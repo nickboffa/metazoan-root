@@ -80,15 +80,20 @@ For a total of 18 species and 20 genes. NB: I don't know how to go about creatin
 
 ### For dataset \in {Nosenko2013_nonribosomal, Nosenko2013_ribosomal, Laumer2018}:
 
-1. Remove outgroups from dataset (sidenote - would a good validation method for the rooting procedure be to include an outgroup, then test if IQTREE infers that the root is on the outgroup's branch?)
+1. Remove outgroups from dataset
 
-2. Create optimal partition without reconstructing tree:
+2. Find ML rooted tree, with rootstrap
 
-	*iqtree -s data_nooutgroup.phy -p data.nex -m MF+MERGE*
+```
+# step 1
+iqtree2 --seed 2222 -s ../test_data.fasta -p ../Nosenko2013_nonribosomal_partitions_formatted.nex -b 100 -T 7 --prefix rev_aa
 
-3. Run the NONREV model on the dataset, which will determine the ML rooted tree. It also calculates the rootstrap support values for each root, and the UFbootstrap support values for each bifurcation.
+# step 2: infer rooted tree with linked non-reversible models
+iqtree2 --seed 2222 -s ../test_data.fasta -p rev_aa.best_scheme.nex --model-joint NONREV -b 100 -T 7 --prefix nonrev_aa
+```
 
-	*iqtree2 -s data_nooutgroup.phy -p best_scheme_data.nex --model-joint NONREV -B 1000 -T AUTO --prefix something_nonrev*
+3. Perform AU test (and REEL?)
+iqtree2 –s ../test_data.fasta –p rev_aa.best_scheme.nex -–model-joint NONREV --root-test –zb 1000 –au –te nonrev_aa.treefile --prefix TOP
 
 
 ### Things I need to keep in mind
