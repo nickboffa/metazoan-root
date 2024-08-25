@@ -86,10 +86,11 @@ For a total of 18 species and 20 genes. NB: I don't know how to go about creatin
 
 ```
 # step 1
-iqtree2 --seed 2222 -s ../test_data.fasta -p ../Nosenko2013_nonribosomal_partitions_formatted.nex -b 100 -T 7 --prefix rev_aa
+iqtree2 --seed 2222 -s ../test_data.fasta -p ../Nosenko2013_nonribosomal_partitions_formatted.nex -T 35 -mem 300G --prefix REV
 
 # step 2: infer rooted tree with linked non-reversible models
-iqtree2 --seed 2222 -s ../test_data.fasta -p rev_aa.best_scheme.nex --model-joint NONREV -b 100 -T 7 --prefix nonrev_aa
+iqtree2 --seed 2222 -s ../test_data.fasta -p rev_aa.best_scheme.nex -t rev_aa.treefile --model-joint NONREV -b 100 -T 35 -mem 300G --prefix nonrev_check2
+
 ```
 
 3. Perform AU test (and REEL?)
