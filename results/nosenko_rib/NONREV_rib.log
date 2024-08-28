@@ -1,0 +1,643 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Aug  4 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree2 --seed 2222 -s ../Nosenko2013.rib.relabelled.outgroup_rem.fasta -p REV_rib.best_scheme.nex -t REV_rib.treefile --model-joint NONREV -B 1000 -T 40 --prefix NONREV_rib
+Seed:    2222 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Aug 27 11:41:18 2024
+Kernel:  AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading partition model file REV_rib.best_scheme.nex ...
+Reading alignment file ../Nosenko2013.rib.relabelled.outgroup_rem.fasta ... Fasta format detected
+Reading fasta file: done in 0.0158152 secs using 88.04% CPU
+Alignment most likely contains protein sequences
+Alignment has 61 sequences with 14612 columns, 13290 distinct patterns
+8236 parsimony-informative, 2693 singleton sites, 3682 constant sites
+                                         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0022951 secs using 97.25% CPU
+   1  CNIDARIA_Acropora_hyacinthus              23.17%    passed     61.42%
+   2  CNIDARIA_Acropora_millepora                7.99%    passed     85.66%
+   3  CNIDARIA_Acropora_palmata                 78.39%    failed      0.04%
+   4  PORIFERA_Amphimedon_queenslandica          1.27%    passed     98.83%
+   5  BILATERIA_Anoplodactylus_eroticus         19.63%    passed     66.95%
+   6  BILATERIA_Aplysia_californica              3.02%    passed     99.84%
+   7  PORIFERA_Aphrocallistes_vastus            97.24%    failed      2.70%
+   8  PORIFERA_Asbestopluma_sp                  17.83%    passed     95.36%
+   9  PORIFERA_Astrosclera_willeyana            70.48%    passed     46.72%
+  10  CTENOPHORA_Beroe_sp                       16.34%    passed     76.42%
+  11  BILATERIA_Branchiostoma_floridae           1.66%    passed     92.31%
+  12  BILATERIA_Capitella_teleta                 3.67%    passed     92.59%
+  13  PORIFERA_Carteriospongia_foliascens       55.82%    passed     22.67%
+  14  BILATERIA_Ciona_intestinalis               3.26%    passed     37.47%
+  15  CNIDARIA_Clytia_hemisphaerica             33.27%    failed      0.78%
+  16  PORIFERA_Corticium                        96.30%    passed     69.95%
+  17  BILATERIA_Crassostrea_gigas                8.92%    passed     91.88%
+  18  PORIFERA_Crateromorpha_meyeri             81.08%    passed     31.21%
+  19  CNIDARIA_Cyanea_capillata                 54.32%    failed      0.26%
+  20  BILATERIA_Danio_rerio                      3.55%    passed     99.89%
+  21  BILATERIA_Daphnia_pulex                    0.23%    passed     84.45%
+  22  PORIFERA_Ephydatia_muelleri               21.67%    passed      8.19%
+  23  BILATERIA_Euprymna_scolopes               19.08%    passed     67.21%
+  24  BILATERIA_Helobdella_robusta               4.91%    passed     72.18%
+  25  PORIFERA_Heterochone_calyx                84.27%    passed     53.47%
+  26  CNIDARIA_Hydra_magnipapillata              0.53%    passed      9.63%
+  27  CNIDARIA_Hydra_vulgaris                   22.30%    passed     87.05%
+  28  CNIDARIA_Hydractinia_echinata             19.08%    passed     99.02%
+  29  BILATERIA_Ixodes_scapularis                1.33%    passed     49.08%
+  30  PORIFERA_Leucetta_chagosensis             18.79%    failed      1.57%
+  31  PORIFERA_Leucosolenia_sp                  92.49%    passed     18.65%
+  32  PORIFERA_Lubomirskia_baicalensis          41.19%    failed      4.10%
+  33  CTENOPHORA_Mertensiid_sp                  21.11%    passed     61.39%
+  34  CNIDARIA_Metridium_senile                  9.60%    passed     98.89%
+  35  CTENOPHORA_Mnemiopsis_leidyi              15.10%    passed     48.13%
+  36  BILATERIA_Molgula_tectiformis              4.89%    passed     82.17%
+  37  CNIDARIA_Montastraea_faveolata            55.50%    passed     48.24%
+  38  BILATERIA_Nasonia_vitripennis              5.32%    passed     99.65%
+  39  CNIDARIA_Nematostella_vectensis            0.01%    passed     86.65%
+  40  PORIFERA_Oopsacas_minuta                  87.38%    failed      0.01%
+  41  PORIFERA_Oscarella_carmela                41.37%    failed      4.68%
+  42  PORIFERA_Oscarella_lobularis              88.18%    passed     11.55%
+  43  PORIFERA_Oscarella_sp                     38.91%    failed      0.73%
+  44  PORIFERA_Pachydictyum_globosum            53.20%    passed      8.70%
+  45  BILATERIA_Pedicellina_cernua              18.57%    passed     43.43%
+  46  BILATERIA_Pediculus_humanus_capitis       24.74%    passed     75.48%
+  47  BILATERIA_Petromyzon_marinus               3.31%    passed     64.06%
+  48  CTENOPHORA_Pleurobrachia_pileus           20.24%    failed      1.40%
+  49  CNIDARIA_Podocoryna_carnea                20.85%    passed     95.94%
+  50  CNIDARIA_Porites_astreoides               18.77%    passed     59.40%
+  51  BILATERIA_Saccoglossus_kowalevskii         0.85%    passed     99.37%
+  52  BILATERIA_Scutigera_coleoptrata           31.57%    failed      3.29%
+  53  BILATERIA_Strongylocentrotus_purpuratus    4.20%    passed     96.42%
+  54  PORIFERA_Suberites_fuscus                 95.05%    passed     57.45%
+  55  PORIFERA_Suberites_domuncula              28.20%    failed      4.77%
+  56  PORIFERA_Sycon_raphanus                   11.16%    failed      2.88%
+  57  PORIFERA_Tethya_wilhelma                  15.12%    passed     45.93%
+  58  PLACOZOA_Trichoplax_adhaerens              0.41%    passed     22.31%
+  59  PLACOZOA_Trichoplax_sp                    29.37%    passed      7.62%
+  60  BILATERIA_Tubifex_tubifex                 14.73%    passed     78.79%
+  61  BILATERIA_Xenoturbella_bocki              23.93%    passed     37.28%
+WARNING: 14 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                     29.26%  13 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Loading 87 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	52	421	192	189	Q.yeast+I+R4	gene_0001
+2	AA	47	353	292	31	Q.yeast+I+G4	gene_0002
+3	AA	39	799	339	318	Q.yeast+F+R4	gene_0003
+4	AA	34	280	186	68	Q.insect+R4	gene_0004
+5	AA	45	109	78	19	Q.yeast+G4	gene_0005
+6	AA	32	266	186	33	Q.insect+G4	gene_0006
+7	AA	39	113	31	72	Q.insect+R3	gene_0007
+8	AA	32	156	80	52	Q.insect+G4	gene_0008
+9	AA	36	155	54	83	Q.insect+I+G4	gene_0009
+10	AA	44	313	122	139	Q.insect+I+R3	gene_0010
+11	AA	46	374	180	154	Q.insect+I+R3	gene_0011
+12	AA	41	121	93	13	Q.yeast+I+R3	gene_0012
+13	AA	35	402	217	132	Q.insect+I+G4	gene_0013
+14	AA	49	211	130	58	Q.insect+I+R4	gene_0014
+15	AA	49	208	95	103	LG+I+G4	gene_0015
+16	AA	50	164	75	73	Q.insect+R4	gene_0016
+17	AA	52	162	90	51	Q.yeast+I+G4	gene_0017
+18	AA	48	156	105	39	LG+I+G4	gene_0018
+19	AA	53	165	114	38	LG+I+G4	gene_0019
+20	AA	45	104	94	5	LG+G4	gene_0020
+21	AA	46	199	124	59	Q.insect+I+G4	gene_0021
+22	AA	51	154	90	51	Q.insect+I+G4	gene_0022
+23	AA	51	155	106	34	Q.insect+I+G4	gene_0023
+24	AA	52	160	122	1	Q.insect+G4	gene_0024
+25	AA	47	176	83	66	Q.insect+R4	gene_0025
+26	AA	49	147	108	27	LG+I+G4	gene_0026
+27	AA	46	79	49	22	Q.yeast+I+R3	gene_0027
+28	AA	46	128	54	58	Q.insect+G4	gene_0028
+29	AA	49	108	59	32	Q.insect+I+G4	gene_0029
+30	AA	49	116	88	21	Q.insect+G4	gene_0030
+31	AA	34	125	78	1	Q.insect+G4	gene_0031
+32	AA	48	120	74	3	Q.insect+R3	gene_0032
+33	AA	49	132	67	3	rtREV+R3	gene_0033
+34	AA	54	367	213	54	Q.insect+R4	gene_0034
+35	AA	46	102	46	3	Q.insect+R2	gene_0035
+36	AA	44	106	65	0	Q.insect+R3	gene_0036
+37	AA	49	123	81	3	Q.insect+R4	gene_0037
+38	AA	46	103	70	6	VT+F+G4	gene_0038
+39	AA	48	118	85	3	Q.insect+G4	gene_0039
+40	AA	50	101	76	0	Q.insect+R4	gene_0040
+41	AA	45	80	54	1	LG+G4	gene_0041
+42	AA	49	84	49	1	Q.insect+G4	gene_0042
+43	AA	47	88	51	3	Q.insect+R3	gene_0043
+44	AA	38	62	44	2	VT+R2	gene_0044
+45	AA	40	50	23	18	Q.insect+I+G4	gene_0045
+46	AA	47	102	54	4	Q.insect+R3	gene_0046
+47	AA	51	290	184	43	LG+R4	gene_0047
+48	AA	54	266	182	23	LG+G4	gene_0048
+49	AA	51	131	97	5	Q.yeast+G4	gene_0049
+50	AA	51	203	144	3	Q.insect+R3	gene_0050
+51	AA	50	222	147	7	Q.insect+G4	gene_0051
+52	AA	54	249	125	16	Q.insect+R3	gene_0052
+53	AA	50	151	99	2	Q.yeast+G4	gene_0053
+54	AA	49	274	188	3	Q.insect+G4	gene_0054
+55	AA	40	75	48	8	Q.yeast+G4	gene_0055
+56	AA	40	77	47	2	WAG+F+G4	gene_0056
+57	AA	51	221	133	52	Q.insect+R3	gene_0057
+58	AA	46	90	55	20	Q.insect+G4	gene_0058
+59	AA	49	129	64	47	Q.insect+I+G4	gene_0059
+60	AA	47	114	79	22	Q.insect+G4	gene_0060
+61	AA	49	150	73	54	Q.insect+R3	gene_0061
+62	AA	50	126	32	82	Q.insect+I+R2	gene_0062
+63	AA	48	137	71	51	Q.insect+G4	gene_0063
+64	AA	48	127	54	59	Q.insect+I+G4	gene_0064
+65	AA	49	132	58	51	Q.insect+G4	gene_0065
+66	AA	46	106	48	48	Q.insect+I+R3	gene_0066
+67	AA	50	151	75	68	Q.insect+I+G4	gene_0067
+68	AA	48	127	99	21	Q.insect+I+G4	gene_0068
+69	AA	49	213	79	103	Q.insect+I+G4	gene_0069
+70	AA	48	96	39	50	Q.insect+I+G4	gene_0070
+71	AA	46	142	44	86	Q.insect+I+G4	gene_0071
+72	AA	50	112	73	21	Q.insect+G4	gene_0072
+73	AA	46	78	38	25	Q.insect+G4	gene_0073
+74	AA	47	98	51	40	Q.insect+R3	gene_0074
+75	AA	45	81	31	30	Q.insect+R3	gene_0075
+76	AA	53	57	29	20	Q.insect+G4	gene_0076
+77	AA	46	59	16	37	Q.insect+G4	gene_0077
+78	AA	42	53	29	16	WAG+G4	gene_0078
+79	AA	51	210	73	9	VT+R3	gene_0079
+80	AA	53	258	170	49	Q.insect+R4	gene_0080
+81	AA	46	187	71	90	Q.insect+G4	gene_0081
+82	AA	49	208	129	53	Q.insect+G4	gene_0082
+83	AA	50	163	114	35	Q.insect+I+G4	gene_0083
+84	AA	53	179	101	7	Q.insect+R3	gene_0084
+85	AA	50	170	59	73	Q.insect+R3	gene_0085
+86	AA	46	200	128	48	Q.insect+I+G4	gene_0086
+87	AA	35	183	94	58	Q.insect+I+R3	gene_0087
+Degree of missing data: 0.236
+Info: multi-threading strategy over partitions
+
+WARNING: States(s) W rarely appear in partition gene_0008 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0009 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0035 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0041 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0044 and may cause numerical problems
+WARNING: States(s) C rarely appear in partition gene_0045 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0046 and may cause numerical problems
+WARNING: States(s) H, W rarely appear in partition gene_0056 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0062 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0063 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0066 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0072 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0074 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0075 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0076 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0077 and may cause numerical problems
+Reading input tree file REV_rib.treefile ...
+Generating 1000 samples for ultrafast bootstrap (seed: 2222)...
+Linking NONREV+FO model across 87 partitions
+Mean state frequencies: 0.06799238 0.08800092 0.03780434 0.04337698 0.01713768 0.03337192 0.05132204 0.06992710 0.02515251 0.06327768 0.08195094 0.10630309 0.02163671 0.03582204 0.04061762 0.04886081 0.04975047 0.00848851 0.03158309 0.07762318
+
+NOTE: 474 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -413493.266
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -409744.908
+Current log-likelihood at step 1: -409133.542
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -407656.044
+Current log-likelihood at step 2: -407598.548
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406695.328
+Current log-likelihood at step 3: -406677.555
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406344.922
+Current log-likelihood at step 4: -406338.415
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406269.277
+Current log-likelihood at step 5: -406266.154
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406200.831
+Current log-likelihood at step 6: -406198.412
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406177.932
+Current log-likelihood at step 7: -406176.916
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406164.399
+Current log-likelihood at step 8: -406163.460
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406152.403
+Current log-likelihood at step 9: -406151.421
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406139.216
+Current log-likelihood at step 10: -406138.513
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406131.182
+Current log-likelihood at step 11: -406130.815
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406122.569
+Current log-likelihood at step 12: -406122.321
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406117.019
+Current log-likelihood at step 13: -406116.808
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406109.445
+Current log-likelihood at step 14: -406109.194
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406103.082
+Current log-likelihood at step 15: -406102.498
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406094.124
+Current log-likelihood at step 16: -406093.811
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406087.686
+Current log-likelihood at step 17: -406087.464
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406082.720
+Current log-likelihood at step 18: -406082.591
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406077.425
+Current log-likelihood at step 19: -406077.341
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406072.821
+Current log-likelihood at step 20: -406072.744
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406067.561
+Current log-likelihood at step 21: -406067.487
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406063.371
+Current log-likelihood at step 22: -406063.291
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406061.056
+Current log-likelihood at step 23: -406060.968
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406056.535
+Current log-likelihood at step 24: -406056.453
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406052.150
+Current log-likelihood at step 25: -406052.067
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406049.513
+Current log-likelihood at step 26: -406049.437
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406045.703
+Current log-likelihood at step 27: -406045.631
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406042.405
+Current log-likelihood at step 28: -406042.336
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406036.758
+Current log-likelihood at step 29: -406036.695
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406035.158
+Current log-likelihood at step 30: -406035.101
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406031.361
+Current log-likelihood at step 31: -406031.310
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406029.699
+Current log-likelihood at step 32: -406029.654
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406026.816
+Current log-likelihood at step 33: -406026.774
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406025.423
+Current log-likelihood at step 34: -406025.385
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406022.596
+Current log-likelihood at step 35: -406022.564
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406020.559
+Current log-likelihood at step 36: -406020.530
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406019.302
+Current log-likelihood at step 37: -406019.274
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406017.109
+Current log-likelihood at step 38: -406017.081
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406014.451
+Current log-likelihood at step 39: -406014.421
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406013.191
+Current log-likelihood at step 40: -406013.161
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406011.506
+Current log-likelihood at step 41: -406011.474
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406009.522
+Current log-likelihood at step 42: -406009.488
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406006.908
+Current log-likelihood at step 43: -406006.878
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406005.468
+Current log-likelihood at step 44: -406005.441
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406004.456
+Current log-likelihood at step 45: -406004.429
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406002.736
+Current log-likelihood at step 46: -406002.711
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -406000.416
+Current log-likelihood at step 47: -406000.392
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405998.692
+Current log-likelihood at step 48: -405998.672
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405997.490
+Current log-likelihood at step 49: -405997.470
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405996.142
+Current log-likelihood at step 50: -405996.125
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405994.874
+Current log-likelihood at step 51: -405994.858
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405993.353
+Current log-likelihood at step 52: -405993.342
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405992.834
+Current log-likelihood at step 53: -405992.822
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405991.894
+Current log-likelihood at step 54: -405991.883
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405990.610
+Current log-likelihood at step 55: -405990.599
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405989.517
+Current log-likelihood at step 56: -405989.508
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405988.388
+Current log-likelihood at step 57: -405988.379
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405987.794
+Current log-likelihood at step 58: -405987.786
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405986.585
+Current log-likelihood at step 59: -405986.578
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405985.699
+Current log-likelihood at step 60: -405985.694
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405984.885
+Current log-likelihood at step 61: -405984.879
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405984.280
+Current log-likelihood at step 62: -405984.275
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405982.731
+Current log-likelihood at step 63: -405982.726
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405981.804
+Current log-likelihood at step 64: -405981.800
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405981.459
+Current log-likelihood at step 65: -405981.456
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405980.938
+Current log-likelihood at step 66: -405980.935
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405979.847
+Current log-likelihood at step 67: -405979.843
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405977.911
+Current log-likelihood at step 68: -405977.907
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405977.182
+Current log-likelihood at step 69: -405977.179
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405976.285
+Current log-likelihood at step 70: -405976.282
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405975.924
+Current log-likelihood at step 71: -405975.922
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405975.611
+Current log-likelihood at step 72: -405975.609
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405974.706
+Current log-likelihood at step 73: -405974.704
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405974.299
+Current log-likelihood at step 74: -405974.297
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405973.785
+Current log-likelihood at step 75: -405973.783
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405972.739
+Current log-likelihood at step 76: -405972.736
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405971.887
+Current log-likelihood at step 77: -405971.885
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405971.124
+Current log-likelihood at step 78: -405971.122
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405970.239
+Current log-likelihood at step 79: -405970.238
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405969.495
+Current log-likelihood at step 80: -405969.494
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405969.164
+Current log-likelihood at step 81: -405969.163
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405968.817
+Current log-likelihood at step 82: -405968.816
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405968.401
+Current log-likelihood at step 83: -405968.400
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405967.612
+Current log-likelihood at step 84: -405967.611
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405966.336
+Current log-likelihood at step 85: -405966.335
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405965.371
+Current log-likelihood at step 86: -405965.370
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405964.954
+Current log-likelihood at step 87: -405964.953
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405964.416
+Current log-likelihood at step 88: -405964.416
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405963.542
+Current log-likelihood at step 89: -405963.541
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405962.490
+Current log-likelihood at step 90: -405962.489
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405961.979
+Current log-likelihood at step 91: -405961.978
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405961.280
+Current log-likelihood at step 92: -405961.280
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405960.986
+Current log-likelihood at step 93: -405960.986
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405960.903
+Current log-likelihood at step 94: -405960.903
+Partition-specific rates:  0.791 1.972 0.860 1.651 1.403 1.289 0.361 0.595 0.517 0.695 0.785 0.859 1.062 0.934 1.164 0.737 1.125 1.316 1.283 2.097 0.881 0.814 1.229 1.816 0.635 1.578 0.833 0.487 1.183 1.102 1.346 0.816 1.015 1.029 0.505 1.098 1.179 1.700 1.788 1.499 1.576 1.777 0.905 0.766 0.994 0.817 1.121 1.499 1.918 1.271 1.260 0.881 1.622 1.571 1.371 1.788 0.716 0.824 0.671 0.754 0.426 0.241 0.564 0.514 0.553 0.442 0.521 1.250 0.608 0.665 0.362 0.999 0.963 0.483 0.358 0.694 0.275 0.951 0.521 1.011 0.339 0.969 0.917 1.128 0.380 0.925 0.733
+Parameters optimization took 93 rounds (3671.832 sec)
+
+Wrote distance file to... 
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -405959.931
+Current log-likelihood at step 1: -405957.779
+Current log-likelihood at step 2: -405956.354
+Current log-likelihood at step 3: -405955.763
+Current log-likelihood at step 4: -405955.350
+Current log-likelihood at step 5: -405955.103
+Current log-likelihood at step 6: -405954.509
+Current log-likelihood at step 7: -405953.990
+Current log-likelihood at step 8: -405953.676
+Current log-likelihood at step 9: -405953.190
+Current log-likelihood at step 10: -405952.992
+Current log-likelihood at step 11: -405952.685
+Current log-likelihood at step 12: -405952.350
+Current log-likelihood at step 13: -405952.263
+Parameters optimization took 12 rounds (541.328 sec)
+
+BETTER TREE FOUND at iteration 1: -405952.263
+Finish initializing candidate tree set (2)
+Current best tree score: -405952.263 / CPU time: 545.237
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 10 / LogL: -405957.513 / Time: 1h:12m:10s
+Iteration 20 / LogL: -405956.121 / Time: 1h:14m:18s
+Iteration 30 / LogL: -405963.948 / Time: 1h:16m:28s (3h:7m:13s left)
+Iteration 40 / LogL: -405971.093 / Time: 1h:18m:31s (2h:2m:48s left)
+Iteration 50 / LogL: -405958.452 / Time: 1h:20m:19s (1h:23m:36s left)
+Log-likelihood cutoff on original alignment: -406016.685
+Iteration 60 / LogL: -405955.436 / Time: 1h:22m:18s (0h:57m:11s left)
+Iteration 70 / LogL: -405959.695 / Time: 1h:24m:13s (0h:37m:50s left)
+Iteration 80 / LogL: -405955.500 / Time: 1h:26m:18s (0h:22m:56s left)
+Iteration 90 / LogL: -405955.495 / Time: 1h:28m:0s (0h:10m:52s left)
+Iteration 100 / LogL: -405953.992 / Time: 1h:29m:47s (0h:0m:54s left)
+Log-likelihood cutoff on original alignment: -406019.153
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.989
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -405968.941 / Time: 1h:31m:39s (1h:15m:40s left)
+Iteration 120 / LogL: -405956.301 / Time: 1h:33m:30s (1h:2m:51s left)
+Iteration 130 / LogL: -405961.355 / Time: 1h:35m:24s (0h:51m:46s left)
+Iteration 140 / LogL: -405959.766 / Time: 1h:37m:28s (0h:42m:4s left)
+Iteration 150 / LogL: -405959.058 / Time: 1h:39m:46s (0h:33m:28s left)
+Log-likelihood cutoff on original alignment: -406020.391
+Iteration 160 / LogL: -405974.409 / Time: 1h:41m:58s (0h:25m:39s left)
+Iteration 170 / LogL: -405956.918 / Time: 1h:44m:11s (0h:18m:29s left)
+Iteration 180 / LogL: -405959.552 / Time: 1h:46m:28s (0h:11m:53s left)
+Iteration 190 / LogL: -406003.613 / Time: 1h:48m:42s (0h:5m:45s left)
+Iteration 200 / LogL: -405987.312 / Time: 1h:51m:1s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -406020.994
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 1h:51m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -405952.263
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405951.720
+Current log-likelihood at step 1: -405951.710
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405948.636
+Current log-likelihood at step 2: -405948.634
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405948.454
+Current log-likelihood at step 3: -405948.453
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405948.318
+Current log-likelihood at step 4: -405948.318
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405948.059
+Current log-likelihood at step 5: -405948.059
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405947.916
+Current log-likelihood at step 6: -405947.916
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405947.717
+Current log-likelihood at step 7: -405947.717
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405947.563
+Current log-likelihood at step 8: -405947.563
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405947.523
+Current log-likelihood at step 9: -405947.523
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405947.457
+Current log-likelihood at step 10: -405947.457
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405935.098
+Current log-likelihood at step 11: -405933.302
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405929.589
+Current log-likelihood at step 12: -405929.473
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.964
+Current log-likelihood at step 13: -405928.941
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.841
+Current log-likelihood at step 14: -405928.833
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.755
+Current log-likelihood at step 15: -405928.753
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.679
+Current log-likelihood at step 16: -405928.677
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.658
+Current log-likelihood at step 17: -405928.657
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.592
+Current log-likelihood at step 18: -405928.591
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.419
+Current log-likelihood at step 19: -405928.419
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.394
+Current log-likelihood at step 20: -405928.394
+Optimizing linked NONREV+FO parameters across all partitions (379 free parameters)
+Linked-model log-likelihood: -405928.386
+Current log-likelihood at step 21: -405928.386
+Partition-specific rates:  0.780 1.931 0.849 1.641 1.397 1.299 0.358 0.585 0.516 0.693 0.782 0.856 1.061 0.927 1.174 0.741 1.122 1.340 1.292 2.144 0.878 0.821 1.240 1.813 0.639 1.523 0.819 0.478 1.204 1.095 1.358 0.816 1.021 1.027 0.495 1.101 1.181 1.688 1.832 1.492 1.577 1.851 0.896 0.761 1.011 0.820 1.128 1.509 1.941 1.282 1.281 0.878 1.729 1.541 1.326 1.762 0.710 0.815 0.687 0.750 0.422 0.243 0.558 0.504 0.550 0.440 0.523 1.249 0.616 0.687 0.369 1.049 0.999 0.485 0.363 0.679 0.265 0.942 0.520 1.007 0.332 0.985 0.903 1.131 0.376 0.904 0.731
+Parameters optimization took 20 rounds (848.506 sec)
+
+Partition information was printed to NONREV_rib.best_model.nex
+BEST SCORE FOUND : -405928.386
+Creating bootstrap support values...
+Split supports printed to NEXUS file NONREV_rib.splits.nex
+Total tree length: 9.302
+
+Total number of iterations: 200
+CPU time used for tree search: 116454.620 sec (32h:20m:54s)
+Wall-clock time used for tree search: 2989.620 sec (0h:49m:49s)
+Total CPU time used: 295567.027 sec (82h:6m:7s)
+Total wall-clock time used: 7510.770 sec (2h:5m:10s)
+Computing rootstrap supports...
+Annotated tree (best viewed in FigTree) written to NONREV_rib.rootstrap.nex
+
+Computing bootstrap consensus tree...
+Reading input file NONREV_rib.splits.nex...
+61 taxa and 216 splits.
+Consensus tree written to NONREV_rib.contree
+Reading input trees file NONREV_rib.contree
+Log-likelihood of consensus tree: -405975.269
+
+Analysis results written to: 
+  IQ-TREE report:                NONREV_rib.iqtree
+  Maximum-likelihood tree:       NONREV_rib.treefile
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          NONREV_rib.splits.nex
+  Consensus tree:                NONREV_rib.contree
+  ML tree with rootstrap:        NONREV_rib.rootstrap.nex
+  Screen log file:               NONREV_rib.log
+
+Date and Time: Tue Aug 27 13:46:40 2024

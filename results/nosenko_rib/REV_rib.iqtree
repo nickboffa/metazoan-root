@@ -1,0 +1,493 @@
+IQ-TREE 2.3.6 built Aug  4 2024
+
+Partition file name: ../Nosenko2013_ribosomal_partitions_formatted.nex
+Input file name: ../Nosenko2013.rib.relabelled.outgroup_rem.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 2222
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 61 taxa with 87 partitions and 14612 total sites (23.5904% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	52	421	369	192	189	189	gene_0001
+   2	AA	47	353	350	292	31	31	gene_0002
+   3	AA	39	799	706	339	318	318	gene_0003
+   4	AA	34	280	264	186	68	68	gene_0004
+   5	AA	45	109	101	78	19	19	gene_0005
+   6	AA	32	266	262	186	33	33	gene_0006
+   7	AA	39	113	67	31	72	72	gene_0007
+   8	AA	32	156	136	80	52	52	gene_0008
+   9	AA	36	155	134	54	83	83	gene_0009
+  10	AA	44	313	261	122	139	139	gene_0010
+  11	AA	46	374	329	180	154	154	gene_0011
+  12	AA	41	121	118	93	13	13	gene_0012
+  13	AA	35	402	353	217	132	132	gene_0013
+  14	AA	49	211	196	130	58	58	gene_0014
+  15	AA	49	208	171	95	103	103	gene_0015
+  16	AA	50	164	135	75	73	73	gene_0016
+  17	AA	52	162	142	90	51	51	gene_0017
+  18	AA	48	156	144	105	39	39	gene_0018
+  19	AA	53	165	153	114	38	38	gene_0019
+  20	AA	45	104	104	94	5	5	gene_0020
+  21	AA	46	199	180	124	59	59	gene_0021
+  22	AA	51	154	137	90	51	51	gene_0022
+  23	AA	51	155	143	106	34	34	gene_0023
+  24	AA	52	160	159	122	1	1	gene_0024
+  25	AA	47	176	146	83	66	66	gene_0025
+  26	AA	49	147	134	108	27	27	gene_0026
+  27	AA	46	79	70	49	22	22	gene_0027
+  28	AA	46	128	104	54	58	58	gene_0028
+  29	AA	49	108	98	59	32	32	gene_0029
+  30	AA	49	116	111	88	21	21	gene_0030
+  31	AA	34	125	125	78	1	1	gene_0031
+  32	AA	48	120	118	74	3	3	gene_0032
+  33	AA	49	132	127	67	3	3	gene_0033
+  34	AA	54	367	349	213	54	54	gene_0034
+  35	AA	46	102	102	46	3	3	gene_0035
+  36	AA	44	106	105	65	0	0	gene_0036
+  37	AA	49	123	123	81	3	3	gene_0037
+  38	AA	46	103	102	70	6	6	gene_0038
+  39	AA	48	118	117	85	3	3	gene_0039
+  40	AA	50	101	101	76	0	0	gene_0040
+  41	AA	45	80	80	54	1	1	gene_0041
+  42	AA	49	84	83	49	1	1	gene_0042
+  43	AA	47	88	88	51	3	3	gene_0043
+  44	AA	38	62	62	44	2	2	gene_0044
+  45	AA	40	50	46	23	18	18	gene_0045
+  46	AA	47	102	100	54	4	4	gene_0046
+  47	AA	51	290	278	184	43	43	gene_0047
+  48	AA	54	266	264	182	23	23	gene_0048
+  49	AA	51	131	130	97	5	5	gene_0049
+  50	AA	51	203	201	144	3	3	gene_0050
+  51	AA	50	222	221	147	7	7	gene_0051
+  52	AA	54	249	245	125	16	16	gene_0052
+  53	AA	50	151	150	99	2	2	gene_0053
+  54	AA	49	274	273	188	3	3	gene_0054
+  55	AA	40	75	73	48	8	8	gene_0055
+  56	AA	40	77	75	47	2	2	gene_0056
+  57	AA	51	221	204	133	52	52	gene_0057
+  58	AA	46	90	87	55	20	20	gene_0058
+  59	AA	49	129	103	64	47	47	gene_0059
+  60	AA	47	114	107	79	22	22	gene_0060
+  61	AA	49	150	129	73	54	54	gene_0061
+  62	AA	50	126	77	32	82	82	gene_0062
+  63	AA	48	137	118	71	51	51	gene_0063
+  64	AA	48	127	92	54	59	59	gene_0064
+  65	AA	49	132	115	58	51	51	gene_0065
+  66	AA	46	106	91	48	48	48	gene_0066
+  67	AA	50	151	129	75	68	68	gene_0067
+  68	AA	48	127	120	99	21	21	gene_0068
+  69	AA	49	213	164	79	103	103	gene_0069
+  70	AA	48	96	60	39	50	50	gene_0070
+  71	AA	46	142	86	44	86	86	gene_0071
+  72	AA	50	112	107	73	21	21	gene_0072
+  73	AA	46	78	71	38	25	25	gene_0073
+  74	AA	47	98	88	51	40	40	gene_0074
+  75	AA	45	81	76	31	30	30	gene_0075
+  76	AA	53	57	53	29	20	20	gene_0076
+  77	AA	46	59	43	16	37	37	gene_0077
+  78	AA	42	53	47	29	16	16	gene_0078
+  79	AA	51	210	190	73	9	9	gene_0079
+  80	AA	53	258	243	170	49	49	gene_0080
+  81	AA	46	187	161	71	90	90	gene_0081
+  82	AA	49	208	189	129	53	53	gene_0082
+  83	AA	50	163	154	114	35	35	gene_0083
+  84	AA	53	179	179	101	7	7	gene_0084
+  85	AA	50	170	131	59	73	73	gene_0085
+  86	AA	46	200	188	128	48	48	gene_0086
+  87	AA	35	183	174	94	58	58	gene_0087
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.yeast+I+R4:gene_0001,Q.yeast+I+G4:gene_0002,Q.yeast+F+R4:gene_0003,Q.insect+R4:gene_0004,Q.yeast+G4:gene_0005,Q.insect+G4:gene_0006,Q.insect+R3:gene_0007,Q.insect+G4:gene_0008,Q.insect+I+G4:gene_0009,Q.insect+I+R3:gene_0010,Q.insect+I+R3:gene_0011,Q.yeast+I+R3:gene_0012,Q.insect+I+G4:gene_0013,Q.insect+I+R4:gene_0014,LG+I+G4:gene_0015,Q.insect+R4:gene_0016,Q.yeast+I+G4:gene_0017,LG+I+G4:gene_0018,LG+I+G4:gene_0019,LG+G4:gene_0020,Q.insect+I+G4:gene_0021,Q.insect+I+G4:gene_0022,Q.insect+I+G4:gene_0023,Q.insect+G4:gene_0024,Q.insect+R4:gene_0025,LG+I+G4:gene_0026,Q.yeast+I+R3:gene_0027,Q.insect+G4:gene_0028,Q.insect+I+G4:gene_0029,Q.insect+G4:gene_0030,Q.insect+G4:gene_0031,Q.insect+R3:gene_0032,rtREV+R3:gene_0033,Q.insect+R4:gene_0034,Q.insect+R2:gene_0035,Q.insect+R3:gene_0036,Q.insect+R4:gene_0037,VT+F+G4:gene_0038,Q.insect+G4:gene_0039,Q.insect+R4:gene_0040,LG+G4:gene_0041,Q.insect+G4:gene_0042,Q.insect+R3:gene_0043,VT+R2:gene_0044,Q.insect+I+G4:gene_0045,Q.insect+R3:gene_0046,LG+R4:gene_0047,LG+G4:gene_0048,Q.yeast+G4:gene_0049,Q.insect+R3:gene_0050,Q.insect+G4:gene_0051,Q.insect+R3:gene_0052,Q.yeast+G4:gene_0053,Q.insect+G4:gene_0054,Q.yeast+G4:gene_0055,WAG+F+G4:gene_0056,Q.insect+R3:gene_0057,Q.insect+G4:gene_0058,Q.insect+I+G4:gene_0059,Q.insect+G4:gene_0060,Q.insect+R3:gene_0061,Q.insect+I+R2:gene_0062,Q.insect+G4:gene_0063,Q.insect+I+G4:gene_0064,Q.insect+G4:gene_0065,Q.insect+I+R3:gene_0066,Q.insect+I+G4:gene_0067,Q.insect+I+G4:gene_0068,Q.insect+I+G4:gene_0069,Q.insect+I+G4:gene_0070,Q.insect+I+G4:gene_0071,Q.insect+G4:gene_0072,Q.insect+G4:gene_0073,Q.insect+R3:gene_0074,Q.insect+R3:gene_0075,Q.insect+G4:gene_0076,Q.insect+G4:gene_0077,WAG+G4:gene_0078,VT+R3:gene_0079,Q.insect+R4:gene_0080,Q.insect+G4:gene_0081,Q.insect+G4:gene_0082,Q.insect+I+G4:gene_0083,Q.insect+R3:gene_0084,Q.insect+R3:gene_0085,Q.insect+I+G4:gene_0086,Q.insect+I+R3:gene_0087
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  Q.yeast+I+R4     -10033.085   20082.170 + 6.91e-310   20082.519 + 6.91e-310   20114.511 +        0
+   2  Q.yeast+I+G4     -16005.210   32016.421 + 6.91e-310   32016.489 + 6.91e-310   32028.020 +        0
+   3  Q.yeast+F+R4     -14280.440   28612.880 + 6.91e-310   28614.699 + 6.91e-310   28734.648 +        0
+   4  Q.insect+R4       -7607.296   15228.591 + 6.91e-310   15229.003 + 6.91e-310   15254.035 +        0
+   5  Q.yeast+G4        -4098.066    8200.133 + 6.91e-310    8200.246 + 6.91e-310    8205.515 +        0
+   6  Q.insect+G4       -6731.389   13466.777 + 6.91e-310   13466.823 + 6.91e-310   13473.944 +        0
+   7  Q.insect+R3       -1516.934    3043.867 + 6.91e-310    3044.428 + 6.91e-310    3057.504 +        0
+   8  Q.insect+G4       -2812.321    5628.642 + 6.91e-310    5628.720 + 6.91e-310    5634.742 +        0
+   9  Q.insect+I+G4     -2065.857    4137.713 + 6.91e-310    4137.872 + 6.91e-310    4146.843 +        0
+  10  Q.insect+I+R3     -5933.003   11878.006 + 6.91e-310   11878.281 + 6.91e-310   11900.484 +        0
+  11  Q.insect+I+R3     -8753.332   17518.664 + 6.91e-310   17518.893 + 6.91e-310   17542.210 +        0
+  12  Q.yeast+I+R3      -3567.924    7147.848 + 6.91e-310    7148.585 + 6.91e-310    7164.623 +        0
+  13  Q.insect+I+G4     -9534.250   19074.500 + 6.91e-310   19074.560 + 6.91e-310   19086.489 +        0
+  14  Q.insect+I+R4     -6367.262   12750.524 + 6.91e-310   12751.237 + 6.91e-310   12777.339 +        0
+  15  LG+I+G4           -5556.296   11118.592 + 6.91e-310   11118.710 + 6.91e-310   11128.605 +        0
+  16  Q.insect+R4       -3765.858    7545.716 + 6.91e-310    7546.434 + 6.91e-310    7567.415 +        0
+  17  Q.yeast+I+G4      -5119.176   10244.352 + 6.91e-310   10244.503 + 6.91e-310   10253.614 +        0
+  18  LG+I+G4           -5871.262   11748.523 + 6.91e-310   11748.681 + 6.91e-310   11757.673 +        0
+  19  LG+I+G4           -6325.724   12657.449 + 6.91e-310   12657.598 + 6.91e-310   12666.766 +        0
+  20  LG+G4             -5330.099   10664.198 + 6.91e-310   10664.317 + 6.91e-310   10669.487 +        0
+  21  Q.insect+I+G4     -5677.079   11360.158 + 6.91e-310   11360.281 + 6.91e-310   11370.038 +        0
+  22  Q.insect+I+G4     -4026.254    8058.508 + 6.91e-310    8058.668 + 6.91e-310    8067.619 +        0
+  23  Q.insect+I+G4     -5371.135   10748.270 + 6.91e-310   10748.428 + 6.91e-310   10757.400 +        0
+  24  Q.insect+G4       -7197.145   14398.289 + 6.91e-310   14398.366 + 6.91e-310   14404.440 +        0
+  25  Q.insect+R4       -4114.893    8243.785 + 6.91e-310    8244.452 + 6.91e-310    8265.979 +        0
+  26  LG+I+G4           -5944.177   11894.355 + 6.91e-310   11894.523 + 6.91e-310   11903.326 +        0
+  27  Q.yeast+I+R3      -2164.979    4341.957 + 6.91e-310    4343.124 + 6.91e-310    4356.174 +        0
+  28  Q.insect+G4       -2141.804    4287.607 + 6.91e-310    4287.703 + 6.91e-310    4293.311 +        0
+  29  Q.insect+I+G4     -3203.905    6413.810 + 6.91e-310    6414.041 + 6.91e-310    6421.856 +        0
+  30  Q.insect+G4       -4033.287    8070.574 + 6.91e-310    8070.680 + 6.91e-310    8076.081 +        0
+  31  Q.insect+G4       -3759.533    7523.065 + 6.91e-310    7523.164 + 6.91e-310    7528.722 +        0
+  32  Q.insect+R3       -3423.143    6856.287 + 6.91e-310    6856.813 + 6.91e-310    6870.224 +        0
+  33  rtREV+R3          -4011.998    8033.995 + 6.91e-310    8034.471 + 6.91e-310    8048.409 +        0
+  34  Q.insect+R4      -11631.414   23276.829 + 6.91e-310   23277.141 + 6.91e-310   23304.166 +        0
+  35  Q.insect+R2       -2183.478    4372.957 + 6.91e-310    4373.202 + 6.91e-310    4380.832 +        0
+  36  Q.insect+R3       -3331.332    6672.664 + 6.91e-310    6673.264 + 6.91e-310    6685.981 +        0
+  37  Q.insect+R4       -4208.741    8431.483 + 6.91e-310    8432.457 + 6.91e-310    8451.168 +        0
+  38  VT+F+G4           -4058.219    8158.438 + 6.91e-310    8169.846 + 6.91e-310    8213.768 +        0
+  39  Q.insect+G4       -4736.877    9477.753 + 6.91e-310    9477.857 + 6.91e-310    9483.294 +        0
+  40  Q.insect+R4       -4212.057    8438.114 + 6.91e-310    8439.318 + 6.91e-310    8456.420 +        0
+  41  LG+G4             -2940.474    5884.949 + 6.91e-310    5885.104 + 6.91e-310    5889.713 +        0
+  42  Q.insect+G4       -3245.084    6494.167 + 6.91e-310    6494.316 + 6.91e-310    6499.029 +        0
+  43  Q.insect+R3       -2634.672    5279.343 + 6.91e-310    5280.075 + 6.91e-310    5291.730 +        0
+  44  VT+R2             -1428.053    2862.106 + 6.91e-310    2862.520 + 6.91e-310    2868.487 +        0
+  45  Q.insect+I+G4     -1203.871    2413.742 + 6.91e-310    2414.264 + 6.91e-310    2419.478 +        0
+  46  Q.insect+R3       -2753.564    5517.127 + 6.91e-310    5517.752 + 6.91e-310    5530.252 +        0
+  47  LG+R4             -9610.505   19235.011 + 6.91e-310   19235.408 + 6.91e-310   19260.700 +        0
+  48  LG+G4            -10798.565   21601.129 + 6.91e-310   21601.175 + 6.91e-310   21608.296 +        0
+  49  Q.yeast+G4        -6023.086   12050.172 + 6.91e-310   12050.266 + 6.91e-310   12055.923 +        0
+  50  Q.insect+R3       -7620.166   15250.332 + 6.91e-310   15250.637 + 6.91e-310   15266.898 +        0
+  51  Q.insect+G4       -7814.559   15633.119 + 6.91e-310   15633.173 + 6.91e-310   15639.924 +        0
+  52  Q.insect+R3       -7396.067   14802.135 + 6.91e-310   14802.382 + 6.91e-310   14819.722 +        0
+  53  Q.yeast+G4        -6101.060   12206.120 + 6.91e-310   12206.201 + 6.91e-310   12212.155 +        0
+  54  Q.insect+G4      -10538.838   21081.677 + 6.91e-310   21081.721 + 6.91e-310   21088.903 +        0
+  55  Q.yeast+G4        -2306.979    4617.958 + 6.91e-310    4618.125 + 6.91e-310    4622.593 +        0
+  56  WAG+F+G4          -2800.696    5643.391 + 6.91e-310    5660.191 + 6.91e-310    5692.611 +        0
+  57  Q.insect+R3       -6188.493   12386.985 + 6.91e-310   12387.264 + 6.91e-310   12403.976 +        0
+  58  Q.insect+G4       -2549.125    5102.250 + 6.91e-310    5102.388 + 6.91e-310    5107.249 +        0
+  59  Q.insect+I+G4     -3248.568    6503.135 + 6.91e-310    6503.327 + 6.91e-310    6511.715 +        0
+  60  Q.insect+G4       -3644.721    7293.443 + 6.91e-310    7293.551 + 6.91e-310    7298.915 +        0
+  61  Q.insect+R3       -2904.271    5818.543 + 6.91e-310    5818.960 + 6.91e-310    5833.596 +        0
+  62  Q.insect+I+R2     -1519.578    3047.155 + 6.91e-310    3047.486 + 6.91e-310    3058.501 +        0
+  63  Q.insect+G4       -3057.516    6119.033 + 6.91e-310    6119.122 + 6.91e-310    6124.873 +        0
+  64  Q.insect+I+G4     -2661.069    5328.139 + 6.91e-310    5328.334 + 6.91e-310    5336.671 +        0
+  65  Q.insect+G4       -3002.187    6008.374 + 6.91e-310    6008.467 + 6.91e-310    6014.139 +        0
+  66  Q.insect+I+R3     -1760.188    3532.375 + 6.91e-310    3533.224 + 6.91e-310    3548.356 +        0
+  67  Q.insect+I+G4     -3223.699    6453.398 + 6.91e-310    6453.561 + 6.91e-310    6462.450 +        0
+  68  Q.insect+I+G4     -5088.746   10183.491 + 6.91e-310   10183.686 + 6.91e-310   10192.024 +        0
+  69  Q.insect+I+G4     -3971.228    7948.455 + 6.91e-310    7948.570 + 6.91e-310    7958.539 +        0
+  70  Q.insect+I+G4     -1533.461    3072.922 + 6.91e-310    3073.183 + 6.91e-310    3080.615 +        0
+  71  Q.insect+I+G4     -1891.843    3789.687 + 6.91e-310    3789.860 + 6.91e-310    3798.554 +        0
+  72  Q.insect+G4       -3659.166    7322.332 + 6.91e-310    7322.442 + 6.91e-310    7327.769 +        0
+  73  Q.insect+G4       -2062.344    4128.688 + 6.91e-310    4128.848 + 6.91e-310    4133.401 +        0
+  74  Q.insect+R3       -1923.324    3856.648 + 6.91e-310    3857.301 + 6.91e-310    3869.573 +        0
+  75  Q.insect+R3       -1259.768    2529.536 + 6.91e-310    2530.336 + 6.91e-310    2541.508 +        0
+  76  Q.insect+G4       -1312.135    2628.270 + 6.91e-310    2628.493 + 6.91e-310    2632.356 +        0
+  77  Q.insect+G4        -689.063    1382.127 + 6.91e-310    1382.341 + 6.91e-310    1386.282 +        0
+  78  WAG+G4            -1514.316    3032.632 + 6.91e-310    3032.872 + 6.91e-310    3036.572 +        0
+  79  VT+R3             -4297.082    8604.165 + 6.91e-310    8604.459 + 6.91e-310    8620.900 +        0
+  80  Q.insect+R4       -8350.269   16714.537 + 6.91e-310   16714.985 + 6.91e-310   16739.408 +        0
+  81  Q.insect+G4       -2910.601    5825.202 + 6.91e-310    5825.267 + 6.91e-310    5831.664 +        0
+  82  Q.insect+G4       -6044.881   12093.761 + 6.91e-310   12093.820 + 6.91e-310   12100.436 +        0
+  83  Q.insect+I+G4     -4819.519    9645.039 + 6.91e-310    9645.190 + 6.91e-310    9654.320 +        0
+  84  Q.insect+R3       -6181.222   12372.444 + 6.91e-310   12372.791 + 6.91e-310   12388.381 +        0
+  85  Q.insect+R3       -2747.077    5504.153 + 6.91e-310    5504.519 + 6.91e-310    5519.832 +        0
+  86  Q.insect+I+G4     -5497.234   11000.469 + 6.91e-310   11000.591 + 6.91e-310   11010.363 +        0
+  87  Q.insect+I+R3     -3534.797    7081.593 + 6.91e-310    7082.071 + 6.91e-310    7100.850 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  Q.yeast+I+R4   0.7848  Q.yeast+I{0.338912}+R4{0.293075,0.191868,0.224179,1.15815,0.103546,3.373,0.0402875,8.31207}
+   2  Q.yeast+I+G4   2.0211  Q.yeast+I{0.070161}+G4{1.39084}
+   3  Q.yeast+F+R4   0.8322  Q.yeast+F+R4{0.467393,0.0675682,0.251672,0.67911,0.212228,2.12121,0.0687063,5.05523}
+   4  Q.insect+R4    1.6763  Q.insect+R4{0.346899,0.0586639,0.398837,0.843785,0.240771,2.18247,0.0134924,8.71906}
+   5  Q.yeast+G4     1.3110  Q.yeast+G4{0.608427}
+   6  Q.insect+G4    1.3104  Q.insect+G4{1.1798}
+   7  Q.insect+R3    0.3675  Q.insect+R3{0.789621,0.0932535,0.157231,2.99484,0.0531475,8.57017}
+   8  Q.insect+G4    0.5936  Q.insect+G4{0.629978}
+   9  Q.insect+I+G4  0.5174  Q.insect+I{0.443456}+G4{0.938443}
+  10  Q.insect+I+R3  0.7117  Q.insect+I{0.377716}+R3{0.393152,0.428928,0.135737,2.1481,0.0933954,5.77962}
+  11  Q.insect+I+R3  0.8149  Q.insect+I{0.33741}+R3{0.30679,0.276949,0.310682,2.12148,0.0451171,5.67253}
+  12  Q.yeast+I+R3   0.8866  Q.yeast+I{0.0669053}+R3{0.570828,0.550492,0.271945,1.25339,0.0903214,3.81869}
+  13  Q.insect+I+G4  1.0992  Q.insect+I{0.242438}+G4{0.90268}
+  14  Q.insect+I+R4  0.9714  Q.insect+I{0.182259}+R4{0.365174,0.211033,0.224338,1.10248,0.208662,2.5777,0.0195679,7.0391}
+  15  LG+I+G4        1.0283  LG+I{0.411956}+G4{0.635018}
+  16  Q.insect+R4    0.7292  Q.insect+R4{0.599206,0.0644352,0.171055,0.778856,0.185242,2.79285,0.044497,6.98494}
+  17  Q.yeast+I+G4   1.0815  Q.yeast+I{0.222028}+G4{0.762012}
+  18  LG+I+G4        1.1924  LG+I{0.187448}+G4{1.02407}
+  19  LG+I+G4        1.1831  LG+I{0.188614}+G4{1.30368}
+  20  LG+G4          1.9901  LG+G4{1.33439}
+  21  Q.insect+I+G4  0.8633  Q.insect+I{0.258059}+G4{1.60461}
+  22  Q.insect+I+G4  0.8094  Q.insect+I{0.229533}+G4{0.813143}
+  23  Q.insect+I+G4  1.2378  Q.insect+I{0.159669}+G4{0.936828}
+  24  Q.insect+G4    1.8260  Q.insect+G4{0.955424}
+  25  Q.insect+R4    0.6674  Q.insect+R4{0.583784,0.103481,0.218199,1.13853,0.164373,2.67234,0.0336445,7.4872}
+  26  LG+I+G4        1.3674  LG+I{0.133372}+G4{1.11268}
+  27  Q.yeast+I+R3   0.8726  Q.yeast+I{0.219843}+R3{0.438767,0.39896,0.26348,1.7812,0.0779102,4.56471}
+  28  Q.insect+G4    0.4500  Q.insect+G4{0.392593}
+  29  Q.insect+I+G4  1.2359  Q.insect+I{0.210728}+G4{0.716259}
+  30  Q.insect+G4    1.1820  Q.insect+G4{0.754057}
+  31  Q.insect+G4    1.4573  Q.insect+G4{1.36428}
+  32  Q.insect+R3    0.8365  Q.insect+R3{0.69234,0.452553,0.273722,1.72547,0.0339384,6.31675}
+  33  rtREV+R3       0.9478  rtREV+R3{0.647822,0.32175,0.272539,1.42192,0.0796395,5.07331}
+  34  Q.insect+R4    1.0439  Q.insect+R4{0.474394,0.171826,0.305304,0.918181,0.177904,2.40172,0.0423983,4.97398}
+  35  Q.insect+R2    0.5257  Q.insect+R2{0.792492,0.597761,0.207508,2.53618}
+  36  Q.insect+R3    1.0771  Q.insect+R3{0.581099,0.318298,0.336801,1.48338,0.0821,3.84207}
+  37  Q.insect+R4    1.1789  Q.insect+R4{0.507428,0.267908,0.347106,1.11459,0.129204,2.36898,0.016262,10.5211}
+  38  VT+F+G4        1.7879  VT+F+G4{0.881452}
+  39  Q.insect+G4    1.8986  Q.insect+G4{0.958078}
+  40  Q.insect+R4    1.4852  Q.insect+R4{0.321538,0.209189,0.349832,0.692401,0.287129,1.67625,0.0415011,5.04115}
+  41  LG+G4          1.5870  LG+G4{1.29875}
+  42  Q.insect+G4    1.7415  Q.insect+G4{0.952735}
+  43  Q.insect+R3    0.9156  Q.insect+R3{0.59794,0.303156,0.308806,1.41254,0.0932541,4.10201}
+  44  VT+R2          0.6644  VT+R2{0.846194,0.680673,0.153806,2.75684}
+  45  Q.insect+I+G4  0.8805  Q.insect+I{0.277306}+G4{1.11604}
+  46  Q.insect+R3    0.8182  Q.insect+R3{0.653351,0.322455,0.241722,1.57338,0.104927,3.89798}
+  47  LG+R4          1.0880  LG+R4{0.41038,0.149089,0.224676,0.719921,0.250624,1.59027,0.114319,3.31097}
+  48  LG+G4          1.4272  LG+G4{1.10722}
+  49  Q.yeast+G4     1.9108  Q.yeast+G4{0.972372}
+  50  Q.insect+R3    1.2759  Q.insect+R3{0.436947,0.287273,0.428228,1.03746,0.134825,3.19086}
+  51  Q.insect+G4    1.3529  Q.insect+G4{1.11124}
+  52  Q.insect+R3    0.8618  Q.insect+R3{0.606832,0.27873,0.270769,1.40432,0.122399,3.6815}
+  53  Q.yeast+G4     1.6049  Q.yeast+G4{0.871496}
+  54  Q.insect+G4    1.7161  Q.insect+G4{1.03849}
+  55  Q.yeast+G4     1.3965  Q.yeast+G4{0.916627}
+  56  WAG+F+G4       1.6269  WAG+F+G4{1.05278}
+  57  Q.insect+R3    0.7268  Q.insect+R3{0.536496,0.172497,0.336614,1.33128,0.12689,3.61989}
+  58  Q.insect+G4    0.7947  Q.insect+G4{0.706295}
+  59  Q.insect+I+G4  0.6891  Q.insect+I{0.261114}+G4{0.856431}
+  60  Q.insect+G4    0.7828  Q.insect+G4{0.856887}
+  61  Q.insect+R3    0.4260  Q.insect+R3{0.605256,0.184033,0.306041,1.49216,0.0887033,4.86961}
+  62  Q.insect+I+R2  0.2432  Q.insect+I{0.618072}+R2{0.306234,1.26973,0.0756938,8.07418}
+  63  Q.insect+G4    0.5780  Q.insect+G4{0.469083}
+  64  Q.insect+I+G4  0.5048  Q.insect+I{0.36664}+G4{0.888319}
+  65  Q.insect+G4    0.5928  Q.insect+G4{0.366729}
+  66  Q.insect+I+R3  0.4370  Q.insect+I{0.360069}+R3{0.369058,0.476171,0.241544,2.38846,0.029329,8.43355}
+  67  Q.insect+I+G4  0.5322  Q.insect+I{0.388645}+G4{1.20866}
+  68  Q.insect+I+G4  1.2373  Q.insect+I{0.140652}+G4{1.81557}
+  69  Q.insect+I+G4  0.5994  Q.insect+I{0.286978}+G4{0.473266}
+  70  Q.insect+I+G4  0.6313  Q.insect+I{0.343353}+G4{0.442781}
+  71  Q.insect+I+G4  0.3552  Q.insect+I{0.403861}+G4{0.473261}
+  72  Q.insect+G4    1.0138  Q.insect+G4{0.717421}
+  73  Q.insect+G4    0.9923  Q.insect+G4{0.413354}
+  74  Q.insect+R3    0.4880  Q.insect+R3{0.690784,0.164313,0.214014,1.67673,0.0952014,5.54247}
+  75  Q.insect+R3    0.3672  Q.insect+R3{0.794467,0.303518,0.168946,2.70982,0.0365865,8.22848}
+  76  Q.insect+G4    0.7834  Q.insect+G4{0.435579}
+  77  Q.insect+G4    0.2960  Q.insect+G4{0.217116}
+  78  WAG+G4         0.9353  WAG+G4{0.590558}
+  79  VT+R3          0.4814  VT+R3{0.815889,0.479283,0.130406,2.39579,0.0537049,5.52153}
+  80  Q.insect+R4    0.9950  Q.insect+R4{0.395819,0.128098,0.374122,0.917345,0.201868,2.25584,0.0281912,5.3462}
+  81  Q.insect+G4    0.3461  Q.insect+G4{0.347597}
+  82  Q.insect+G4    0.9747  Q.insect+G4{0.57167}
+  83  Q.insect+I+G4  0.9684  Q.insect+I{0.146267}+G4{1.23224}
+  84  Q.insect+R3    1.1413  Q.insect+R3{0.565078,0.243829,0.279007,1.22799,0.155915,3.33258}
+  85  Q.insect+R3    0.3837  Q.insect+R3{0.723429,0.174853,0.17386,1.66315,0.102711,5.68929}
+  86  Q.insect+I+G4  0.9480  Q.insect+I{0.153211}+G4{0.988352}
+  87  Q.insect+I+R3  0.7428  Q.insect+I{0.220029}+R3{0.541262,0.429851,0.173884,2.09438,0.064825,6.21918}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -408676.8565 (s.e. 3061.8436)
+Unconstrained log-likelihood (without tree): -74811.5066
+Number of free parameters (#branches + #model parameters): 501
+Akaike information criterion (AIC) score: 818355.7130
+Corrected Akaike information criterion (AICc) score: 818391.3618
+Bayesian information criterion (BIC) score: 822158.1018
+
+Total tree length (sum of branch lengths): 8.9736
+Sum of internal branch lengths: 2.9369 (32.7285% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'CNIDARIA_Acropora_hyacinthus' is drawn at root
+
++-----------------------------------------------------------CNIDARIA_Acropora_hyacinthus
+|
++--CNIDARIA_Acropora_millepora
+|
+|  +--CNIDARIA_Acropora_palmata
++--|
+   |                                 +------------PORIFERA_Amphimedon_queenslandica
+   |                              +--|
+   |                              |  |           +--PORIFERA_Ephydatia_muelleri
+   |                              |  |        +--|
+   |                              |  |        |  +--PORIFERA_Lubomirskia_baicalensis
+   |                              |  +--------|
+   |                              |           +---PORIFERA_Pachydictyum_globosum
+   |                           +--|
+   |                           |  |        +--------PORIFERA_Asbestopluma_sp
+   |                           |  |     +--|
+   |                           |  |     |  |    +--PORIFERA_Suberites_domuncula
+   |                           |  |     |  +----|
+   |                           |  |     |       +--PORIFERA_Suberites_fuscus
+   |                           |  |  +--|
+   |                           |  |  |  +-----PORIFERA_Tethya_wilhelma
+   |                           |  +--|
+   |                           |     +----------PORIFERA_Astrosclera_willeyana
+   |                        +--|
+   |                        |  +---------PORIFERA_Carteriospongia_foliascens
+   |                     +--|
+   |                     |  |                         +--PORIFERA_Aphrocallistes_vastus
+   |                     |  |                     +---|
+   |                     |  |                     |   +--PORIFERA_Heterochone_calyx
+   |                     |  +---------------------|
+   |                     |                        |  +---PORIFERA_Crateromorpha_meyeri
+   |                     |                        +--|
+   |                     |                           +------PORIFERA_Oopsacas_minuta
+   |                  +--|
+   |                  |  |       +------PORIFERA_Leucetta_chagosensis
+   |                  |  |  +----|
+   |                  |  |  |    |     +------PORIFERA_Leucosolenia_sp
+   |                  |  |  |    +-----|
+   |                  |  |  |          +---PORIFERA_Sycon_raphanus
+   |                  |  +--|
+   |                  |     |            +**PORIFERA_Oscarella_carmela
+   |                  |     |         +--|
+   |                  |     |         |  +**PORIFERA_Oscarella_sp
+   |                  |     |   +-----|
+   |                  |     |   |     +--PORIFERA_Oscarella_lobularis
+   |                  |     +---|
+   |                  |         +----------PORIFERA_Corticium
+   |               +--|
+   |               |  |                             +----CTENOPHORA_Beroe_sp
+   |               |  |                          +--|
+   |               |  |                          |  +--CTENOPHORA_Mnemiopsis_leidyi
+   |               |  |                       +--|
+   |               |  |                       |  +---CTENOPHORA_Mertensiid_sp
+   |               |  |  +--------------------|
+   |               |  |  |                    +----CTENOPHORA_Pleurobrachia_pileus
+   |               |  +--|
+   |               |     |           +--PLACOZOA_Trichoplax_adhaerens
+   |               |     +-----------|
+   |               |                 +--PLACOZOA_Trichoplax_sp
+   |            +--|
+   |            |  |               +-------BILATERIA_Anoplodactylus_eroticus
+   |            |  |            +--|
+   |            |  |            |  +---------BILATERIA_Ixodes_scapularis
+   |            |  |         +--|
+   |            |  |         |  +-----BILATERIA_Scutigera_coleoptrata
+   |            |  |      +--|
+   |            |  |      |  |  +---------BILATERIA_Daphnia_pulex
+   |            |  |      |  +--|
+   |            |  |      |     |   +-----BILATERIA_Nasonia_vitripennis
+   |            |  |      |     +---|
+   |            |  |      |         +------BILATERIA_Pediculus_humanus_capitis
+   |            |  |   +--|
+   |            |  |   |  |        +---------BILATERIA_Aplysia_californica
+   |            |  |   |  |     +--|
+   |            |  |   |  |     |  +-------BILATERIA_Crassostrea_gigas
+   |            |  |   |  |  +--|
+   |            |  |   |  |  |  +-------------BILATERIA_Euprymna_scolopes
+   |            |  |   |  +--|
+   |            |  |   |     |     +-----------BILATERIA_Capitella_teleta
+   |            |  |   |     |  +--|
+   |            |  |   |     |  |  |  +------BILATERIA_Helobdella_robusta
+   |            |  |   |     |  |  +--|
+   |            |  |   |     |  |     +-----BILATERIA_Tubifex_tubifex
+   |            |  |   |     +--|
+   |            |  |   |        +----------------BILATERIA_Pedicellina_cernua
+   |            |  +---|
+   |            |      |     +--------BILATERIA_Branchiostoma_floridae
+   |            |      |  +--|
+   |            |      |  |  |          +-------BILATERIA_Ciona_intestinalis
+   |            |      |  |  |  +-------|
+   |            |      |  |  |  |       +--------BILATERIA_Molgula_tectiformis
+   |            |      |  |  +--|
+   |            |      |  |     |    +---BILATERIA_Danio_rerio
+   |            |      |  |     +----|
+   |            |      |  |          +----BILATERIA_Petromyzon_marinus
+   |            |      +--|
+   |            |         |     +-------BILATERIA_Saccoglossus_kowalevskii
+   |            |         |  +--|
+   |            |         |  |  +------------BILATERIA_Strongylocentrotus_purpuratus
+   |            |         +--|
+   |            |            +-------------BILATERIA_Xenoturbella_bocki
+   |         +--|
+   |         |  |        +------CNIDARIA_Clytia_hemisphaerica
+   |         |  |    +---|
+   |         |  |    |   |       +--CNIDARIA_Hydra_magnipapillata
+   |         |  |    |   |  +----|
+   |         |  |    |   |  |    +--CNIDARIA_Hydra_vulgaris
+   |         |  |    |   +--|
+   |         |  |    |      |  +--CNIDARIA_Hydractinia_echinata
+   |         |  |    |      +--|
+   |         |  |    |         +--CNIDARIA_Podocoryna_carnea
+   |         |  +----|
+   |         |       +-------CNIDARIA_Cyanea_capillata
+   |      +--|
+   |      |  |  +-----CNIDARIA_Metridium_senile
+   |      |  +--|
+   |      |     +---CNIDARIA_Nematostella_vectensis
+   +------|
+          |  +---CNIDARIA_Porites_astreoides
+          +--|
+             +--CNIDARIA_Montastraea_faveolata
+
+Tree in newick format:
+
+(CNIDARIA_Acropora_hyacinthus:0.8214935786,CNIDARIA_Acropora_millepora:0.0013216472,(CNIDARIA_Acropora_palmata:0.0061046410,((((((((((PORIFERA_Amphimedon_queenslandica:0.1849841824,((PORIFERA_Ephydatia_muelleri:0.0088973880,PORIFERA_Lubomirskia_baicalensis:0.0261435725):0.0199916871,PORIFERA_Pachydictyum_globosum:0.0574992254):0.1367053216):0.0189787750,(((PORIFERA_Asbestopluma_sp:0.1274541405,(PORIFERA_Suberites_domuncula:0.0130060004,PORIFERA_Suberites_fuscus:0.0155057818):0.0717963413):0.0188898168,PORIFERA_Tethya_wilhelma:0.0879226451):0.0189580053,PORIFERA_Astrosclera_willeyana:0.1599174451):0.0276054486):0.0332749001,PORIFERA_Carteriospongia_foliascens:0.1499848917):0.0324577745,((PORIFERA_Aphrocallistes_vastus:0.0162191905,PORIFERA_Heterochone_calyx:0.0106427920):0.0583428693,(PORIFERA_Crateromorpha_meyeri:0.0578835776,PORIFERA_Oopsacas_minuta:0.1081801244):0.0289166079):0.3040187697):0.0279582767,((PORIFERA_Leucetta_chagosensis:0.1015376307,(PORIFERA_Leucosolenia_sp:0.1006584624,PORIFERA_Sycon_raphanus:0.0623454286):0.0879918827):0.0786604046,(((PORIFERA_Oscarella_carmela:0.0000010019,PORIFERA_Oscarella_sp:0.0000010019):0.0526898839,PORIFERA_Oscarella_lobularis:0.0481702758):0.0921421717,PORIFERA_Corticium:0.1562221693):0.0606620936):0.0153809054):0.0145535109,((((CTENOPHORA_Beroe_sp:0.0737897558,CTENOPHORA_Mnemiopsis_leidyi:0.0496066062):0.0189081041,CTENOPHORA_Mertensiid_sp:0.0603763169):0.0290894156,CTENOPHORA_Pleurobrachia_pileus:0.0700055668):0.2994426519,(PLACOZOA_Trichoplax_adhaerens:0.0294290500,PLACOZOA_Trichoplax_sp:0.0409865716):0.1777588861):0.0240764432):0.0134536392,(((((BILATERIA_Anoplodactylus_eroticus:0.1231851274,BILATERIA_Ixodes_scapularis:0.1431310675):0.0125722289,BILATERIA_Scutigera_coleoptrata:0.0881323540):0.0147211836,(BILATERIA_Daphnia_pulex:0.1436765462,(BILATERIA_Nasonia_vitripennis:0.0838063179,BILATERIA_Pediculus_humanus_capitis:0.1043112028):0.0561471800):0.0499261247):0.0402613154,(((BILATERIA_Aplysia_californica:0.1445519866,BILATERIA_Crassostrea_gigas:0.1096193920):0.0249102738,BILATERIA_Euprymna_scolopes:0.1968396153):0.0257097603,((BILATERIA_Capitella_teleta:0.1647460223,(BILATERIA_Helobdella_robusta:0.1025798985,BILATERIA_Tubifex_tubifex:0.0895468068):0.0480300056):0.0242807844,BILATERIA_Pedicellina_cernua:0.2374235712):0.0115068714):0.0193182820):0.0290944221,((BILATERIA_Branchiostoma_floridae:0.1358875512,((BILATERIA_Ciona_intestinalis:0.1143930670,BILATERIA_Molgula_tectiformis:0.1347926906):0.1135558552,(BILATERIA_Danio_rerio:0.0653952523,BILATERIA_Petromyzon_marinus:0.0728681925):0.0764209326):0.0167552334):0.0143284152,((BILATERIA_Saccoglossus_kowalevskii:0.1115635309,BILATERIA_Strongylocentrotus_purpuratus:0.1796230816):0.0195432283,BILATERIA_Xenoturbella_bocki:0.1971576345):0.0140853995):0.0123219013):0.0561630169):0.0286546170,((CNIDARIA_Clytia_hemisphaerica:0.1084591090,((CNIDARIA_Hydra_magnipapillata:0.0361132515,CNIDARIA_Hydra_vulgaris:0.0155956250):0.0806614965,(CNIDARIA_Hydractinia_echinata:0.0430827897,CNIDARIA_Podocoryna_carnea:0.0242547727):0.0334584790):0.0217474035):0.0627320781,CNIDARIA_Cyanea_capillata:0.1130956757):0.0760894402):0.0417438505,(CNIDARIA_Metridium_senile:0.0936122543,CNIDARIA_Nematostella_vectensis:0.0662845819):0.0389133797):0.0348552423,(CNIDARIA_Porites_astreoides:0.0639413798,CNIDARIA_Montastraea_faveolata:0.0300421953):0.0175086030):0.1055378530):0.0053686219);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t REV_rib.treefile -p REV_rib.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ../Nosenko2013.rib.relabelled.outgroup_rem.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ../Nosenko2013.rib.relabelled.outgroup_rem.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Aug 26 13:41:35 2024
+Total CPU time used: 82414.1 seconds (22h:53m:34s)
+Total wall-clock time used: 1547.04 seconds (0h:25m:47s)
+

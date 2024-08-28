@@ -1,0 +1,472 @@
+IQ-TREE multicore version 2.3.5 for MacOS ARM 64-bit built Jun 27 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Nicholass-MacBook-Air.local (SSE4.2, 8 GB RAM)
+Command: iqtree2 --seed 2222 -T 7 -s /Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/test_data.fasta -p /Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/Nosenko2013_nonribosomal_partitions_formatted.nex -m MFP -mset LG,WAG,JTT -cmax 4 --prefix 1REV
+Seed:    2222 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Aug 14 11:40:07 2024
+Kernel:  SSE2 - 7 threads (8 CPU cores detected)
+
+Reading partition model file /Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/Nosenko2013_nonribosomal_partitions_formatted.nex ...
+Reading alignment file /Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/test_data.fasta ... Fasta format detected
+Reading fasta file: done in 0.007375 secs using 36.42% CPU
+Alignment most likely contains protein sequences
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 16 sequences with 9187 columns, 6166 distinct patterns
+2494 parsimony-informative, 1946 singleton sites, 4747 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000149965 secs using 249.4% CPU
+   1  Acropor_mi    1.04%    passed     98.60%
+   2  Metridi_se   17.88%    passed     95.30%
+   3  Clytia_hem    1.81%    passed     96.38%
+   4  Podocor_ca   57.39%    passed     83.09%
+   5  Oscarel_lo   64.61%    passed      8.53%
+   6  Sycon_raph   55.80%    passed     32.87%
+   7  Cratero_me   56.16%    passed     98.95%
+   8  Carteri_fo   58.77%    passed     92.63%
+   9  Ixodes_sca    8.36%    passed     95.23%
+  10  Saccogl_ko    1.93%    passed     99.41%
+  11  Danio_reri    0.09%    passed     99.98%
+  12  Tubifex_tu   40.95%    passed     98.07%
+  13  Beroe_sp__   38.30%    passed     98.67%
+  14  Mertens_sp   78.98%    passed      7.70%
+  15  Mnemiop_le   31.66%    passed     99.10%
+  16  Pleurob_pi   36.27%    passed     45.87%
+WARNING: 6 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        34.37%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 35 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		16	238	13	220	MFP	gene_0001
+2		11	619	114	385	MFP	gene_0002
+3		15	143	15	105	MFP	gene_0003
+4		14	165	18	131	MFP	gene_0004
+5		14	160	51	57	MFP	gene_0005
+6		12	523	77	278	MFP	gene_0006
+7		13	133	75	30	MFP	gene_0007
+8		13	160	50	66	MFP	gene_0008
+9		14	227	74	118	MFP	gene_0009
+10		10	297	47	162	MFP	gene_0010
+11		11	167	18	125	MFP	gene_0011
+12		13	141	21	91	MFP	gene_0012
+13		11	103	56	17	MFP	gene_0013
+14		12	273	110	59	MFP	gene_0014
+15		15	329	127	147	MFP	gene_0015
+16		15	371	21	327	MFP	gene_0016
+17		11	278	89	123	MFP	gene_0017
+18		15	209	99	82	MFP	gene_0018
+19		12	159	61	65	MFP	gene_0019
+20		12	305	124	88	MFP	gene_0020
+21		12	371	76	214	MFP	gene_0021
+22		13	417	54	298	MFP	gene_0022
+23		11	441	21	390	MFP	gene_0023
+24		10	309	107	118	MFP	gene_0024
+25		11	259	113	83	MFP	gene_0025
+26		15	246	130	59	MFP	gene_0026
+27		12	321	121	138	MFP	gene_0027
+28		12	203	113	47	MFP	gene_0028
+29		15	136	2	134	MFP	gene_0029
+30		15	122	63	49	MFP	gene_0030
+31		10	415	86	178	MFP	gene_0031
+32		11	244	102	93	MFP	gene_0032
+33		7	282	60	146	MFP	gene_0033
+34		11	252	89	91	MFP	gene_0034
+35		11	169	97	33	MFP	gene_0035
+Degree of missing data: 0.239
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.011 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -91600.289
+Current log-likelihood at step 1: -89533.026
+Current log-likelihood at step 2: -89311.249
+Current log-likelihood at step 3: -89293.001
+Current log-likelihood at step 4: -89286.800
+Current log-likelihood at step 5: -89281.123
+Current log-likelihood at step 6: -89276.972
+Parameters optimization took 5 rounds (3.054 sec)
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -89262.283
+Current log-likelihood at step 1: -89258.856
+Current log-likelihood at step 2: -89256.563
+Current log-likelihood at step 3: -89254.870
+Current log-likelihood at step 4: -89253.625
+Current log-likelihood at step 5: -89252.678
+Partition-specific rates:  0.059 0.652 0.146 0.270 0.758 0.710 1.487 1.355 0.734 0.619 0.215 0.473 2.366 1.565 1.215 0.103 1.206 1.632 1.031 1.916 0.639 0.282 0.136 1.803 1.476 2.119 1.200 2.453 0.424 1.217 1.128 1.550 1.162 1.130 2.288
+Parameters optimization took 4 rounds (1.984 sec)
+
+Time for fast ML tree search: 5.940 seconds
+
+NOTE: ModelFinder requires 16 MB RAM!
+Selecting individual models for 35 charsets using BIC...
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 41 likelihood is underflown
+Pattern 68 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 59 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 89 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 53 likelihood is underflown
++R3 reinitialized from +R2 with factor 0.500
++R3 reinitialized from +R2 with factor 0.250
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 82 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 82 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 82 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 82 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 82 likelihood is underflown
+WARNING: Numerical underflow for lh-branch, use `-safe` option to avoid this warning
+Pattern 82 likelihood is underflown
++I+R4 reinitialized from +I+R3 with factor 0.500
++I+R4 reinitialized from +I+R3 with factor 0.250
++I+R3 reinitialized from +I+R2 with factor 0.500
++I+R3 reinitialized from +I+R2 with factor 0.250
++I+R3 reinitialized from +I+R2 with factor 0.500
++I+R3 reinitialized from +I+R2 with factor 0.250
++R3 reinitialized from +R2 with factor 0.500
++I+R3 reinitialized from +I+R2 with factor 0.500
+Full partition model BIC score: 179354.337 (LnL: -89184.389  df:108)
+Partition information was printed to 1REV.best_scheme.nex
+Partition information in Raxml format was printed to 1REV.best_scheme
+
+All model information printed to 1REV.model.gz
+CPU time for ModelFinder: 151.240 seconds (0h:2m:31s)
+Wall-clock time for ModelFinder: 27.386 seconds (0h:0m:27s)
+WARNING: States(s) C, W rarely appear in partition gene_0001 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0003 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0029 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0030 and may cause numerical problems
+
+NOTE: 48 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -89406.308
+Current log-likelihood at step 1: -89206.497
+Current log-likelihood at step 2: -89184.776
+Current log-likelihood at step 3: -89183.936
+Current log-likelihood at step 4: -89183.719
+Current log-likelihood at step 5: -89183.645
+Partition-specific rates:  0.054 0.670 0.155 0.266 0.794 0.751 1.528 1.258 0.763 0.658 0.229 0.543 2.136 1.635 1.176 0.106 1.257 1.736 1.036 1.808 0.643 0.297 0.133 1.850 1.533 1.909 1.123 2.566 0.010 1.274 1.186 1.595 1.211 1.174 2.066
+Parameters optimization took 4 rounds (1.982 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000138044 secs using 289% CPU
+Computing ML distances took 0.000644 sec (of wall-clock time) 0.000546 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.0002141 secs using 93.88% CPU
+Computing RapidNJ tree took 0.002772 sec (of wall-clock time) 0.001491 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -91771.787
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.484 second
+Computing log-likelihood of 98 initial trees ... 8.044 seconds
+Current best score: -89183.645
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -89183.645
+Current log-likelihood at step 1: -89183.612
+Parameters optimization took 0 rounds (0.243 sec)
+
+BETTER TREE FOUND at iteration 1: -89183.612
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -89147.368
+Current log-likelihood at step 1: -89146.057
+Current log-likelihood at step 2: -89146.017
+Parameters optimization took 1 rounds (0.670 sec)
+
+BETTER TREE FOUND at iteration 2: -89146.017
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -89136.705
+Current log-likelihood at step 1: -89135.494
+Current log-likelihood at step 2: -89135.421
+Parameters optimization took 1 rounds (0.628 sec)
+
+BETTER TREE FOUND at iteration 7: -89135.421
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -89133.145
+Current log-likelihood at step 1: -89132.226
+Current log-likelihood at step 2: -89132.163
+Parameters optimization took 1 rounds (0.857 sec)
+
+BETTER TREE FOUND at iteration 8: -89132.163
+Iteration 10 / LogL: -89146.719 / Time: 0h:0m:55s
+Iteration 20 / LogL: -89142.814 / Time: 0h:1m:12s
+Finish initializing candidate tree set (7)
+Current best tree score: -89132.163 / CPU time: 43.021
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -89136.230 / Time: 0h:1m:27s (0h:2m:42s left)
+Iteration 40 / LogL: -89135.998 / Time: 0h:1m:43s (0h:2m:12s left)
+Iteration 50 / LogL: -89136.133 / Time: 0h:1m:57s (0h:1m:46s left)
+Iteration 60 / LogL: -89146.701 / Time: 0h:2m:14s (0h:1m:27s left)
+Iteration 70 / LogL: -89146.058 / Time: 0h:2m:28s (0h:1m:6s left)
+Iteration 80 / LogL: -89147.687 / Time: 0h:2m:46s (0h:0m:49s left)
+UPDATE BEST LOG-LIKELIHOOD: -89132.163
+Iteration 90 / LogL: -89135.980 / Time: 0h:3m:2s (0h:0m:31s left)
+Iteration 100 / LogL: -89145.983 / Time: 0h:3m:19s (0h:0m:13s left)
+TREE SEARCH COMPLETED AFTER 109 ITERATIONS / Time: 0h:3m:34s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -89132.163
+Current log-likelihood at step 1: -89132.143
+Current log-likelihood at step 2: -89132.131
+Current log-likelihood at step 3: -89132.120
+Current log-likelihood at step 4: -89132.111
+Partition-specific rates:  0.054 0.677 0.162 0.267 0.791 0.743 1.551 1.248 0.781 0.658 0.229 0.567 2.109 1.639 1.162 0.110 1.231 1.746 1.057 1.796 0.666 0.305 0.131 1.821 1.513 1.901 1.154 2.614 0.008 1.317 1.165 1.578 1.196 1.174 2.050
+Parameters optimization took 3 rounds (1.336 sec)
+
+Partition information was printed to 1REV.best_model.nex
+BEST SCORE FOUND : -89132.111
+Total tree length: 2.798
+
+Total number of iterations: 109
+CPU time used for tree search: 856.641 sec (0h:14m:16s)
+Wall-clock time used for tree search: 184.124 sec (0h:3m:4s)
+Total CPU time used: 1026.256 sec (0h:17m:6s)
+Total wall-clock time used: 215.388 sec (0h:3m:35s)
+
+Analysis results written to: 
+  IQ-TREE report:                1REV.iqtree
+  Maximum-likelihood tree:       1REV.treefile
+  Likelihood distances:          1REV.mldist
+  Best partitioning scheme:      1REV.best_scheme.nex
+           in RAxML format:      1REV.best_scheme
+  Screen log file:               1REV.log
+
+Date and Time: Wed Aug 14 11:43:43 2024

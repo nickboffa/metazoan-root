@@ -1,0 +1,74 @@
+#nexus
+begin sets;
+  charset gene_0001 = , 1 - 238;
+  charset gene_0002 = , 239 - 857;
+  charset gene_0003 = , 858 - 1000;
+  charset gene_0004 = , 1001 - 1165;
+  charset gene_0005 = , 1166 - 1325;
+  charset gene_0006 = , 1326 - 1848;
+  charset gene_0007 = , 1849 - 1981;
+  charset gene_0008 = , 1982 - 2141;
+  charset gene_0009 = , 2142 - 2368;
+  charset gene_0010 = , 2369 - 2665;
+  charset gene_0011 = , 2666 - 2832;
+  charset gene_0012 = , 2833 - 2973;
+  charset gene_0013 = , 2974 - 3076;
+  charset gene_0014 = , 3077 - 3349;
+  charset gene_0015 = , 3350 - 3678;
+  charset gene_0016 = , 3679 - 4049;
+  charset gene_0017 = , 4050 - 4327;
+  charset gene_0018 = , 4328 - 4536;
+  charset gene_0019 = , 4537 - 4695;
+  charset gene_0020 = , 4696 - 5000;
+  charset gene_0021 = , 5001 - 5371;
+  charset gene_0022 = , 5372 - 5788;
+  charset gene_0023 = , 5789 - 6229;
+  charset gene_0024 = , 6230 - 6538;
+  charset gene_0025 = , 6539 - 6797;
+  charset gene_0026 = , 6798 - 7043;
+  charset gene_0027 = , 7044 - 7364;
+  charset gene_0028 = , 7365 - 7567;
+  charset gene_0029 = , 7568 - 7703;
+  charset gene_0030 = , 7704 - 7825;
+  charset gene_0031 = , 7826 - 8240;
+  charset gene_0032 = , 8241 - 8484;
+  charset gene_0033 = , 8485 - 8766;
+  charset gene_0034 = , 8767 - 9018;
+  charset gene_0035 = , 9019 - 9187;
+  charpartition mymodels =
+    NONREV+FO: gene_0001{0.169658},
+    NONREV+FO: gene_0002{1.11574},
+    NONREV+FO: gene_0003{0.402493},
+    NONREV+FO: gene_0004{0.610517},
+    NONREV+FO: gene_0005{1.88651},
+    NONREV+FO: gene_0006{1.32044},
+    NONREV+FO: gene_0007{3.39252},
+    NONREV+FO: gene_0008{2.50267},
+    NONREV+FO: gene_0009{1.67424},
+    NONREV+FO: gene_0010{1.13487},
+    NONREV+FO: gene_0011{0.445457},
+    NONREV+FO: gene_0012{1.00082},
+    NONREV+FO: gene_0013{4.15954},
+    NONREV+FO: gene_0014{3.09342},
+    NONREV+FO: gene_0015{2.5449},
+    NONREV+FO: gene_0016{0.268441},
+    NONREV+FO: gene_0017{2.1752},
+    NONREV+FO: gene_0018{3.39794},
+    NONREV+FO: gene_0019{2.04796},
+    NONREV+FO: gene_0020{3.49775},
+    NONREV+FO: gene_0021{1.20528},
+    NONREV+FO: gene_0022{0.65319},
+    NONREV+FO: gene_0023{0.241449},
+    NONREV+FO: gene_0024{2.45824},
+    NONREV+FO: gene_0025{2.45165},
+    NONREV+FO: gene_0026{4.61189},
+    NONREV+FO: gene_0027{2.12553},
+    NONREV+FO: gene_0028{4.04036},
+    NONREV+FO: gene_0029{0.16104},
+    NONREV+FO: gene_0030{2.86882},
+    NONREV+FO: gene_0031{1.83296},
+    NONREV+FO: gene_0032{2.4666},
+    NONREV+FO: gene_0033{1.2139},
+    NONREV+FO: gene_0034{2.09869},
+    NONREV+FO: gene_0035{3.78919};
+end;

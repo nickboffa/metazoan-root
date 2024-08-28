@@ -1,0 +1,307 @@
+IQ-TREE 2.3.5 built Jun 27 2024
+
+Partition file name: ../Nosenko2013_nonribosomal_partitions_formatted.nex
+Input file name: ../test_data.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 2222
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 taxa with 35 partitions and 9187 total sites (23.9176% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	16	238	124	13	220	220	gene_0001
+   2	AA	11	619	389	114	385	385	gene_0002
+   3	AA	15	143	58	15	105	105	gene_0003
+   4	AA	14	165	75	18	131	131	gene_0004
+   5	AA	14	160	129	51	57	57	gene_0005
+   6	AA	12	523	325	77	278	278	gene_0006
+   7	AA	13	133	119	75	30	30	gene_0007
+   8	AA	13	160	129	50	66	66	gene_0008
+   9	AA	14	227	141	74	118	118	gene_0009
+  10	AA	10	297	212	47	162	162	gene_0010
+  11	AA	11	167	72	18	125	125	gene_0011
+  12	AA	13	141	68	21	91	91	gene_0012
+  13	AA	11	103	98	56	17	17	gene_0013
+  14	AA	12	273	250	110	59	59	gene_0014
+  15	AA	15	329	271	127	147	147	gene_0015
+  16	AA	15	371	127	21	327	327	gene_0016
+  17	AA	11	278	215	89	123	123	gene_0017
+  18	AA	15	209	168	99	82	82	gene_0018
+  19	AA	12	159	126	61	65	65	gene_0019
+  20	AA	12	305	264	124	88	88	gene_0020
+  21	AA	12	371	247	76	214	214	gene_0021
+  22	AA	13	417	264	54	298	298	gene_0022
+  23	AA	11	441	132	21	390	390	gene_0023
+  24	AA	10	309	245	107	118	118	gene_0024
+  25	AA	11	259	216	113	83	83	gene_0025
+  26	AA	15	246	225	130	59	59	gene_0026
+  27	AA	12	321	245	121	138	138	gene_0027
+  28	AA	12	203	192	113	47	47	gene_0028
+  29	AA	15	136	29	2	134	134	gene_0029
+  30	AA	15	122	95	63	49	49	gene_0030
+  31	AA	10	415	315	86	178	178	gene_0031
+  32	AA	11	244	202	102	93	93	gene_0032
+  33	AA	7	282	185	60	146	146	gene_0033
+  34	AA	11	252	213	89	91	91	gene_0034
+  35	AA	11	169	149	97	33	33	gene_0035
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with joint substitution model and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  NONREV+FO      0.0539  NONREV+FO
+   2  NONREV+FO      0.6620  NONREV+FO
+   3  NONREV+FO      0.1718  NONREV+FO
+   4  NONREV+FO      0.2888  NONREV+FO
+   5  NONREV+FO      0.8737  NONREV+FO
+   6  NONREV+FO      0.7332  NONREV+FO
+   7  NONREV+FO      1.7425  NONREV+FO
+   8  NONREV+FO      1.2813  NONREV+FO
+   9  NONREV+FO      0.8086  NONREV+FO
+  10  NONREV+FO      0.6976  NONREV+FO
+  11  NONREV+FO      0.2561  NONREV+FO
+  12  NONREV+FO      0.4946  NONREV+FO
+  13  NONREV+FO      2.3473  NONREV+FO
+  14  NONREV+FO      1.6827  NONREV+FO
+  15  NONREV+FO      1.1429  NONREV+FO
+  16  NONREV+FO      0.1211  NONREV+FO
+  17  NONREV+FO      1.2739  NONREV+FO
+  18  NONREV+FO      1.5242  NONREV+FO
+  19  NONREV+FO      1.0982  NONREV+FO
+  20  NONREV+FO      1.9005  NONREV+FO
+  21  NONREV+FO      0.6409  NONREV+FO
+  22  NONREV+FO      0.3420  NONREV+FO
+  23  NONREV+FO      0.1526  NONREV+FO
+  24  NONREV+FO      1.6165  NONREV+FO
+  25  NONREV+FO      1.5210  NONREV+FO
+  26  NONREV+FO      2.0658  NONREV+FO
+  27  NONREV+FO      1.1850  NONREV+FO
+  28  NONREV+FO      2.1300  NONREV+FO
+  29  NONREV+FO      0.0521  NONREV+FO
+  30  NONREV+FO      1.2791  NONREV+FO
+  31  NONREV+FO      1.1544  NONREV+FO
+  32  NONREV+FO      1.5670  NONREV+FO
+  33  NONREV+FO      1.1105  NONREV+FO
+  34  NONREV+FO      1.1939  NONREV+FO
+  35  NONREV+FO      2.2438  NONREV+FO
+
+Linked model of substitution: NONREV+FO
+
+WARNING: This model has 379 parameters that may be overfitting. Please use with caution!
+
+Full Q matrix and state frequencies (can be used as input for IQ-TREE): 
+
+ -1.028746 0.018203 0.014797 0.018339 0.049933 0.035195 0.056648 0.143378 0.006181 0.007853 0.028835 0.062506 0.014317 0.005947 0.053663 0.307536 0.096570 0.000855 0.004145 0.103845
+ 0.024343 -0.854252 0.023033 0.004374 0.007064 0.074174 0.022321 0.014596 0.045106 0.004458 0.035173 0.472854 0.020060 0.005512 0.020209 0.023857 0.021360 0.005580 0.007461 0.022715
+ 0.059869 0.026775 -1.219120 0.246767 0.008810 0.118120 0.065664 0.082601 0.116184 0.014577 0.022081 0.135503 0.003322 0.000093 0.000093 0.180434 0.122067 0.003595 0.007337 0.005227
+ 0.035656 0.006245 0.169019 -0.925605 0.003585 0.032794 0.391511 0.057042 0.009674 0.007494 0.009278 0.076695 0.000093 0.000093 0.028373 0.051712 0.031124 0.000093 0.003938 0.011183
+ 0.245485 0.000093 0.021900 0.017303 -0.840155 0.000093 0.007856 0.031084 0.000093 0.041726 0.042489 0.000093 0.027437 0.011925 0.000093 0.140878 0.133887 0.000093 0.017540 0.100084
+ 0.129258 0.084002 0.083679 0.040760 0.000093 -1.538030 0.341112 0.027447 0.086370 0.014367 0.067245 0.329361 0.081561 0.004505 0.014298 0.114302 0.088013 0.000093 0.010677 0.020887
+ 0.126288 0.017713 0.052057 0.439127 0.002002 0.153898 -1.272887 0.022457 0.013789 0.015187 0.015496 0.176400 0.013497 0.001045 0.032362 0.083765 0.062963 0.000093 0.009178 0.035568
+ 0.107946 0.017512 0.034934 0.050484 0.009672 0.025149 0.033086 -0.425914 0.008793 0.000093 0.000556 0.036782 0.004057 0.000093 0.006946 0.065750 0.018714 0.001523 0.000850 0.002973
+ 0.021205 0.099180 0.175513 0.029984 0.000093 0.122594 0.056201 0.005646 -1.055124 0.004567 0.054071 0.096761 0.017648 0.044787 0.044128 0.041951 0.036963 0.002741 0.179594 0.021496
+ 0.016934 0.001846 0.009623 0.004324 0.005823 0.002258 0.013098 0.000093 0.005123 -1.233481 0.335244 0.014291 0.087992 0.025178 0.000093 0.013544 0.032130 0.000381 0.010851 0.654652
+ 0.016527 0.005065 0.013386 0.000093 0.015024 0.016531 0.010763 0.001777 0.008088 0.210927 -0.725169 0.016747 0.163989 0.088778 0.010641 0.013059 0.021308 0.002262 0.013472 0.096733
+ 0.111678 0.289364 0.083645 0.047840 0.002643 0.173653 0.153984 0.020604 0.037571 0.017377 0.033038 -1.295235 0.015617 0.002749 0.022235 0.092804 0.120805 0.000502 0.018802 0.050324
+ 0.047334 0.034673 0.029400 0.004900 0.012635 0.046344 0.016105 0.013125 0.018482 0.266456 0.546576 0.061797 -1.390192 0.041711 0.017806 0.016720 0.103375 0.003032 0.021750 0.087973
+ 0.015831 0.000334 0.006645 0.000093 0.013912 0.002292 0.014171 0.003003 0.016284 0.046640 0.103472 0.011705 0.057087 -0.647215 0.007344 0.019835 0.000462 0.013995 0.268706 0.045403
+ 0.139943 0.007576 0.016393 0.022937 0.006160 0.032743 0.061509 0.037761 0.000439 0.007291 0.006947 0.057710 0.000632 0.000661 -0.538921 0.073072 0.043960 0.000093 0.000093 0.023000
+ 0.288353 0.024356 0.125827 0.081304 0.032562 0.065379 0.071254 0.120230 0.015546 0.007048 0.012622 0.109811 0.002560 0.007941 0.046615 -1.365341 0.333211 0.001014 0.002021 0.017688
+ 0.065433 0.064599 0.096289 0.036152 0.023341 0.069307 0.060916 0.003901 0.016395 0.054607 0.025651 0.124177 0.037376 0.002602 0.027069 0.381164 -1.228496 0.002853 0.012443 0.124222
+ 0.000093 0.000093 0.000093 0.000093 0.000093 0.000093 0.000093 0.000093 0.010798 0.011256 0.016531 0.013440 0.010472 0.070849 0.000093 0.000093 0.000093 -0.217739 0.083271 0.000093
+ 0.027052 0.000802 0.008714 0.000093 0.006577 0.017802 0.014056 0.001676 0.104556 0.005052 0.034300 0.005443 0.015467 0.328604 0.000093 0.018387 0.029128 0.030843 -0.668871 0.020225
+ 0.122203 0.007610 0.003391 0.006245 0.053407 0.026575 0.030636 0.004488 0.000093 0.559011 0.115303 0.012501 0.030284 0.013867 0.009748 0.015605 0.109355 0.001228 0.007661 -1.129211
+ 0.077925 0.042992 0.039628 0.059501 0.019457 0.033992 0.057207 0.077932 0.021392 0.063640 0.089540 0.064704 0.025862 0.042323 0.035481 0.065304 0.059802 0.013811 0.035805 0.073703
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(A) = 0.0779
+  pi(R) = 0.0430
+  pi(N) = 0.0396
+  pi(D) = 0.0595
+  pi(C) = 0.0195
+  pi(Q) = 0.0340
+  pi(E) = 0.0572
+  pi(G) = 0.0779
+  pi(H) = 0.0214
+  pi(I) = 0.0636
+  pi(L) = 0.0895
+  pi(K) = 0.0647
+  pi(M) = 0.0259
+  pi(F) = 0.0423
+  pi(P) = 0.0355
+  pi(S) = 0.0653
+  pi(T) = 0.0598
+  pi(W) = 0.0138
+  pi(Y) = 0.0358
+  pi(V) = 0.0737
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -91473.3947 (s.e. 812.5361)
+Unconstrained log-likelihood (without tree): -46223.4330
+Number of free parameters (#branches + #model parameters): 444
+Akaike information criterion (AIC) score: 183834.7893
+Corrected Akaike information criterion (AICc) score: 183879.9918
+Bayesian information criterion (BIC) score: 186998.5312
+
+Total tree length (sum of branch lengths): 2.3733
+Sum of internal branch lengths: 0.4624 (19.4834% of tree length)
+
+NOTE: Tree is ROOTED at virtual root '__root__'
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+            +----------------Acropor_mi
+      +-----| (100)
+      |     +---------------Metridi_se
+   +--| (92)
+   |  |          +---------------Clytia_hem
+   |  +----------| (100)
+   |             +---------------Podocor_ca
++--| (82)
+|  |         +-------------------Oscarel_lo
+|  |      +--| (40)
+|  |      |  +-----------------------Carteri_fo
+|  |  +---| (62)
+|  |  |   +--------------------------Sycon_raph
+|  +--| (88)
+|     |   +----------------------------------Cratero_me
+|     +---| (49)
+|         |                   +---------------Beroe_sp__
+|         |               +---| (97)
+|         |               |   |         +-------------------Mertens_sp
+|         |               |   +---------| (100)
+|         |               |             +--------Mnemiop_le
+|         +---------------| (100)
+|                         +------------------Pleurob_pi
+|
+|     +----------------------Ixodes_sca
+|  +--| (46)
+|  |  +-----------------Danio_reri
++--| (94)
+|  |  +--------------Saccogl_ko
+|  +--| (40)
+|     +---------------------Tubifex_tu
+|
++**__root__
+
+Tree in newick format:
+
+((((Acropor_mi:0.1049982259,Metridi_se:0.1008507347)100:0.0413361832,(Clytia_hem:0.1000315360,Podocor_ca:0.0992373973)100:0.0664382248)92:0.0218805591,(((Oscarel_lo:0.1211142191,Carteri_fo:0.1449216993)40:0.0150427142,Sycon_raph:0.1620661130)62:0.0262499784,(Cratero_me:0.2093483872,((Beroe_sp__:0.0982248975,(Mertens_sp:0.1192989221,Mnemiop_le:0.0566967879)100:0.0633660631)97:0.0243927007,Pleurob_pi:0.1137513089)100:0.0951492900)49:0.0238383689)88:0.0193279487)82:0.0113876512,((Ixodes_sca:0.1400359839,Danio_reri:0.1100547436)46:0.0210350197,(Saccogl_ko:0.0943589383,Tubifex_tu:0.1358786151)40:0.0147037247)94:0.0182429545):0.0000012255;
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -91476.7224213549
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.0000000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+            +----------------Acropor_mi
+      +-----| (100)
+      |     +---------------Metridi_se
+   +--| (92)
+   |  |          +---------------Clytia_hem
+   |  +----------| (100)
+   |             +---------------Podocor_ca
++--| (82)
+|  |         +------------------Oscarel_lo
+|  |      +--| (59)
+|  |      |  +------------------------Sycon_raph
+|  |  +---| (62)
+|  |  |   +-------------------------Carteri_fo
+|  +--| (88)
+|     |  +----------------------------------Cratero_me
+|     +--| (49)
+|        |                  +---------------Beroe_sp__
+|        |              +---| (97)
+|        |              |   |         +-------------------Mertens_sp
+|        |              |   +---------| (100)
+|        |              |             +--------Mnemiop_le
+|        +--------------| (100)
+|                       +------------------Pleurob_pi
+|
+|     +----------------------Ixodes_sca
+|  +--| (46)
+|  |  +-----------------Danio_reri
++--| (94)
+|  |  +--------------Saccogl_ko
+|  +--| (40)
+|     +---------------------Tubifex_tu
+|
++**__root__
+
+
+Consensus tree in newick format: 
+
+((((Acropor_mi:0.1049624880,Metridi_se:0.1008641316)100:0.0413199065,(Clytia_hem:0.1000263626,Podocor_ca:0.0991400904)100:0.0665276979)92:0.0218048747,(((Oscarel_lo:0.1175683597,Sycon_raph:0.1504466944)59:0.0151624779,Carteri_fo:0.1554699549)62:0.0271418756,(Cratero_me:0.2095814020,((Beroe_sp__:0.0982938473,(Mertens_sp:0.1193457086,Mnemiop_le:0.0566127588)100:0.0634211038)97:0.0243656003,Pleurob_pi:0.1137330835)100:0.0949519664)49:0.0237311214)88:0.0198015086)82:0.0117533516,((Ixodes_sca:0.1400576248,Danio_reri:0.1100604636)46:0.0208787194,(Saccogl_ko:0.0943402442,Tubifex_tu:0.1359358744)40:0.0148065185)94:0.0178567898):0.0000000000;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t 3NONREV.treefile -p 3NONREV.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ../test_data.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ../test_data.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Aug 14 15:59:44 2024
+Total CPU time used: 14348.37091 seconds (3h:59m:8s)
+Total wall-clock time used: 2541.81755 seconds (0h:42m:21s)
+
