@@ -70,7 +70,7 @@ Gave this tree (with rootstraps)
 
 ![Image](results/tree_images/NONREV_rib.png)
 
-So you can see, the default root of the reversible model is the same as the ML root inferred by the nonreversible model. Most likely this is a coincidence, but I thought it bears pointing out. Additionally, the root doesn't appear to have a rootstrap value, even though I'm quite sure this is exactly how the tree looked when I opened it in FigTree. Together these things make me suspect something is awry.
+So you can see, the default root of the reversible model is the same as the ML root inferred by the nonreversible model. Most likely this is a coincidence, but I thought it bears pointing out.
 
 In any case, despite being a larger dataset, the Nosenko2013 ribosomal data has given an even weirder root than the nonribosomal one - in the middle of Cnidaria.
 
@@ -86,11 +86,19 @@ This morning, giving this tree (I rooted it at ctenophora myself, to make the pa
 
 Interestingly, almost all of the taxa failed the composition test (the reverse was true for the Nosenko2013 datasets), so I should follow up on that with the MaxSym test. Also, some of the branch lengths in this tree are still extremely long, like in many of the Nosenko2013 trees.
 
-I am currently running the nonreversible model:
+The nonreversible model has just finished running:
 
 ```
 iqtree2 --seed 2222 -s ../Laumer2018.relabelled.outgroup_rem.fasta -p REV_laumer.best_scheme.nex -t REV_laumer.treefile --model-joint NONREV -B 1000 -T 75 --prefix NONREV_laumer
 ```
+
+Giving this tree 
+
+![Image](results/tree_images/NONREV_laumer.png) 
+
+So, a Porifera+Ctenophora sister tree, with Porifera as a paraphyletic group. The rootstrap support of the ML root is only 36.3. So, I imagine many of the replicates had the root on a branch that doesn't exist in this ML tree. Is there a way to figure out which branches these were?
+
+Also, many of the UFbootstrap support values were quite small in this tree. For example, the node connecting Ctenophora and Porifera only has a bootstrap support value of 36.
 
 ## Future Directions
 
@@ -105,7 +113,7 @@ So the main contribution of the paper was to show the effectiveness of 1) nonrev
 |-------------------------|----------------------------|------------------------------------|--------------------|
 | Nosenko2013 nonribosomal | 4558                       | (471496.1938, 472652.2213)         | R                  |
 | Nosenko2013 ribosomal    | 8236                       | (822158.1018, 819768.1900)         | NR                 |
-| Laumer2018               | 72871                      | (8308997.6476, ___ )               |                    |
+| Laumer2018               | 72871                      | (8308997.6476, 8304071.4595)       | NR                 |
 | Simion2017               | 310886                     |                                    |                    |
 
 In Figure 5 and 7 of the rootstrap paper (Rootstrap support vs # parsimony-informative sites), it appears that 10^4 parsimony-informative sites are generally not enough for the rootstrap support to clearly favour one hypothesis, at least in the clades they analysed. So I expect that the Nosenko datasets are not large enough, which is why I have begun with Laumer2018.
