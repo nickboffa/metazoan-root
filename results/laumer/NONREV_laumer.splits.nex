@@ -1,0 +1,204 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=53;
+TAXLABELS
+[1] 'BILATERIA_Isodiametra_pulchra'
+[2] 'BILATERIA_Capitella_teleta'
+[3] 'BILATERIA_Drosophila_melanogaster'
+[4] 'BILATERIA_Lingula_anatina'
+[5] 'CNIDARIA_Alatina_alata'
+[6] 'CNIDARIA_Alcyonium_palmatum'
+[7] 'CNIDARIA_Abylopsis_tetragona'
+[8] 'CNIDARIA_Craspedacusta_sowerbyi'
+[9] 'CNIDARIA_Exaiptasia_pallida'
+[10] 'CNIDARIA_Hydra_vulgaris'
+[11] 'CNIDARIA_Lucernariopsis_campanulata'
+[12] 'CNIDARIA_Liriope_tetraphylla'
+[13] 'CNIDARIA_Nematostella_vectensis'
+[14] 'CNIDARIA_Stomolophus_meleagris'
+[15] 'BILATERIA_Mus_musculus'
+[16] 'CTENOPHORA_Beroe_abyssicola'
+[17] 'CTENOPHORA_Coeloplana_cf_meteoris'
+[18] 'CTENOPHORA_Euplokamis_dunlapae'
+[19] 'CTENOPHORA_Mnemiopsis_leidyi'
+[20] 'CTENOPHORA_Pleurobrachia_bachei'
+[21] 'CTENOPHORA_Vallicula_multiformis'
+[22] 'BILATERIA_Strongylocentrotus_purpuratus'
+[23] 'BILATERIA_Limnognathia_maerski'
+[24] 'BILATERIA_Crassostrea_gigas'
+[25] 'BILATERIA_Nemertoderma_westbladi'
+[26] 'PLACOZOA_Trichoplax_sp_11'
+[27] 'PLACOZOA_Trichoplax_adhaerens'
+[28] 'PLACOZOA_Trichoplax_sp_H4'
+[29] 'PLACOZOA_Trichoplax_sp_H6'
+[30] 'BILATERIA_Schistosoma_mansoni'
+[31] 'PORIFERA_Amphimedon_queenslandica'
+[32] 'PORIFERA_Corticium_candelabrum'
+[33] 'PORIFERA_Chondrilla_caribensis'
+[34] 'PORIFERA_Cliona_varians'
+[35] 'PORIFERA_Leucosolenia_complicata'
+[36] 'PORIFERA_Oscarella_carmela'
+[37] 'PORIFERA_Petrosia_ficiformis'
+[38] 'PORIFERA_Sycon_ciliatum'
+[39] 'PORIFERA_Sycon_coactum'
+[40] 'PORIFERA_Sympagella_nux'
+[41] 'BILATERIA_Priapulus_caudatus'
+[42] 'BILATERIA_Ramazzottius_varieornatus'
+[43] 'BILATERIA_Xenoturbella_bocki'
+[44] 'CNIDARIA_Acropora_digitifera'
+[45] 'CNIDARIA_Gorgonia_ventalina'
+[46] 'CNIDARIA_Pelagia_noctiluca'
+[47] 'BILATERIA_Pristionchus_pacificus'
+[48] 'PORIFERA_Clathrina_coriacea'
+[49] 'PORIFERA_Spongilla_lacustris'
+[50] 'NA_PORI_s'
+[51] 'PORIFERA_Crella_elegans'
+[52] 'PORIFERA_Euplectella_aspergillum'
+[53] '__root__'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=53 nsplits=136;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 1,
+	100	 25,
+	100	 1 25,
+	100	 43,
+	100	 1 25 43,
+	100	 15,
+	100	 22,
+	93	 15 22,
+	27	 1 15 22 25 43,
+	100	 2,
+	100	 4,
+	100	 24,
+	100	 4 24,
+	100	 2 4 24,
+	100	 3,
+	100	 30,
+	100	 42,
+	100	 47,
+	3	 42 47,
+	100	 30 42 47,
+	98	 3 30 42 47,
+	100	 23,
+	100	 3 23 30 42 47,
+	84	 2 3 4 23 24 30 42 47,
+	100	 41,
+	100	 2 3 4 23 24 30 41 42 47,
+	100	 1 2 3 4 15 22 23 24 25 30 41 42 43 47,
+	100	 5,
+	100	 14,
+	100	 46,
+	100	 14 46,
+	100	 5 14 46,
+	100	 11,
+	83	 5 11 14 46,
+	100	 7,
+	100	 10,
+	100	 7 10,
+	100	 8,
+	100	 12,
+	100	 8 12,
+	100	 7 8 10 12,
+	100	 5 7 8 10 11 12 14 46,
+	100	 6,
+	100	 45,
+	100	 6 45,
+	100	 9,
+	100	 13,
+	100	 9 13,
+	100	 44,
+	100	 9 13 44,
+	100	 6 9 13 44 45,
+	100	 5 6 7 8 9 10 11 12 13 14 44 45 46,
+	88	 16 17 18 19 20 21 26 27 28 29 31 32 33 34 35 36 37 38 39 40 48 49 50 51 52 53,
+	100	 16,
+	100	 19,
+	100	 16 19,
+	100	 20,
+	100	 16 19 20,
+	100	 17,
+	100	 21,
+	100	 17 21,
+	100	 16 17 19 20 21,
+	100	 18,
+	100	 16 17 18 19 20 21,
+	100	 35,
+	100	 38,
+	100	 39,
+	100	 38 39,
+	100	 35 38 39,
+	100	 48,
+	100	 35 38 39 48,
+	46	 16 17 18 19 20 21 35 38 39 48,
+	100	 32,
+	100	 36,
+	100	 32 36,
+	36	 16 17 18 19 20 21 32 35 36 38 39 48,
+	100	 31,
+	100	 37,
+	100	 31 37,
+	100	 34,
+	100	 49,
+	100	 51,
+	91	 49 51,
+	100	 34 49 51,
+	100	 31 34 37 49 51,
+	100	 33,
+	100	 50,
+	100	 33 50,
+	100	 31 33 34 37 49 50 51,
+	100	 40,
+	100	 52,
+	100	 40 52,
+	100	 31 33 34 37 40 49 50 51 52,
+	68	 16 17 18 19 20 21 31 32 33 34 35 36 37 38 39 40 48 49 50 51 52,
+	100	 26,
+	100	 28,
+	100	 29,
+	100	 28 29,
+	100	 26 28 29,
+	100	 27,
+	100	 26 27 28 29,
+	26	 16 17 18 19 20 21 26 27 28 29 31 32 33 34 35 36 37 38 39 40 48 49 50 51 52,
+	100	 53,
+	97	 30 47,
+	68	 2 3 4 15 22 23 24 30 41 42 47,
+	20	 16 17 18 19 20 21 26 27 28 29,
+	6	 31 32 33 34 35 36 37 38 39 40 48 49 50 51 52 53,
+	54	 32 35 36 38 39 48,
+	21	 31 32 33 34 35 36 37 38 39 40 48 49 50 51 52,
+	10	 16 17 18 19 20 21 26 27 28 29 53,
+	16	 2 4 24 41,
+	48	 16 17 18 19 20 21 31 32 33 34 35 36 37 38 39 40 48 49 50 51 52 53,
+	25	 16 17 18 19 20 21 31 33 34 37 40 49 50 51 52,
+	3	 16 17 18 19 20 21 53,
+	9	 31 32 33 34 36 37 40 49 50 51 52,
+	10	 26 27 28 29 53,
+	10	 16 17 18 19 20 21 31 33 34 37 40 49 50 51 52 53,
+	6	 31 33 34 37 40 49 50 51 52 53,
+	13	 7 8 10 11 12,
+	7	 1 2 3 4 15 22 23 24 25 30 41 42 43 47 53,
+	4	 5 7 8 10 12 14 46,
+	7	 1 22 25 43,
+	5	 2 3 4 15 23 24 30 41 42 47,
+	9	 34 51,
+	1	 5 6 7 8 9 10 11 12 13 14 44 45 46 53,
+	5	 5 6 7 8 9 10 11 12 13 14 26 27 28 29 44 45 46,
+	2	 23 30 42 47,
+	0	 1 25 43 53,
+	0	 16 17 18 19 20 21 31 33 34 35 37 38 39 40 48 49 50 51 52,
+	0	 31 32 33 34 36 37 40 49 50 51 52 53,
+	0	 3 23,
+	0	 1 2 3 4 23 24 25 30 41 42 43 47,
+	0	 16 17 18 19 20 21 32 35 36 38 39 48 53,
+	0	 40 52 53,
+	0	 31 33 34 37 49 50 51 53,
+	0	 5 6 7 8 9 10 11 12 13 14 26 27 28 29 44 45 46 53,
+;
+END; [Splits]
+
