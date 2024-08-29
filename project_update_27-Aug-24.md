@@ -16,7 +16,7 @@ iqtree2 --seed 2222 -s ../Nosenko2013.nonrib.relabelled.outgroup_rem.fasta -p ..
 
 This gave the following REV_nonrib.treefile:
 
-IMAGE
+![Image](results/tree_images/REV_nonrib.png)
 
 Then ran the nonreversible model:
 ```
@@ -24,7 +24,7 @@ iqtree2 --seed 2222 -s ../Nosenko2013.nonrib.relabelled.outgroup_rem.fasta -p RE
 ```
 Giving the NONREV_nonrib.rootstrap.nex tree
 
-IMAGE
+![Image](results/tree_images/NONREV_nonrib.png)
 
 The lion's mane jellyfish (CNIDARIA_) was also in the wrong position when I included it in my test dataset. It simply has very little actual data in the MSA - most are gaps, giving the model little information to go off of to determine its position.
 
@@ -46,7 +46,7 @@ iqtree2 --seed 2222 -s ../Nosenko2013.rib.relabelled.outgroup_rem.fasta -p ../No
 
 Gave this tree
 
-IMAGE
+![Image](results/tree_images/REV_rib.png)
 
 And the nonreversible model
 
@@ -56,7 +56,7 @@ iqtree2 --seed 2222 -s ../Nosenko2013.nonrib.relabelled.outgroup_rem.fasta -p RE
 
 Gave this tree 
 
-IMAGE
+![Image](results/tree_images/NONREV_rib.png)
 
 ### Laumer2018 Dataset 
 
@@ -66,6 +66,7 @@ I have just run
 
 Giving this tree (I rooted it at ctenophora myself, to make the paraphyly of sponges obvious)
 
+![Image](results/tree_images/REV_laumer.png)
 
 Interestingly, almost all of the taxa failed the composition test (the reverse was true for the Nosenko2013 datasets), so I should follow up on that with the MaxSym test.
 
