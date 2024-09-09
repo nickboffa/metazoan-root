@@ -1,0 +1,3442 @@
+#nexus
+begin sets;
+  charset gene_0001 = 1 - 538;
+  charset gene_0002 = 539 - 1122;
+  charset gene_0003 = 1123 - 1676;
+  charset gene_0004 = 1677 - 2511;
+  charset gene_0005 = 2512 - 3056;
+  charset gene_0006 = 3057 - 3424;
+  charset gene_0007 = 3425 - 3736;
+  charset gene_0008 = 3737 - 4013;
+  charset gene_0009 = 4014 - 4415;
+  charset gene_0010 = 4416 - 4832;
+  charset gene_0011 = 4833 - 5277;
+  charset gene_0012 = 5278 - 5512;
+  charset gene_0013 = 5513 - 5864;
+  charset gene_0014 = 5865 - 6314;
+  charset gene_0015 = 6315 - 6631;
+  charset gene_0016 = 6632 - 7152;
+  charset gene_0017 = 7153 - 7668;
+  charset gene_0018 = 7669 - 8175;
+  charset gene_0019 = 8176 - 8459;
+  charset gene_0020 = 8460 - 9046;
+  charset gene_0021 = 9047 - 10049;
+  charset gene_0022 = 10050 - 10542;
+  charset gene_0023 = 10543 - 11140;
+  charset gene_0024 = 11141 - 11465;
+  charset gene_0025 = 11466 - 11964;
+  charset gene_0026 = 11965 - 12218;
+  charset gene_0027 = 12219 - 12579;
+  charset gene_0028 = 12580 - 12969;
+  charset gene_0029 = 12970 - 13349;
+  charset gene_0030 = 13350 - 13760;
+  charset gene_0031 = 13761 - 13951;
+  charset gene_0032 = 13952 - 14423;
+  charset gene_0033 = 14424 - 14884;
+  charset gene_0034 = 14885 - 15764;
+  charset gene_0035 = 15765 - 15865;
+  charset gene_0036 = 15866 - 16249;
+  charset gene_0037 = 16250 - 16383;
+  charset gene_0038 = 16384 - 16687;
+  charset gene_0039 = 16688 - 17386;
+  charset gene_0040 = 17387 - 18755;
+  charset gene_0041 = 18756 - 19102;
+  charset gene_0042 = 19103 - 19244;
+  charset gene_0043 = 19245 - 19618;
+  charset gene_0044 = 19619 - 20152;
+  charset gene_0045 = 20153 - 20753;
+  charset gene_0046 = 20754 - 20953;
+  charset gene_0047 = 20954 - 21655;
+  charset gene_0048 = 21656 - 22253;
+  charset gene_0049 = 22254 - 22647;
+  charset gene_0050 = 22648 - 22946;
+  charset gene_0051 = 22947 - 23377;
+  charset gene_0052 = 23378 - 23666;
+  charset gene_0053 = 23667 - 23957;
+  charset gene_0054 = 23958 - 24380;
+  charset gene_0055 = 24381 - 25481;
+  charset gene_0056 = 25482 - 25857;
+  charset gene_0057 = 25858 - 26594;
+  charset gene_0058 = 26595 - 26891;
+  charset gene_0059 = 26892 - 27154;
+  charset gene_0060 = 27155 - 27613;
+  charset gene_0061 = 27614 - 28265;
+  charset gene_0062 = 28266 - 28928;
+  charset gene_0063 = 28929 - 29017;
+  charset gene_0064 = 29018 - 29244;
+  charset gene_0065 = 29245 - 29579;
+  charset gene_0066 = 29580 - 30006;
+  charset gene_0067 = 30007 - 30354;
+  charset gene_0068 = 30355 - 30624;
+  charset gene_0069 = 30625 - 30878;
+  charset gene_0070 = 30879 - 31156;
+  charset gene_0071 = 31157 - 31329;
+  charset gene_0072 = 31330 - 31680;
+  charset gene_0073 = 31681 - 31823;
+  charset gene_0074 = 31824 - 32377;
+  charset gene_0075 = 32378 - 32683;
+  charset gene_0076 = 32684 - 32846;
+  charset gene_0077 = 32847 - 33004;
+  charset gene_0078 = 33005 - 33176;
+  charset gene_0079 = 33177 - 33389;
+  charset gene_0080 = 33390 - 33612;
+  charset gene_0081 = 33613 - 33897;
+  charset gene_0082 = 33898 - 34286;
+  charset gene_0083 = 34287 - 34785;
+  charset gene_0084 = 34786 - 35056;
+  charset gene_0085 = 35057 - 35942;
+  charset gene_0086 = 35943 - 36154;
+  charset gene_0087 = 36155 - 36373;
+  charset gene_0088 = 36374 - 36736;
+  charset gene_0089 = 36737 - 37388;
+  charset gene_0090 = 37389 - 37738;
+  charset gene_0091 = 37739 - 38047;
+  charset gene_0092 = 38048 - 38347;
+  charset gene_0093 = 38348 - 38770;
+  charset gene_0094 = 38771 - 39055;
+  charset gene_0095 = 39056 - 39473;
+  charset gene_0096 = 39474 - 39694;
+  charset gene_0097 = 39695 - 40352;
+  charset gene_0098 = 40353 - 40517;
+  charset gene_0099 = 40518 - 40787;
+  charset gene_0100 = 40788 - 41028;
+  charset gene_0101 = 41029 - 41525;
+  charset gene_0102 = 41526 - 41873;
+  charset gene_0103 = 41874 - 42242;
+  charset gene_0104 = 42243 - 42397;
+  charset gene_0105 = 42398 - 42594;
+  charset gene_0106 = 42595 - 42747;
+  charset gene_0107 = 42748 - 42929;
+  charset gene_0108 = 42930 - 43203;
+  charset gene_0109 = 43204 - 43422;
+  charset gene_0110 = 43423 - 43858;
+  charset gene_0111 = 43859 - 44047;
+  charset gene_0112 = 44048 - 44518;
+  charset gene_0113 = 44519 - 45168;
+  charset gene_0114 = 45169 - 45480;
+  charset gene_0115 = 45481 - 45767;
+  charset gene_0116 = 45768 - 45956;
+  charset gene_0117 = 45957 - 46271;
+  charset gene_0118 = 46272 - 46634;
+  charset gene_0119 = 46635 - 46894;
+  charset gene_0120 = 46895 - 47180;
+  charset gene_0121 = 47181 - 47547;
+  charset gene_0122 = 47548 - 47692;
+  charset gene_0123 = 47693 - 47949;
+  charset gene_0124 = 47950 - 48218;
+  charset gene_0125 = 48219 - 48523;
+  charset gene_0126 = 48524 - 48793;
+  charset gene_0127 = 48794 - 49184;
+  charset gene_0128 = 49185 - 49570;
+  charset gene_0129 = 49571 - 49879;
+  charset gene_0130 = 49880 - 50479;
+  charset gene_0131 = 50480 - 50609;
+  charset gene_0132 = 50610 - 50956;
+  charset gene_0133 = 50957 - 51388;
+  charset gene_0134 = 51389 - 51837;
+  charset gene_0135 = 51838 - 52148;
+  charset gene_0136 = 52149 - 52585;
+  charset gene_0137 = 52586 - 52868;
+  charset gene_0138 = 52869 - 53223;
+  charset gene_0139 = 53224 - 53570;
+  charset gene_0140 = 53571 - 54165;
+  charset gene_0141 = 54166 - 54585;
+  charset gene_0142 = 54586 - 54838;
+  charset gene_0143 = 54839 - 55165;
+  charset gene_0144 = 55166 - 55434;
+  charset gene_0145 = 55435 - 55609;
+  charset gene_0146 = 55610 - 55834;
+  charset gene_0147 = 55835 - 55977;
+  charset gene_0148 = 55978 - 56275;
+  charset gene_0149 = 56276 - 56359;
+  charset gene_0150 = 56360 - 56473;
+  charset gene_0151 = 56474 - 56679;
+  charset gene_0152 = 56680 - 57080;
+  charset gene_0153 = 57081 - 57324;
+  charset gene_0154 = 57325 - 58104;
+  charset gene_0155 = 58105 - 58385;
+  charset gene_0156 = 58386 - 58724;
+  charset gene_0157 = 58725 - 58997;
+  charset gene_0158 = 58998 - 59159;
+  charset gene_0159 = 59160 - 59273;
+  charset gene_0160 = 59274 - 59510;
+  charset gene_0161 = 59511 - 59937;
+  charset gene_0162 = 59938 - 60147;
+  charset gene_0163 = 60148 - 60393;
+  charset gene_0164 = 60394 - 60515;
+  charset gene_0165 = 60516 - 60760;
+  charset gene_0166 = 60761 - 61144;
+  charset gene_0167 = 61145 - 61305;
+  charset gene_0168 = 61306 - 61423;
+  charset gene_0169 = 61424 - 61657;
+  charset gene_0170 = 61658 - 61948;
+  charset gene_0171 = 61949 - 62098;
+  charset gene_0172 = 62099 - 62490;
+  charset gene_0173 = 62491 - 62763;
+  charset gene_0174 = 62764 - 62888;
+  charset gene_0175 = 62889 - 63097;
+  charset gene_0176 = 63098 - 64140;
+  charset gene_0177 = 64141 - 64350;
+  charset gene_0178 = 64351 - 64638;
+  charset gene_0179 = 64639 - 65277;
+  charset gene_0180 = 65278 - 65794;
+  charset gene_0181 = 65795 - 66105;
+  charset gene_0182 = 66106 - 66349;
+  charset gene_0183 = 66350 - 66523;
+  charset gene_0184 = 66524 - 66936;
+  charset gene_0185 = 66937 - 67718;
+  charset gene_0186 = 67719 - 68066;
+  charset gene_0187 = 68067 - 68292;
+  charset gene_0188 = 68293 - 68475;
+  charset gene_0189 = 68476 - 68633;
+  charset gene_0190 = 68634 - 68868;
+  charset gene_0191 = 68869 - 69081;
+  charset gene_0192 = 69082 - 69377;
+  charset gene_0193 = 69378 - 69553;
+  charset gene_0194 = 69554 - 70180;
+  charset gene_0195 = 70181 - 70358;
+  charset gene_0196 = 70359 - 70449;
+  charset gene_0197 = 70450 - 70683;
+  charset gene_0198 = 70684 - 70820;
+  charset gene_0199 = 70821 - 71024;
+  charset gene_0200 = 71025 - 71332;
+  charset gene_0201 = 71333 - 71618;
+  charset gene_0202 = 71619 - 71877;
+  charset gene_0203 = 71878 - 72069;
+  charset gene_0204 = 72070 - 72489;
+  charset gene_0205 = 72490 - 72697;
+  charset gene_0206 = 72698 - 72875;
+  charset gene_0207 = 72876 - 73059;
+  charset gene_0208 = 73060 - 73211;
+  charset gene_0209 = 73212 - 73735;
+  charset gene_0210 = 73736 - 74012;
+  charset gene_0211 = 74013 - 74153;
+  charset gene_0212 = 74154 - 74856;
+  charset gene_0213 = 74857 - 74984;
+  charset gene_0214 = 74985 - 75230;
+  charset gene_0215 = 75231 - 75525;
+  charset gene_0216 = 75526 - 75918;
+  charset gene_0217 = 75919 - 76084;
+  charset gene_0218 = 76085 - 76357;
+  charset gene_0219 = 76358 - 76529;
+  charset gene_0220 = 76530 - 76673;
+  charset gene_0221 = 76674 - 76954;
+  charset gene_0222 = 76955 - 77107;
+  charset gene_0223 = 77108 - 77258;
+  charset gene_0224 = 77259 - 77387;
+  charset gene_0225 = 77388 - 77514;
+  charset gene_0226 = 77515 - 77822;
+  charset gene_0227 = 77823 - 78160;
+  charset gene_0228 = 78161 - 78401;
+  charset gene_0229 = 78402 - 78693;
+  charset gene_0230 = 78694 - 79219;
+  charset gene_0231 = 79220 - 79647;
+  charset gene_0232 = 79648 - 80070;
+  charset gene_0233 = 80071 - 80538;
+  charset gene_0234 = 80539 - 80803;
+  charset gene_0235 = 80804 - 81005;
+  charset gene_0236 = 81006 - 81128;
+  charset gene_0237 = 81129 - 81363;
+  charset gene_0238 = 81364 - 81595;
+  charset gene_0239 = 81596 - 82039;
+  charset gene_0240 = 82040 - 82418;
+  charset gene_0241 = 82419 - 82729;
+  charset gene_0242 = 82730 - 82831;
+  charset gene_0243 = 82832 - 83986;
+  charset gene_0244 = 83987 - 84298;
+  charset gene_0245 = 84299 - 84542;
+  charset gene_0246 = 84543 - 84776;
+  charset gene_0247 = 84777 - 85145;
+  charset gene_0248 = 85146 - 85580;
+  charset gene_0249 = 85581 - 85765;
+  charset gene_0250 = 85766 - 85900;
+  charset gene_0251 = 85901 - 86159;
+  charset gene_0252 = 86160 - 87758;
+  charset gene_0253 = 87759 - 87901;
+  charset gene_0254 = 87902 - 88209;
+  charset gene_0255 = 88210 - 88402;
+  charset gene_0256 = 88403 - 88561;
+  charset gene_0257 = 88562 - 88710;
+  charset gene_0258 = 88711 - 89378;
+  charset gene_0259 = 89379 - 90235;
+  charset gene_0260 = 90236 - 90389;
+  charset gene_0261 = 90390 - 90723;
+  charset gene_0262 = 90724 - 91031;
+  charset gene_0263 = 91032 - 91247;
+  charset gene_0264 = 91248 - 91460;
+  charset gene_0265 = 91461 - 91844;
+  charset gene_0266 = 91845 - 92113;
+  charset gene_0267 = 92114 - 92203;
+  charset gene_0268 = 92204 - 93056;
+  charset gene_0269 = 93057 - 93355;
+  charset gene_0270 = 93356 - 94277;
+  charset gene_0271 = 94278 - 94687;
+  charset gene_0272 = 94688 - 95439;
+  charset gene_0273 = 95440 - 95583;
+  charset gene_0274 = 95584 - 96013;
+  charset gene_0275 = 96014 - 96191;
+  charset gene_0276 = 96192 - 96390;
+  charset gene_0277 = 96391 - 96682;
+  charset gene_0278 = 96683 - 97318;
+  charset gene_0279 = 97319 - 97870;
+  charset gene_0280 = 97871 - 98339;
+  charset gene_0281 = 98340 - 98640;
+  charset gene_0282 = 98641 - 98948;
+  charset gene_0283 = 98949 - 99146;
+  charset gene_0284 = 99147 - 99561;
+  charset gene_0285 = 99562 - 100361;
+  charset gene_0286 = 100362 - 101306;
+  charset gene_0287 = 101307 - 101757;
+  charset gene_0288 = 101758 - 102020;
+  charset gene_0289 = 102021 - 102269;
+  charset gene_0290 = 102270 - 102387;
+  charset gene_0291 = 102388 - 102797;
+  charset gene_0292 = 102798 - 103098;
+  charset gene_0293 = 103099 - 104289;
+  charset gene_0294 = 104290 - 104922;
+  charset gene_0295 = 104923 - 105382;
+  charset gene_0296 = 105383 - 105536;
+  charset gene_0297 = 105537 - 106100;
+  charset gene_0298 = 106101 - 106222;
+  charset gene_0299 = 106223 - 106364;
+  charset gene_0300 = 106365 - 106695;
+  charset gene_0301 = 106696 - 106855;
+  charset gene_0302 = 106856 - 107359;
+  charset gene_0303 = 107360 - 107627;
+  charset gene_0304 = 107628 - 107895;
+  charset gene_0305 = 107896 - 108207;
+  charset gene_0306 = 108208 - 108435;
+  charset gene_0307 = 108436 - 108538;
+  charset gene_0308 = 108539 - 108619;
+  charset gene_0309 = 108620 - 108795;
+  charset gene_0310 = 108796 - 109142;
+  charset gene_0311 = 109143 - 109991;
+  charset gene_0312 = 109992 - 110188;
+  charset gene_0313 = 110189 - 110376;
+  charset gene_0314 = 110377 - 110674;
+  charset gene_0315 = 110675 - 110868;
+  charset gene_0316 = 110869 - 111016;
+  charset gene_0317 = 111017 - 111897;
+  charset gene_0318 = 111898 - 112736;
+  charset gene_0319 = 112737 - 112919;
+  charset gene_0320 = 112920 - 113297;
+  charset gene_0321 = 113298 - 113384;
+  charset gene_0322 = 113385 - 113468;
+  charset gene_0323 = 113469 - 113806;
+  charset gene_0324 = 113807 - 114176;
+  charset gene_0325 = 114177 - 114266;
+  charset gene_0326 = 114267 - 114441;
+  charset gene_0327 = 114442 - 114587;
+  charset gene_0328 = 114588 - 114716;
+  charset gene_0329 = 114717 - 114800;
+  charset gene_0330 = 114801 - 114956;
+  charset gene_0331 = 114957 - 115146;
+  charset gene_0332 = 115147 - 115492;
+  charset gene_0333 = 115493 - 116217;
+  charset gene_0334 = 116218 - 116356;
+  charset gene_0335 = 116357 - 116560;
+  charset gene_0336 = 116561 - 116688;
+  charset gene_0337 = 116689 - 117540;
+  charset gene_0338 = 117541 - 117786;
+  charset gene_0339 = 117787 - 118083;
+  charset gene_0340 = 118084 - 118173;
+  charset gene_0341 = 118174 - 118273;
+  charset gene_0342 = 118274 - 118439;
+  charset gene_0343 = 118440 - 119044;
+  charset gene_0344 = 119045 - 119526;
+  charset gene_0345 = 119527 - 119973;
+  charset gene_0346 = 119974 - 120394;
+  charset gene_0347 = 120395 - 120743;
+  charset gene_0348 = 120744 - 121210;
+  charset gene_0349 = 121211 - 121718;
+  charset gene_0350 = 121719 - 121819;
+  charset gene_0351 = 121820 - 122342;
+  charset gene_0352 = 122343 - 122441;
+  charset gene_0353 = 122442 - 123212;
+  charset gene_0354 = 123213 - 123546;
+  charset gene_0355 = 123547 - 123668;
+  charset gene_0356 = 123669 - 123871;
+  charset gene_0357 = 123872 - 124097;
+  charset gene_0358 = 124098 - 124226;
+  charset gene_0359 = 124227 - 124774;
+  charset gene_0360 = 124775 - 124902;
+  charset gene_0361 = 124903 - 125155;
+  charset gene_0362 = 125156 - 125413;
+  charset gene_0363 = 125414 - 125673;
+  charset gene_0364 = 125674 - 125905;
+  charset gene_0365 = 125906 - 126120;
+  charset gene_0366 = 126121 - 126556;
+  charset gene_0367 = 126557 - 127130;
+  charset gene_0368 = 127131 - 127212;
+  charset gene_0369 = 127213 - 127490;
+  charset gene_0370 = 127491 - 128250;
+  charset gene_0371 = 128251 - 128477;
+  charset gene_0372 = 128478 - 129407;
+  charset gene_0373 = 129408 - 129619;
+  charset gene_0374 = 129620 - 129824;
+  charset gene_0375 = 129825 - 130028;
+  charset gene_0376 = 130029 - 130217;
+  charset gene_0377 = 130218 - 130500;
+  charset gene_0378 = 130501 - 130686;
+  charset gene_0379 = 130687 - 130976;
+  charset gene_0380 = 130977 - 131100;
+  charset gene_0381 = 131101 - 131486;
+  charset gene_0382 = 131487 - 131734;
+  charset gene_0383 = 131735 - 131991;
+  charset gene_0384 = 131992 - 132128;
+  charset gene_0385 = 132129 - 132469;
+  charset gene_0386 = 132470 - 132745;
+  charset gene_0387 = 132746 - 133109;
+  charset gene_0388 = 133110 - 133495;
+  charset gene_0389 = 133496 - 133631;
+  charset gene_0390 = 133632 - 134040;
+  charset gene_0391 = 134041 - 134287;
+  charset gene_0392 = 134288 - 134606;
+  charset gene_0393 = 134607 - 135023;
+  charset gene_0394 = 135024 - 135656;
+  charset gene_0395 = 135657 - 135958;
+  charset gene_0396 = 135959 - 136493;
+  charset gene_0397 = 136494 - 136776;
+  charset gene_0398 = 136777 - 137141;
+  charset gene_0399 = 137142 - 137311;
+  charset gene_0400 = 137312 - 137565;
+  charset gene_0401 = 137566 - 138018;
+  charset gene_0402 = 138019 - 138254;
+  charset gene_0403 = 138255 - 138891;
+  charset gene_0404 = 138892 - 139231;
+  charset gene_0405 = 139232 - 139529;
+  charset gene_0406 = 139530 - 139711;
+  charset gene_0407 = 139712 - 140486;
+  charset gene_0408 = 140487 - 140641;
+  charset gene_0409 = 140642 - 141416;
+  charset gene_0410 = 141417 - 141846;
+  charset gene_0411 = 141847 - 142250;
+  charset gene_0412 = 142251 - 142478;
+  charset gene_0413 = 142479 - 142733;
+  charset gene_0414 = 142734 - 142989;
+  charset gene_0415 = 142990 - 143079;
+  charset gene_0416 = 143080 - 143176;
+  charset gene_0417 = 143177 - 143430;
+  charset gene_0418 = 143431 - 143796;
+  charset gene_0419 = 143797 - 144065;
+  charset gene_0420 = 144066 - 144305;
+  charset gene_0421 = 144306 - 144428;
+  charset gene_0422 = 144429 - 144771;
+  charset gene_0423 = 144772 - 145090;
+  charset gene_0424 = 145091 - 145318;
+  charset gene_0425 = 145319 - 145489;
+  charset gene_0426 = 145490 - 145798;
+  charset gene_0427 = 145799 - 146032;
+  charset gene_0428 = 146033 - 146239;
+  charset gene_0429 = 146240 - 146494;
+  charset gene_0430 = 146495 - 146662;
+  charset gene_0431 = 146663 - 147068;
+  charset gene_0432 = 147069 - 147212;
+  charset gene_0433 = 147213 - 147331;
+  charset gene_0434 = 147332 - 147786;
+  charset gene_0435 = 147787 - 148032;
+  charset gene_0436 = 148033 - 148254;
+  charset gene_0437 = 148255 - 148549;
+  charset gene_0438 = 148550 - 148840;
+  charset gene_0439 = 148841 - 148988;
+  charset gene_0440 = 148989 - 149491;
+  charset gene_0441 = 149492 - 149591;
+  charset gene_0442 = 149592 - 149847;
+  charset gene_0443 = 149848 - 150126;
+  charset gene_0444 = 150127 - 150447;
+  charset gene_0445 = 150448 - 150808;
+  charset gene_0446 = 150809 - 151179;
+  charset gene_0447 = 151180 - 151683;
+  charset gene_0448 = 151684 - 151845;
+  charset gene_0449 = 151846 - 152200;
+  charset gene_0450 = 152201 - 152417;
+  charset gene_0451 = 152418 - 152730;
+  charset gene_0452 = 152731 - 153007;
+  charset gene_0453 = 153008 - 153421;
+  charset gene_0454 = 153422 - 153645;
+  charset gene_0455 = 153646 - 153965;
+  charset gene_0456 = 153966 - 154176;
+  charset gene_0457 = 154177 - 154278;
+  charset gene_0458 = 154279 - 154722;
+  charset gene_0459 = 154723 - 154986;
+  charset gene_0460 = 154987 - 155158;
+  charset gene_0461 = 155159 - 155540;
+  charset gene_0462 = 155541 - 155690;
+  charset gene_0463 = 155691 - 155845;
+  charset gene_0464 = 155846 - 156108;
+  charset gene_0465 = 156109 - 156388;
+  charset gene_0466 = 156389 - 157094;
+  charset gene_0467 = 157095 - 157363;
+  charset gene_0468 = 157364 - 157609;
+  charset gene_0469 = 157610 - 157809;
+  charset gene_0470 = 157810 - 158000;
+  charset gene_0471 = 158001 - 158112;
+  charset gene_0472 = 158113 - 158327;
+  charset gene_0473 = 158328 - 159068;
+  charset gene_0474 = 159069 - 159614;
+  charset gene_0475 = 159615 - 159848;
+  charset gene_0476 = 159849 - 160037;
+  charset gene_0477 = 160038 - 160206;
+  charset gene_0478 = 160207 - 160304;
+  charset gene_0479 = 160305 - 160495;
+  charset gene_0480 = 160496 - 160602;
+  charset gene_0481 = 160603 - 161246;
+  charset gene_0482 = 161247 - 161374;
+  charset gene_0483 = 161375 - 161554;
+  charset gene_0484 = 161555 - 161766;
+  charset gene_0485 = 161767 - 162208;
+  charset gene_0486 = 162209 - 162378;
+  charset gene_0487 = 162379 - 162480;
+  charset gene_0488 = 162481 - 162693;
+  charset gene_0489 = 162694 - 162826;
+  charset gene_0490 = 162827 - 163011;
+  charset gene_0491 = 163012 - 163162;
+  charset gene_0492 = 163163 - 163455;
+  charset gene_0493 = 163456 - 163707;
+  charset gene_0494 = 163708 - 163845;
+  charset gene_0495 = 163846 - 164021;
+  charset gene_0496 = 164022 - 164278;
+  charset gene_0497 = 164279 - 164472;
+  charset gene_0498 = 164473 - 164648;
+  charset gene_0499 = 164649 - 164744;
+  charset gene_0500 = 164745 - 165733;
+  charset gene_0501 = 165734 - 166109;
+  charset gene_0502 = 166110 - 166594;
+  charset gene_0503 = 166595 - 166751;
+  charset gene_0504 = 166752 - 167399;
+  charset gene_0505 = 167400 - 167699;
+  charset gene_0506 = 167700 - 167910;
+  charset gene_0507 = 167911 - 168409;
+  charset gene_0508 = 168410 - 168513;
+  charset gene_0509 = 168514 - 168687;
+  charset gene_0510 = 168688 - 168788;
+  charset gene_0511 = 168789 - 169113;
+  charset gene_0512 = 169114 - 169568;
+  charset gene_0513 = 169569 - 169961;
+  charset gene_0514 = 169962 - 170334;
+  charset gene_0515 = 170335 - 170579;
+  charset gene_0516 = 170580 - 170693;
+  charset gene_0517 = 170694 - 170795;
+  charset gene_0518 = 170796 - 170974;
+  charset gene_0519 = 170975 - 171266;
+  charset gene_0520 = 171267 - 171735;
+  charset gene_0521 = 171736 - 172097;
+  charset gene_0522 = 172098 - 172306;
+  charset gene_0523 = 172307 - 172509;
+  charset gene_0524 = 172510 - 172768;
+  charset gene_0525 = 172769 - 173214;
+  charset gene_0526 = 173215 - 173447;
+  charset gene_0527 = 173448 - 173655;
+  charset gene_0528 = 173656 - 173798;
+  charset gene_0529 = 173799 - 174005;
+  charset gene_0530 = 174006 - 174148;
+  charset gene_0531 = 174149 - 174408;
+  charset gene_0532 = 174409 - 175135;
+  charset gene_0533 = 175136 - 175392;
+  charset gene_0534 = 175393 - 175477;
+  charset gene_0535 = 175478 - 175632;
+  charset gene_0536 = 175633 - 175721;
+  charset gene_0537 = 175722 - 175828;
+  charset gene_0538 = 175829 - 175932;
+  charset gene_0539 = 175933 - 176113;
+  charset gene_0540 = 176114 - 176562;
+  charset gene_0541 = 176563 - 176798;
+  charset gene_0542 = 176799 - 176982;
+  charset gene_0543 = 176983 - 177167;
+  charset gene_0544 = 177168 - 177602;
+  charset gene_0545 = 177603 - 177922;
+  charset gene_0546 = 177923 - 178165;
+  charset gene_0547 = 178166 - 178616;
+  charset gene_0548 = 178617 - 178817;
+  charset gene_0549 = 178818 - 179153;
+  charset gene_0550 = 179154 - 179410;
+  charset gene_0551 = 179411 - 179594;
+  charset gene_0552 = 179595 - 179696;
+  charset gene_0553 = 179697 - 179890;
+  charset gene_0554 = 179891 - 180015;
+  charset gene_0555 = 180016 - 180507;
+  charset gene_0556 = 180508 - 180606;
+  charset gene_0557 = 180607 - 181065;
+  charset gene_0558 = 181066 - 181183;
+  charset gene_0559 = 181184 - 181334;
+  charset gene_0560 = 181335 - 181472;
+  charset gene_0561 = 181473 - 181558;
+  charset gene_0562 = 181559 - 181733;
+  charset gene_0563 = 181734 - 181983;
+  charset gene_0564 = 181984 - 182253;
+  charset gene_0565 = 182254 - 182655;
+  charset gene_0566 = 182656 - 182829;
+  charset gene_0567 = 182830 - 183241;
+  charset gene_0568 = 183242 - 183321;
+  charset gene_0569 = 183322 - 183588;
+  charset gene_0570 = 183589 - 183789;
+  charset gene_0571 = 183790 - 183933;
+  charset gene_0572 = 183934 - 184204;
+  charset gene_0573 = 184205 - 184531;
+  charset gene_0574 = 184532 - 185085;
+  charset gene_0575 = 185086 - 185361;
+  charset gene_0576 = 185362 - 185739;
+  charset gene_0577 = 185740 - 185924;
+  charset gene_0578 = 185925 - 186079;
+  charset gene_0579 = 186080 - 186275;
+  charset gene_0580 = 186276 - 186526;
+  charset gene_0581 = 186527 - 186705;
+  charset gene_0582 = 186706 - 186862;
+  charset gene_0583 = 186863 - 187054;
+  charset gene_0584 = 187055 - 187272;
+  charset gene_0585 = 187273 - 187461;
+  charset gene_0586 = 187462 - 187661;
+  charset gene_0587 = 187662 - 187922;
+  charset gene_0588 = 187923 - 188222;
+  charset gene_0589 = 188223 - 188357;
+  charset gene_0590 = 188358 - 188558;
+  charset gene_0591 = 188559 - 188896;
+  charset gene_0592 = 188897 - 189512;
+  charset gene_0593 = 189513 - 189609;
+  charset gene_0594 = 189610 - 190184;
+  charset gene_0595 = 190185 - 190800;
+  charset gene_0596 = 190801 - 191325;
+  charset gene_0597 = 191326 - 191813;
+  charset gene_0598 = 191814 - 191983;
+  charset gene_0599 = 191984 - 192185;
+  charset gene_0600 = 192186 - 192777;
+  charset gene_0601 = 192778 - 193217;
+  charset gene_0602 = 193218 - 193501;
+  charset gene_0603 = 193502 - 193630;
+  charset gene_0604 = 193631 - 193930;
+  charset gene_0605 = 193931 - 194192;
+  charset gene_0606 = 194193 - 194443;
+  charset gene_0607 = 194444 - 194851;
+  charset gene_0608 = 194852 - 195337;
+  charset gene_0609 = 195338 - 195950;
+  charset gene_0610 = 195951 - 196146;
+  charset gene_0611 = 196147 - 196527;
+  charset gene_0612 = 196528 - 196776;
+  charset gene_0613 = 196777 - 197315;
+  charset gene_0614 = 197316 - 197534;
+  charset gene_0615 = 197535 - 197718;
+  charset gene_0616 = 197719 - 197954;
+  charset gene_0617 = 197955 - 198104;
+  charset gene_0618 = 198105 - 198218;
+  charset gene_0619 = 198219 - 198317;
+  charset gene_0620 = 198318 - 198582;
+  charset gene_0621 = 198583 - 199018;
+  charset gene_0622 = 199019 - 199230;
+  charset gene_0623 = 199231 - 199452;
+  charset gene_0624 = 199453 - 199646;
+  charset gene_0625 = 199647 - 199897;
+  charset gene_0626 = 199898 - 200021;
+  charset gene_0627 = 200022 - 200388;
+  charset gene_0628 = 200389 - 200604;
+  charset gene_0629 = 200605 - 200745;
+  charset gene_0630 = 200746 - 200836;
+  charset gene_0631 = 200837 - 201255;
+  charset gene_0632 = 201256 - 201385;
+  charset gene_0633 = 201386 - 201663;
+  charset gene_0634 = 201664 - 201920;
+  charset gene_0635 = 201921 - 202036;
+  charset gene_0636 = 202037 - 202247;
+  charset gene_0637 = 202248 - 202401;
+  charset gene_0638 = 202402 - 202495;
+  charset gene_0639 = 202496 - 202697;
+  charset gene_0640 = 202698 - 202854;
+  charset gene_0641 = 202855 - 203017;
+  charset gene_0642 = 203018 - 203238;
+  charset gene_0643 = 203239 - 203465;
+  charset gene_0644 = 203466 - 203592;
+  charset gene_0645 = 203593 - 204203;
+  charset gene_0646 = 204204 - 204403;
+  charset gene_0647 = 204404 - 204721;
+  charset gene_0648 = 204722 - 204839;
+  charset gene_0649 = 204840 - 204961;
+  charset gene_0650 = 204962 - 205318;
+  charset gene_0651 = 205319 - 205598;
+  charset gene_0652 = 205599 - 205752;
+  charset gene_0653 = 205753 - 205879;
+  charset gene_0654 = 205880 - 206376;
+  charset gene_0655 = 206377 - 206538;
+  charset gene_0656 = 206539 - 206874;
+  charset gene_0657 = 206875 - 207019;
+  charset gene_0658 = 207020 - 207914;
+  charset gene_0659 = 207915 - 208135;
+  charset gene_0660 = 208136 - 208544;
+  charset gene_0661 = 208545 - 208804;
+  charset gene_0662 = 208805 - 208963;
+  charset gene_0663 = 208964 - 209094;
+  charset gene_0664 = 209095 - 209465;
+  charset gene_0665 = 209466 - 209613;
+  charset gene_0666 = 209614 - 209803;
+  charset gene_0667 = 209804 - 209999;
+  charset gene_0668 = 210000 - 210345;
+  charset gene_0669 = 210346 - 210542;
+  charset gene_0670 = 210543 - 210690;
+  charset gene_0671 = 210691 - 210883;
+  charset gene_0672 = 210884 - 210970;
+  charset gene_0673 = 210971 - 211224;
+  charset gene_0674 = 211225 - 211311;
+  charset gene_0675 = 211312 - 211817;
+  charset gene_0676 = 211818 - 211950;
+  charset gene_0677 = 211951 - 212101;
+  charset gene_0678 = 212102 - 212190;
+  charset gene_0679 = 212191 - 212686;
+  charset gene_0680 = 212687 - 212789;
+  charset gene_0681 = 212790 - 213298;
+  charset gene_0682 = 213299 - 213432;
+  charset gene_0683 = 213433 - 213636;
+  charset gene_0684 = 213637 - 213847;
+  charset gene_0685 = 213848 - 214344;
+  charset gene_0686 = 214345 - 214620;
+  charset gene_0687 = 214621 - 214975;
+  charset gene_0688 = 214976 - 215178;
+  charset gene_0689 = 215179 - 215551;
+  charset gene_0690 = 215552 - 215827;
+  charset gene_0691 = 215828 - 215949;
+  charset gene_0692 = 215950 - 216142;
+  charset gene_0693 = 216143 - 216267;
+  charset gene_0694 = 216268 - 216365;
+  charset gene_0695 = 216366 - 216489;
+  charset gene_0696 = 216490 - 216790;
+  charset gene_0697 = 216791 - 216872;
+  charset gene_0698 = 216873 - 217016;
+  charset gene_0699 = 217017 - 217171;
+  charset gene_0700 = 217172 - 217296;
+  charset gene_0701 = 217297 - 217463;
+  charset gene_0702 = 217464 - 217551;
+  charset gene_0703 = 217552 - 217708;
+  charset gene_0704 = 217709 - 217960;
+  charset gene_0705 = 217961 - 218211;
+  charset gene_0706 = 218212 - 218488;
+  charset gene_0707 = 218489 - 218576;
+  charset gene_0708 = 218577 - 218727;
+  charset gene_0709 = 218728 - 218907;
+  charset gene_0710 = 218908 - 218994;
+  charset gene_0711 = 218995 - 219136;
+  charset gene_0712 = 219137 - 219304;
+  charset gene_0713 = 219305 - 219556;
+  charset gene_0714 = 219557 - 219658;
+  charset gene_0715 = 219659 - 219747;
+  charset gene_0716 = 219748 - 219889;
+  charset gene_0717 = 219890 - 219993;
+  charset gene_0718 = 219994 - 220157;
+  charset gene_0719 = 220158 - 220361;
+  charset gene_0720 = 220362 - 220522;
+  charset gene_0721 = 220523 - 220678;
+  charset gene_0722 = 220679 - 220850;
+  charset gene_0723 = 220851 - 221946;
+  charset gene_0724 = 221947 - 222431;
+  charset gene_0725 = 222432 - 222528;
+  charset gene_0726 = 222529 - 222876;
+  charset gene_0727 = 222877 - 223082;
+  charset gene_0728 = 223083 - 223234;
+  charset gene_0729 = 223235 - 223453;
+  charset gene_0730 = 223454 - 223603;
+  charset gene_0731 = 223604 - 223942;
+  charset gene_0732 = 223943 - 224075;
+  charset gene_0733 = 224076 - 224494;
+  charset gene_0734 = 224495 - 224592;
+  charset gene_0735 = 224593 - 224798;
+  charset gene_0736 = 224799 - 225021;
+  charset gene_0737 = 225022 - 225392;
+  charset gene_0738 = 225393 - 225667;
+  charset gene_0739 = 225668 - 225923;
+  charset gene_0740 = 225924 - 226199;
+  charset gene_0741 = 226200 - 226367;
+  charset gene_0742 = 226368 - 226826;
+  charset gene_0743 = 226827 - 227085;
+  charset gene_0744 = 227086 - 227362;
+  charset gene_0745 = 227363 - 227587;
+  charset gene_0746 = 227588 - 227701;
+  charset gene_0747 = 227702 - 228011;
+  charset gene_0748 = 228012 - 228275;
+  charset gene_0749 = 228276 - 228768;
+  charset gene_0750 = 228769 - 228976;
+  charset gene_0751 = 228977 - 229087;
+  charset gene_0752 = 229088 - 229535;
+  charset gene_0753 = 229536 - 229798;
+  charset gene_0754 = 229799 - 229975;
+  charset gene_0755 = 229976 - 230260;
+  charset gene_0756 = 230261 - 230457;
+  charset gene_0757 = 230458 - 230773;
+  charset gene_0758 = 230774 - 230881;
+  charset gene_0759 = 230882 - 231199;
+  charset gene_0760 = 231200 - 231366;
+  charset gene_0761 = 231367 - 231519;
+  charset gene_0762 = 231520 - 231726;
+  charset gene_0763 = 231727 - 232296;
+  charset gene_0764 = 232297 - 232471;
+  charset gene_0765 = 232472 - 232628;
+  charset gene_0766 = 232629 - 232811;
+  charset gene_0767 = 232812 - 232936;
+  charset gene_0768 = 232937 - 233053;
+  charset gene_0769 = 233054 - 233154;
+  charset gene_0770 = 233155 - 233377;
+  charset gene_0771 = 233378 - 233808;
+  charset gene_0772 = 233809 - 234403;
+  charset gene_0773 = 234404 - 234571;
+  charset gene_0774 = 234572 - 234651;
+  charset gene_0775 = 234652 - 235004;
+  charset gene_0776 = 235005 - 235358;
+  charset gene_0777 = 235359 - 235657;
+  charset gene_0778 = 235658 - 235871;
+  charset gene_0779 = 235872 - 236017;
+  charset gene_0780 = 236018 - 236429;
+  charset gene_0781 = 236430 - 236896;
+  charset gene_0782 = 236897 - 237304;
+  charset gene_0783 = 237305 - 237463;
+  charset gene_0784 = 237464 - 237689;
+  charset gene_0785 = 237690 - 237849;
+  charset gene_0786 = 237850 - 238052;
+  charset gene_0787 = 238053 - 238147;
+  charset gene_0788 = 238148 - 238515;
+  charset gene_0789 = 238516 - 238836;
+  charset gene_0790 = 238837 - 238969;
+  charset gene_0791 = 238970 - 239240;
+  charset gene_0792 = 239241 - 239563;
+  charset gene_0793 = 239564 - 239868;
+  charset gene_0794 = 239869 - 239993;
+  charset gene_0795 = 239994 - 240163;
+  charset gene_0796 = 240164 - 240289;
+  charset gene_0797 = 240290 - 240406;
+  charset gene_0798 = 240407 - 240499;
+  charset gene_0799 = 240500 - 240584;
+  charset gene_0800 = 240585 - 240884;
+  charset gene_0801 = 240885 - 241002;
+  charset gene_0802 = 241003 - 241440;
+  charset gene_0803 = 241441 - 241577;
+  charset gene_0804 = 241578 - 241749;
+  charset gene_0805 = 241750 - 241900;
+  charset gene_0806 = 241901 - 242151;
+  charset gene_0807 = 242152 - 242419;
+  charset gene_0808 = 242420 - 242583;
+  charset gene_0809 = 242584 - 242756;
+  charset gene_0810 = 242757 - 242970;
+  charset gene_0811 = 242971 - 243088;
+  charset gene_0812 = 243089 - 243200;
+  charset gene_0813 = 243201 - 243370;
+  charset gene_0814 = 243371 - 243602;
+  charset gene_0815 = 243603 - 243838;
+  charset gene_0816 = 243839 - 244119;
+  charset gene_0817 = 244120 - 244609;
+  charset gene_0818 = 244610 - 244812;
+  charset gene_0819 = 244813 - 245083;
+  charset gene_0820 = 245084 - 245285;
+  charset gene_0821 = 245286 - 245418;
+  charset gene_0822 = 245419 - 245514;
+  charset gene_0823 = 245515 - 245632;
+  charset gene_0824 = 245633 - 245986;
+  charset gene_0825 = 245987 - 246104;
+  charset gene_0826 = 246105 - 246194;
+  charset gene_0827 = 246195 - 246459;
+  charset gene_0828 = 246460 - 246563;
+  charset gene_0829 = 246564 - 246845;
+  charset gene_0830 = 246846 - 246983;
+  charset gene_0831 = 246984 - 247181;
+  charset gene_0832 = 247182 - 247570;
+  charset gene_0833 = 247571 - 247777;
+  charset gene_0834 = 247778 - 247899;
+  charset gene_0835 = 247900 - 248025;
+  charset gene_0836 = 248026 - 248500;
+  charset gene_0837 = 248501 - 248889;
+  charset gene_0838 = 248890 - 248975;
+  charset gene_0839 = 248976 - 249322;
+  charset gene_0840 = 249323 - 249406;
+  charset gene_0841 = 249407 - 249763;
+  charset gene_0842 = 249764 - 249909;
+  charset gene_0843 = 249910 - 250146;
+  charset gene_0844 = 250147 - 250390;
+  charset gene_0845 = 250391 - 250485;
+  charset gene_0846 = 250486 - 250741;
+  charset gene_0847 = 250742 - 251088;
+  charset gene_0848 = 251089 - 251339;
+  charset gene_0849 = 251340 - 251496;
+  charset gene_0850 = 251497 - 251640;
+  charset gene_0851 = 251641 - 251906;
+  charset gene_0852 = 251907 - 251993;
+  charset gene_0853 = 251994 - 252160;
+  charset gene_0854 = 252161 - 252262;
+  charset gene_0855 = 252263 - 252410;
+  charset gene_0856 = 252411 - 252601;
+  charset gene_0857 = 252602 - 252709;
+  charset gene_0858 = 252710 - 252829;
+  charset gene_0859 = 252830 - 252936;
+  charset gene_0860 = 252937 - 253066;
+  charset gene_0861 = 253067 - 253194;
+  charset gene_0862 = 253195 - 253437;
+  charset gene_0863 = 253438 - 253646;
+  charset gene_0864 = 253647 - 253858;
+  charset gene_0865 = 253859 - 253947;
+  charset gene_0866 = 253948 - 254035;
+  charset gene_0867 = 254036 - 254196;
+  charset gene_0868 = 254197 - 254388;
+  charset gene_0869 = 254389 - 254606;
+  charset gene_0870 = 254607 - 254747;
+  charset gene_0871 = 254748 - 255006;
+  charset gene_0872 = 255007 - 255205;
+  charset gene_0873 = 255206 - 255304;
+  charset gene_0874 = 255305 - 255420;
+  charset gene_0875 = 255421 - 255520;
+  charset gene_0876 = 255521 - 255630;
+  charset gene_0877 = 255631 - 255747;
+  charset gene_0878 = 255748 - 255877;
+  charset gene_0879 = 255878 - 255970;
+  charset gene_0880 = 255971 - 256256;
+  charset gene_0881 = 256257 - 256387;
+  charset gene_0882 = 256388 - 256530;
+  charset gene_0883 = 256531 - 256713;
+  charset gene_0884 = 256714 - 257240;
+  charset gene_0885 = 257241 - 257399;
+  charset gene_0886 = 257400 - 257732;
+  charset gene_0887 = 257733 - 258036;
+  charset gene_0888 = 258037 - 258405;
+  charset gene_0889 = 258406 - 258612;
+  charset gene_0890 = 258613 - 258727;
+  charset gene_0891 = 258728 - 258929;
+  charset gene_0892 = 258930 - 259032;
+  charset gene_0893 = 259033 - 259317;
+  charset gene_0894 = 259318 - 259512;
+  charset gene_0895 = 259513 - 259629;
+  charset gene_0896 = 259630 - 259966;
+  charset gene_0897 = 259967 - 260104;
+  charset gene_0898 = 260105 - 260503;
+  charset gene_0899 = 260504 - 260641;
+  charset gene_0900 = 260642 - 260920;
+  charset gene_0901 = 260921 - 261055;
+  charset gene_0902 = 261056 - 261324;
+  charset gene_0903 = 261325 - 261530;
+  charset gene_0904 = 261531 - 261758;
+  charset gene_0905 = 261759 - 262248;
+  charset gene_0906 = 262249 - 262412;
+  charset gene_0907 = 262413 - 262556;
+  charset gene_0908 = 262557 - 262759;
+  charset gene_0909 = 262760 - 262853;
+  charset gene_0910 = 262854 - 263065;
+  charset gene_0911 = 263066 - 263258;
+  charset gene_0912 = 263259 - 263494;
+  charset gene_0913 = 263495 - 263607;
+  charset gene_0914 = 263608 - 263814;
+  charset gene_0915 = 263815 - 264173;
+  charset gene_0916 = 264174 - 264390;
+  charset gene_0917 = 264391 - 264532;
+  charset gene_0918 = 264533 - 264806;
+  charset gene_0919 = 264807 - 264987;
+  charset gene_0920 = 264988 - 265114;
+  charset gene_0921 = 265115 - 265300;
+  charset gene_0922 = 265301 - 265479;
+  charset gene_0923 = 265480 - 265928;
+  charset gene_0924 = 265929 - 266052;
+  charset gene_0925 = 266053 - 266150;
+  charset gene_0926 = 266151 - 266502;
+  charset gene_0927 = 266503 - 266700;
+  charset gene_0928 = 266701 - 266898;
+  charset gene_0929 = 266899 - 267043;
+  charset gene_0930 = 267044 - 267123;
+  charset gene_0931 = 267124 - 267512;
+  charset gene_0932 = 267513 - 267648;
+  charset gene_0933 = 267649 - 267774;
+  charset gene_0934 = 267775 - 267871;
+  charset gene_0935 = 267872 - 268091;
+  charset gene_0936 = 268092 - 268248;
+  charset gene_0937 = 268249 - 268369;
+  charset gene_0938 = 268370 - 268605;
+  charset gene_0939 = 268606 - 268691;
+  charset gene_0940 = 268692 - 268822;
+  charset gene_0941 = 268823 - 269088;
+  charset gene_0942 = 269089 - 269198;
+  charset gene_0943 = 269199 - 269486;
+  charset gene_0944 = 269487 - 269734;
+  charset gene_0945 = 269735 - 269912;
+  charset gene_0946 = 269913 - 270006;
+  charset gene_0947 = 270007 - 270212;
+  charset gene_0948 = 270213 - 270454;
+  charset gene_0949 = 270455 - 270647;
+  charset gene_0950 = 270648 - 270740;
+  charset gene_0951 = 270741 - 270850;
+  charset gene_0952 = 270851 - 271021;
+  charset gene_0953 = 271022 - 271482;
+  charset gene_0954 = 271483 - 271684;
+  charset gene_0955 = 271685 - 271876;
+  charset gene_0956 = 271877 - 272232;
+  charset gene_0957 = 272233 - 272755;
+  charset gene_0958 = 272756 - 272953;
+  charset gene_0959 = 272954 - 273305;
+  charset gene_0960 = 273306 - 273435;
+  charset gene_0961 = 273436 - 273534;
+  charset gene_0962 = 273535 - 273654;
+  charset gene_0963 = 273655 - 273994;
+  charset gene_0964 = 273995 - 274086;
+  charset gene_0965 = 274087 - 274243;
+  charset gene_0966 = 274244 - 274392;
+  charset gene_0967 = 274393 - 274553;
+  charset gene_0968 = 274554 - 274744;
+  charset gene_0969 = 274745 - 275056;
+  charset gene_0970 = 275057 - 275237;
+  charset gene_0971 = 275238 - 275477;
+  charset gene_0972 = 275478 - 275652;
+  charset gene_0973 = 275653 - 275828;
+  charset gene_0974 = 275829 - 275936;
+  charset gene_0975 = 275937 - 276120;
+  charset gene_0976 = 276121 - 276202;
+  charset gene_0977 = 276203 - 276435;
+  charset gene_0978 = 276436 - 276544;
+  charset gene_0979 = 276545 - 276686;
+  charset gene_0980 = 276687 - 276941;
+  charset gene_0981 = 276942 - 277144;
+  charset gene_0982 = 277145 - 277292;
+  charset gene_0983 = 277293 - 277372;
+  charset gene_0984 = 277373 - 277568;
+  charset gene_0985 = 277569 - 277710;
+  charset gene_0986 = 277711 - 277850;
+  charset gene_0987 = 277851 - 277967;
+  charset gene_0988 = 277968 - 278172;
+  charset gene_0989 = 278173 - 278492;
+  charset gene_0990 = 278493 - 278624;
+  charset gene_0991 = 278625 - 278868;
+  charset gene_0992 = 278869 - 279127;
+  charset gene_0993 = 279128 - 279534;
+  charset gene_0994 = 279535 - 279706;
+  charset gene_0995 = 279707 - 279885;
+  charset gene_0996 = 279886 - 280085;
+  charset gene_0997 = 280086 - 280469;
+  charset gene_0998 = 280470 - 280573;
+  charset gene_0999 = 280574 - 280738;
+  charset gene_1000 = 280739 - 280918;
+  charset gene_1001 = 280919 - 281009;
+  charset gene_1002 = 281010 - 281122;
+  charset gene_1003 = 281123 - 281270;
+  charset gene_1004 = 281271 - 281551;
+  charset gene_1005 = 281552 - 281751;
+  charset gene_1006 = 281752 - 282062;
+  charset gene_1007 = 282063 - 282436;
+  charset gene_1008 = 282437 - 282689;
+  charset gene_1009 = 282690 - 282889;
+  charset gene_1010 = 282890 - 283014;
+  charset gene_1011 = 283015 - 283171;
+  charset gene_1012 = 283172 - 283378;
+  charset gene_1013 = 283379 - 283578;
+  charset gene_1014 = 283579 - 283752;
+  charset gene_1015 = 283753 - 284147;
+  charset gene_1016 = 284148 - 284360;
+  charset gene_1017 = 284361 - 284725;
+  charset gene_1018 = 284726 - 284871;
+  charset gene_1019 = 284872 - 285063;
+  charset gene_1020 = 285064 - 285276;
+  charset gene_1021 = 285277 - 285428;
+  charset gene_1022 = 285429 - 285613;
+  charset gene_1023 = 285614 - 285791;
+  charset gene_1024 = 285792 - 285971;
+  charset gene_1025 = 285972 - 286057;
+  charset gene_1026 = 286058 - 286146;
+  charset gene_1027 = 286147 - 286293;
+  charset gene_1028 = 286294 - 286497;
+  charset gene_1029 = 286498 - 286660;
+  charset gene_1030 = 286661 - 286840;
+  charset gene_1031 = 286841 - 286924;
+  charset gene_1032 = 286925 - 287080;
+  charset gene_1033 = 287081 - 287294;
+  charset gene_1034 = 287295 - 287516;
+  charset gene_1035 = 287517 - 287668;
+  charset gene_1036 = 287669 - 287781;
+  charset gene_1037 = 287782 - 287924;
+  charset gene_1038 = 287925 - 288022;
+  charset gene_1039 = 288023 - 288189;
+  charset gene_1040 = 288190 - 288314;
+  charset gene_1041 = 288315 - 288466;
+  charset gene_1042 = 288467 - 288589;
+  charset gene_1043 = 288590 - 288676;
+  charset gene_1044 = 288677 - 288826;
+  charset gene_1045 = 288827 - 288910;
+  charset gene_1046 = 288911 - 288995;
+  charset gene_1047 = 288996 - 289171;
+  charset gene_1048 = 289172 - 289509;
+  charset gene_1049 = 289510 - 289682;
+  charset gene_1050 = 289683 - 289905;
+  charset gene_1051 = 289906 - 289998;
+  charset gene_1052 = 289999 - 290086;
+  charset gene_1053 = 290087 - 290357;
+  charset gene_1054 = 290358 - 290678;
+  charset gene_1055 = 290679 - 290781;
+  charset gene_1056 = 290782 - 290947;
+  charset gene_1057 = 290948 - 291099;
+  charset gene_1058 = 291100 - 291270;
+  charset gene_1059 = 291271 - 291681;
+  charset gene_1060 = 291682 - 292224;
+  charset gene_1061 = 292225 - 292324;
+  charset gene_1062 = 292325 - 292432;
+  charset gene_1063 = 292433 - 292610;
+  charset gene_1064 = 292611 - 292768;
+  charset gene_1065 = 292769 - 292975;
+  charset gene_1066 = 292976 - 293313;
+  charset gene_1067 = 293314 - 293411;
+  charset gene_1068 = 293412 - 293825;
+  charset gene_1069 = 293826 - 293978;
+  charset gene_1070 = 293979 - 294216;
+  charset gene_1071 = 294217 - 294345;
+  charset gene_1072 = 294346 - 294508;
+  charset gene_1073 = 294509 - 294760;
+  charset gene_1074 = 294761 - 294870;
+  charset gene_1075 = 294871 - 295005;
+  charset gene_1076 = 295006 - 295108;
+  charset gene_1077 = 295109 - 295212;
+  charset gene_1078 = 295213 - 295374;
+  charset gene_1079 = 295375 - 295580;
+  charset gene_1080 = 295581 - 295734;
+  charset gene_1081 = 295735 - 295888;
+  charset gene_1082 = 295889 - 296207;
+  charset gene_1083 = 296208 - 296457;
+  charset gene_1084 = 296458 - 296560;
+  charset gene_1085 = 296561 - 297058;
+  charset gene_1086 = 297059 - 297164;
+  charset gene_1087 = 297165 - 297384;
+  charset gene_1088 = 297385 - 297537;
+  charset gene_1089 = 297538 - 297664;
+  charset gene_1090 = 297665 - 297880;
+  charset gene_1091 = 297881 - 298022;
+  charset gene_1092 = 298023 - 298166;
+  charset gene_1093 = 298167 - 298311;
+  charset gene_1094 = 298312 - 298744;
+  charset gene_1095 = 298745 - 299159;
+  charset gene_1096 = 299160 - 299318;
+  charset gene_1097 = 299319 - 299583;
+  charset gene_1098 = 299584 - 299763;
+  charset gene_1099 = 299764 - 299878;
+  charset gene_1100 = 299879 - 300114;
+  charset gene_1101 = 300115 - 300278;
+  charset gene_1102 = 300279 - 300442;
+  charset gene_1103 = 300443 - 300677;
+  charset gene_1104 = 300678 - 301055;
+  charset gene_1105 = 301056 - 301298;
+  charset gene_1106 = 301299 - 301437;
+  charset gene_1107 = 301438 - 301617;
+  charset gene_1108 = 301618 - 301772;
+  charset gene_1109 = 301773 - 302018;
+  charset gene_1110 = 302019 - 302106;
+  charset gene_1111 = 302107 - 302338;
+  charset gene_1112 = 302339 - 302445;
+  charset gene_1113 = 302446 - 302760;
+  charset gene_1114 = 302761 - 303093;
+  charset gene_1115 = 303094 - 303395;
+  charset gene_1116 = 303396 - 303541;
+  charset gene_1117 = 303542 - 303858;
+  charset gene_1118 = 303859 - 303965;
+  charset gene_1119 = 303966 - 304193;
+  charset gene_1120 = 304194 - 304330;
+  charset gene_1121 = 304331 - 304522;
+  charset gene_1122 = 304523 - 304659;
+  charset gene_1123 = 304660 - 304823;
+  charset gene_1124 = 304824 - 304939;
+  charset gene_1125 = 304940 - 305098;
+  charset gene_1126 = 305099 - 305449;
+  charset gene_1127 = 305450 - 305653;
+  charset gene_1128 = 305654 - 305888;
+  charset gene_1129 = 305889 - 306133;
+  charset gene_1130 = 306134 - 306238;
+  charset gene_1131 = 306239 - 306438;
+  charset gene_1132 = 306439 - 306568;
+  charset gene_1133 = 306569 - 306705;
+  charset gene_1134 = 306706 - 306849;
+  charset gene_1135 = 306850 - 306954;
+  charset gene_1136 = 306955 - 307094;
+  charset gene_1137 = 307095 - 307278;
+  charset gene_1138 = 307279 - 307457;
+  charset gene_1139 = 307458 - 307599;
+  charset gene_1140 = 307600 - 307875;
+  charset gene_1141 = 307876 - 308007;
+  charset gene_1142 = 308008 - 308161;
+  charset gene_1143 = 308162 - 308281;
+  charset gene_1144 = 308282 - 308526;
+  charset gene_1145 = 308527 - 308663;
+  charset gene_1146 = 308664 - 308766;
+  charset gene_1147 = 308767 - 308924;
+  charset gene_1148 = 308925 - 309153;
+  charset gene_1149 = 309154 - 309357;
+  charset gene_1150 = 309358 - 309481;
+  charset gene_1151 = 309482 - 309566;
+  charset gene_1152 = 309567 - 309718;
+  charset gene_1153 = 309719 - 309874;
+  charset gene_1154 = 309875 - 309984;
+  charset gene_1155 = 309985 - 310188;
+  charset gene_1156 = 310189 - 310363;
+  charset gene_1157 = 310364 - 310484;
+  charset gene_1158 = 310485 - 310591;
+  charset gene_1159 = 310592 - 310736;
+  charset gene_1160 = 310737 - 310899;
+  charset gene_1161 = 310900 - 311133;
+  charset gene_1162 = 311134 - 311249;
+  charset gene_1163 = 311250 - 311384;
+  charset gene_1164 = 311385 - 311539;
+  charset gene_1165 = 311540 - 311744;
+  charset gene_1166 = 311745 - 311871;
+  charset gene_1167 = 311872 - 312078;
+  charset gene_1168 = 312079 - 312378;
+  charset gene_1169 = 312379 - 312695;
+  charset gene_1170 = 312696 - 312917;
+  charset gene_1171 = 312918 - 313028;
+  charset gene_1172 = 313029 - 313160;
+  charset gene_1173 = 313161 - 313333;
+  charset gene_1174 = 313334 - 313677;
+  charset gene_1175 = 313678 - 313973;
+  charset gene_1176 = 313974 - 314149;
+  charset gene_1177 = 314150 - 314380;
+  charset gene_1178 = 314381 - 314691;
+  charset gene_1179 = 314692 - 314862;
+  charset gene_1180 = 314863 - 315013;
+  charset gene_1181 = 315014 - 315127;
+  charset gene_1182 = 315128 - 315361;
+  charset gene_1183 = 315362 - 315488;
+  charset gene_1184 = 315489 - 315575;
+  charset gene_1185 = 315576 - 315972;
+  charset gene_1186 = 315973 - 316191;
+  charset gene_1187 = 316192 - 316318;
+  charset gene_1188 = 316319 - 316467;
+  charset gene_1189 = 316468 - 316613;
+  charset gene_1190 = 316614 - 316719;
+  charset gene_1191 = 316720 - 316982;
+  charset gene_1192 = 316983 - 317109;
+  charset gene_1193 = 317110 - 317240;
+  charset gene_1194 = 317241 - 317351;
+  charset gene_1195 = 317352 - 317459;
+  charset gene_1196 = 317460 - 317700;
+  charset gene_1197 = 317701 - 317822;
+  charset gene_1198 = 317823 - 317925;
+  charset gene_1199 = 317926 - 318047;
+  charset gene_1200 = 318048 - 318139;
+  charset gene_1201 = 318140 - 318225;
+  charset gene_1202 = 318226 - 318347;
+  charset gene_1203 = 318348 - 318481;
+  charset gene_1204 = 318482 - 318581;
+  charset gene_1205 = 318582 - 318719;
+  charset gene_1206 = 318720 - 318814;
+  charset gene_1207 = 318815 - 318924;
+  charset gene_1208 = 318925 - 319014;
+  charset gene_1209 = 319015 - 319108;
+  charset gene_1210 = 319109 - 319214;
+  charset gene_1211 = 319215 - 319554;
+  charset gene_1212 = 319555 - 319786;
+  charset gene_1213 = 319787 - 319891;
+  charset gene_1214 = 319892 - 320123;
+  charset gene_1215 = 320124 - 320330;
+  charset gene_1216 = 320331 - 320418;
+  charset gene_1217 = 320419 - 320598;
+  charset gene_1218 = 320599 - 320792;
+  charset gene_1219 = 320793 - 320884;
+  charset gene_1220 = 320885 - 321070;
+  charset gene_1221 = 321071 - 321159;
+  charset gene_1222 = 321160 - 321305;
+  charset gene_1223 = 321306 - 321494;
+  charset gene_1224 = 321495 - 321637;
+  charset gene_1225 = 321638 - 321727;
+  charset gene_1226 = 321728 - 321808;
+  charset gene_1227 = 321809 - 322012;
+  charset gene_1228 = 322013 - 322117;
+  charset gene_1229 = 322118 - 322206;
+  charset gene_1230 = 322207 - 322448;
+  charset gene_1231 = 322449 - 322542;
+  charset gene_1232 = 322543 - 322637;
+  charset gene_1233 = 322638 - 322861;
+  charset gene_1234 = 322862 - 322998;
+  charset gene_1235 = 322999 - 323268;
+  charset gene_1236 = 323269 - 323395;
+  charset gene_1237 = 323396 - 323603;
+  charset gene_1238 = 323604 - 323772;
+  charset gene_1239 = 323773 - 323880;
+  charset gene_1240 = 323881 - 324207;
+  charset gene_1241 = 324208 - 324421;
+  charset gene_1242 = 324422 - 324514;
+  charset gene_1243 = 324515 - 324663;
+  charset gene_1244 = 324664 - 324763;
+  charset gene_1245 = 324764 - 324926;
+  charset gene_1246 = 324927 - 325010;
+  charset gene_1247 = 325011 - 325177;
+  charset gene_1248 = 325178 - 325332;
+  charset gene_1249 = 325333 - 325511;
+  charset gene_1250 = 325512 - 325709;
+  charset gene_1251 = 325710 - 325792;
+  charset gene_1252 = 325793 - 325969;
+  charset gene_1253 = 325970 - 326092;
+  charset gene_1254 = 326093 - 326237;
+  charset gene_1255 = 326238 - 326332;
+  charset gene_1256 = 326333 - 326487;
+  charset gene_1257 = 326488 - 326578;
+  charset gene_1258 = 326579 - 326914;
+  charset gene_1259 = 326915 - 327085;
+  charset gene_1260 = 327086 - 327188;
+  charset gene_1261 = 327189 - 327305;
+  charset gene_1262 = 327306 - 327478;
+  charset gene_1263 = 327479 - 327606;
+  charset gene_1264 = 327607 - 327802;
+  charset gene_1265 = 327803 - 327970;
+  charset gene_1266 = 327971 - 328112;
+  charset gene_1267 = 328113 - 328228;
+  charset gene_1268 = 328229 - 328364;
+  charset gene_1269 = 328365 - 328513;
+  charset gene_1270 = 328514 - 328684;
+  charset gene_1271 = 328685 - 328987;
+  charset gene_1272 = 328988 - 329091;
+  charset gene_1273 = 329092 - 329197;
+  charset gene_1274 = 329198 - 329354;
+  charset gene_1275 = 329355 - 329511;
+  charset gene_1276 = 329512 - 329799;
+  charset gene_1277 = 329800 - 330020;
+  charset gene_1278 = 330021 - 330240;
+  charset gene_1279 = 330241 - 330392;
+  charset gene_1280 = 330393 - 330479;
+  charset gene_1281 = 330480 - 330676;
+  charset gene_1282 = 330677 - 330771;
+  charset gene_1283 = 330772 - 330881;
+  charset gene_1284 = 330882 - 331021;
+  charset gene_1285 = 331022 - 331241;
+  charset gene_1286 = 331242 - 331407;
+  charset gene_1287 = 331408 - 331496;
+  charset gene_1288 = 331497 - 331590;
+  charset gene_1289 = 331591 - 331687;
+  charset gene_1290 = 331688 - 331801;
+  charset gene_1291 = 331802 - 332049;
+  charset gene_1292 = 332050 - 332148;
+  charset gene_1293 = 332149 - 332325;
+  charset gene_1294 = 332326 - 332517;
+  charset gene_1295 = 332518 - 332622;
+  charset gene_1296 = 332623 - 332740;
+  charset gene_1297 = 332741 - 332891;
+  charset gene_1298 = 332892 - 333041;
+  charset gene_1299 = 333042 - 333148;
+  charset gene_1300 = 333149 - 333512;
+  charset gene_1301 = 333513 - 333639;
+  charset gene_1302 = 333640 - 333731;
+  charset gene_1303 = 333732 - 333859;
+  charset gene_1304 = 333860 - 334026;
+  charset gene_1305 = 334027 - 334182;
+  charset gene_1306 = 334183 - 334452;
+  charset gene_1307 = 334453 - 334557;
+  charset gene_1308 = 334558 - 334845;
+  charset gene_1309 = 334846 - 335076;
+  charset gene_1310 = 335077 - 335221;
+  charset gene_1311 = 335222 - 335306;
+  charset gene_1312 = 335307 - 335417;
+  charset gene_1313 = 335418 - 335532;
+  charset gene_1314 = 335533 - 335726;
+  charset gene_1315 = 335727 - 336175;
+  charset gene_1316 = 336176 - 336373;
+  charset gene_1317 = 336374 - 336651;
+  charset gene_1318 = 336652 - 337015;
+  charset gene_1319 = 337016 - 337272;
+  charset gene_1320 = 337273 - 337487;
+  charset gene_1321 = 337488 - 337873;
+  charset gene_1322 = 337874 - 338289;
+  charset gene_1323 = 338290 - 338516;
+  charset gene_1324 = 338517 - 338741;
+  charset gene_1325 = 338742 - 338823;
+  charset gene_1326 = 338824 - 338978;
+  charset gene_1327 = 338979 - 339387;
+  charset gene_1328 = 339388 - 339511;
+  charset gene_1329 = 339512 - 340061;
+  charset gene_1330 = 340062 - 340344;
+  charset gene_1331 = 340345 - 340599;
+  charset gene_1332 = 340600 - 340686;
+  charset gene_1333 = 340687 - 341006;
+  charset gene_1334 = 341007 - 341097;
+  charset gene_1335 = 341098 - 341246;
+  charset gene_1336 = 341247 - 341358;
+  charset gene_1337 = 341359 - 341569;
+  charset gene_1338 = 341570 - 341803;
+  charset gene_1339 = 341804 - 341915;
+  charset gene_1340 = 341916 - 342029;
+  charset gene_1341 = 342030 - 342150;
+  charset gene_1342 = 342151 - 342275;
+  charset gene_1343 = 342276 - 342372;
+  charset gene_1344 = 342373 - 342501;
+  charset gene_1345 = 342502 - 342612;
+  charset gene_1346 = 342613 - 342862;
+  charset gene_1347 = 342863 - 342948;
+  charset gene_1348 = 342949 - 343092;
+  charset gene_1349 = 343093 - 343202;
+  charset gene_1350 = 343203 - 343351;
+  charset gene_1351 = 343352 - 343887;
+  charset gene_1352 = 343888 - 344362;
+  charset gene_1353 = 344363 - 344575;
+  charset gene_1354 = 344576 - 344720;
+  charset gene_1355 = 344721 - 344897;
+  charset gene_1356 = 344898 - 345070;
+  charset gene_1357 = 345071 - 345340;
+  charset gene_1358 = 345341 - 345544;
+  charset gene_1359 = 345545 - 345971;
+  charset gene_1360 = 345972 - 346145;
+  charset gene_1361 = 346146 - 346415;
+  charset gene_1362 = 346416 - 346503;
+  charset gene_1363 = 346504 - 346642;
+  charset gene_1364 = 346643 - 346772;
+  charset gene_1365 = 346773 - 347005;
+  charset gene_1366 = 347006 - 347087;
+  charset gene_1367 = 347088 - 347206;
+  charset gene_1368 = 347207 - 347375;
+  charset gene_1369 = 347376 - 347482;
+  charset gene_1370 = 347483 - 347600;
+  charset gene_1371 = 347601 - 347809;
+  charset gene_1372 = 347810 - 348107;
+  charset gene_1373 = 348108 - 348196;
+  charset gene_1374 = 348197 - 348504;
+  charset gene_1375 = 348505 - 348626;
+  charset gene_1376 = 348627 - 348741;
+  charset gene_1377 = 348742 - 348967;
+  charset gene_1378 = 348968 - 349078;
+  charset gene_1379 = 349079 - 349400;
+  charset gene_1380 = 349401 - 349544;
+  charset gene_1381 = 349545 - 349653;
+  charset gene_1382 = 349654 - 349895;
+  charset gene_1383 = 349896 - 350022;
+  charset gene_1384 = 350023 - 350457;
+  charset gene_1385 = 350458 - 350592;
+  charset gene_1386 = 350593 - 350764;
+  charset gene_1387 = 350765 - 350876;
+  charset gene_1388 = 350877 - 351148;
+  charset gene_1389 = 351149 - 351241;
+  charset gene_1390 = 351242 - 351368;
+  charset gene_1391 = 351369 - 351478;
+  charset gene_1392 = 351479 - 351574;
+  charset gene_1393 = 351575 - 351710;
+  charset gene_1394 = 351711 - 351928;
+  charset gene_1395 = 351929 - 352053;
+  charset gene_1396 = 352054 - 352239;
+  charset gene_1397 = 352240 - 352385;
+  charset gene_1398 = 352386 - 352567;
+  charset gene_1399 = 352568 - 352669;
+  charset gene_1400 = 352670 - 352795;
+  charset gene_1401 = 352796 - 352929;
+  charset gene_1402 = 352930 - 353038;
+  charset gene_1403 = 353039 - 353148;
+  charset gene_1404 = 353149 - 353236;
+  charset gene_1405 = 353237 - 353322;
+  charset gene_1406 = 353323 - 353445;
+  charset gene_1407 = 353446 - 353668;
+  charset gene_1408 = 353669 - 353805;
+  charset gene_1409 = 353806 - 353921;
+  charset gene_1410 = 353922 - 354090;
+  charset gene_1411 = 354091 - 354207;
+  charset gene_1412 = 354208 - 354339;
+  charset gene_1413 = 354340 - 354465;
+  charset gene_1414 = 354466 - 354582;
+  charset gene_1415 = 354583 - 354722;
+  charset gene_1416 = 354723 - 354816;
+  charset gene_1417 = 354817 - 354932;
+  charset gene_1418 = 354933 - 355121;
+  charset gene_1419 = 355122 - 355319;
+  charset gene_1420 = 355320 - 355407;
+  charset gene_1421 = 355408 - 355570;
+  charset gene_1422 = 355571 - 355914;
+  charset gene_1423 = 355915 - 356043;
+  charset gene_1424 = 356044 - 356197;
+  charset gene_1425 = 356198 - 356315;
+  charset gene_1426 = 356316 - 356404;
+  charset gene_1427 = 356405 - 356539;
+  charset gene_1428 = 356540 - 356673;
+  charset gene_1429 = 356674 - 356759;
+  charset gene_1430 = 356760 - 356877;
+  charset gene_1431 = 356878 - 357073;
+  charset gene_1432 = 357074 - 357248;
+  charset gene_1433 = 357249 - 357359;
+  charset gene_1434 = 357360 - 357554;
+  charset gene_1435 = 357555 - 357665;
+  charset gene_1436 = 357666 - 357752;
+  charset gene_1437 = 357753 - 357946;
+  charset gene_1438 = 357947 - 358080;
+  charset gene_1439 = 358081 - 358166;
+  charset gene_1440 = 358167 - 358357;
+  charset gene_1441 = 358358 - 358585;
+  charset gene_1442 = 358586 - 358708;
+  charset gene_1443 = 358709 - 358816;
+  charset gene_1444 = 358817 - 358900;
+  charset gene_1445 = 358901 - 359059;
+  charset gene_1446 = 359060 - 359225;
+  charset gene_1447 = 359226 - 359377;
+  charset gene_1448 = 359378 - 359516;
+  charset gene_1449 = 359517 - 359624;
+  charset gene_1450 = 359625 - 359716;
+  charset gene_1451 = 359717 - 359828;
+  charset gene_1452 = 359829 - 359965;
+  charset gene_1453 = 359966 - 360432;
+  charset gene_1454 = 360433 - 360771;
+  charset gene_1455 = 360772 - 360985;
+  charset gene_1456 = 360986 - 361139;
+  charset gene_1457 = 361140 - 361252;
+  charset gene_1458 = 361253 - 361601;
+  charset gene_1459 = 361602 - 361717;
+  charset gene_1460 = 361718 - 362063;
+  charset gene_1461 = 362064 - 362176;
+  charset gene_1462 = 362177 - 362374;
+  charset gene_1463 = 362375 - 362583;
+  charset gene_1464 = 362584 - 362756;
+  charset gene_1465 = 362757 - 362843;
+  charset gene_1466 = 362844 - 363007;
+  charset gene_1467 = 363008 - 363250;
+  charset gene_1468 = 363251 - 363516;
+  charset gene_1469 = 363517 - 363605;
+  charset gene_1470 = 363606 - 363759;
+  charset gene_1471 = 363760 - 363846;
+  charset gene_1472 = 363847 - 364023;
+  charset gene_1473 = 364024 - 364196;
+  charset gene_1474 = 364197 - 364378;
+  charset gene_1475 = 364379 - 364512;
+  charset gene_1476 = 364513 - 364703;
+  charset gene_1477 = 364704 - 364799;
+  charset gene_1478 = 364800 - 364914;
+  charset gene_1479 = 364915 - 365019;
+  charset gene_1480 = 365020 - 365153;
+  charset gene_1481 = 365154 - 365289;
+  charset gene_1482 = 365290 - 365373;
+  charset gene_1483 = 365374 - 365518;
+  charset gene_1484 = 365519 - 365625;
+  charset gene_1485 = 365626 - 365740;
+  charset gene_1486 = 365741 - 365875;
+  charset gene_1487 = 365876 - 366124;
+  charset gene_1488 = 366125 - 366250;
+  charset gene_1489 = 366251 - 366714;
+  charset gene_1490 = 366715 - 366849;
+  charset gene_1491 = 366850 - 367082;
+  charset gene_1492 = 367083 - 367190;
+  charset gene_1493 = 367191 - 367275;
+  charset gene_1494 = 367276 - 367374;
+  charset gene_1495 = 367375 - 367477;
+  charset gene_1496 = 367478 - 367640;
+  charset gene_1497 = 367641 - 367794;
+  charset gene_1498 = 367795 - 367914;
+  charset gene_1499 = 367915 - 368122;
+  charset gene_1500 = 368123 - 368215;
+  charset gene_1501 = 368216 - 368358;
+  charset gene_1502 = 368359 - 368444;
+  charset gene_1503 = 368445 - 368536;
+  charset gene_1504 = 368537 - 368779;
+  charset gene_1505 = 368780 - 368902;
+  charset gene_1506 = 368903 - 369119;
+  charset gene_1507 = 369120 - 369318;
+  charset gene_1508 = 369319 - 369475;
+  charset gene_1509 = 369476 - 369573;
+  charset gene_1510 = 369574 - 369678;
+  charset gene_1511 = 369679 - 369802;
+  charset gene_1512 = 369803 - 369954;
+  charset gene_1513 = 369955 - 370074;
+  charset gene_1514 = 370075 - 370228;
+  charset gene_1515 = 370229 - 370381;
+  charset gene_1516 = 370382 - 370504;
+  charset gene_1517 = 370505 - 370739;
+  charset gene_1518 = 370740 - 370916;
+  charset gene_1519 = 370917 - 371000;
+  charset gene_1520 = 371001 - 371207;
+  charset gene_1521 = 371208 - 371764;
+  charset gene_1522 = 371765 - 371862;
+  charset gene_1523 = 371863 - 372150;
+  charset gene_1524 = 372151 - 372248;
+  charset gene_1525 = 372249 - 372443;
+  charset gene_1526 = 372444 - 372603;
+  charset gene_1527 = 372604 - 372697;
+  charset gene_1528 = 372698 - 372881;
+  charset gene_1529 = 372882 - 373079;
+  charset gene_1530 = 373080 - 373217;
+  charset gene_1531 = 373218 - 373390;
+  charset gene_1532 = 373391 - 373813;
+  charset gene_1533 = 373814 - 373928;
+  charset gene_1534 = 373929 - 374018;
+  charset gene_1535 = 374019 - 374151;
+  charset gene_1536 = 374152 - 374247;
+  charset gene_1537 = 374248 - 374344;
+  charset gene_1538 = 374345 - 374468;
+  charset gene_1539 = 374469 - 374565;
+  charset gene_1540 = 374566 - 374728;
+  charset gene_1541 = 374729 - 374881;
+  charset gene_1542 = 374882 - 374978;
+  charset gene_1543 = 374979 - 375374;
+  charset gene_1544 = 375375 - 375870;
+  charset gene_1545 = 375871 - 375993;
+  charset gene_1546 = 375994 - 376282;
+  charset gene_1547 = 376283 - 376645;
+  charset gene_1548 = 376646 - 376805;
+  charset gene_1549 = 376806 - 376965;
+  charset gene_1550 = 376966 - 377088;
+  charset gene_1551 = 377089 - 377393;
+  charset gene_1552 = 377394 - 377517;
+  charset gene_1553 = 377518 - 377670;
+  charset gene_1554 = 377671 - 377785;
+  charset gene_1555 = 377786 - 378132;
+  charset gene_1556 = 378133 - 378236;
+  charset gene_1557 = 378237 - 378362;
+  charset gene_1558 = 378363 - 378495;
+  charset gene_1559 = 378496 - 378617;
+  charset gene_1560 = 378618 - 378749;
+  charset gene_1561 = 378750 - 378946;
+  charset gene_1562 = 378947 - 379029;
+  charset gene_1563 = 379030 - 379204;
+  charset gene_1564 = 379205 - 379323;
+  charset gene_1565 = 379324 - 379413;
+  charset gene_1566 = 379414 - 379666;
+  charset gene_1567 = 379667 - 379774;
+  charset gene_1568 = 379775 - 379912;
+  charset gene_1569 = 379913 - 380023;
+  charset gene_1570 = 380024 - 380160;
+  charset gene_1571 = 380161 - 380342;
+  charset gene_1572 = 380343 - 380488;
+  charset gene_1573 = 380489 - 380586;
+  charset gene_1574 = 380587 - 380751;
+  charset gene_1575 = 380752 - 380835;
+  charset gene_1576 = 380836 - 381141;
+  charset gene_1577 = 381142 - 381298;
+  charset gene_1578 = 381299 - 381379;
+  charset gene_1579 = 381380 - 381477;
+  charset gene_1580 = 381478 - 381573;
+  charset gene_1581 = 381574 - 381668;
+  charset gene_1582 = 381669 - 381838;
+  charset gene_1583 = 381839 - 381921;
+  charset gene_1584 = 381922 - 382046;
+  charset gene_1585 = 382047 - 382149;
+  charset gene_1586 = 382150 - 382288;
+  charset gene_1587 = 382289 - 382408;
+  charset gene_1588 = 382409 - 382516;
+  charset gene_1589 = 382517 - 382730;
+  charset gene_1590 = 382731 - 382811;
+  charset gene_1591 = 382812 - 382948;
+  charset gene_1592 = 382949 - 383046;
+  charset gene_1593 = 383047 - 383142;
+  charset gene_1594 = 383143 - 383263;
+  charset gene_1595 = 383264 - 383438;
+  charset gene_1596 = 383439 - 383819;
+  charset gene_1597 = 383820 - 383971;
+  charset gene_1598 = 383972 - 384105;
+  charset gene_1599 = 384106 - 384248;
+  charset gene_1600 = 384249 - 384409;
+  charset gene_1601 = 384410 - 384538;
+  charset gene_1602 = 384539 - 384625;
+  charset gene_1603 = 384626 - 384712;
+  charset gene_1604 = 384713 - 384883;
+  charset gene_1605 = 384884 - 385074;
+  charset gene_1606 = 385075 - 385216;
+  charset gene_1607 = 385217 - 385509;
+  charset gene_1608 = 385510 - 385782;
+  charset gene_1609 = 385783 - 386072;
+  charset gene_1610 = 386073 - 386171;
+  charset gene_1611 = 386172 - 386287;
+  charset gene_1612 = 386288 - 386373;
+  charset gene_1613 = 386374 - 386480;
+  charset gene_1614 = 386481 - 386661;
+  charset gene_1615 = 386662 - 386747;
+  charset gene_1616 = 386748 - 386906;
+  charset gene_1617 = 386907 - 387034;
+  charset gene_1618 = 387035 - 387184;
+  charset gene_1619 = 387185 - 387281;
+  charset gene_1620 = 387282 - 387367;
+  charset gene_1621 = 387368 - 387467;
+  charset gene_1622 = 387468 - 387625;
+  charset gene_1623 = 387626 - 387712;
+  charset gene_1624 = 387713 - 387793;
+  charset gene_1625 = 387794 - 387978;
+  charset gene_1626 = 387979 - 388083;
+  charset gene_1627 = 388084 - 388225;
+  charset gene_1628 = 388226 - 388474;
+  charset gene_1629 = 388475 - 388615;
+  charset gene_1630 = 388616 - 388746;
+  charset gene_1631 = 388747 - 389014;
+  charset gene_1632 = 389015 - 389219;
+  charset gene_1633 = 389220 - 389312;
+  charset gene_1634 = 389313 - 389446;
+  charset gene_1635 = 389447 - 389646;
+  charset gene_1636 = 389647 - 389774;
+  charset gene_1637 = 389775 - 390025;
+  charset gene_1638 = 390026 - 390250;
+  charset gene_1639 = 390251 - 390338;
+  charset gene_1640 = 390339 - 390450;
+  charset gene_1641 = 390451 - 390534;
+  charset gene_1642 = 390535 - 390618;
+  charset gene_1643 = 390619 - 390917;
+  charset gene_1644 = 390918 - 391028;
+  charset gene_1645 = 391029 - 391135;
+  charset gene_1646 = 391136 - 391234;
+  charset gene_1647 = 391235 - 391359;
+  charset gene_1648 = 391360 - 391553;
+  charset gene_1649 = 391554 - 391850;
+  charset gene_1650 = 391851 - 391976;
+  charset gene_1651 = 391977 - 392282;
+  charset gene_1652 = 392283 - 392417;
+  charset gene_1653 = 392418 - 392520;
+  charset gene_1654 = 392521 - 392699;
+  charset gene_1655 = 392700 - 392842;
+  charset gene_1656 = 392843 - 392939;
+  charset gene_1657 = 392940 - 393023;
+  charset gene_1658 = 393024 - 393109;
+  charset gene_1659 = 393110 - 393244;
+  charset gene_1660 = 393245 - 393358;
+  charset gene_1661 = 393359 - 393441;
+  charset gene_1662 = 393442 - 393541;
+  charset gene_1663 = 393542 - 393633;
+  charset gene_1664 = 393634 - 393790;
+  charset gene_1665 = 393791 - 393969;
+  charset gene_1666 = 393970 - 394076;
+  charset gene_1667 = 394077 - 394208;
+  charset gene_1668 = 394209 - 394317;
+  charset gene_1669 = 394318 - 394517;
+  charset gene_1670 = 394518 - 394631;
+  charset gene_1671 = 394632 - 394792;
+  charset gene_1672 = 394793 - 394926;
+  charset gene_1673 = 394927 - 395245;
+  charset gene_1674 = 395246 - 395450;
+  charset gene_1675 = 395451 - 395653;
+  charset gene_1676 = 395654 - 395923;
+  charset gene_1677 = 395924 - 396006;
+  charset gene_1678 = 396007 - 396088;
+  charset gene_1679 = 396089 - 396172;
+  charset gene_1680 = 396173 - 396464;
+  charset gene_1681 = 396465 - 396558;
+  charset gene_1682 = 396559 - 396644;
+  charset gene_1683 = 396645 - 396730;
+  charset gene_1684 = 396731 - 396843;
+  charset gene_1685 = 396844 - 396953;
+  charset gene_1686 = 396954 - 397263;
+  charset gene_1687 = 397264 - 397369;
+  charset gene_1688 = 397370 - 397473;
+  charset gene_1689 = 397474 - 397577;
+  charset gene_1690 = 397578 - 397864;
+  charset gene_1691 = 397865 - 397982;
+  charset gene_1692 = 397983 - 398064;
+  charset gene_1693 = 398065 - 398199;
+  charset gene_1694 = 398200 - 398291;
+  charset gene_1695 = 398292 - 398383;
+  charset gene_1696 = 398384 - 398484;
+  charset gene_1697 = 398485 - 398607;
+  charset gene_1698 = 398608 - 398708;
+  charset gene_1699 = 398709 - 398874;
+  charset gene_1700 = 398875 - 398957;
+  charset gene_1701 = 398958 - 399177;
+  charset gene_1702 = 399178 - 399338;
+  charset gene_1703 = 399339 - 399512;
+  charset gene_1704 = 399513 - 399612;
+  charset gene_1705 = 399613 - 399694;
+  charset gene_1706 = 399695 - 399780;
+  charset gene_1707 = 399781 - 399931;
+  charset gene_1708 = 399932 - 400019;
+  charset gene_1709 = 400020 - 400160;
+  charset gene_1710 = 400161 - 400251;
+  charset gene_1711 = 400252 - 400443;
+  charset gene_1712 = 400444 - 400533;
+  charset gene_1713 = 400534 - 400674;
+  charset gene_1714 = 400675 - 400902;
+  charset gene_1715 = 400903 - 401204;
+  charset gene_1716 = 401205 - 401319;
+  charset gene_1717 = 401320 - 401405;
+  charset gene_1718 = 401406 - 401526;
+  charset gene_1719 = 401527 - 401632;
+  charpartition mymodels =
+    Q.insect+I{0.275233}+G4{0.956072}: gene_0001{8.22456},
+    Q.insect+R5{0.369736,0.0445735,0.179916,0.47761,0.274287,1.24272,0.146255,2.5687,0.0298063,6.07403}: gene_0002{8.04046},
+    Q.insect+I{0.216742}+G4{0.885456}: gene_0003{5.14051},
+    LG+R5{0.512516,0.0492086,0.212083,0.638065,0.136918,1.67145,0.102218,3.64904,0.0362665,6.55182}: gene_0004{5.82544},
+    LG+I{0.259464}+R4{0.260114,0.222859,0.277822,1.04805,0.167231,2.64823,0.0353695,5.8806}: gene_0005{8.49799},
+    Q.insect+I{0.21695}+G4{1.1451}: gene_0006{5.19561},
+    Q.insect+R4{0.355302,0.11029,0.225052,0.637904,0.347217,1.61538,0.0724286,3.53955}: gene_0007{8.76809},
+    Q.insect+I{0.189943}+G4{1.48348}: gene_0008{8.48078},
+    Q.insect+I{0.217046}+G4{1.16579}: gene_0009{8.65787},
+    Q.insect+I{0.155419}+R4{0.257279,0.159748,0.265108,0.705522,0.248757,1.83731,0.0734372,4.28689}: gene_0010{11.1392},
+    Q.insect+R4{0.47012,0.0896642,0.26599,0.804795,0.193927,2.14053,0.0699635,4.69779}: gene_0011{6.6901},
+    Q.insect+I{0.203592}+G4{0.667315}: gene_0012{9.70495},
+    Q.insect+R4{0.638718,0.12241,0.243268,1.17342,0.100762,4.42217,0.0172512,11.0584}: gene_0013{2.56003},
+    Q.insect+I{0.17822}+G4{0.803004}: gene_0014{9.75509},
+    Q.insect+I{0.205885}+G4{1.11414}: gene_0015{7.82933},
+    Q.insect+I{0.301478}+R4{0.288671,0.281731,0.298099,1.37042,0.0986684,3.88334,0.0130836,9.70596}: gene_0016{7.54984},
+    Q.insect+R4{0.469131,0.0489767,0.292917,0.787761,0.18214,2.41678,0.055812,5.48419}: gene_0017{6.435},
+    Q.insect+R5{0.381314,0.0557741,0.241163,0.591111,0.252323,1.52389,0.110352,3.17011,0.0148466,6.85931}: gene_0018{6.8194},
+    Q.yeast+I{0.217662}+G4{0.836795}: gene_0019{10.2525},
+    Q.insect+I{0.285968}+G4{0.79484}: gene_0020{7.40585},
+    Q.insect+I{0.21412}+R4{0.329397,0.255636,0.264887,1.05333,0.157722,2.69368,0.0338738,6.25638}: gene_0021{6.85856},
+    LG+F+R5{0.350348,0.0654646,0.259088,0.472739,0.258567,1.38101,0.124754,3.40382,0.0072433,10.059}: gene_0022{8.3944},
+    Q.insect+R4{0.29644,0.0597994,0.32203,0.595477,0.306494,1.66001,0.0750362,3.75458}: gene_0023{11.0411},
+    LG+I{0.143614}+G4{1.06695}: gene_0024{8.96334},
+    Q.insect+I{0.17439}+R4{0.207569,0.196688,0.309265,0.75702,0.246833,1.90262,0.0619427,4.12356}: gene_0025{11.4094},
+    LG+I{0.109595}+R4{0.205111,0.157124,0.322443,0.675979,0.30489,1.63663,0.0579603,4.32736}: gene_0026{11.289},
+    Q.insect+I{0.195614}+R4{0.241264,0.223428,0.330651,0.990793,0.211883,2.35628,0.0205877,5.79141}: gene_0027{9.91062},
+    Q.insect+I{0.230248}+R4{0.271361,0.218108,0.295098,0.984208,0.152174,2.49189,0.0511185,5.30482}: gene_0028{8.67034},
+    Q.insect+I{0.533162}+R3{0.287579,0.61628,0.158326,3.71196,0.0209328,11.2298}: gene_0029{1.98165},
+    Q.insect+I{0.444277}+R3{0.305917,0.45174,0.189579,2.39893,0.060227,6.75808}: gene_0030{3.00612},
+    Q.insect+I{0.413023}+G4{0.582754}: gene_0031{1.31364},
+    Q.insect+I{0.0845525}+R4{0.355615,0.198989,0.345316,0.832806,0.174185,2.3604,0.0403317,5.71538}: gene_0032{9.71678},
+    Q.insect+R4{0.424067,0.097074,0.339013,0.821368,0.194368,2.28096,0.0425523,5.57044}: gene_0033{6.26372},
+    Q.insect+R4{0.268047,0.0910324,0.35177,0.566043,0.289913,1.57633,0.0902701,3.53919}: gene_0034{10.9351},
+    Q.insect+G4{0.585502}: gene_0035{10.62},
+    LG+I{0.190949}+R4{0.242568,0.177113,0.350104,0.875671,0.168004,2.38469,0.048375,5.16431}: gene_0036{8.24732},
+    LG+I{0.314137}+G4{0.990661}: gene_0037{7.38792},
+    Q.insect+I{0.1164}+G4{0.742707}: gene_0038{8.87576},
+    Q.insect+I{0.211699}+R4{0.27023,0.203317,0.302051,0.953912,0.184328,2.53164,0.031691,6.00407}: gene_0039{9.78165},
+    Q.insect+I{0.234014}+R4{0.313729,0.262886,0.277885,1.19925,0.134691,2.58759,0.0396805,5.94113}: gene_0040{4.74976},
+    Q.insect+R4{0.22213,0.0381397,0.356967,0.481336,0.364082,1.5841,0.0568211,4.27594}: gene_0041{10.488},
+    Q.insect+I{0.182311}+G4{1.34057}: gene_0042{6.85049},
+    LG+I{0.16691}+G4{1.21177}: gene_0043{10.6168},
+    Q.yeast+I{0.215699}+R4{0.353595,0.218045,0.23063,0.91136,0.124029,2.39028,0.0760469,5.47358}: gene_0044{6.9221},
+    Q.insect+R4{0.323892,0.0666201,0.326178,0.566492,0.276694,1.78134,0.0732364,4.10671}: gene_0045{7.8553},
+    Q.insect+G4{1.34737}: gene_0046{12.0384},
+    Q.insect+R4{0.343038,0.0681511,0.385517,0.602466,0.170187,1.84735,0.101258,4.24625}: gene_0047{5.73599},
+    Q.insect+I{0.138643}+R4{0.335638,0.244039,0.283487,0.99537,0.203338,2.14504,0.0388927,5.13586}: gene_0048{9.05601},
+    Q.insect+R4{0.370505,0.090404,0.332547,0.708409,0.252476,1.99779,0.0444728,5.09376}: gene_0049{7.14647},
+    Q.insect+I{0.205058}+G4{1.0967}: gene_0050{11.1224},
+    Q.insect+I{0.162376}+R4{0.310794,0.18297,0.262846,0.95286,0.225323,2.12908,0.0386618,5.50793}: gene_0051{8.31495},
+    Q.insect+I{0.246146}+R3{0.446735,0.305198,0.225753,1.96334,0.081367,5.16707}: gene_0052{3.85491},
+    Q.insect+R4{0.383145,0.0593671,0.31966,0.610557,0.231865,1.85447,0.06533,5.3895}: gene_0053{8.14696},
+    Q.insect+R4{0.406382,0.0615023,0.270251,0.594658,0.224309,1.6726,0.0990585,4.43294}: gene_0054{7.68417},
+    Q.insect+R3{0.597826,0.106898,0.316366,1.54124,0.0858083,5.22675}: gene_0055{2.51591},
+    Q.insect+R4{0.461738,0.0576438,0.291591,0.837899,0.19677,2.24607,0.049901,5.75342}: gene_0056{7.78919},
+    Q.insect+I{0.185784}+R4{0.30595,0.143559,0.247142,0.773035,0.180844,2.07313,0.0802802,4.85944}: gene_0057{9.09278},
+    LG+I{0.246763}+G4{0.728627}: gene_0058{6.08351},
+    LG+I{0.269329}+G4{0.872572}: gene_0059{11.0563},
+    Q.insect+I{0.230458}+G4{1.15033}: gene_0060{8.60113},
+    Q.insect+I{0.338303}+R3{0.341686,0.32218,0.23885,2.02864,0.081161,4.99471}: gene_0061{3.69903},
+    Q.yeast+I{0.20415}+G4{0.976682}: gene_0062{8.72186},
+    Q.insect+G4{0.698143}: gene_0063{6.98425},
+    Q.insect+I{0.13098}+G4{1.52956}: gene_0064{6.37201},
+    Q.insect+I{0.224476}+R3{0.396386,0.306359,0.287432,1.47171,0.0917065,4.96745}: gene_0065{10.6788},
+    Q.insect+G4{0.757274}: gene_0066{9.54037},
+    Q.insect+R4{0.371949,0.0933835,0.330131,0.72826,0.236239,1.76362,0.0616802,4.99688}: gene_0067{10.0419},
+    Q.insect+R4{0.306993,0.0651395,0.293813,0.53107,0.311505,1.47359,0.0876886,4.16173}: gene_0068{9.56183},
+    Q.insect+R4{0.373024,0.0533377,0.378274,0.723852,0.213165,2.37597,0.0355362,5.62288}: gene_0069{7.02763},
+    LG+I{0.242597}+G4{0.77078}: gene_0070{8.74592},
+    Q.yeast+I{0.262347}+R3{0.351571,0.324109,0.314405,1.80718,0.0716761,4.43476}: gene_0071{7.08532},
+    Q.insect+I{0.160268}+G4{0.632144}: gene_0072{8.87738},
+    Q.insect+I{0.16158}+G4{1.07524}: gene_0073{9.69977},
+    Q.insect+I{0.168861}+G4{1.12613}: gene_0074{10.3294},
+    Q.insect+R4{0.429062,0.0509996,0.227627,0.574065,0.245479,1.55737,0.097832,4.75452}: gene_0075{6.32882},
+    Q.insect+I{0.269507}+G4{0.623222}: gene_0076{6.21607},
+    Q.insect+I{0.277545}+G4{1.04609}: gene_0077{11.692},
+    Q.insect+R4{0.352811,0.046305,0.325226,0.591993,0.242878,1.85367,0.0790854,4.31073}: gene_0078{10.0837},
+    LG+G4{0.601483}: gene_0079{8.55632},
+    Q.yeast+G4{0.817629}: gene_0080{12.6617},
+    Q.insect+I{0.12814}+G4{1.41886}: gene_0081{7.94267},
+    Q.insect+I{0.138367}+G4{1.04666}: gene_0082{14.8383},
+    LG+R5{0.329305,0.0510995,0.25838,0.445852,0.21314,1.19939,0.157833,2.5192,0.0413417,5.19381}: gene_0083{9.4115},
+    Q.yeast+I{0.102214}+G4{0.969619}: gene_0084{16.2553},
+    Q.yeast+R5{0.317462,0.0211387,0.247302,0.323276,0.242878,1.11135,0.139676,2.67636,0.0526812,5.11748}: gene_0085{9.51546},
+    LG+I{0.216825}+G4{1.22735}: gene_0086{10.4388},
+    Q.insect+R4{0.505847,0.0792715,0.193267,0.787495,0.244694,2.07818,0.0561915,5.32437}: gene_0087{5.51112},
+    Q.insect+R4{0.225948,0.100757,0.454426,0.671285,0.266016,1.64262,0.0536097,4.38765}: gene_0088{10.9332},
+    Q.insect+R4{0.266449,0.0480616,0.337074,0.524384,0.270296,1.43744,0.126181,3.34362}: gene_0089{9.88008},
+    Q.insect+I{0.137389}+G4{1.01517}: gene_0090{9.0777},
+    LG+I{0.101481}+G4{1.04404}: gene_0091{15.9086},
+    Q.insect+R4{0.445865,0.156199,0.369488,0.898929,0.156357,2.58943,0.0282898,6.83415}: gene_0092{7.017},
+    Q.insect+R4{0.159584,0.0460322,0.283895,0.365048,0.410682,1.25554,0.145839,2.56031}: gene_0093{11.4543},
+    Q.insect+G4{0.965592}: gene_0094{10.3462},
+    Q.insect+I{0.0664467}+G4{1.46888}: gene_0095{12.699},
+    Q.yeast+R4{0.209537,0.0473238,0.295005,0.314874,0.386724,1.33924,0.108734,3.48813}: gene_0096{12.9748},
+    LG+R5{0.37368,0.0344759,0.226837,0.443425,0.268398,1.41872,0.0875479,2.95872,0.043537,5.6669}: gene_0097{8.25675},
+    Q.insect+G4{1.07248}: gene_0098{7.49023},
+    Q.insect+I{0.209227}+G4{1.01854}: gene_0099{7.18146},
+    Q.insect+I{0.109099}+R4{0.316785,0.313688,0.335888,1.02818,0.211766,1.97197,0.0264619,5.20293}: gene_0100{9.94048},
+    Q.yeast+I{0.188558}+G4{0.965888}: gene_0101{9.05066},
+    Q.insect+R4{0.239239,0.0647189,0.34811,0.528704,0.304414,1.4746,0.108237,3.24826}: gene_0102{13.5632},
+    Q.insect+R5{0.281807,0.046651,0.307435,0.438791,0.221228,1.19405,0.147437,2.47803,0.0420932,5.28456}: gene_0103{12.0415},
+    Q.insect+I{0.187871}+G4{0.858082}: gene_0104{8.42012},
+    Q.insect+I{0.1819}+G4{1.0673}: gene_0105{11.796},
+    Q.insect+I{0.135639}+G4{1.42771}: gene_0106{11.5139},
+    Q.insect+I{0.127356}+G4{1.14293}: gene_0107{13.8776},
+    Q.insect+I{0.197214}+G4{0.9241}: gene_0108{9.59891},
+    Q.insect+I{0.141432}+G4{0.985026}: gene_0109{15.9184},
+    Q.insect+I{0.198152}+G4{0.847035}: gene_0110{8.78803},
+    Q.insect+I{0.179917}+G4{1.28711}: gene_0111{11.218},
+    Q.insect+I{0.0653918}+G4{1.10295}: gene_0112{16.0408},
+    Q.insect+R5{0.246148,0.0617931,0.319323,0.487451,0.28394,1.23026,0.140279,2.86405,0.0103088,7.57109}: gene_0113{10.5307},
+    Q.insect+R4{0.273437,0.104903,0.382029,0.739316,0.306024,1.71013,0.0385098,4.29851}: gene_0114{11.286},
+    LG+I{0.162877}+G4{1.1606}: gene_0115{11.8258},
+    Q.insect+I{0.15154}+G4{0.787731}: gene_0116{7.43655},
+    Q.insect+I{0.175493}+G4{1.35463}: gene_0117{9.36267},
+    Q.insect+R4{0.270414,0.036685,0.313081,0.500088,0.327726,1.45214,0.0887783,4.02808}: gene_0118{8.64748},
+    Q.yeast+I{0.110973}+G4{1.37485}: gene_0119{14.1383},
+    LG+I{0.0930922}+G4{1.21667}: gene_0120{12.6003},
+    Q.insect+I{0.19515}+G4{0.884079}: gene_0121{10.4913},
+    Q.insect+I{0.278819}+G4{1.53325}: gene_0122{9.16126},
+    LG+I{0.229655}+G4{0.972476}: gene_0123{10.1825},
+    Q.yeast+I{0.11804}+G4{1.00934}: gene_0124{15.2679},
+    Q.insect+I{0.111932}+G4{1.00864}: gene_0125{10.8043},
+    Q.insect+I{0.0571217}+G4{1.43231}: gene_0126{17.3148},
+    Q.insect+I{0.0655618}+G4{1.22978}: gene_0127{15.0216},
+    Q.yeast+I{0.237591}+G4{1.03306}: gene_0128{10.3208},
+    Q.insect+R4{0.378271,0.082033,0.335334,0.703106,0.247129,2.03695,0.0392657,5.85258}: gene_0129{9.46124},
+    LG+R5{0.272707,0.0338499,0.191468,0.318404,0.188032,0.88469,0.237404,1.7113,0.110389,3.23569}: gene_0130{11.9036},
+    Q.insect+I{0.203879}+G4{0.607709}: gene_0131{9.18687},
+    Q.insect+I{0.153448}+R4{0.271518,0.239107,0.371491,0.92243,0.178405,2.47342,0.0251387,6.01201}: gene_0132{9.92162},
+    Q.insect+I{0.336174}+R4{0.304194,0.300573,0.196936,1.31329,0.119608,2.9791,0.0430876,6.81427}: gene_0133{6.65226},
+    Q.yeast+I{0.250141}+R4{0.253494,0.327343,0.221878,0.995211,0.224391,2.0145,0.0500954,4.87406}: gene_0134{8.07016},
+    Q.insect+I{0.273663}+G4{0.751503}: gene_0135{7.88883},
+    Q.insect+I{0.360271}+R3{0.333361,0.439794,0.247224,2.0512,0.0591432,5.85501}: gene_0136{4.26532},
+    Q.yeast+I{0.140307}+G4{0.848407}: gene_0137{7.38205},
+    LG+I{0.228307}+G4{0.965483}: gene_0138{10.829},
+    LG+I{0.244867}+G4{1.12433}: gene_0139{9.34881},
+    LG+I{0.156532}+R4{0.284922,0.135661,0.254919,0.781912,0.212025,1.95632,0.0916028,3.79066}: gene_0140{10.0605},
+    Q.insect+I{0.216756}+G4{0.941993}: gene_0141{9.45784},
+    Q.insect+I{0.0749386}+G4{0.95702}: gene_0142{13.858},
+    Q.insect+I{0.131413}+G4{1.05663}: gene_0143{19.6534},
+    Q.insect+I{0.0955079}+G4{0.970848}: gene_0144{15.717},
+    Q.insect+G4{0.622606}: gene_0145{8.03676},
+    Q.insect+I{0.162701}+G4{1.33174}: gene_0146{11.744},
+    Q.yeast+G4{0.34231}: gene_0147{9.11316},
+    Q.insect+I{0.134663}+G4{1.14467}: gene_0148{10.1556},
+    Q.yeast+I{0.206486}+R3{0.372857,0.34047,0.365014,1.59286,0.0556439,5.24113}: gene_0149{8.75903},
+    Q.yeast+I{0.26296}+G4{0.91453}: gene_0150{11.6018},
+    LG+I{0.110754}+G4{1.52284}: gene_0151{11.8986},
+    Q.insect+I{0.0592141}+R4{0.215218,0.174577,0.284336,0.654944,0.336425,1.45987,0.104806,2.71993}: gene_0152{15.7105},
+    Q.insect+I{0.315974}+G4{0.830094}: gene_0153{8.94121},
+    Q.insect+I{0.0646948}+R3{0.476923,0.341962,0.347647,1.32451,0.110735,3.39953}: gene_0154{6.34322},
+    Q.yeast+R4{0.310332,0.0443208,0.265592,0.396897,0.323632,1.55555,0.100444,3.75741}: gene_0155{9.23533},
+    LG+I{0.255163}+R4{0.240882,0.190368,0.334901,1.14558,0.129454,2.76552,0.0395998,5.36564}: gene_0156{9.37433},
+    Q.yeast+I{0.121155}+G4{1.07666}: gene_0157{15.4394},
+    Q.insect+I{0.139213}+G4{1.37824}: gene_0158{6.83224},
+    Q.insect+G4{0.657406}: gene_0159{7.90686},
+    Q.insect+G4{0.601127}: gene_0160{6.79316},
+    Q.insect+I{0.103597}+R4{0.322733,0.271198,0.347049,0.903824,0.210725,2.37112,0.0158959,6.23742}: gene_0161{11.0265},
+    Q.insect+I{0.162997}+G4{1.05359}: gene_0162{7.68311},
+    Q.yeast+I{0.178861}+G4{0.854336}: gene_0163{10.3878},
+    Q.insect+I{0.0947051}+G4{1.2001}: gene_0164{12.6106},
+    Q.insect+I{0.110388}+G4{1.44521}: gene_0165{13.9808},
+    Q.yeast+I{0.184554}+G4{1.27936}: gene_0166{10.6261},
+    Q.insect+I{0.25524}+G4{1.31666}: gene_0167{8.18506},
+    Q.insect+G4{0.864489}: gene_0168{4.77616},
+    Q.insect+R4{0.366307,0.0434326,0.302493,0.484276,0.254073,1.80601,0.0771266,4.91064}: gene_0169{7.85556},
+    Q.insect+I{0.0734295}+G4{0.987468}: gene_0170{12.434},
+    Q.yeast+G4{0.56794}: gene_0171{11.8111},
+    Q.yeast+I{0.135537}+R5{0.292594,0.0881315,0.224032,0.51465,0.202182,1.46348,0.117886,3.3075,0.0277693,6.23421}: gene_0172{11.1855},
+    LG+I{0.174618}+G4{1.08547}: gene_0173{11.2624},
+    Q.insect+I{0.214419}+G4{1.33874}: gene_0174{12.0567},
+    LG+I{0.128663}+G4{0.979992}: gene_0175{14.594},
+    Q.insect+I{0.000157069}+R4{0.2583,0.105229,0.353415,0.583155,0.276671,1.4783,0.111457,3.2095}: gene_0176{8.27205},
+    LG+I{0.159536}+G4{1.48753}: gene_0177{10.504},
+    WAG+I{0.252286}+G4{1.07721}: gene_0178{16.9781},
+    Q.insect+I{0.177473}+G4{0.921604}: gene_0179{10.2892},
+    Q.insect+R4{0.453879,0.0839647,0.185145,0.639503,0.264477,1.74678,0.0964986,3.95349}: gene_0180{9.64412},
+    Q.yeast+I{0.213509}+R4{0.225172,0.190406,0.282351,0.682311,0.179619,1.82664,0.0993494,4.39234}: gene_0181{9.64228},
+    Q.insect+G4{0.882406}: gene_0182{6.44474},
+    Q.insect+I{0.132444}+G4{0.990935}: gene_0183{13.8786},
+    Q.insect+I{0.282811}+G4{0.991714}: gene_0184{8.67039},
+    Q.insect+I{0.092033}+G4{1.51401}: gene_0185{8.51182},
+    Q.insect+I{0.355009}+R4{0.341555,0.319794,0.154623,1.46771,0.106174,3.35887,0.042639,7.2048}: gene_0186{5.13498},
+    Q.yeast+R4{0.340012,0.0736403,0.326739,0.587525,0.251003,1.76494,0.0822457,4.1338}: gene_0187{9.36631},
+    Q.insect+I{0.301295}+R3{0.417634,0.287543,0.161419,1.74682,0.119652,4.99736}: gene_0188{5.70265},
+    Q.insect+I{0.312977}+G4{0.862935}: gene_0189{8.22717},
+    LG+I{0.119405}+G4{1.03921}: gene_0190{9.10005},
+    Q.insect+I{0.255674}+G4{1.16112}: gene_0191{10.7768},
+    Q.insect+I{0.228866}+G4{1.23668}: gene_0192{10.8053},
+    Q.insect+I{0.174729}+G4{1.04299}: gene_0193{8.99428},
+    Q.yeast+R5{0.354548,0.044192,0.170179,0.381444,0.224279,1.02902,0.18394,2.11422,0.0670533,4.47017}: gene_0194{11.104},
+    LG+R4{0.400303,0.114217,0.273671,0.640715,0.281363,1.99882,0.0446631,4.84825}: gene_0195{10.6448},
+    mtZOA+G4{0.50467}: gene_0196{9.88963},
+    Q.yeast+F+I{0.241875}+G4{0.790803}: gene_0197{8.87517},
+    Q.insect+I{0.310907}+G4{0.946028}: gene_0198{6.1554},
+    LG+R4{0.269577,0.037746,0.306615,0.567435,0.342517,1.58433,0.0812915,3.36051}: gene_0199{13.4761},
+    Q.yeast+I{0.118401}+G4{1.1701}: gene_0200{16.6255},
+    Q.yeast+I{0.188649}+G4{1.10965}: gene_0201{10.5399},
+    Q.pfam+I{0.316741}+R4{0.234044,0.173711,0.216143,1.02724,0.197522,2.56919,0.0355491,6.46546}: gene_0202{7.91784},
+    Q.insect+I{0.354672}+G4{0.998344}: gene_0203{7.2044},
+    Q.insect+I{0.152346}+R5{0.254413,0.145584,0.254061,0.678985,0.16842,1.45353,0.127039,2.59832,0.0437204,4.93051}: gene_0204{15.1044},
+    LG+I{0.0962594}+G4{1.24335}: gene_0205{13.3647},
+    Q.yeast+I{0.123021}+G4{1.33072}: gene_0206{9.48157},
+    Q.insect+G4{0.734413}: gene_0207{6.79295},
+    Q.insect+G4{0.479063}: gene_0208{5.31175},
+    Q.insect+I{0.100894}+G4{1.28886}: gene_0209{11.7119},
+    Q.insect+I{0.196374}+G4{0.948781}: gene_0210{10.1782},
+    Q.insect+F+I{0.113696}+G4{1.28023}: gene_0211{14.569},
+    Q.insect+I{0.093833}+G4{1.23946}: gene_0212{12.1623},
+    Q.insect+I{0.142136}+G4{1.7408}: gene_0213{12.4948},
+    Q.insect+R4{0.287205,0.046507,0.339329,0.57462,0.303702,1.66612,0.0697631,4.0946}: gene_0214{10.3912},
+    Q.insect+I{0.219333}+G4{0.847948}: gene_0215{8.18947},
+    LG+F+I{0.145611}+G4{1.07378}: gene_0216{13.1354},
+    Q.insect+R4{0.376146,0.0519736,0.182368,0.520895,0.376396,1.62746,0.0650906,4.19239}: gene_0217{10.6567},
+    Q.insect+G4{1.00053}: gene_0218{12.5506},
+    Q.insect+I{0.205091}+G4{0.81686}: gene_0219{11.3516},
+    Q.insect+G4{0.848037}: gene_0220{10.6883},
+    LG+F+I{0.108512}+G4{1.05634}: gene_0221{9.46323},
+    LG+G4{0.69287}: gene_0222{6.57419},
+    Q.insect+I{0.148784}+G4{1.33376}: gene_0223{17.102},
+    Q.yeast+G4{0.976266}: gene_0224{11.7331},
+    Q.insect+G4{0.797865}: gene_0225{16.5801},
+    LG+I{0.287604}+G4{0.854479}: gene_0226{12.6574},
+    Q.insect+I{0.128018}+G4{1.01958}: gene_0227{13.1377},
+    Q.insect+I{0.160515}+G4{0.869524}: gene_0228{11.7879},
+    Q.insect+I{0.121083}+G4{0.921073}: gene_0229{16.5454},
+    Q.insect+I{0.0362788}+R4{0.184078,0.187893,0.434956,0.689344,0.30834,1.72243,0.0363478,3.69997}: gene_0230{14.6032},
+    Q.insect+I{0.262893}+G4{1.35404}: gene_0231{6.18475},
+    Q.insect+I{0.041378}+G4{1.19618}: gene_0232{15.0344},
+    Q.insect+R5{0.258902,0.0885579,0.327238,0.550337,0.304734,1.40834,0.0979872,2.94317,0.0111393,7.12965}: gene_0233{8.6763},
+    LG+I{0.146936}+G4{1.48224}: gene_0234{13.4404},
+    Q.yeast+R4{0.317791,0.0409139,0.302185,0.454786,0.32196,1.75149,0.0580642,4.9197}: gene_0235{8.28914},
+    Q.insect+I{0.217875}+G4{1.46107}: gene_0236{12.1788},
+    Q.insect+G4{1.04622}: gene_0237{11.8978},
+    Q.insect+G4{1.28913}: gene_0238{8.81711},
+    Q.yeast+I{0.190899}+R4{0.284778,0.23905,0.270959,0.840892,0.197075,2.18889,0.0562878,4.84475}: gene_0239{8.85546},
+    LG+R4{0.311972,0.0696391,0.274952,0.503205,0.295493,1.48114,0.117583,3.42097}: gene_0240{12.1449},
+    Q.insect+R3{0.550253,0.0769092,0.384352,1.52227,0.0653946,5.69763}: gene_0241{2.35887},
+    Q.insect+I{0.116174}+G4{1.43717}: gene_0242{13.3514},
+    Q.insect+R4{0.265981,0.106309,0.427299,0.710546,0.237148,1.7803,0.0695725,3.53466}: gene_0243{9.61095},
+    Q.yeast+F+I{0.133434}+G4{1.43673}: gene_0244{10.054},
+    LG+I{0.185194}+G4{1.11998}: gene_0245{9.97855},
+    Q.insect+I{0.197647}+G4{0.968714}: gene_0246{7.24817},
+    Q.insect+I{0.127988}+G4{0.975169}: gene_0247{14.248},
+    Q.insect+I{0.263088}+G4{0.93125}: gene_0248{9.79518},
+    Q.insect+I{0.12032}+G4{2.00992}: gene_0249{14.7614},
+    Q.insect+I{0.100247}+G4{1.77825}: gene_0250{9.51104},
+    LG+I{0.116306}+G4{0.813094}: gene_0251{13.6421},
+    Q.insect+I{0.210482}+R4{0.399989,0.24019,0.228492,1.28777,0.122253,3.04873,0.0387844,6.10981}: gene_0252{3.86024},
+    Q.insect+G4{0.775229}: gene_0253{10.3706},
+    Q.insect+I{0.176756}+G4{0.868908}: gene_0254{13.6752},
+    LG+G4{1.18142}: gene_0255{19.2567},
+    LG+I{0.11264}+G4{1.49087}: gene_0256{14.0462},
+    Q.plant+G4{0.904802}: gene_0257{9.56067},
+    Q.insect+I{0.0981214}+R3{0.391308,0.326899,0.414733,1.31813,0.095838,3.39543}: gene_0258{8.09516},
+    Q.insect+I{0.140305}+R4{0.362221,0.268861,0.320194,1.06651,0.152477,2.69181,0.0248044,6.07502}: gene_0259{7.45448},
+    Q.yeast+R4{0.305996,0.0606725,0.313243,0.545341,0.318465,1.72529,0.0622966,4.19232}: gene_0260{12.5663},
+    Q.insect+F+I{0.0315572}+G4{1.49582}: gene_0261{12.8231},
+    LG+I{0.191633}+G4{1.00108}: gene_0262{11.7948},
+    Q.insect+I{0.0522973}+G4{2.5684}: gene_0263{10.0205},
+    LG+I{0.125228}+G4{1.13201}: gene_0264{14.1804},
+    Q.insect+I{0.0581205}+R4{0.342326,0.248395,0.394949,0.943149,0.160496,2.0705,0.0441087,4.76469}: gene_0265{10.8939},
+    Q.insect+I{0.104215}+G4{1.20153}: gene_0266{10.9361},
+    Q.insect+I{0.157918}+G4{1.17488}: gene_0267{10.4799},
+    Q.insect+I{0.128258}+R3{0.431693,0.385051,0.324791,1.37631,0.115258,3.35562}: gene_0268{7.01499},
+    Q.insect+I{0.0649078}+R5{0.225595,0.153792,0.276488,0.566798,0.260895,1.14447,0.14578,2.45633,0.0263342,5.76906}: gene_0269{15.6873},
+    Q.insect+R4{0.489575,0.163101,0.35512,0.980794,0.135461,3.08556,0.0198426,7.75478}: gene_0270{5.90958},
+    Q.insect+G4{1.07917}: gene_0271{13.4145},
+    Q.insect+I{0.0599523}+G4{1.51416}: gene_0272{14.4404},
+    Q.insect+I{0.134144}+G4{0.814421}: gene_0273{14.9661},
+    Q.insect+G4{1.04636}: gene_0274{11.4981},
+    Q.insect+I{0.232072}+G4{1.74162}: gene_0275{9.08465},
+    LG+F+I{0.0904236}+G4{0.783128}: gene_0276{15.2254},
+    LG+I{0.176138}+R4{0.217454,0.164783,0.25746,0.840378,0.276101,1.78062,0.0728475,3.51656}: gene_0277{14.4028},
+    Q.insect+I{0.139428}+G4{1.1604}: gene_0278{8.55118},
+    Q.yeast+I{0.257983}+G4{0.963192}: gene_0279{9.92058},
+    Q.insect+R4{0.296722,0.0902238,0.35731,0.642969,0.296487,1.72736,0.0494812,4.67552}: gene_0280{8.56868},
+    Q.insect+I{0.134865}+G4{1.2253}: gene_0281{13.848},
+    Q.insect+G4{1.09707}: gene_0282{8.3401},
+    Q.insect+I{0.0539057}+G4{1.41278}: gene_0283{14.3149},
+    Q.insect+I{0.0926426}+G4{1.06749}: gene_0284{16.0381},
+    Q.insect+R4{0.423836,0.0844271,0.23858,0.610919,0.252547,1.8088,0.085037,4.25294}: gene_0285{6.58136},
+    Q.insect+R4{0.637682,0.0696056,0.183465,0.964698,0.139249,3.17132,0.0396048,8.50964}: gene_0286{3.14826},
+    Q.insect+I{0.181206}+G4{1.31072}: gene_0287{7.55124},
+    Q.insect+R4{0.656514,0.0805218,0.198933,0.966636,0.115176,4.01003,0.0293761,9.97341}: gene_0288{3.64813},
+    LG+R5{0.201671,0.0339768,0.255171,0.382173,0.333998,0.924511,0.184964,2.37711,0.0241955,6.08227}: gene_0289{15.0664},
+    Q.insect+I{0.128958}+G4{0.860812}: gene_0290{13.4217},
+    LG+I{0.235006}+G4{0.701036}: gene_0291{6.17293},
+    Q.yeast+I{0.161933}+R4{0.27,0.262263,0.240795,0.857478,0.272059,1.82127,0.0552124,4.11534}: gene_0292{11.9893},
+    Q.insect+I{0.281422}+R4{0.296049,0.298862,0.263239,1.28855,0.132539,3.07056,0.0267518,6.18115}: gene_0293{7.20806},
+    Q.insect+I{0.111041}+G4{1.17375}: gene_0294{10.562},
+    LG+R5{0.204309,0.0171039,0.25215,0.342533,0.263988,1.03625,0.227852,1.95628,0.0517009,3.69118}: gene_0295{15.1227},
+    Q.insect+R4{0.265353,0.0590419,0.295046,0.599351,0.368546,1.5622,0.0710556,3.26158}: gene_0296{13.2733},
+    Q.insect+R4{0.452919,0.0473058,0.272379,0.68364,0.223178,2.19967,0.0515246,5.85054}: gene_0297{4.53875},
+    Q.insect+G4{0.804949}: gene_0298{9.83592},
+    Q.insect+I{0.142314}+G4{0.890248}: gene_0299{14.3811},
+    Q.insect+G4{0.983996}: gene_0300{12.7197},
+    Q.yeast+G4{0.602081}: gene_0301{5.04582},
+    Q.insect+I{0.114619}+R4{0.2707,0.222165,0.336684,0.758486,0.191707,1.74233,0.0862888,4.06162}: gene_0302{9.64483},
+    LG+I{0.167451}+G4{0.960871}: gene_0303{11.6962},
+    LG+F+I{0.0723292}+G4{0.912527}: gene_0304{14.956},
+    Q.insect+I{0.0983783}+G4{1.45916}: gene_0305{14.2869},
+    Q.insect+I{0.0928533}+G4{1.50554}: gene_0306{13.6517},
+    Q.insect+I{0.29591}+R3{0.489322,0.611849,0.159916,2.24055,0.0548514,6.24065}: gene_0307{5.34703},
+    Q.insect+I{0.0789536}+G4{2.98514}: gene_0308{8.17976},
+    Q.insect+R3{0.327025,0.170836,0.550876,1.09034,0.122099,2.81319}: gene_0309{7.48968},
+    Q.insect+G4{1.06586}: gene_0310{12.5631},
+    Q.insect+R5{0.162956,0.0600723,0.261452,0.370933,0.311466,0.952187,0.217236,1.92742,0.0468902,3.79505}: gene_0311{14.7276},
+    Q.insect+G4{0.634605}: gene_0312{5.74293},
+    LG+I{0.159982}+R4{0.230482,0.190392,0.438493,0.962877,0.130168,2.3957,0.0408739,5.43278}: gene_0313{13.2898},
+    LG+R4{0.290332,0.03415,0.421653,0.648547,0.228123,1.75863,0.0598916,5.26684}: gene_0314{10.6796},
+    Q.insect+I{0.137354}+G4{1.11202}: gene_0315{18.4592},
+    Q.insect+R3{0.698274,0.171804,0.190818,1.56757,0.110908,5.2378}: gene_0316{2.78163},
+    Q.insect+I{0.175414}+R4{0.340285,0.261152,0.320458,1.20041,0.139741,2.76279,0.0241014,5.82451}: gene_0317{7.00091},
+    Q.yeast+I{0.170538}+G4{0.901075}: gene_0318{12.8379},
+    Q.insect+G4{0.676285}: gene_0319{12.8434},
+    Q.insect+I{0.149896}+G4{1.0562}: gene_0320{8.59691},
+    Q.insect+I{0.259383}+G4{0.997302}: gene_0321{13.6627},
+    Q.insect+G4{1.4161}: gene_0322{15.9518},
+    Q.insect+I{0.0859308}+G4{1.65455}: gene_0323{13.2636},
+    Q.insect+I{0.0934166}+G4{1.20994}: gene_0324{11.0353},
+    Q.insect+G4{0.601874}: gene_0325{6.83127},
+    Q.insect+I{0.0433955}+G4{1.57879}: gene_0326{13.919},
+    Q.insect+R4{0.246151,0.104098,0.427243,0.705219,0.304534,1.76079,0.0220723,6.20037}: gene_0327{10.2218},
+    Q.yeast+I{0.134096}+G4{0.878282}: gene_0328{11.4483},
+    LG+G4{1.15211}: gene_0329{10.3319},
+    Q.insect+I{0.0711757}+G4{1.86268}: gene_0330{9.72063},
+    LG+I{0.17783}+G4{0.940967}: gene_0331{11.9166},
+    Q.insect+R4{0.418356,0.198202,0.381563,0.923801,0.172893,2.31266,0.0271878,6.05965}: gene_0332{8.16617},
+    Q.insect+I{0.166484}+R4{0.348012,0.317221,0.292435,1.15214,0.160463,2.42463,0.0326062,5.01788}: gene_0333{6.78282},
+    Q.insect+I{0.076899}+G4{1.11755}: gene_0334{13.0844},
+    Q.insect+I{0.4151}+G4{1.03641}: gene_0335{4.72695},
+    Q.insect+G4{0.672741}: gene_0336{15.0001},
+    Q.insect+R4{0.444173,0.0562293,0.249626,0.597993,0.198694,1.73969,0.107508,4.46559}: gene_0337{7.18714},
+    Q.insect+I{0.0911747}+G4{0.772481}: gene_0338{11.6461},
+    LG+I{0.267777}+G4{0.762422}: gene_0339{8.09204},
+    Q.insect+I{0.0906982}+G4{1.24806}: gene_0340{11.1412},
+    Q.insect+I{0.215866}+G4{1.1514}: gene_0341{8.65436},
+    LG+I{0.16626}+G4{0.924504}: gene_0342{13.5137},
+    Q.insect+I{0.0647256}+R4{0.233951,0.18234,0.432517,0.86389,0.233192,1.89739,0.0356142,3.96578}: gene_0343{12.2274},
+    Q.insect+I{0.0537648}+G4{1.29521}: gene_0344{12.4243},
+    Q.insect+I{0.0552475}+G4{1.63213}: gene_0345{12.2123},
+    Q.yeast+I{0.1808}+R4{0.306447,0.196153,0.252604,0.833398,0.170025,2.02226,0.0901233,4.27785}: gene_0346{15.0378},
+    Q.insect+I{0.194174}+R3{0.370357,0.302458,0.350659,1.41955,0.0848103,4.60089}: gene_0347{6.17085},
+    Q.insect+I{0.19193}+G4{0.983319}: gene_0348{3.98786},
+    Q.yeast+I{0.0825214}+G4{1.14585}: gene_0349{16.9913},
+    Q.insect+G4{0.866614}: gene_0350{11.8974},
+    Q.insect+G4{1.15308}: gene_0351{7.26006},
+    LG+G4{1.20402}: gene_0352{10.4713},
+    LG+R5{0.261204,0.0148246,0.211262,0.255004,0.256703,0.876832,0.200346,2.03171,0.0704853,4.39986}: gene_0353{9.8296},
+    Q.insect+R4{0.384065,0.112347,0.318964,0.759504,0.252263,2.00863,0.0447078,4.65007}: gene_0354{9.05358},
+    Q.yeast+I{0.199582}+G4{0.934779}: gene_0355{13.7629},
+    LG+I{0.116864}+G4{1.34412}: gene_0356{15.6149},
+    LG+F+G4{0.96471}: gene_0357{7.65467},
+    LG+I{0.110001}+G4{1.12589}: gene_0358{11.1991},
+    Q.insect+I{0.0270013}+G4{1.60754}: gene_0359{16.4478},
+    Q.yeast+I{0.149686}+G4{0.799718}: gene_0360{14.729},
+    Q.insect+G4{0.830373}: gene_0361{8.78811},
+    Q.insect+I{0.131504}+G4{0.803857}: gene_0362{14.0623},
+    Q.insect+I{0.154236}+G4{1.28083}: gene_0363{8.58664},
+    Q.insect+I{0.0356787}+G4{1.39695}: gene_0364{15.5447},
+    Q.insect+I{0.115214}+G4{1.68167}: gene_0365{14.3977},
+    Q.insect+I{0.113634}+G4{1.23253}: gene_0366{12.2561},
+    Q.insect+R4{0.162958,0.0785309,0.374498,0.527137,0.370276,1.37913,0.0922685,3.02522}: gene_0367{10.066},
+    Q.insect+G4{0.65754}: gene_0368{6.19378},
+    Q.insect+I{0.0523184}+G4{1.49982}: gene_0369{13.6001},
+    Q.insect+R4{0.375359,0.0955168,0.328374,0.563572,0.200387,1.80259,0.0958805,4.35823}: gene_0370{5.94907},
+    Q.insect+I{0.156968}+G4{1.03126}: gene_0371{11.2469},
+    Q.yeast+I{0.28496}+R4{0.240151,0.203744,0.252374,0.856009,0.155328,2.30709,0.0671865,5.60648}: gene_0372{8.40005},
+    Q.insect+I{0.169336}+G4{1.22958}: gene_0373{15.001},
+    Q.yeast+G4{0.784624}: gene_0374{12.9849},
+    Q.yeast+I{0.184158}+G4{1.16641}: gene_0375{13.4856},
+    Q.insect+G4{0.729023}: gene_0376{11.8289},
+    Q.yeast+I{0.154537}+G4{0.951754}: gene_0377{11.7851},
+    Q.insect+R4{0.391614,0.0733042,0.345321,0.674085,0.234266,2.2079,0.0287995,7.68352}: gene_0378{7.11559},
+    Q.insect+R4{0.161089,0.0599748,0.344083,0.519821,0.379148,1.25743,0.11568,2.89356}: gene_0379{13.9332},
+    Q.insect+G4{0.638243}: gene_0380{10.6229},
+    Q.insect+R4{0.319899,0.0433109,0.26117,0.504162,0.329166,1.47273,0.0897644,4.11857}: gene_0381{10.0115},
+    Q.insect+I{0.0846452}+R3{0.36698,0.329487,0.41863,1.11365,0.129745,3.18222}: gene_0382{10.22},
+    Q.insect+R3{0.46637,0.106687,0.385891,1.09865,0.147739,3.56227}: gene_0383{7.79569},
+    Q.yeast+F+G4{1.05864}: gene_0384{14.6056},
+    Q.insect+I{0.0842684}+G4{1.46135}: gene_0385{11.8967},
+    Q.yeast+F+I{0.141911}+G4{1.12784}: gene_0386{9.10906},
+    Q.insect+G4{1.18208}: gene_0387{11.8852},
+    Q.insect+R5{0.301124,0.0250826,0.265332,0.406687,0.246279,1.31605,0.145296,2.4583,0.0419693,4.84268}: gene_0388{10.6642},
+    Q.yeast+I{0.120584}+G4{1.34239}: gene_0389{10.4503},
+    Q.yeast+I{0.231748}+G4{0.765992}: gene_0390{13.4908},
+    Q.insect+I{0.112892}+G4{1.07874}: gene_0391{12.3523},
+    Q.insect+R4{0.300849,0.0542211,0.416173,0.618465,0.253669,2.14634,0.0293096,6.20414}: gene_0392{7.82107},
+    Q.insect+R4{0.210404,0.0882132,0.468729,0.655829,0.252961,1.66289,0.0679065,3.73143}: gene_0393{10.3221},
+    Q.insect+I{0.12388}+G4{0.905266}: gene_0394{6.49441},
+    Q.insect+G4{0.918637}: gene_0395{10.688},
+    Q.insect+R4{0.367187,0.0624751,0.267463,0.637631,0.270579,1.66807,0.0947714,3.74768}: gene_0396{7.80926},
+    Q.insect+R4{0.342169,0.0491444,0.359498,0.532448,0.20092,1.79351,0.0974127,4.42877}: gene_0397{7.74041},
+    Q.insect+I{0.227384}+R3{0.359218,0.31051,0.314177,1.48442,0.0992204,4.25405}: gene_0398{6.25419},
+    Q.yeast+I{0.101399}+G4{1.26362}: gene_0399{16.2799},
+    Q.insect+I{0.128784}+G4{1.19569}: gene_0400{8.07576},
+    Q.insect+R4{0.297141,0.113224,0.337527,0.684223,0.295953,1.59562,0.0693791,3.79344}: gene_0401{10.8104},
+    Q.insect+I{0.150029}+G4{0.915447}: gene_0402{7.90307},
+    Q.insect+R5{0.172789,0.0456881,0.30087,0.398007,0.277106,1.08783,0.191906,1.96289,0.057329,3.38789}: gene_0403{13.4531},
+    LG+I{0.152721}+G4{0.939462}: gene_0404{10.6596},
+    Q.insect+R5{0.186054,0.0801803,0.218804,0.373451,0.303584,0.8114,0.218107,1.66189,0.0734512,4.01044}: gene_0405{16.6109},
+    Q.yeast+I{0.118272}+R4{0.260266,0.165294,0.244716,0.68147,0.331989,1.80426,0.0447564,4.27242}: gene_0406{11.5005},
+    Q.insect+I{0.094738}+G4{1.50409}: gene_0407{8.03},
+    Q.insect+G4{1.52584}: gene_0408{11.4835},
+    Q.insect+R4{0.342049,0.0531403,0.357729,0.641793,0.214163,1.88517,0.0860587,4.04957}: gene_0409{6.84756},
+    Q.insect+I{0.105397}+R4{0.373086,0.301817,0.369076,1.19971,0.135831,2.51464,0.0166098,6.20399}: gene_0410{9.08149},
+    Q.insect+I{0.0886839}+G4{0.963442}: gene_0411{11.1328},
+    Q.insect+I{0.233506}+R3{0.339255,0.254799,0.355374,1.5018,0.0718653,5.28571}: gene_0412{6.15635},
+    LG+I{0.0978407}+G4{1.09808}: gene_0413{10.8009},
+    Q.yeast+F+G4{0.894751}: gene_0414{17.7039},
+    Q.insect+G4{0.549434}: gene_0415{3.63705},
+    Q.insect+I{0.117254}+G4{1.87119}: gene_0416{11.5863},
+    Q.insect+R4{0.117077,0.107444,0.603235,0.628916,0.226913,1.72042,0.0527747,4.12412}: gene_0417{9.23864},
+    Q.insect+R4{0.361065,0.066935,0.281397,0.584004,0.297139,1.77949,0.0603985,4.68121}: gene_0418{10.2781},
+    Q.insect+I{0.0939468}+G4{1.4356}: gene_0419{11.1321},
+    Q.insect+I{0.202609}+G4{1.07038}: gene_0420{8.82505},
+    Q.insect+I{0.0998908}+G4{0.898159}: gene_0421{19.0941},
+    Q.insect+R4{0.459613,0.21581,0.256264,1.02599,0.25187,1.98656,0.0322523,4.26419}: gene_0422{8.34288},
+    Q.insect+I{0.0552891}+G4{1.50869}: gene_0423{15.6449},
+    Q.insect+I{0.064642}+R3{0.348522,0.2625,0.478903,1.25544,0.107933,2.84693}: gene_0424{15.8857},
+    Q.insect+I{0.0326302}+G4{1.44948}: gene_0425{21.5006},
+    Q.pfam+R5{0.348383,0.030487,0.264722,0.483452,0.186709,1.30385,0.169336,2.64513,0.0308504,5.51189}: gene_0426{10.4468},
+    Q.insect+G4{1.0001}: gene_0427{12.8272},
+    mtZOA+I{0.220606}+G4{0.907747}: gene_0428{5.62695},
+    Q.insect+I{0.208944}+R4{0.266307,0.203527,0.302696,1.07713,0.197153,2.34289,0.0249004,6.33921}: gene_0429{11.0168},
+    LG+R3{0.589419,0.126528,0.306642,1.53164,0.103939,4.38484}: gene_0430{5.08694},
+    Q.insect+I{0.134587}+R4{0.367399,0.289822,0.284826,1.15,0.19528,2.31373,0.0179076,6.37405}: gene_0431{7.41701},
+    Q.insect+I{0.118506}+G4{1.70834}: gene_0432{11.3954},
+    Q.insect+G4{1.15513}: gene_0433{10.7708},
+    Q.insect+G4{1.06336}: gene_0434{13.1665},
+    Q.insect+R3{0.488692,0.207996,0.422984,1.26216,0.0883236,4.12664}: gene_0435{6.35176},
+    Q.yeast+F+G4{1.01836}: gene_0436{8.74499},
+    Q.insect+I{0.0924033}+G4{1.1221}: gene_0437{13.3566},
+    Q.insect+I{0.119586}+G4{1.53974}: gene_0438{13.2651},
+    mtZOA+G4{0.566148}: gene_0439{10.9612},
+    Q.insect+I{0.15837}+G4{0.90623}: gene_0440{11.3293},
+    Q.yeast+I{0.165303}+R3{0.539251,0.342725,0.219945,1.88364,0.0755001,5.30975}: gene_0441{7.64008},
+    Q.insect+R3{0.418977,0.209343,0.455964,1.16618,0.125059,3.043}: gene_0442{10.8985},
+    Q.insect+R4{0.297402,0.0784105,0.290395,0.626827,0.369609,1.66288,0.0425943,4.22683}: gene_0443{9.11445},
+    Q.insect+R4{0.336329,0.108697,0.390603,0.668833,0.225815,2.04346,0.0472536,5.09488}: gene_0444{8.9542},
+    LG+I{0.248779}+G4{0.992383}: gene_0445{10.8773},
+    Q.insect+R4{0.261932,0.0998421,0.393844,0.703913,0.274409,1.61346,0.0698155,3.63626}: gene_0446{10.5278},
+    Q.insect+I{0.179962}+G4{0.845449}: gene_0447{7.81689},
+    Q.pfam+G4{0.705611}: gene_0448{11.563},
+    Q.insect+I{0.133785}+G4{1.31797}: gene_0449{10.0036},
+    Q.insect+I{0.16876}+G4{1.35046}: gene_0450{7.68786},
+    Q.insect+G4{1.21983}: gene_0451{8.42494},
+    Q.insect+I{0.0615499}+G4{1.09429}: gene_0452{15.6909},
+    Q.insect+R4{0.265722,0.12324,0.352398,0.665057,0.342761,1.65125,0.039119,4.26656}: gene_0453{12.4312},
+    Q.insect+I{0.163621}+G4{0.94116}: gene_0454{15.3927},
+    Q.insect+G4{0.775814}: gene_0455{9.15364},
+    Q.yeast+I{0.177769}+R4{0.273235,0.166662,0.206059,0.759627,0.31952,2.14701,0.0234172,4.77946}: gene_0456{11.1395},
+    Q.yeast+I{0.422852}+G4{0.772585}: gene_0457{8.37521},
+    Q.insect+I{0.0546719}+G4{1.15883}: gene_0458{14.8603},
+    Q.insect+I{0.203588}+G4{1.22256}: gene_0459{7.49396},
+    LG+I{0.165994}+G4{1.24244}: gene_0460{15.7849},
+    LG+I{0.265527}+G4{0.95155}: gene_0461{6.965},
+    LG+I{0.0497171}+G4{2.00905}: gene_0462{16.0125},
+    Q.insect+I{0.0888531}+G4{1.18433}: gene_0463{12.5682},
+    Q.insect+G4{1.14351}: gene_0464{13.2287},
+    Q.insect+G4{0.968802}: gene_0465{11.4743},
+    Q.yeast+I{0.410678}+G4{0.901193}: gene_0466{10.1316},
+    Q.insect+G4{1.03852}: gene_0467{13.7628},
+    LG+F+I{0.112435}+G4{1.03897}: gene_0468{17.2501},
+    Q.insect+I{0.19746}+G4{0.993027}: gene_0469{12.6341},
+    Q.insect+I{0.294956}+G4{0.983597}: gene_0470{8.10958},
+    LG+I{0.327286}+G4{0.752371}: gene_0471{7.74755},
+    Q.insect+R4{0.190863,0.0713499,0.335413,0.445151,0.405825,1.39053,0.0678993,4.01713}: gene_0472{10.2351},
+    Q.insect+I{0.11358}+G4{0.949253}: gene_0473{7.44037},
+    Q.insect+I{0.0935964}+G4{1.54821}: gene_0474{10.5223},
+    Q.insect+I{0.10679}+R3{0.404137,0.342979,0.397887,1.32913,0.0911869,3.64686}: gene_0475{10.2315},
+    Q.insect+I{0.1504}+G4{1.04232}: gene_0476{12.2823},
+    Q.yeast+I{0.043634}+G4{2.20221}: gene_0477{13.7256},
+    Q.insect+I{0.154662}+G4{0.736682}: gene_0478{13.684},
+    Q.yeast+F+I{0.0640835}+G4{1.36903}: gene_0479{17.2008},
+    Q.insect+G4{1.11251}: gene_0480{8.19426},
+    Q.insect+R5{0.245656,0.0827157,0.253859,0.505567,0.314492,1.1468,0.154475,2.28694,0.0315178,4.35958}: gene_0481{12.7458},
+    Q.insect+G4{0.731461}: gene_0482{4.89572},
+    Q.insect+I{0.188219}+G4{0.826329}: gene_0483{15.6443},
+    Q.insect+G4{0.988446}: gene_0484{10.9319},
+    Q.insect+R4{0.207924,0.0907333,0.451407,0.609095,0.254406,1.55989,0.0862633,3.586}: gene_0485{9.34858},
+    Q.yeast+I{0.0858017}+G4{1.12311}: gene_0486{16.4191},
+    Q.insect+G4{0.633304}: gene_0487{14.7022},
+    Q.insect+R5{0.212887,0.0263238,0.228216,0.274917,0.362577,0.912381,0.156896,2.271,0.0394231,6.20284}: gene_0488{15.4326},
+    LG+I{0.0722088}+G4{1.16353}: gene_0489{13.4112},
+    Q.insect+I{0.159253}+G4{0.913651}: gene_0490{7.29441},
+    Q.yeast+I{0.173129}+G4{0.944336}: gene_0491{17.5508},
+    LG+F+I{0.192976}+R4{0.288209,0.14557,0.23836,0.721163,0.231617,2.19576,0.0488391,5.68347}: gene_0492{10.3859},
+    Q.insect+G4{0.912005}: gene_0493{8.6299},
+    Q.yeast+I{0.184157}+G4{1.03317}: gene_0494{8.31726},
+    Q.insect+F+I{0.0519453}+G4{1.48994}: gene_0495{12.8851},
+    Q.insect+I{0.131373}+G4{1.10939}: gene_0496{13.1574},
+    Q.yeast+I{0.196605}+G4{1.0459}: gene_0497{17.7668},
+    Q.insect+R5{0.259812,0.0251855,0.317064,0.405487,0.224921,1.19964,0.132482,2.1835,0.0657206,4.65289}: gene_0498{12.6897},
+    Q.insect+R4{0.223135,0.0486632,0.421317,0.507819,0.307433,1.78214,0.0481158,4.72404}: gene_0499{11.9703},
+    Q.insect+R4{0.171679,0.0748616,0.39055,0.522656,0.33255,1.37871,0.105222,3.08429}: gene_0500{9.00079},
+    Q.insect+I{0.188199}+R4{0.317254,0.341263,0.282451,0.969991,0.17841,2.51415,0.0336855,5.02314}: gene_0501{11.6219},
+    Q.insect+G4{1.05467}: gene_0502{9.65256},
+    Q.insect+I{0.131603}+G4{0.945305}: gene_0503{17.9307},
+    Q.insect+R4{0.290465,0.063263,0.382788,0.601888,0.267886,1.83657,0.0588607,4.40426}: gene_0504{7.11682},
+    Q.yeast+I{0.128331}+R4{0.312013,0.201639,0.32832,0.866798,0.172306,2.10562,0.0590305,4.90743}: gene_0505{10.3959},
+    LG+I{0.138943}+G4{0.765866}: gene_0506{14.1725},
+    Q.insect+R5{0.340386,0.0235413,0.226722,0.344091,0.209394,1.18828,0.161,2.3532,0.0624971,4.58083}: gene_0507{10.0367},
+    Q.insect+G4{0.857826}: gene_0508{14.1847},
+    Q.yeast+I{0.0742364}+G4{1.37667}: gene_0509{15.0452},
+    Q.pfam+F+I{0.0751948}+G4{1.71596}: gene_0510{14.5861},
+    LG+I{0.135684}+G4{1.21849}: gene_0511{14.8874},
+    Q.insect+R4{0.234972,0.0826039,0.345982,0.56481,0.293548,1.3976,0.125498,2.9874}: gene_0512{12.2986},
+    LG+I{0.284295}+G4{1.0216}: gene_0513{7.57828},
+    Q.insect+I{0.11501}+R3{0.434897,0.387099,0.362497,1.38941,0.0875956,3.74443}: gene_0514{8.90656},
+    Q.insect+I{0.055805}+G4{1.22973}: gene_0515{19.0942},
+    Q.insect+G4{1.10643}: gene_0516{18.3985},
+    Q.insect+G4{0.843314}: gene_0517{8.13056},
+    Q.insect+R4{0.243866,0.0399611,0.323611,0.496531,0.340092,1.50581,0.0924311,3.43452}: gene_0518{15.0353},
+    LG+I{0.299144}+G4{0.929057}: gene_0519{11.5978},
+    Q.yeast+I{0.247718}+G4{0.970347}: gene_0520{10.631},
+    Q.insect+I{0.111914}+R4{0.197258,0.165274,0.287328,0.668716,0.335741,1.58755,0.0677593,3.57522}: gene_0521{11.9705},
+    LG+I{0.199114}+G4{0.80802}: gene_0522{13.9352},
+    Q.insect+G4{0.923439}: gene_0523{11.9133},
+    Q.insect+R4{0.310774,0.0814865,0.348662,0.641094,0.318786,1.91995,0.0217786,6.38683}: gene_0524{8.14708},
+    Q.insect+R5{0.248518,0.023965,0.247378,0.315501,0.311239,1.1227,0.175426,2.50053,0.0174382,7.33497}: gene_0525{11.6322},
+    Q.insect+I{0.14402}+G4{1.21709}: gene_0526{13.641},
+    Q.insect+I{0.0951329}+G4{1.90547}: gene_0527{12.6583},
+    LG+I{0.261261}+G4{1.59175}: gene_0528{7.09848},
+    Q.insect+R4{0.388122,0.112537,0.34985,0.801028,0.247445,2.19889,0.0145833,9.04996}: gene_0529{10.2311},
+    LG+I{0.0657823}+G4{1.57353}: gene_0530{15.7072},
+    Q.insect+I{0.106078}+G4{0.952291}: gene_0531{11.735},
+    Q.insect+R4{0.2614,0.0532128,0.356659,0.532038,0.3008,1.65395,0.0811404,3.68282}: gene_0532{8.63237},
+    LG+I{0.172788}+G4{0.931031}: gene_0533{13.0802},
+    LG+G4{0.959175}: gene_0534{11.7984},
+    LG+F+I{0.162147}+G4{0.948539}: gene_0535{16.0875},
+    Q.insect+I{0.161703}+G4{1.02549}: gene_0536{11.3636},
+    Q.insect+G4{0.819087}: gene_0537{12.2235},
+    Q.insect+I{0.101357}+G4{0.848573}: gene_0538{18.9671},
+    Q.insect+R4{0.466124,0.0972326,0.244026,0.789788,0.221067,1.9877,0.0687826,4.68917}: gene_0539{7.88457},
+    Q.insect+I{0.178672}+G4{1.0617}: gene_0540{7.83838},
+    Q.insect+I{0.183681}+G4{1.06934}: gene_0541{7.00433},
+    Q.insect+I{0.137894}+G4{0.962509}: gene_0542{11.3632},
+    Q.insect+I{0.215212}+G4{1.06453}: gene_0543{9.21508},
+    Q.insect+R5{0.201004,0.0595275,0.260628,0.432804,0.336774,1.02582,0.161683,2.09805,0.0399105,4.77432}: gene_0544{12.3142},
+    Q.insect+G4{1.04677}: gene_0545{19.6658},
+    Q.insect+I{0.0847743}+G4{1.31748}: gene_0546{9.41514},
+    Q.insect+I{0.0647016}+G4{1.35102}: gene_0547{10.1109},
+    Q.insect+I{0.204298}+G4{0.726988}: gene_0548{6.04271},
+    Q.insect+I{0.0903929}+G4{1.00838}: gene_0549{11.8053},
+    Q.insect+R5{0.351978,0.0591825,0.289793,0.61202,0.223582,1.48121,0.126754,3.19945,0.00789239,8.24775}: gene_0550{7.76844},
+    Q.insect+R4{0.356009,0.0537637,0.171114,0.387223,0.338383,1.50562,0.134494,3.01221}: gene_0551{8.83853},
+    Q.insect+I{0.0552218}+G4{1.45757}: gene_0552{15.5989},
+    LG+I{0.0731675}+G4{1.22616}: gene_0553{13.2595},
+    LG+I{0.116884}+G4{1.30959}: gene_0554{13.1836},
+    Q.insect+I{0.0514481}+R4{0.263524,0.220533,0.374185,0.735368,0.237695,1.67184,0.0731474,3.68206}: gene_0555{15.9295},
+    Q.insect+G4{1.36115}: gene_0556{8.79671},
+    Q.insect+I{0.0947667}+G4{1.5517}: gene_0557{15.479},
+    Q.yeast+I{0.267533}+G4{1.30162}: gene_0558{11.1481},
+    Q.insect+I{0.144455}+G4{1.01167}: gene_0559{10.2207},
+    Q.insect+G4{0.758944}: gene_0560{10.69},
+    Q.plant+F+I{0.063669}+G4{1.7337}: gene_0561{23.1082},
+    LG+I{0.166209}+G4{0.885502}: gene_0562{15.1451},
+    Q.insect+I{0.0801787}+R4{0.271923,0.249812,0.43579,0.962564,0.181882,2.03068,0.0302265,4.73927}: gene_0563{10.1349},
+    Q.insect+I{0.250463}+G4{0.994701}: gene_0564{9.52198},
+    Q.insect+I{0.107119}+G4{1.09601}: gene_0565{11.0305},
+    Q.insect+I{0.167182}+G4{1.02719}: gene_0566{12.5562},
+    Q.insect+R4{0.425792,0.160194,0.347446,0.871758,0.182329,2.13305,0.0444333,5.40102}: gene_0567{7.28959},
+    LG+G4{0.549412}: gene_0568{12.6263},
+    LG+I{0.0574067}+G4{1.1473}: gene_0569{16.9254},
+    LG+I{0.141673}+G4{0.84337}: gene_0570{11.0509},
+    LG+G4{0.617753}: gene_0571{10.3036},
+    Q.insect+G4{1.0522}: gene_0572{9.27446},
+    Q.insect+I{0.265536}+G4{0.865785}: gene_0573{4.75612},
+    Q.yeast+I{0.257306}+R4{0.265928,0.256974,0.251764,1.09995,0.193179,2.45514,0.031823,5.67057}: gene_0574{7.54408},
+    Q.insect+I{0.133056}+G4{1.14717}: gene_0575{11.8706},
+    Q.insect+R4{0.246896,0.150419,0.3895,0.729305,0.300571,1.56657,0.0630332,3.29881}: gene_0576{11.2202},
+    Q.insect+I{0.142714}+G4{1.42294}: gene_0577{10.0579},
+    LG+I{0.0933896}+G4{1.42035}: gene_0578{12.6245},
+    Q.yeast+I{0.101273}+G4{0.998103}: gene_0579{18.3505},
+    Q.insect+I{0.357094}+G4{0.933018}: gene_0580{8.23509},
+    Q.insect+I{0.0793948}+G4{1.13433}: gene_0581{13.0945},
+    Q.insect+G4{0.581016}: gene_0582{8.95545},
+    Q.yeast+G4{0.785878}: gene_0583{14.9989},
+    Q.insect+I{0.248155}+G4{2.01222}: gene_0584{6.71371},
+    Q.insect+I{0.165929}+G4{1.03541}: gene_0585{12.2391},
+    Q.insect+I{0.171903}+G4{1.51712}: gene_0586{6.67921},
+    Q.yeast+R4{0.488894,0.0306078,0.286061,0.64215,0.159928,2.45555,0.0651172,6.27533}: gene_0587{7.55697},
+    Q.insect+G4{1.03473}: gene_0588{8.25292},
+    Q.yeast+I{0.371805}+G4{0.467953}: gene_0589{3.85186},
+    Q.insect+I{0.26994}+G4{1.58407}: gene_0590{6.43853},
+    LG+I{0.158369}+G4{0.898258}: gene_0591{14.1994},
+    Q.insect+R4{0.281281,0.115503,0.322356,0.57094,0.300389,1.49298,0.0959741,3.49044}: gene_0592{9.47298},
+    Q.insect+G4{0.915552}: gene_0593{10.2027},
+    Q.insect+I{0.119205}+G4{1.07776}: gene_0594{11.5364},
+    Q.insect+I{0.161468}+R3{0.319856,0.295929,0.406036,1.24181,0.11264,3.56113}: gene_0595{8.41878},
+    Q.insect+I{0.104981}+G4{1.374}: gene_0596{8.6609},
+    Q.insect+I{0.0574964}+G4{1.37121}: gene_0597{17.6142},
+    Q.insect+G4{0.720236}: gene_0598{13.344},
+    LG+G4{1.10136}: gene_0599{17.749},
+    Q.yeast+I{0.152439}+G4{1.1934}: gene_0600{13.8997},
+    Q.insect+R4{0.336711,0.057149,0.198411,0.487638,0.348054,1.32877,0.116824,3.60816}: gene_0601{8.30766},
+    LG+F+R5{0.186077,0.0430626,0.241352,0.335882,0.307148,0.860708,0.204069,1.9684,0.0613541,3.99103}: gene_0602{12.0968},
+    Q.insect+I{0.183594}+G4{1.25095}: gene_0603{16.7295},
+    Q.insect+R5{0.30975,0.0316241,0.251226,0.441944,0.286248,1.22775,0.12007,2.80605,0.0327055,5.83428}: gene_0604{10.0311},
+    Q.insect+I{0.0774178}+G4{1.00846}: gene_0605{15.5139},
+    Q.insect+I{0.0526458}+G4{1.2663}: gene_0606{12.2152},
+    Q.insect+I{0.102664}+G4{1.20072}: gene_0607{13.4034},
+    LG+R4{0.356803,0.0613794,0.278351,0.580072,0.264298,1.64268,0.100548,3.80394}: gene_0608{10.0487},
+    Q.insect+R4{0.180613,0.109039,0.372511,0.523458,0.3362,1.34157,0.110676,3.02031}: gene_0609{11.8534},
+    LG+I{0.139385}+G4{0.958615}: gene_0610{13.5901},
+    Q.insect+I{0.228361}+R4{0.306761,0.242876,0.250076,1.01471,0.141627,2.21042,0.0731752,4.90176}: gene_0611{9.0627},
+    Q.insect+I{0.194096}+G4{0.968655}: gene_0612{12.349},
+    Q.insect+I{0.060065}+G4{1.37814}: gene_0613{11.7585},
+    Q.insect+I{0.153395}+G4{0.993373}: gene_0614{14.3063},
+    Q.insect+I{0.102033}+G4{1.6304}: gene_0615{15.2952},
+    Q.yeast+I{0.104153}+G4{1.04103}: gene_0616{14.2178},
+    Q.insect+I{0.282676}+G4{0.710959}: gene_0617{5.98876},
+    Q.insect+G4{1.12779}: gene_0618{13.1994},
+    Q.yeast+I{0.181598}+G4{1.07431}: gene_0619{9.93938},
+    Q.yeast+R4{0.222851,0.0602077,0.34734,0.463902,0.328443,1.49346,0.101365,3.30422}: gene_0620{13.1968},
+    Q.insect+I{0.129809}+R4{0.242341,0.16795,0.371296,0.735085,0.205145,2.20457,0.0514089,4.55385}: gene_0621{10.8537},
+    Q.insect+R4{0.298031,0.0912865,0.376019,0.686274,0.254757,1.67868,0.0711927,4.03252}: gene_0622{12.3283},
+    Q.insect+I{0.0370432}+G4{1.8165}: gene_0623{15.1353},
+    Q.insect+G4{0.784677}: gene_0624{11.3362},
+    Q.insect+I{0.134474}+G4{1.58796}: gene_0625{13.0482},
+    Q.insect+I{0.0576275}+G4{1.56358}: gene_0626{13.7095},
+    Q.yeast+F+G4{0.634328}: gene_0627{8.44589},
+    Q.insect+I{0.0921581}+G4{1.45442}: gene_0628{14.4336},
+    Q.insect+G4{0.499924}: gene_0629{4.82081},
+    Q.insect+G4{0.598586}: gene_0630{20.7937},
+    Q.insect+F+I{0.0410713}+G4{0.936675}: gene_0631{15.4337},
+    Q.insect+G4{0.89619}: gene_0632{17.7131},
+    Q.insect+G4{1.25392}: gene_0633{14.0782},
+    LG+I{0.0647261}+G4{1.13446}: gene_0634{14.633},
+    LG+I{0.169392}+G4{0.939108}: gene_0635{17.6787},
+    mtZOA+F+I{0.152473}+G4{1.14503}: gene_0636{11.719},
+    Q.insect+G4{0.4379}: gene_0637{5.94618},
+    Q.insect+I{0.206658}+G4{0.928036}: gene_0638{15.4901},
+    Q.insect+I{0.151954}+G4{0.940835}: gene_0639{17.6015},
+    Q.insect+I{0.120081}+R3{0.364709,0.263889,0.411324,1.246,0.103886,3.76613}: gene_0640{11.0398},
+    Q.insect+G4{0.997166}: gene_0641{17.8876},
+    Q.insect+I{0.136472}+G4{1.65396}: gene_0642{8.08774},
+    Q.yeast+I{0.164529}+G4{0.962937}: gene_0643{10.8052},
+    Q.yeast+G4{0.886435}: gene_0644{12.331},
+    Q.insect+R4{0.456825,0.149115,0.35791,0.992953,0.172368,2.82298,0.0128981,6.9702}: gene_0645{5.28601},
+    Q.insect+I{0.177999}+G4{1.20528}: gene_0646{14.2037},
+    Q.insect+I{0.0795305}+R4{0.320606,0.179051,0.370987,0.973185,0.180438,2.05339,0.0484381,4.35702}: gene_0647{12.0374},
+    Q.insect+G4{0.897443}: gene_0648{8.96731},
+    Q.insect+G4{0.457417}: gene_0649{3.84435},
+    Q.insect+I{0.0926661}+R4{0.283318,0.194726,0.310532,0.787215,0.24407,1.72348,0.0694136,4.02984}: gene_0650{11.7038},
+    Q.insect+I{0.0829915}+G4{1.23851}: gene_0651{11.4764},
+    Q.insect+I{0.197539}+G4{1.23985}: gene_0652{20.308},
+    Q.insect+I{0.118806}+G4{1.23425}: gene_0653{13.1353},
+    Q.insect+I{0.0970622}+R4{0.267518,0.164879,0.208493,0.661077,0.29819,1.40554,0.128737,3.09891}: gene_0654{12.2325},
+    Q.insect+G4{1.14442}: gene_0655{10.5248},
+    Q.insect+R4{0.284333,0.0569873,0.396043,0.638922,0.217152,1.60096,0.102472,3.73864}: gene_0656{11.9798},
+    Q.insect+G4{1.74963}: gene_0657{6.07353},
+    Q.insect+R4{0.275139,0.115929,0.345454,0.611139,0.301827,1.57739,0.0775807,3.62056}: gene_0658{10.0792},
+    Q.insect+I{0.105573}+G4{1.38706}: gene_0659{16.0363},
+    Q.insect+R4{0.403811,0.139376,0.351762,0.819157,0.198999,2.12925,0.0454283,5.10367}: gene_0660{9.49357},
+    Q.insect+I{0.134968}+R4{0.25061,0.237304,0.323219,0.840978,0.257828,1.97633,0.0333759,4.76859}: gene_0661{10.4855},
+    Q.insect+I{0.137839}+G4{1.17025}: gene_0662{9.82519},
+    Q.insect+I{0.382247}+G4{0.847291}: gene_0663{5.40594},
+    Q.insect+I{0.0819639}+R4{0.299962,0.174325,0.308184,0.78333,0.255087,1.93735,0.0548036,3.87029}: gene_0664{12.1901},
+    Q.yeast+R5{0.333186,0.0127883,0.122762,0.263,0.194103,0.823354,0.278638,1.80416,0.0713098,4.22003}: gene_0665{13.5067},
+    Q.yeast+I{0.0753689}+G4{1.0296}: gene_0666{15.132},
+    Q.insect+I{0.184464}+G4{0.851286}: gene_0667{7.9376},
+    LG+I{0.256161}+G4{0.935818}: gene_0668{7.20335},
+    Q.insect+I{0.118039}+G4{1.84729}: gene_0669{13.9547},
+    Q.insect+I{0.0835141}+G4{1.53536}: gene_0670{11.7287},
+    Q.yeast+G4{0.808901}: gene_0671{13.8576},
+    Q.yeast+I{0.147688}+G4{0.689}: gene_0672{14.5823},
+    mtZOA+I{0.136896}+G4{0.99662}: gene_0673{12.333},
+    Q.insect+I{0.215568}+G4{1.25323}: gene_0674{8.51163},
+    Q.insect+G4{1.07846}: gene_0675{11.4481},
+    LG+I{0.1909}+G4{1.35899}: gene_0676{15.7087},
+    Q.insect+I{0.0555457}+G4{2.148}: gene_0677{11.7213},
+    Q.insect+G4{0.488587}: gene_0678{13.5903},
+    Q.insect+I{0.120788}+R4{0.263927,0.2683,0.360464,0.879141,0.218604,1.98779,0.0362172,4.90794}: gene_0679{11.7368},
+    Q.insect+G4{0.460137}: gene_0680{7.35755},
+    Q.insect+I{0.168768}+G4{0.936953}: gene_0681{9.93335},
+    Q.insect+G4{0.803414}: gene_0682{9.40838},
+    LG+I{0.16127}+G4{0.899512}: gene_0683{10.2967},
+    Q.insect+I{0.190699}+G4{0.813063}: gene_0684{12.8854},
+    Q.insect+R4{0.624543,0.0508727,0.206807,0.958541,0.128366,3.44065,0.0402837,8.15048}: gene_0685{5.93331},
+    Q.yeast+I{0.249104}+R3{0.391752,0.449912,0.260599,1.6291,0.0985454,4.05097}: gene_0686{10.3412},
+    Q.insect+G4{0.889277}: gene_0687{9.25914},
+    Q.insect+G4{0.78486}: gene_0688{8.22701},
+    Q.insect+I{0.0476394}+G4{1.70771}: gene_0689{14.9003},
+    Q.insect+I{0.157522}+G4{1.03853}: gene_0690{8.70208},
+    LG+G4{0.759623}: gene_0691{20.1654},
+    Q.insect+R3{0.435336,0.154596,0.445511,1.12832,0.119153,3.60896}: gene_0692{7.77408},
+    Q.insect+I{0.191624}+G4{1.12837}: gene_0693{17.3344},
+    Q.insect+G4{0.699264}: gene_0694{16.638},
+    Q.insect+I{0.102242}+G4{0.859093}: gene_0695{16.9971},
+    Q.insect+R4{0.235869,0.11532,0.471526,0.71898,0.236901,1.78111,0.0557049,3.8028}: gene_0696{14.0045},
+    Q.insect+R4{0.193224,0.0715675,0.253055,0.48133,0.534797,1.46,0.0189242,4.41589}: gene_0697{11.5079},
+    Q.insect+R4{0.176227,0.0989676,0.469892,0.735267,0.282421,1.53884,0.0714589,2.83327}: gene_0698{17.633},
+    Q.insect+G4{0.891762}: gene_0699{11.656},
+    LG+G4{0.542607}: gene_0700{11.0848},
+    LG+F+I{0.116672}+G4{1.51201}: gene_0701{13.337},
+    Q.insect+G4{1.12249}: gene_0702{12.3472},
+    Q.insect+G4{0.622043}: gene_0703{12.3927},
+    Q.insect+I{0.147656}+G4{0.934437}: gene_0704{9.90314},
+    Q.insect+G4{1.1993}: gene_0705{10.6136},
+    Q.insect+R4{0.183166,0.092871,0.312605,0.517217,0.36634,1.3038,0.137889,2.49236}: gene_0706{18.3918},
+    Q.insect+G4{1.28156}: gene_0707{12.221},
+    Q.insect+I{0.355617}+G4{1.07158}: gene_0708{11.2024},
+    LG+G4{0.676112}: gene_0709{11.3877},
+    LG+I{0.0813706}+G4{1.39612}: gene_0710{16.442},
+    LG+R3{0.351883,0.171845,0.511241,1.16222,0.136876,2.52312}: gene_0711{11.5885},
+    Q.yeast+I{0.0834027}+G4{1.4412}: gene_0712{16.9297},
+    Q.insect+I{0.0946165}+G4{1.49508}: gene_0713{14.1197},
+    LG+I{0.157895}+G4{0.756668}: gene_0714{12.0716},
+    mtZOA+G4{0.895041}: gene_0715{20.3219},
+    Q.insect+G4{0.375766}: gene_0716{3.54114},
+    Q.insect+I{0.172224}+G4{0.868245}: gene_0717{9.32198},
+    Q.insect+I{0.243776}+G4{0.960434}: gene_0718{10.4243},
+    Q.insect+I{0.0858738}+G4{1.52242}: gene_0719{8.51817},
+    Q.insect+I{0.120276}+G4{0.842412}: gene_0720{14.1909},
+    Q.insect+I{0.178698}+G4{1.31221}: gene_0721{10.92},
+    Q.yeast+F+G4{0.658306}: gene_0722{11.8923},
+    Q.insect+R5{0.42665,0.0868588,0.255508,0.628081,0.243572,1.97567,0.0694074,3.997,0.00486299,9.01139}: gene_0723{6.05554},
+    LG+R4{0.387975,0.0530378,0.276029,0.627948,0.26128,1.79793,0.0747153,4.50143}: gene_0724{9.86652},
+    Q.insect+G4{0.701361}: gene_0725{12.3302},
+    LG+F+I{0.0619533}+G4{1.22327}: gene_0726{12.427},
+    Q.plant+I{0.0717427}+G4{1.32909}: gene_0727{14.4193},
+    Q.insect+I{0.0796498}+G4{1.18944}: gene_0728{11.1379},
+    Q.insect+I{0.116814}+G4{1.38159}: gene_0729{10.5339},
+    Q.insect+I{0.217931}+G4{0.74846}: gene_0730{16.2968},
+    Q.yeast+I{0.263651}+G4{0.929255}: gene_0731{9.6969},
+    Q.insect+R4{0.290909,0.0840565,0.171256,0.426202,0.431223,1.31271,0.106612,3.15619}: gene_0732{13.8082},
+    LG+I{0.41301}+G4{0.855637}: gene_0733{5.89111},
+    Q.insect+I{0.079955}+G4{1.14183}: gene_0734{16.3671},
+    Q.insect+R4{0.384892,0.0714517,0.188704,0.508845,0.362271,1.58488,0.0641325,4.71403}: gene_0735{9.23969},
+    Q.insect+I{0.214502}+G4{0.989998}: gene_0736{10.2521},
+    Q.insect+R4{0.484487,0.0658943,0.234523,0.805967,0.225796,2.11053,0.0551943,5.48081}: gene_0737{6.58235},
+    Q.yeast+I{0.206318}+G4{0.830051}: gene_0738{9.76558},
+    LG+I{0.186447}+G4{0.711418}: gene_0739{11.4962},
+    LG+F+I{0.214175}+G4{1.12273}: gene_0740{12.9601},
+    Q.insect+I{0.176967}+G4{1.35183}: gene_0741{9.46493},
+    Q.insect+I{0.0652233}+R4{0.256959,0.17825,0.380003,0.832998,0.268537,1.88425,0.0292772,4.49712}: gene_0742{13.0579},
+    Q.insect+I{0.200679}+G4{1.42969}: gene_0743{13.2288},
+    Q.insect+I{0.14786}+G4{1.07125}: gene_0744{9.34163},
+    Q.insect+I{0.151414}+G4{0.965748}: gene_0745{12.5501},
+    Q.insect+G4{1.1332}: gene_0746{16.9556},
+    Q.insect+I{0.0597477}+G4{1.39312}: gene_0747{11.5382},
+    Q.insect+I{0.0445522}+G4{1.46416}: gene_0748{19.3378},
+    Q.insect+R3{0.498768,0.153945,0.404322,1.35013,0.0969101,3.89358}: gene_0749{5.08565},
+    Q.insect+I{0.190559}+R5{0.157795,0.0873913,0.20913,0.441495,0.193951,1.06358,0.191243,2.10459,0.0573222,4.9738}: gene_0750{15.8389},
+    Q.insect+I{0.111819}+G4{1.44023}: gene_0751{12.3955},
+    LG+R4{0.291513,0.0840404,0.335033,0.516176,0.310241,1.75127,0.0632124,4.10124}: gene_0752{8.20003},
+    LG+F+I{0.15988}+G4{0.917863}: gene_0753{12.775},
+    Q.insect+I{0.144988}+G4{0.949123}: gene_0754{10.2645},
+    Q.insect+R4{0.50861,0.0765635,0.236473,0.589041,0.189878,2.28786,0.06504,5.95561}: gene_0755{5.43574},
+    LG+R4{0.207266,0.0635559,0.305731,0.545621,0.358207,1.33613,0.128796,2.65073}: gene_0756{12.5504},
+    Q.insect+I{0.0942934}+G4{1.28995}: gene_0757{17.4504},
+    Q.insect+I{0.0609136}+G4{1.21374}: gene_0758{16.6433},
+    Q.insect+R4{0.273478,0.0527437,0.285719,0.511183,0.345963,1.44652,0.0948409,3.57524}: gene_0759{13.3006},
+    Q.insect+G4{0.95461}: gene_0760{9.15136},
+    Q.insect+R5{0.324317,0.0425604,0.226623,0.387504,0.277696,1.14685,0.152161,2.798,0.0192022,8.028}: gene_0761{10.6956},
+    Q.insect+I{0.110349}+G4{0.795351}: gene_0762{17.5934},
+    Q.insect+G4{1.10001}: gene_0763{10.8626},
+    Q.insect+I{0.240608}+G4{0.988511}: gene_0764{7.61733},
+    Q.insect+I{0.177997}+G4{1.37219}: gene_0765{11.0123},
+    Q.insect+R3{0.668736,0.121503,0.18727,1.77312,0.143994,4.07443}: gene_0766{3.90489},
+    Q.insect+I{0.199954}+R3{0.460784,0.398529,0.252429,1.53287,0.0868331,4.94539}: gene_0767{9.20343},
+    Q.yeast+I{0.116548}+G4{1.39193}: gene_0768{16.7798},
+    Q.insect+G4{0.910886}: gene_0769{13.6248},
+    Q.insect+R5{0.319821,0.0594965,0.225169,0.527406,0.28116,1.09985,0.139177,2.40726,0.0346736,6.28574}: gene_0770{13.0293},
+    Q.insect+I{0.166425}+G4{0.800552}: gene_0771{9.0563},
+    Q.insect+I{0.244813}+G4{0.952222}: gene_0772{8.59479},
+    Q.insect+G4{0.539449}: gene_0773{6.05627},
+    Q.insect+G4{0.546094}: gene_0774{14.2499},
+    Q.insect+I{0.146996}+G4{1.11115}: gene_0775{9.45967},
+    Q.insect+I{0.239275}+R3{0.381889,0.358557,0.289327,1.6373,0.089508,4.34994}: gene_0776{4.67369},
+    LG+R4{0.484811,0.0337225,0.243136,0.581577,0.212013,2.31222,0.0600393,5.8633}: gene_0777{6.50309},
+    Q.yeast+I{0.104912}+G4{1.42635}: gene_0778{12.9379},
+    Q.insect+G4{0.646468}: gene_0779{14.6825},
+    Q.insect+I{0.188499}+R4{0.273248,0.219839,0.28349,0.908367,0.195048,2.16964,0.0597151,4.34115}: gene_0780{11.6999},
+    Q.insect+I{0.0753203}+G4{1.08234}: gene_0781{10.3325},
+    Q.yeast+I{0.257521}+R5{0.231939,0.170119,0.221803,0.700782,0.174604,1.7188,0.0752368,3.45325,0.0388958,6.30364}: gene_0782{9.94837},
+    Q.yeast+R4{0.0830251,0.0374945,0.333622,0.451972,0.495841,1.19642,0.0875123,2.88951}: gene_0783{20.5838},
+    Q.yeast+I{0.134213}+G4{1.27765}: gene_0784{16.518},
+    Q.insect+R4{0.448522,0.0752968,0.297738,0.867088,0.230039,2.36703,0.0237011,6.90076}: gene_0785{8.60211},
+    Q.pfam+G4{0.906178}: gene_0786{8.29347},
+    Q.insect+I{0.271931}+G4{1.82591}: gene_0787{6.999},
+    Q.insect+I{0.062079}+G4{1.65032}: gene_0788{10.2797},
+    Q.yeast+I{0.22287}+G4{0.874523}: gene_0789{10.6602},
+    Q.insect+I{0.129485}+R3{0.326533,0.385821,0.490869,1.32774,0.0531135,4.18479}: gene_0790{7.49511},
+    Q.insect+R4{0.17226,0.133341,0.250878,0.555444,0.453113,1.21364,0.123749,2.32542}: gene_0791{17.229},
+    Q.insect+I{0.117105}+G4{1.01345}: gene_0792{17.816},
+    Q.insect+R5{0.175815,0.0597248,0.190859,0.377928,0.329065,0.892274,0.270003,1.82511,0.0342584,3.82292}: gene_0793{15.9057},
+    LG+I{0.12681}+G4{0.953327}: gene_0794{13.7931},
+    Q.insect+G4{1.14353}: gene_0795{14.0399},
+    Q.insect+I{0.144619}+G4{0.803397}: gene_0796{18.3261},
+    LG+I{0.189709}+G4{1.35897}: gene_0797{14.8976},
+    Q.insect+G4{1.48533}: gene_0798{11.8221},
+    Q.yeast+I{0.116664}+G4{0.926401}: gene_0799{13.6474},
+    Q.insect+I{0.0512929}+G4{1.57363}: gene_0800{14.541},
+    Q.insect+I{0.108831}+G4{1.73814}: gene_0801{12.2311},
+    Q.insect+R4{0.381358,0.123018,0.238463,0.718621,0.258731,1.5637,0.121448,3.10539}: gene_0802{10.889},
+    Q.insect+G4{0.520055}: gene_0803{11.7757},
+    mtZOA+G4{0.548979}: gene_0804{27.0244},
+    Q.insect+I{0.114283}+G4{1.18348}: gene_0805{17.0829},
+    Q.insect+I{0.0968578}+R4{0.321048,0.244222,0.316735,0.884398,0.235779,2.09683,0.0295801,4.9724}: gene_0806{9.1826},
+    LG+I{0.161225}+G4{0.946045}: gene_0807{9.63489},
+    Q.insect+I{0.244467}+R3{0.468655,0.40434,0.224546,2.13604,0.0623322,5.30809}: gene_0808{5.21493},
+    mtZOA+I{0.117886}+G4{0.730678}: gene_0809{22.8841},
+    mtZOA+R5{0.216471,0.0726498,0.303383,0.364171,0.296454,0.965297,0.105058,1.9862,0.0786346,4.81923}: gene_0810{16.6227},
+    Q.insect+I{0.149916}+G4{0.826279}: gene_0811{15.1544},
+    Q.insect+I{0.0905961}+G4{1.83601}: gene_0812{11.0393},
+    Q.insect+I{0.13458}+G4{1.24404}: gene_0813{16.8221},
+    LG+I{0.230328}+G4{1.15516}: gene_0814{10.8315},
+    Q.insect+I{0.144341}+G4{1.26412}: gene_0815{8.8294},
+    Q.insect+I{0.20113}+G4{0.995049}: gene_0816{11.9399},
+    LG+I{0.203463}+R4{0.294922,0.190964,0.260045,0.968868,0.173363,2.23456,0.0682066,4.46204}: gene_0817{8.50172},
+    Q.yeast+I{0.142364}+G4{1.17246}: gene_0818{15.0926},
+    Q.insect+I{0.0604782}+G4{1.22434}: gene_0819{15.0318},
+    Q.insect+G4{0.910413}: gene_0820{13.4386},
+    LG+I{0.152329}+G4{0.810465}: gene_0821{16.413},
+    Q.yeast+G4{0.683874}: gene_0822{11.1385},
+    Q.insect+I{0.129881}+G4{1.46355}: gene_0823{11.2664},
+    LG+I{0.195668}+G4{0.958442}: gene_0824{12.9853},
+    Q.insect+G4{0.855544}: gene_0825{14.3492},
+    LG+I{0.239301}+G4{1.29864}: gene_0826{11.6808},
+    Q.insect+R4{0.0882859,0.0420275,0.423849,0.552944,0.459574,1.42187,0.0282915,3.83401}: gene_0827{12.895},
+    Q.pfam+I{0.0425731}+G4{1.70076}: gene_0828{20.2979},
+    Q.insect+I{0.180955}+G4{1.4603}: gene_0829{9.28023},
+    Q.insect+I{0.220097}+G4{0.730231}: gene_0830{16.8994},
+    Q.insect+I{0.101837}+G4{1.67344}: gene_0831{8.47288},
+    Q.insect+I{0.198102}+R4{0.267933,0.172172,0.26648,1.00297,0.231231,2.22878,0.0362539,4.72324}: gene_0832{9.56442},
+    LG+G4{0.80292}: gene_0833{7.59767},
+    Q.insect+I{0.133075}+G4{0.984231}: gene_0834{16.4334},
+    Q.insect+R4{0.389781,0.081049,0.252362,0.680011,0.325204,1.93321,0.0326526,5.14852}: gene_0835{10.9397},
+    Q.insect+G4{0.961661}: gene_0836{11.5056},
+    Q.insect+I{0.211798}+R4{0.279523,0.330605,0.199892,0.703683,0.238228,1.90423,0.0705593,4.44003}: gene_0837{5.17628},
+    Q.insect+G4{0.701953}: gene_0838{13.3854},
+    Q.insect+I{0.153209}+G4{0.975705}: gene_0839{14.5502},
+    Q.insect+I{0.166512}+G4{1.34529}: gene_0840{7.63463},
+    Q.insect+I{0.0821005}+R4{0.287211,0.26576,0.368927,0.856539,0.207887,1.83003,0.0538749,4.21776}: gene_0841{12.8018},
+    Q.insect+I{0.0435946}+G4{1.45542}: gene_0842{14.9326},
+    Q.insect+I{0.192576}+G4{1.13681}: gene_0843{11.1229},
+    LG+G4{0.552587}: gene_0844{14.0643},
+    Q.insect+I{0.0730409}+G4{2.19338}: gene_0845{11.5443},
+    mtZOA+G4{0.623623}: gene_0846{19.6631},
+    Q.insect+I{0.0726184}+G4{1.30519}: gene_0847{13.2561},
+    Q.insect+I{0.11699}+G4{1.0085}: gene_0848{10.5414},
+    Q.insect+I{0.142653}+R4{0.251566,0.226535,0.362505,0.766926,0.198195,2.21803,0.0450819,4.99967}: gene_0849{13.6527},
+    Q.insect+G4{1.55208}: gene_0850{13.5323},
+    Q.insect+R4{0.409165,0.0496365,0.307139,0.575519,0.211782,2.19872,0.0719129,4.69007}: gene_0851{8.13865},
+    Q.insect+R4{0.184777,0.0584328,0.509112,0.707504,0.218419,1.3887,0.0876922,3.71396}: gene_0852{16.9475},
+    Q.yeast+I{0.219781}+G4{0.928016}: gene_0853{8.63447},
+    LG+I{0.146075}+G4{0.890594}: gene_0854{15.4563},
+    Q.yeast+F+I{0.130969}+G4{1.73384}: gene_0855{12.6487},
+    Q.insect+G4{1.13532}: gene_0856{11.5348},
+    Q.insect+I{0.104985}+R3{0.307684,0.277538,0.528562,1.28362,0.0587694,4.01794}: gene_0857{8.37594},
+    Q.insect+I{0.0606518}+G4{1.37781}: gene_0858{14.1589},
+    Q.yeast+F+G4{0.881745}: gene_0859{16.6916},
+    LG+I{0.0751033}+R3{0.246533,0.235837,0.490715,1.07526,0.187648,2.20737}: gene_0860{14.3361},
+    LG+I{0.160261}+G4{1.60813}: gene_0861{12.0169},
+    Q.insect+G4{0.762983}: gene_0862{10.9053},
+    LG+I{0.1665}+G4{0.937479}: gene_0863{17.9909},
+    Q.yeast+R4{0.237749,0.132959,0.348654,0.593416,0.374972,1.6351,0.0386247,3.84146}: gene_0864{14.96},
+    LG+I{0.126782}+G4{1.38601}: gene_0865{14.594},
+    Q.insect+G4{0.842246}: gene_0866{9.8981},
+    Q.insect+I{0.206035}+G4{1.00334}: gene_0867{9.36393},
+    Q.insect+F+G4{0.665838}: gene_0868{6.63103},
+    Q.insect+R4{0.279082,0.0724513,0.384505,0.530252,0.24948,1.65391,0.0869323,4.17885}: gene_0869{8.36682},
+    Q.insect+G4{0.82052}: gene_0870{12.5294},
+    LG+I{0.15892}+G4{0.801031}: gene_0871{11.5583},
+    LG+I{0.112863}+G4{0.706132}: gene_0872{15.3828},
+    Q.insect+I{0.172182}+G4{1.33951}: gene_0873{9.10291},
+    mtZOA+I{0.0951807}+G4{1.35734}: gene_0874{12.1292},
+    Q.insect+I{0.213566}+G4{1.35096}: gene_0875{8.35063},
+    LG+I{0.235177}+G4{1.05175}: gene_0876{14.4296},
+    Q.insect+G4{0.654984}: gene_0877{9.34689},
+    Q.insect+I{0.143594}+G4{0.888155}: gene_0878{15.3141},
+    mtZOA+I{0.0476564}+G4{1.06003}: gene_0879{32.2136},
+    Q.insect+I{0.484853}+R3{0.338681,0.531357,0.143371,3.12171,0.0330951,11.2547}: gene_0880{3.04612},
+    Q.insect+G4{1.07949}: gene_0881{14.1462},
+    LG+I{0.175731}+G4{0.789831}: gene_0882{10.5},
+    LG+I{0.172973}+R4{0.30679,0.153334,0.247191,0.851991,0.178348,1.96234,0.0946985,4.14342}: gene_0883{14.7722},
+    Q.insect+R4{0.202789,0.0769511,0.296192,0.484873,0.384006,1.28783,0.117013,2.95905}: gene_0884{17.8472},
+    mtZOA+I{0.0821794}+G4{1.05617}: gene_0885{13.8024},
+    LG+I{0.160599}+G4{1.27696}: gene_0886{13.7191},
+    Q.insect+R5{0.151714,0.0542249,0.265586,0.374843,0.386882,1.02002,0.169992,2.20922,0.0258269,4.72547}: gene_0887{15.5493},
+    Q.insect+I{0.088733}+G4{1.30883}: gene_0888{11.7744},
+    LG+G4{0.571025}: gene_0889{9.58917},
+    Q.yeast+I{0.150515}+G4{1.25402}: gene_0890{15.6534},
+    Q.yeast+I{0.145485}+G4{1.92354}: gene_0891{7.89398},
+    Q.insect+I{0.103872}+G4{1.00091}: gene_0892{11.5734},
+    Q.insect+R4{0.294207,0.166187,0.244232,0.576775,0.40873,1.47861,0.0528306,3.89712}: gene_0893{9.52861},
+    Q.insect+I{0.138704}+R3{0.390242,0.258838,0.379685,1.31615,0.0913677,4.36988}: gene_0894{7.89199},
+    Q.insect+G4{0.465969}: gene_0895{5.36806},
+    Q.insect+I{0.0783137}+G4{1.22122}: gene_0896{11.8798},
+    Q.yeast+I{0.162632}+G4{0.812638}: gene_0897{11.1285},
+    Q.insect+F+I{0.0957515}+G4{0.986433}: gene_0898{14.6009},
+    Q.insect+I{0.130325}+G4{0.946899}: gene_0899{12.4998},
+    LG+I{0.12333}+G4{1.0947}: gene_0900{10.6986},
+    Q.insect+G4{0.839225}: gene_0901{6.22861},
+    Q.insect+R4{0.496959,0.110365,0.286869,0.847301,0.147118,2.00289,0.0690545,5.90009}: gene_0902{4.90496},
+    Q.insect+I{0.20016}+G4{0.908861}: gene_0903{11.0989},
+    Q.insect+I{0.240311}+R4{0.347151,0.204849,0.173581,1.08531,0.178696,2.42305,0.0602609,5.10292}: gene_0904{7.53194},
+    Q.insect+G4{0.896249}: gene_0905{10.2177},
+    Q.insect+G4{1.30989}: gene_0906{11.5711},
+    LG+G4{0.737923}: gene_0907{13.1801},
+    Q.insect+I{0.0485421}+G4{1.38279}: gene_0908{18.1722},
+    LG+I{0.178131}+R3{0.359494,0.301613,0.418223,1.61468,0.0441518,4.89845}: gene_0909{9.74284},
+    Q.insect+R4{0.289888,0.0691142,0.347184,0.625212,0.253882,1.48424,0.109046,3.54052}: gene_0910{10.6817},
+    LG+F+I{0.112175}+G4{1.05205}: gene_0911{19.4617},
+    Q.insect+I{0.157301}+G4{0.975515}: gene_0912{11.0572},
+    LG+I{0.0790559}+G4{1.30704}: gene_0913{13.9048},
+    Q.insect+I{0.0663707}+G4{1.43101}: gene_0914{14.9775},
+    Q.insect+I{0.107686}+G4{1.21463}: gene_0915{11.3954},
+    Q.insect+I{0.0719148}+G4{1.40946}: gene_0916{11.644},
+    Q.insect+G4{0.769474}: gene_0917{13.0948},
+    Q.insect+I{0.0582691}+G4{1.8012}: gene_0918{14.5674},
+    Q.insect+I{0.120585}+G4{0.967514}: gene_0919{11.2649},
+    mtZOA+G4{1.0582}: gene_0920{14.2551},
+    Q.insect+R4{0.116096,0.0529936,0.420201,0.473942,0.433215,1.44308,0.0304884,5.56063}: gene_0921{12.3474},
+    Q.insect+I{0.201958}+G4{0.902244}: gene_0922{8.3989},
+    Q.insect+I{0.245177}+G4{0.915088}: gene_0923{10.7912},
+    Q.insect+R4{0.492771,0.158021,0.309631,0.920828,0.152161,2.4118,0.0454366,5.94307}: gene_0924{7.2531},
+    Q.insect+G4{0.873287}: gene_0925{18.7934},
+    Q.insect+I{0.0522049}+G4{1.31923}: gene_0926{12.4551},
+    Q.insect+I{0.066732}+G4{1.31761}: gene_0927{18.7726},
+    Q.yeast+I{0.21135}+G4{0.995984}: gene_0928{10.2805},
+    Q.insect+G4{0.5922}: gene_0929{10.5382},
+    Q.insect+G4{0.938074}: gene_0930{16.5337},
+    Q.insect+I{0.174984}+G4{1.51759}: gene_0931{11.1338},
+    Q.insect+I{0.0529294}+G4{1.80685}: gene_0932{12.2947},
+    LG+G4{1.36609}: gene_0933{14.268},
+    Q.insect+G4{1.01752}: gene_0934{14.7359},
+    Q.insect+R4{0.271745,0.104715,0.30219,0.54346,0.341548,1.47017,0.0845168,3.6109}: gene_0935{8.65423},
+    Q.insect+I{0.211903}+G4{1.11163}: gene_0936{9.751},
+    Q.insect+I{0.241863}+G4{1.55801}: gene_0937{7.37885},
+    Q.insect+I{0.164886}+R4{0.30067,0.305678,0.32027,0.961751,0.17284,2.22019,0.0413338,5.23384}: gene_0938{7.91077},
+    LG+G4{0.586896}: gene_0939{14.5915},
+    Q.insect+I{0.0437314}+G4{1.32826}: gene_0940{16.9261},
+    Q.yeast+I{0.169893}+G4{1.10317}: gene_0941{9.6318},
+    Q.insect+I{0.0780747}+G4{1.26412}: gene_0942{15.714},
+    mtZOA+F+I{0.188603}+G4{1.00399}: gene_0943{15.1372},
+    Q.insect+I{0.0396912}+G4{1.41245}: gene_0944{16.1721},
+    Q.insect+G4{0.826613}: gene_0945{6.47734},
+    Q.insect+G4{0.895745}: gene_0946{11.3348},
+    Q.insect+I{0.151669}+G4{1.14895}: gene_0947{15.6623},
+    Q.insect+G4{0.57421}: gene_0948{9.13081},
+    Q.insect+I{0.150684}+G4{1.15136}: gene_0949{14.862},
+    PMB+I{0.111241}+G4{1.56983}: gene_0950{12.5013},
+    Q.plant+G4{0.765945}: gene_0951{12.4942},
+    Q.insect+G4{0.761468}: gene_0952{14.4672},
+    Q.insect+I{0.0711353}+G4{1.32055}: gene_0953{11.6385},
+    LG+I{0.198371}+G4{1.25801}: gene_0954{10.2373},
+    Q.insect+I{0.110272}+G4{1.04314}: gene_0955{10.973},
+    Q.insect+I{0.157301}+G4{0.966797}: gene_0956{9.60064},
+    Q.insect+I{0.093504}+G4{1.02851}: gene_0957{9.08507},
+    Q.insect+R4{0.383283,0.169299,0.401708,0.88713,0.182376,2.2254,0.0326334,5.29773}: gene_0958{9.70603},
+    Q.insect+I{0.179541}+G4{1.18943}: gene_0959{9.11991},
+    Q.yeast+I{0.193071}+G4{0.890353}: gene_0960{14.131},
+    LG+G4{1.09837}: gene_0961{15.5201},
+    Q.insect+G4{1.01833}: gene_0962{14.7358},
+    Q.insect+I{0.162885}+G4{0.941951}: gene_0963{11.2055},
+    Q.insect+I{0.404205}+G4{1.39885}: gene_0964{3.37713},
+    LG+G4{0.492395}: gene_0965{13.721},
+    Q.insect+I{0.18833}+G4{0.818371}: gene_0966{7.79791},
+    Q.insect+I{0.225614}+G4{0.92193}: gene_0967{6.32468},
+    Q.insect+I{0.140977}+G4{1.67994}: gene_0968{9.40156},
+    Q.yeast+I{0.166852}+G4{0.889321}: gene_0969{9.89518},
+    Q.insect+I{0.078113}+G4{1.42094}: gene_0970{10.1518},
+    Q.insect+R4{0.554893,0.141523,0.324918,1.21235,0.0992266,3.59068,0.0209626,8.16999}: gene_0971{3.77231},
+    Q.insect+R4{0.283141,0.0786601,0.227721,0.564672,0.396896,1.40567,0.0922419,3.15728}: gene_0972{10.8803},
+    Q.insect+G4{0.948907}: gene_0973{16.139},
+    Q.insect+R3{0.49478,0.129689,0.423476,1.49667,0.0817442,3.69482}: gene_0974{5.99324},
+    Q.yeast+I{0.180765}+G4{1.2767}: gene_0975{8.16729},
+    Q.insect+I{0.0693357}+G4{0.765899}: gene_0976{23.4163},
+    Q.insect+I{0.166543}+G4{1.01921}: gene_0977{12.3549},
+    LG+I{0.114263}+G4{1.5058}: gene_0978{16.012},
+    Q.insect+I{0.337968}+G4{0.79099}: gene_0979{5.08749},
+    Q.insect+I{0.0691309}+G4{0.917984}: gene_0980{20.6179},
+    Q.insect+I{0.0876227}+G4{1.06674}: gene_0981{13.5868},
+    Q.insect+I{0.124485}+G4{0.823873}: gene_0982{12.5321},
+    Q.insect+I{0.17421}+G4{1.41264}: gene_0983{7.29519},
+    Q.insect+I{0.0303511}+G4{1.93978}: gene_0984{13.8396},
+    Q.insect+I{0.244629}+R3{0.297869,0.356694,0.365257,1.36785,0.0922441,4.27272}: gene_0985{8.58572},
+    Q.insect+G4{0.389927}: gene_0986{10.086},
+    Q.yeast+I{0.238864}+G4{1.36145}: gene_0987{14.029},
+    Q.yeast+I{0.169024}+G4{1.13643}: gene_0988{8.4025},
+    LG+I{0.164673}+R4{0.330665,0.227607,0.334877,1.11118,0.11049,2.41387,0.0592939,4.82208}: gene_0989{9.788},
+    LG+G4{0.679546}: gene_0990{12.5603},
+    LG+F+I{0.155419}+G4{1.09118}: gene_0991{15.1481},
+    Q.insect+I{0.288851}+G4{0.777569}: gene_0992{3.83592},
+    Q.insect+R3{0.643152,0.143071,0.302692,1.94934,0.0541558,5.87075}: gene_0993{3.00801},
+    LG+I{0.245793}+G4{1.08392}: gene_0994{13.1173},
+    Q.insect+I{0.200819}+R4{0.134108,0.112961,0.287815,0.532681,0.290903,1.73415,0.0863556,3.78745}: gene_0995{16.8841},
+    LG+I{0.160943}+G4{0.756943}: gene_0996{10.7138},
+    Q.yeast+R4{0.544904,0.0696488,0.278928,0.995136,0.125385,2.88815,0.0507817,6.34764}: gene_0997{4.30838},
+    Q.yeast+G4{1.01687}: gene_0998{7.28556},
+    Q.insect+I{0.323157}+G4{0.99144}: gene_0999{8.1987},
+    LG+G4{0.598308}: gene_1000{10.6689},
+    Q.insect+I{0.16782}+G4{1.02243}: gene_1001{10.063},
+    Q.insect+I{0.0989145}+G4{1.8313}: gene_1002{17.4483},
+    LG+R4{0.274063,0.123138,0.249941,0.673448,0.377693,1.31964,0.0983023,3.04685}: gene_1003{14.411},
+    Q.insect+G4{0.800055}: gene_1004{11.6652},
+    LG+I{0.133365}+G4{0.94635}: gene_1005{12.9226},
+    Q.yeast+R5{0.489105,0.0646482,0.151689,0.541338,0.201004,1.30045,0.114428,2.86445,0.0437737,6.78706}: gene_1006{8.08703},
+    Q.insect+I{0.102457}+G4{1.06767}: gene_1007{7.06294},
+    Q.insect+I{0.0576953}+G4{1.31466}: gene_1008{11.1362},
+    Q.insect+I{0.145378}+G4{2.30639}: gene_1009{8.21447},
+    Q.insect+G4{1.60572}: gene_1010{10.9263},
+    Q.insect+G4{0.951964}: gene_1011{12.7896},
+    Q.insect+I{0.126256}+G4{1.02722}: gene_1012{15.9379},
+    Q.insect+I{0.1702}+G4{1.03891}: gene_1013{12.1855},
+    Q.insect+I{0.119226}+G4{1.24986}: gene_1014{10.8043},
+    Q.insect+G4{0.863357}: gene_1015{11.1871},
+    Q.insect+I{0.0605098}+G4{1.54274}: gene_1016{10.3936},
+    Q.insect+I{0.042236}+G4{1.83131}: gene_1017{12.372},
+    Q.insect+G4{0.876524}: gene_1018{13.8338},
+    Q.insect+I{0.0909121}+G4{1.42484}: gene_1019{17.6325},
+    Q.insect+I{0.0672184}+G4{1.31968}: gene_1020{10.8145},
+    Q.yeast+I{0.0699675}+G4{1.11815}: gene_1021{13.8155},
+    Q.insect+I{0.0945153}+G4{1.46817}: gene_1022{13.6199},
+    Q.insect+I{0.125473}+G4{1.18657}: gene_1023{10.3596},
+    Q.insect+I{0.151729}+G4{1.34269}: gene_1024{14.3351},
+    Q.insect+I{0.24419}+G4{1.06376}: gene_1025{13.4606},
+    Q.yeast+G4{0.552923}: gene_1026{13.8171},
+    Q.yeast+I{0.111188}+G4{1.23406}: gene_1027{10.61},
+    Q.insect+I{0.0595336}+G4{1.41622}: gene_1028{13.0768},
+    Q.pfam+I{0.102417}+G4{1.11121}: gene_1029{15.0874},
+    LG+I{0.184728}+G4{1.26723}: gene_1030{9.1344},
+    Q.yeast+I{0.0927582}+G4{0.975553}: gene_1031{23.3152},
+    Q.insect+G4{0.758576}: gene_1032{9.08659},
+    Q.yeast+I{0.232656}+G4{1.03588}: gene_1033{12.0128},
+    Q.insect+I{0.159266}+G4{0.891525}: gene_1034{8.12752},
+    mtZOA+I{0.0538684}+G4{0.867653}: gene_1035{17.7947},
+    Q.insect+G4{1.39737}: gene_1036{11.4539},
+    Q.insect+I{0.167834}+G4{1.22527}: gene_1037{10.2737},
+    Q.insect+I{0.144693}+R3{0.54822,0.469632,0.232803,1.7819,0.0742843,4.41152}: gene_1038{8.46943},
+    Q.insect+G4{0.484708}: gene_1039{4.05359},
+    Q.insect+G4{0.878235}: gene_1040{8.85998},
+    Q.yeast+I{0.154491}+G4{0.729989}: gene_1041{10.4606},
+    Q.insect+I{0.114736}+G4{1.18959}: gene_1042{8.9135},
+    LG+I{0.194121}+G4{1.03846}: gene_1043{11.2698},
+    Q.insect+I{0.391518}+G4{0.872229}: gene_1044{4.55314},
+    LG+I{0.0657899}+G4{1.05909}: gene_1045{19.8842},
+    Q.insect+I{0.0616795}+G4{1.50313}: gene_1046{17.5246},
+    Q.insect+I{0.161239}+G4{1.05775}: gene_1047{10.8206},
+    Q.insect+I{0.108598}+R4{0.267125,0.228518,0.377224,0.880621,0.203918,2.01166,0.0431346,4.55671}: gene_1048{15.7176},
+    Q.insect+I{0.0913567}+G4{1.15677}: gene_1049{10.8073},
+    mtZOA+R5{0.0641094,0.00753753,0.347333,0.287437,0.422587,0.958866,0.143654,2.41471,0.0223168,6.61357}: gene_1050{20.2756},
+    LG+G4{0.732374}: gene_1051{16.0379},
+    Q.yeast+I{0.173843}+G4{1.57948}: gene_1052{10.128},
+    Q.yeast+I{0.140085}+G4{1.11391}: gene_1053{13.9578},
+    Q.insect+I{0.0476317}+G4{1.67097}: gene_1054{13.5231},
+    Q.yeast+I{0.122315}+G4{1.1682}: gene_1055{19.5295},
+    Q.insect+R4{0.181431,0.0316243,0.388912,0.524354,0.352674,1.41726,0.0769833,3.77362}: gene_1056{12.9308},
+    LG+G4{0.79759}: gene_1057{13.6544},
+    Q.insect+I{0.0859534}+G4{1.46749}: gene_1058{14.1437},
+    Q.insect+I{0.193728}+G4{1.13594}: gene_1059{7.45445},
+    Q.insect+R5{0.318225,0.043623,0.288099,0.490715,0.179414,1.22538,0.151833,2.32844,0.062428,4.34672}: gene_1060{11.8122},
+    Q.insect+I{0.259053}+G4{1.12654}: gene_1061{9.51205},
+    Q.insect+G4{0.769964}: gene_1062{7.70442},
+    Q.insect+G4{0.993065}: gene_1063{11.0519},
+    LG+I{0.0748672}+G4{1.03632}: gene_1064{14.2437},
+    Q.insect+R3{0.708235,0.237787,0.21887,1.8456,0.0728949,5.86659}: gene_1065{2.99068},
+    Q.insect+I{0.214471}+R4{0.274065,0.208709,0.260671,0.823601,0.20078,2.31115,0.0500128,5.28021}: gene_1066{9.46405},
+    Q.yeast+I{0.180574}+G4{1.23184}: gene_1067{8.07079},
+    Q.insect+I{0.110624}+G4{1.11938}: gene_1068{9.99248},
+    Q.insect+I{0.0904547}+G4{1.52576}: gene_1069{12.3331},
+    Q.insect+I{0.124273}+G4{0.995515}: gene_1070{11.6333},
+    Q.insect+I{0.186717}+G4{1.2447}: gene_1071{7.98593},
+    Q.insect+G4{1.11901}: gene_1072{14.7691},
+    Q.insect+I{0.0657692}+R4{0.200513,0.164171,0.325267,0.640936,0.31433,1.43302,0.094121,3.27413}: gene_1073{17.2315},
+    LG+G4{0.623277}: gene_1074{11.028},
+    Q.yeast+I{0.0884836}+G4{0.932075}: gene_1075{11.6235},
+    LG+I{0.199964}+G4{1.52204}: gene_1076{10.9258},
+    Q.insect+I{0.197671}+G4{0.948726}: gene_1077{14.6324},
+    LG+I{0.556574}+G4{0.721193}: gene_1078{5.16289},
+    Q.insect+I{0.0675061}+G4{1.551}: gene_1079{7.92575},
+    Q.insect+G4{1.53392}: gene_1080{12.5137},
+    Q.insect+G4{0.881798}: gene_1081{16.7415},
+    LG+R4{0.401488,0.0710579,0.294785,0.637126,0.241285,1.92259,0.0624422,5.12093}: gene_1082{9.15383},
+    Q.yeast+I{0.238051}+R4{0.29132,0.189179,0.228081,0.812893,0.209743,2.55801,0.032805,6.7965}: gene_1083{10.7849},
+    Q.insect+R4{0.282766,0.0382558,0.26136,0.575276,0.422676,1.66427,0.0331986,4.07795}: gene_1084{9.7449},
+    Q.insect+R4{0.206572,0.149906,0.358455,0.590277,0.370337,1.46292,0.0646364,3.33669}: gene_1085{13.1462},
+    LG+G4{1.5615}: gene_1086{14.3012},
+    Q.insect+I{0.151509}+G4{0.874804}: gene_1087{16.7884},
+    Q.insect+I{0.102574}+G4{1.5491}: gene_1088{17.1503},
+    Q.yeast+R4{0.266681,0.0413938,0.365317,0.592858,0.268368,1.5543,0.0996338,3.5656}: gene_1089{17.1325},
+    LG+I{0.205523}+G4{1.11973}: gene_1090{11.8912},
+    mtZOA+I{0.102598}+G4{1.15546}: gene_1091{18.6229},
+    LG+I{0.101599}+G4{1.11457}: gene_1092{16.5369},
+    Q.insect+I{0.122392}+G4{1.00794}: gene_1093{10.8662},
+    Q.yeast+I{0.162398}+G4{0.884742}: gene_1094{13.4173},
+    Q.insect+I{0.352955}+G4{0.721953}: gene_1095{3.42578},
+    Q.insect+I{0.326631}+G4{0.966548}: gene_1096{8.6057},
+    Q.yeast+I{0.134247}+G4{0.988173}: gene_1097{11.3997},
+    Q.insect+I{0.108755}+G4{1.37311}: gene_1098{13.6296},
+    Q.insect+I{0.0987992}+G4{1.59112}: gene_1099{14.2787},
+    Q.insect+R4{0.220542,0.0603878,0.332198,0.489969,0.350521,1.40095,0.0967397,3.4407}: gene_1100{12.4644},
+    Q.insect+G4{0.734016}: gene_1101{4.71967},
+    Q.insect+I{0.118368}+G4{1.17068}: gene_1102{13.8983},
+    Q.insect+I{0.17988}+G4{1.20482}: gene_1103{5.45766},
+    Q.insect+I{0.150722}+G4{1.04211}: gene_1104{10.9627},
+    Q.insect+I{0.101207}+G4{1.3446}: gene_1105{12.7087},
+    Q.insect+G4{1.04291}: gene_1106{11.1382},
+    LG+I{0.163151}+G4{0.802681}: gene_1107{13.7207},
+    Q.insect+I{0.280544}+G4{0.794588}: gene_1108{13.7511},
+    Q.insect+I{0.103003}+G4{1.16596}: gene_1109{16.3663},
+    LG+I{0.0791325}+G4{1.4655}: gene_1110{17.8913},
+    Q.insect+R4{0.14704,0.0838305,0.452791,0.506063,0.351391,1.53108,0.0487775,4.52106}: gene_1111{11.6768},
+    Q.insect+I{0.0747315}+G4{1.99113}: gene_1112{17.2459},
+    Q.insect+I{0.151786}+G4{1.13092}: gene_1113{10.4051},
+    Q.insect+I{0.202292}+G4{1.20394}: gene_1114{10.2862},
+    Q.insect+I{0.163666}+G4{1.08079}: gene_1115{10.1597},
+    LG+G4{0.962216}: gene_1116{10.4212},
+    Q.insect+I{0.0737061}+G4{1.60881}: gene_1117{15.2316},
+    Q.insect+G4{0.582575}: gene_1118{10.1719},
+    Q.insect+I{0.188243}+G4{0.817922}: gene_1119{10.9799},
+    Q.yeast+I{0.226711}+G4{0.892226}: gene_1120{8.34187},
+    Q.yeast+R5{0.313534,0.0375325,0.290948,0.495464,0.254016,1.15712,0.124605,3.19312,0.0168965,9.01213}: gene_1121{9.24},
+    Q.insect+I{0.0816712}+G4{1.44486}: gene_1122{15.0754},
+    Q.insect+I{0.0980385}+G4{1.54771}: gene_1123{9.26773},
+    LG+F+I{0.142799}+G4{1.5941}: gene_1124{11.2469},
+    Q.yeast+I{0.227257}+G4{1.0637}: gene_1125{9.29511},
+    Q.insect+I{0.0852753}+R4{0.34465,0.144063,0.279012,0.817643,0.238689,2.08961,0.0523736,4.26643}: gene_1126{7.48202},
+    Q.insect+I{0.381006}+R3{0.365477,0.339002,0.177311,2.29735,0.0762051,6.15124}: gene_1127{5.07936},
+    Q.insect+R4{0.485006,0.0758898,0.30324,0.796226,0.163785,2.57793,0.0479689,6.24406}: gene_1128{7.35106},
+    Q.insect+G4{0.863548}: gene_1129{12.8736},
+    Q.insect+I{0.0938556}+G4{1.34949}: gene_1130{12.3736},
+    Q.insect+G4{0.739034}: gene_1131{9.05609},
+    Q.insect+I{0.0703}+G4{1.10376}: gene_1132{15.4616},
+    Q.yeast+G4{1.44417}: gene_1133{18.0728},
+    Q.insect+I{0.117537}+G4{1.62963}: gene_1134{11.6239},
+    Q.yeast+F+R4{0.205431,0.0690266,0.274719,0.452721,0.453006,1.4351,0.0668435,3.16173}: gene_1135{15.3096},
+    mtZOA+F+I{0.115394}+G4{1.52559}: gene_1136{11.2692},
+    Q.insect+I{0.110823}+G4{1.00979}: gene_1137{14.3757},
+    LG+I{0.156905}+G4{1.05802}: gene_1138{9.549},
+    Q.insect+G4{1.50313}: gene_1139{11.6878},
+    Q.insect+I{0.193464}+R4{0.365173,0.248422,0.221931,1.05503,0.1839,2.57627,0.0355314,5.66717}: gene_1140{6.75645},
+    Q.insect+I{0.180035}+G4{0.919708}: gene_1141{9.13674},
+    Q.insect+R3{0.299612,0.0448549,0.358089,0.716161,0.342299,2.13297}: gene_1142{12.9885},
+    Q.yeast+I{0.0356827}+G4{1.83377}: gene_1143{16.8016},
+    Q.yeast+I{0.139429}+G4{1.07879}: gene_1144{14.1642},
+    Q.yeast+G4{0.950172}: gene_1145{16.6751},
+    Q.yeast+I{0.244137}+G4{1.53822}: gene_1146{10.905},
+    Q.insect+I{0.133711}+G4{0.90416}: gene_1147{12.6687},
+    Q.insect+G4{0.8699}: gene_1148{12.7442},
+    Q.insect+I{0.0589079}+G4{1.50436}: gene_1149{12.0243},
+    Q.insect+I{0.135499}+G4{1.62752}: gene_1150{12.3534},
+    Q.yeast+I{0.116456}+G4{1.23556}: gene_1151{13.6695},
+    mtZOA+I{0.223605}+G4{0.819298}: gene_1152{9.48505},
+    Q.insect+G4{0.872256}: gene_1153{8.42169},
+    Q.insect+G4{1.55643}: gene_1154{12.2221},
+    Q.insect+I{0.0615895}+G4{1.65034}: gene_1155{17.1319},
+    Q.insect+I{0.0571455}+G4{1.68266}: gene_1156{13.8327},
+    Q.insect+I{0.135552}+G4{1.27005}: gene_1157{14.4052},
+    Q.insect+G4{0.761202}: gene_1158{8.73659},
+    mtZOA+I{0.162961}+G4{0.715127}: gene_1159{12.6939},
+    Q.insect+I{0.0801035}+G4{1.16465}: gene_1160{16.0967},
+    Q.insect+I{0.144772}+G4{1.01536}: gene_1161{16.3738},
+    Q.insect+G4{0.815688}: gene_1162{12.8196},
+    Q.insect+I{0.108354}+G4{2.01681}: gene_1163{9.72281},
+    Q.insect+I{0.0837057}+G4{1.38993}: gene_1164{14.5526},
+    Q.yeast+I{0.213941}+G4{0.934253}: gene_1165{15.1898},
+    mtZOA+I{0.183593}+G4{0.832712}: gene_1166{6.24258},
+    Q.insect+I{0.0967889}+G4{2.08727}: gene_1167{12.6833},
+    LG+I{0.19603}+G4{0.973032}: gene_1168{17.5091},
+    LG+I{0.338242}+G4{0.677275}: gene_1169{8.44401},
+    Q.insect+R3{0.639121,0.0986217,0.264987,1.72256,0.0958918,5.01099}: gene_1170{3.1814},
+    Q.insect+I{0.153941}+G4{1.5748}: gene_1171{10.867},
+    LG+G4{0.360429}: gene_1172{7.72014},
+    Q.yeast+I{0.0872064}+G4{1.1665}: gene_1173{16.3474},
+    Q.insect+I{0.114922}+G4{0.759621}: gene_1174{10.2222},
+    Q.insect+R4{0.181849,0.0733195,0.395706,0.592935,0.33149,1.36176,0.090955,3.30524}: gene_1175{14.5793},
+    LG+I{0.132825}+G4{1.31005}: gene_1176{13.2976},
+    Q.yeast+I{0.0334319}+G4{1.59342}: gene_1177{16.6511},
+    Q.insect+I{0.184137}+R3{0.583039,0.503076,0.190922,2.26002,0.0419023,6.56764}: gene_1178{4.5315},
+    Q.pfam+I{0.121963}+G4{1.51089}: gene_1179{15.6644},
+    LG+I{0.327709}+G4{0.934265}: gene_1180{12.4749},
+    Q.insect+I{0.10822}+G4{1.41041}: gene_1181{18.4342},
+    Q.insect+I{0.188457}+R4{0.333042,0.174339,0.189474,0.844775,0.232918,2.06516,0.0561091,5.36208}: gene_1182{8.63855},
+    Q.insect+I{0.0692674}+G4{2.25271}: gene_1183{13.4426},
+    Q.insect+I{0.0593706}+G4{1.02443}: gene_1184{17.2491},
+    Q.insect+I{0.0707806}+G4{1.44793}: gene_1185{9.85248},
+    Q.plant+R4{0.431223,0.143303,0.387243,0.858708,0.162973,2.76077,0.0185608,8.39105}: gene_1186{5.10837},
+    Q.insect+I{0.180833}+G4{0.928145}: gene_1187{12.6943},
+    Q.pfam+I{0.179742}+G4{1.16209}: gene_1188{14.2237},
+    LG+F+R4{0.306516,0.0602003,0.400196,0.650632,0.239145,1.94711,0.0541435,4.71942}: gene_1189{14.8784},
+    Q.insect+G4{0.515957}: gene_1190{14.3937},
+    mtZOA+F+I{0.100898}+G4{0.855439}: gene_1191{19.3137},
+    Q.insect+I{0.0600561}+G4{1.55465}: gene_1192{12.5616},
+    Q.insect+G4{1.06862}: gene_1193{9.30369},
+    LG+I{0.144527}+G4{1.25208}: gene_1194{14.0723},
+    Q.insect+I{0.334644}+G4{1.05916}: gene_1195{11.0041},
+    Q.insect+I{0.0633863}+G4{1.12092}: gene_1196{19.055},
+    Q.insect+I{0.165465}+G4{1.27537}: gene_1197{15.3},
+    Q.insect+I{0.123579}+G4{1.72775}: gene_1198{10.1886},
+    Q.insect+I{0.14152}+G4{0.919926}: gene_1199{8.15975},
+    LG+G4{0.646846}: gene_1200{12.8527},
+    Q.insect+I{0.29827}+G4{1.25362}: gene_1201{4.1587},
+    LG+G4{0.793546}: gene_1202{10.9077},
+    LG+G4{0.822427}: gene_1203{15.1005},
+    Q.insect+R4{0.312578,0.0768148,0.412912,0.733115,0.236333,1.89037,0.0381768,5.93344}: gene_1204{9.85094},
+    Q.insect+R4{0.299173,0.0946498,0.34815,0.741786,0.287422,1.61538,0.0652544,3.81787}: gene_1205{11.2106},
+    mtZOA+G4{0.883702}: gene_1206{14.746},
+    Q.insect+G4{0.432728}: gene_1207{15.654},
+    Q.plant+G4{0.697345}: gene_1208{16.1457},
+    Q.yeast+I{0.176547}+G4{0.905596}: gene_1209{14.2791},
+    Q.yeast+I{0.103249}+G4{1.45612}: gene_1210{17.3945},
+    LG+F+I{0.174145}+G4{1.11002}: gene_1211{13.9872},
+    Q.insect+I{0.16064}+R4{0.214732,0.198536,0.298702,0.813307,0.286201,1.87968,0.0397249,4.44213}: gene_1212{11.1411},
+    Q.insect+I{0.0705533}+G4{1.81679}: gene_1213{20.1333},
+    Q.insect+I{0.172166}+G4{0.870882}: gene_1214{11.8204},
+    Q.insect+I{0.320274}+G4{1.04841}: gene_1215{5.643},
+    Q.insect+I{0.138187}+G4{0.869514}: gene_1216{17.6545},
+    Q.insect+I{0.130764}+R4{0.413305,0.368447,0.334298,1.30557,0.110518,2.84976,0.0111143,8.66627}: gene_1217{8.62269},
+    LG+R4{0.360324,0.0846884,0.272035,0.636318,0.318021,1.83124,0.0496199,4.31301}: gene_1218{11.3581},
+    Q.insect+G4{0.972244}: gene_1219{12.8835},
+    Q.insect+I{0.170902}+G4{1.17786}: gene_1220{9.56537},
+    Q.insect+G4{0.985249}: gene_1221{11.5103},
+    mtZOA+I{0.154385}+G4{0.681309}: gene_1222{26.4029},
+    mtZOA+G4{1.26491}: gene_1223{13.7685},
+    Q.insect+I{0.0876955}+G4{2.15397}: gene_1224{10.5612},
+    Q.insect+G4{0.907073}: gene_1225{13.9593},
+    Q.insect+G4{1.47877}: gene_1226{11.498},
+    Q.insect+G4{0.952701}: gene_1227{10.6843},
+    LG+I{0.141273}+G4{1.02168}: gene_1228{18.1791},
+    Q.insect+G4{0.937428}: gene_1229{19.5175},
+    Q.yeast+G4{0.827959}: gene_1230{16.3367},
+    Q.insect+I{0.101088}+G4{1.25457}: gene_1231{16.5133},
+    Q.insect+I{0.19588}+G4{1.08771}: gene_1232{9.63401},
+    Q.insect+R5{0.225893,0.0665439,0.324824,0.52517,0.286227,1.08216,0.138467,2.45135,0.0245899,6.71845}: gene_1233{14.5023},
+    LG+I{0.124143}+G4{1.28423}: gene_1234{19.4775},
+    LG+R4{0.385479,0.0963451,0.373021,0.817007,0.153632,1.89294,0.0878681,4.17995}: gene_1235{10.5053},
+    Q.yeast+G4{0.902463}: gene_1236{16.5704},
+    Q.insect+G4{0.730974}: gene_1237{13.2244},
+    Q.yeast+G4{0.639628}: gene_1238{12.5731},
+    Q.pfam+G4{0.903509}: gene_1239{10.0769},
+    Q.insect+I{0.0534113}+G4{1.3019}: gene_1240{13.0286},
+    Q.yeast+I{0.0700222}+G4{1.5961}: gene_1241{14.2884},
+    Q.insect+G4{1.241}: gene_1242{8.59585},
+    LG+G4{1.03123}: gene_1243{13.6862},
+    LG+I{0.144557}+G4{0.856316}: gene_1244{11.6135},
+    Q.yeast+I{0.127841}+G4{0.90328}: gene_1245{15.7525},
+    Q.insect+G4{0.617294}: gene_1246{5.29182},
+    Q.insect+G4{0.929993}: gene_1247{10.1319},
+    LG+I{0.12314}+G4{1.08424}: gene_1248{13.0449},
+    Q.insect+I{0.181323}+G4{1.18419}: gene_1249{12.462},
+    Q.insect+I{0.0848787}+G4{1.33884}: gene_1250{12.3101},
+    Q.insect+G4{1.24635}: gene_1251{15.2108},
+    Q.insect+I{0.150535}+G4{1.15421}: gene_1252{14.0539},
+    Q.insect+I{0.0628139}+G4{1.48554}: gene_1253{13.0916},
+    Q.insect+I{0.111873}+G4{1.24611}: gene_1254{11.4923},
+    Q.insect+I{0.177673}+G4{1.44649}: gene_1255{13.9654},
+    Q.insect+I{0.205647}+G4{1.00169}: gene_1256{10.371},
+    Q.insect+I{0.0563066}+G4{1.83812}: gene_1257{15.182},
+    Q.insect+I{0.109038}+G4{1.61017}: gene_1258{9.3732},
+    Q.insect+I{0.0884945}+G4{1.22466}: gene_1259{13.4229},
+    Q.yeast+G4{0.89861}: gene_1260{16.2523},
+    Q.insect+I{0.0533995}+G4{1.49952}: gene_1261{18.0826},
+    Q.insect+I{0.188582}+R3{0.482159,0.36514,0.265589,1.89188,0.06367,5.04921}: gene_1262{4.86201},
+    Q.insect+I{0.204196}+G4{1.08572}: gene_1263{12.8346},
+    Q.insect+I{0.0573126}+G4{1.43455}: gene_1264{12.0525},
+    mtZOA+G4{0.756254}: gene_1265{12.9192},
+    Q.insect+I{0.464266}+G4{1.01888}: gene_1266{3.01867},
+    Q.yeast+I{0.143801}+G4{1.27542}: gene_1267{15.4013},
+    Q.yeast+F+G4{0.684083}: gene_1268{15.494},
+    Q.insect+I{0.0409793}+G4{1.65906}: gene_1269{16.8382},
+    Q.insect+I{0.307431}+G4{0.913394}: gene_1270{8.05147},
+    LG+I{0.183467}+G4{0.831617}: gene_1271{14.7833},
+    Q.insect+I{0.0932663}+G4{0.838779}: gene_1272{18.4378},
+    Q.insect+I{0.0925897}+G4{1.4799}: gene_1273{11.2732},
+    mtInv+F+R4{0.326798,0.129898,0.266349,0.59443,0.35785,1.57313,0.0490021,4.82179}: gene_1274{9.99445},
+    LG+F+I{0.0210169}+G4{2.81306}: gene_1275{18.7037},
+    Q.yeast+I{0.273246}+G4{0.580947}: gene_1276{8.50468},
+    Q.insect+I{0.102668}+G4{0.93787}: gene_1277{19.6667},
+    mtZOA+F+I{0.101402}+G4{1.11903}: gene_1278{20.0891},
+    Q.insect+I{0.1507}+G4{1.05054}: gene_1279{10.2268},
+    Q.pfam+I{0.0935149}+G4{1.46648}: gene_1280{11.8541},
+    Q.insect+I{0.199943}+G4{1.11084}: gene_1281{9.17222},
+    LG+I{0.0512993}+G4{1.52624}: gene_1282{20.0155},
+    Q.insect+G4{0.476727}: gene_1283{3.59169},
+    Q.insect+G4{1.0691}: gene_1284{15.6636},
+    Q.insect+R4{0.495058,0.0924932,0.26578,0.70464,0.159882,2.04689,0.0792793,5.54584}: gene_1285{5.76596},
+    Q.insect+I{0.185075}+G4{1.15907}: gene_1286{7.91331},
+    LG+I{0.215601}+G4{0.914782}: gene_1287{17.7502},
+    Q.insect+I{0.122481}+G4{1.67662}: gene_1288{8.25819},
+    Q.insect+I{0.176533}+G4{1.06518}: gene_1289{11.3298},
+    Q.yeast+I{0.217186}+G4{0.819725}: gene_1290{8.32053},
+    Q.insect+I{0.0629873}+G4{1.50739}: gene_1291{11.2457},
+    Q.insect+G4{0.765091}: gene_1292{16.5289},
+    LG+I{0.0829574}+G4{1.08919}: gene_1293{17.0147},
+    Q.yeast+I{0.139411}+G4{1.10258}: gene_1294{10.9855},
+    Q.insect+I{0.0723188}+G4{1.16401}: gene_1295{16.4385},
+    Q.insect+I{0.0341313}+G4{2.01427}: gene_1296{16.7787},
+    Q.yeast+I{0.122275}+G4{1.43521}: gene_1297{13.612},
+    Q.insect+I{0.259033}+G4{1.09908}: gene_1298{9.00363},
+    Q.insect+I{0.405358}+G4{1.144}: gene_1299{4.20204},
+    Q.insect+I{0.181786}+G4{1.275}: gene_1300{14.0491},
+    Q.insect+I{0.169819}+G4{1.21262}: gene_1301{14.4897},
+    LG+G4{1.07186}: gene_1302{11.2639},
+    Q.insect+I{0.0963809}+G4{1.21734}: gene_1303{14.6114},
+    Q.insect+G4{0.488255}: gene_1304{3.46109},
+    Q.yeast+I{0.224729}+G4{1.20964}: gene_1305{7.85702},
+    Q.insect+I{0.127317}+G4{1.27101}: gene_1306{9.87031},
+    Q.insect+G4{0.712268}: gene_1307{11.0169},
+    Q.insect+I{0.257516}+G4{0.983817}: gene_1308{7.38763},
+    Q.insect+R5{0.16211,0.00840219,0.282129,0.166119,0.277537,0.845702,0.204092,1.6858,0.0741328,5.0315}: gene_1309{9.9483},
+    LG+I{0.0557214}+R4{0.19523,0.131897,0.265934,0.60941,0.415622,1.43608,0.0674931,3.19025}: gene_1310{19.3193},
+    Q.insect+I{0.116548}+G4{1.77473}: gene_1311{10.3902},
+    Q.insect+I{0.183402}+G4{1.14123}: gene_1312{11.4965},
+    Q.insect+G4{0.678031}: gene_1313{8.5321},
+    Q.insect+I{0.128471}+G4{1.34625}: gene_1314{13.6964},
+    Q.insect+R4{0.390459,0.114836,0.315962,0.684379,0.210064,1.7463,0.0835152,4.45533}: gene_1315{7.00004},
+    LG+I{0.0748344}+G4{1.17337}: gene_1316{17.5895},
+    LG+R4{0.198796,0.0379063,0.282993,0.389136,0.322654,1.26295,0.195557,2.42816}: gene_1317{15.46},
+    Q.insect+R4{0.270121,0.0979575,0.342,0.607521,0.31741,1.62982,0.0704685,3.52562}: gene_1318{11.6044},
+    Q.insect+I{0.0692324}+G4{1.15244}: gene_1319{13.8881},
+    Q.insect+I{0.152685}+G4{1.37068}: gene_1320{11.7532},
+    Q.insect+I{0.0920649}+G4{1.29092}: gene_1321{7.12358},
+    Q.insect+I{0.0403118}+G4{1.68688}: gene_1322{16.2805},
+    Q.insect+R4{0.339729,0.142553,0.317325,0.734149,0.313433,1.80794,0.029513,5.14818}: gene_1323{8.98566},
+    Q.insect+I{0.0966787}+R4{0.178786,0.161041,0.442685,0.824036,0.260517,1.91229,0.0213336,5.07352}: gene_1324{14.564},
+    Q.insect+I{0.227635}+G4{0.912922}: gene_1325{11.0213},
+    LG+I{0.0847067}+G4{0.948679}: gene_1326{16.5557},
+    LG+I{0.154926}+G4{0.903612}: gene_1327{7.78841},
+    Q.insect+G4{1.08236}: gene_1328{16.3509},
+    Q.insect+I{0.379498}+R5{0.274278,0.198975,0.197333,1.13058,0.0976753,2.99738,0.0352992,6.4605,0.0159165,12.6601}: gene_1329{5.4105},
+    Q.insect+I{0.0664523}+G4{1.63708}: gene_1330{8.03128},
+    Q.insect+I{0.136906}+G4{0.689675}: gene_1331{10.9878},
+    Q.yeast+G4{0.630788}: gene_1332{12.3322},
+    LG+I{0.204684}+G4{1.00997}: gene_1333{11.4972},
+    Q.insect+R4{0.270141,0.109074,0.388578,0.740867,0.263522,1.42887,0.0777595,3.93663}: gene_1334{14.4871},
+    Q.insect+I{0.059623}+R3{0.398102,0.391595,0.487558,1.33167,0.0547179,3.56081}: gene_1335{13.086},
+    Q.insect+G4{1.10089}: gene_1336{18.0881},
+    Q.insect+I{0.0548254}+G4{1.31231}: gene_1337{13.7018},
+    Q.yeast+I{0.145877}+G4{0.791427}: gene_1338{11.5131},
+    LG+G4{1.30325}: gene_1339{15.0923},
+    mtZOA+G4{1.40994}: gene_1340{11.9627},
+    Q.insect+I{0.145942}+G4{1.30877}: gene_1341{13.3924},
+    Q.insect+I{0.176654}+G4{0.690994}: gene_1342{6.88504},
+    LG+I{0.196768}+R3{0.386456,0.23979,0.395599,1.85766,0.0211777,8.14267}: gene_1343{6.05625},
+    LG+F+G4{0.833036}: gene_1344{7.59979},
+    Q.insect+I{0.0832625}+G4{1.43201}: gene_1345{14.0163},
+    Q.insect+I{0.127934}+G4{1.13142}: gene_1346{8.40127},
+    LG+I{0.116086}+G4{1.32441}: gene_1347{12.2745},
+    Q.insect+I{0.261307}+G4{0.766341}: gene_1348{15.2289},
+    Q.insect+I{0.181255}+G4{0.872847}: gene_1349{9.86215},
+    mtZOA+I{0.058055}+G4{1.01782}: gene_1350{21.5008},
+    Q.insect+R5{0.119008,0.057364,0.217043,0.337826,0.343338,0.858189,0.256796,1.64624,0.0638146,3.17251}: gene_1351{15.6147},
+    Q.insect+I{0.0579472}+G4{1.12312}: gene_1352{11.2781},
+    LG+I{0.204526}+G4{1.11023}: gene_1353{13.2026},
+    Q.insect+I{0.0445719}+G4{1.73718}: gene_1354{14.4144},
+    Q.insect+I{0.209177}+G4{1.4849}: gene_1355{15.7675},
+    Q.insect+R4{0.333067,0.108232,0.326856,0.608887,0.26132,1.67987,0.0787564,4.13871}: gene_1356{9.96451},
+    Q.insect+I{0.0772417}+G4{1.34648}: gene_1357{12.0865},
+    LG+F+I{0.176328}+G4{0.946505}: gene_1358{13.9108},
+    Q.insect+I{0.15858}+G4{1.00789}: gene_1359{13.3322},
+    Q.insect+R4{0.465475,0.15193,0.291333,0.931532,0.200885,2.16356,0.0423079,5.27724}: gene_1360{7.43965},
+    LG+I{0.152137}+G4{0.824419}: gene_1361{12.6684},
+    Q.yeast+I{0.231656}+G4{0.86769}: gene_1362{15.9224},
+    Q.insect+G4{0.64151}: gene_1363{13.1498},
+    Q.yeast+G4{0.732466}: gene_1364{16.4434},
+    Q.insect+G4{0.842726}: gene_1365{12.474},
+    Q.insect+G4{0.928423}: gene_1366{16.1873},
+    Q.insect+I{0.116472}+G4{1.69713}: gene_1367{13.7667},
+    Q.insect+G4{0.838818}: gene_1368{14.3539},
+    Q.insect+I{0.0935979}+G4{1.37443}: gene_1369{13.5272},
+    Q.yeast+I{0.309479}+R3{0.192512,0.255731,0.400238,1.40513,0.0977715,3.97236}: gene_1370{10.5258},
+    Q.insect+G4{0.852366}: gene_1371{15.0952},
+    Q.insect+G4{0.969421}: gene_1372{11.1279},
+    Q.insect+I{0.0884281}+G4{1.19708}: gene_1373{14.6335},
+    LG+I{0.0803589}+G4{1.43281}: gene_1374{11.9641},
+    Q.insect+G4{0.744279}: gene_1375{14.1831},
+    Q.insect+I{0.231629}+G4{1.07208}: gene_1376{8.64244},
+    Q.yeast+I{0.253273}+G4{1.14307}: gene_1377{11.2458},
+    Q.insect+I{0.0656483}+R3{0.365888,0.355175,0.500723,1.18461,0.0677408,4.08742}: gene_1378{13.1066},
+    Q.insect+I{0.150391}+G4{1.159}: gene_1379{7.75383},
+    LG+G4{0.982053}: gene_1380{18.0128},
+    Q.insect+I{0.0721701}+G4{1.26368}: gene_1381{13.647},
+    Q.insect+G4{0.636499}: gene_1382{8.66828},
+    Q.insect+I{0.179645}+G4{0.96057}: gene_1383{11.2136},
+    Q.insect+I{0.11692}+G4{0.932788}: gene_1384{11.3542},
+    LG+I{0.118873}+G4{2.22552}: gene_1385{12.8705},
+    Q.pfam+I{0.115381}+G4{1.54972}: gene_1386{13.2483},
+    Q.insect+G4{0.792412}: gene_1387{14.1114},
+    Q.insect+R4{0.237627,0.174331,0.36248,0.707324,0.342883,1.43798,0.05701,3.6682}: gene_1388{13.3939},
+    Q.insect+I{0.128734}+G4{0.773269}: gene_1389{16.2103},
+    Q.insect+I{0.0672145}+G4{1.55125}: gene_1390{14.9148},
+    Q.insect+I{0.139989}+G4{1.54781}: gene_1391{8.81287},
+    Q.plant+G4{0.702227}: gene_1392{10.057},
+    Q.insect+I{0.201645}+G4{1.13693}: gene_1393{15.4139},
+    Q.insect+I{0.0875898}+G4{0.912557}: gene_1394{16.256},
+    Q.yeast+R4{0.397149,0.0377603,0.280523,0.577873,0.252933,1.97004,0.0693946,4.67771}: gene_1395{11.3818},
+    Q.yeast+I{0.0936404}+G4{1.59183}: gene_1396{13.9795},
+    Q.insect+I{0.111071}+G4{1.44197}: gene_1397{12.145},
+    Q.insect+I{0.0700633}+G4{1.1727}: gene_1398{20.7532},
+    Q.insect+I{0.16466}+G4{0.86262}: gene_1399{13.8257},
+    Q.insect+I{0.20938}+G4{1.16636}: gene_1400{4.82744},
+    Q.insect+I{0.218344}+G4{1.27116}: gene_1401{10.4218},
+    Q.yeast+G4{0.912548}: gene_1402{13.9853},
+    Q.yeast+I{0.0693254}+G4{1.12816}: gene_1403{14.9384},
+    Q.yeast+G4{0.816882}: gene_1404{17.6009},
+    Q.insect+I{0.0416704}+G4{1.85027}: gene_1405{16.3576},
+    Q.yeast+I{0.159948}+G4{1.24536}: gene_1406{14.7839},
+    Q.insect+R3{0.577507,0.130076,0.304436,1.38124,0.118057,4.27235}: gene_1407{5.49646},
+    Q.insect+I{0.196162}+R3{0.432197,0.353829,0.28235,1.61898,0.089291,4.36727}: gene_1408{7.12854},
+    Q.insect+I{0.125739}+G4{1.31121}: gene_1409{15.7424},
+    LG+I{0.0736824}+G4{1.11408}: gene_1410{17.4338},
+    Q.yeast+I{0.30503}+G4{0.804269}: gene_1411{9.55847},
+    Q.insect+G4{0.711648}: gene_1412{15.6727},
+    Q.insect+F+G4{1.14368}: gene_1413{13.4573},
+    Q.insect+I{0.0930057}+G4{1.23845}: gene_1414{13.3251},
+    Q.insect+G4{0.941434}: gene_1415{5.09637},
+    Q.yeast+G4{0.722936}: gene_1416{21.5863},
+    Q.yeast+R4{0.241621,0.0358262,0.412976,0.701907,0.318294,1.82084,0.0271086,4.49713}: gene_1417{14.2157},
+    Q.insect+I{0.289249}+G4{1.0463}: gene_1418{9.18674},
+    Q.insect+I{0.187581}+G4{1.50358}: gene_1419{8.10257},
+    Q.insect+G4{0.411267}: gene_1420{4.18424},
+    Q.insect+I{0.125977}+G4{1.07303}: gene_1421{7.96117},
+    Q.insect+G4{0.689233}: gene_1422{11.6098},
+    Q.insect+G4{0.975939}: gene_1423{5.94459},
+    Q.insect+I{0.0522292}+G4{1.64342}: gene_1424{14.9479},
+    mtZOA+R4{0.337906,0.0394886,0.382444,0.570263,0.218631,2.11567,0.0610184,5.01506}: gene_1425{9.86488},
+    Q.insect+G4{0.633097}: gene_1426{12.1854},
+    LG+I{0.161235}+G4{0.931148}: gene_1427{11.9603},
+    LG+I{0.25918}+G4{1.08646}: gene_1428{10.3816},
+    Q.yeast+I{0.151098}+G4{1.78565}: gene_1429{14.2636},
+    Q.insect+G4{1.22136}: gene_1430{14.0948},
+    Q.insect+I{0.127494}+G4{1.016}: gene_1431{12.6936},
+    Q.insect+G4{0.659382}: gene_1432{12.0296},
+    Q.insect+I{0.26147}+G4{1.04271}: gene_1433{8.83776},
+    mtZOA+R4{0.304679,0.0763455,0.326963,0.43568,0.282216,1.57374,0.0861422,4.52916}: gene_1434{11.1352},
+    Q.insect+I{0.161391}+G4{1.06285}: gene_1435{11.9517},
+    Q.yeast+I{0.142483}+G4{1.824}: gene_1436{16.3428},
+    LG+G4{0.893206}: gene_1437{12.1437},
+    Q.yeast+I{0.0778856}+G4{1.00513}: gene_1438{22.2876},
+    Q.insect+I{0.113213}+G4{1.26737}: gene_1439{14.7996},
+    Q.insect+I{0.127226}+G4{0.77228}: gene_1440{15.8445},
+    Q.insect+I{0.118644}+G4{1.11056}: gene_1441{13.97},
+    LG+G4{0.69766}: gene_1442{10.7944},
+    Q.pfam+I{0.0808214}+G4{1.60079}: gene_1443{14.9802},
+    LG+I{0.110041}+G4{0.808248}: gene_1444{18.5232},
+    LG+I{0.201678}+G4{1.35989}: gene_1445{11.0646},
+    LG+G4{0.610616}: gene_1446{13.1442},
+    Q.insect+I{0.0744025}+G4{1.11884}: gene_1447{12.6088},
+    Q.insect+G4{1.27448}: gene_1448{10.9075},
+    Q.insect+G4{0.705208}: gene_1449{19.0187},
+    LG+I{0.085402}+G4{1.16927}: gene_1450{23.0199},
+    LG+I{0.117061}+G4{0.968101}: gene_1451{11.0116},
+    Q.insect+I{0.175025}+G4{1.30255}: gene_1452{9.41117},
+    Q.insect+I{0.0876417}+G4{1.48689}: gene_1453{13.1663},
+    Q.insect+I{0.0742014}+G4{1.46375}: gene_1454{16.9876},
+    Q.insect+I{0.172045}+R3{0.555602,0.560133,0.242201,2.10663,0.0301514,5.92214}: gene_1455{7.06574},
+    Q.insect+I{0.0884048}+G4{1.44953}: gene_1456{10.4475},
+    Q.insect+I{0.0786362}+G4{1.18983}: gene_1457{15.7379},
+    Q.insect+I{0.0787773}+G4{1.2762}: gene_1458{12.6261},
+    Q.insect+I{0.130106}+G4{0.961306}: gene_1459{15.6509},
+    Q.insect+I{0.109311}+R4{0.133281,0.142298,0.380491,0.632664,0.288203,1.47218,0.0887142,3.56228}: gene_1460{12.905},
+    Q.insect+G4{0.758108}: gene_1461{8.50107},
+    Q.insect+G4{0.832647}: gene_1462{10.3693},
+    Q.insect+I{0.110162}+G4{1.25044}: gene_1463{13.2947},
+    LG+G4{0.745013}: gene_1464{6.98775},
+    Q.insect+I{0.138774}+G4{1.69921}: gene_1465{12.2569},
+    Q.insect+R4{0.305282,0.0267713,0.290974,0.5774,0.319428,1.63725,0.0843156,3.56798}: gene_1466{11.7797},
+    Q.insect+R3{0.19755,0.0383661,0.295798,0.559127,0.506652,1.63235}: gene_1467{14.1194},
+    LG+G4{0.675237}: gene_1468{9.31268},
+    Q.insect+I{0.162066}+G4{1.09367}: gene_1469{14.4949},
+    Q.yeast+I{0.15547}+R3{0.343196,0.359895,0.403829,1.25696,0.0975052,3.78328}: gene_1470{12.6994},
+    Q.insect+G4{1.23375}: gene_1471{15.567},
+    Q.yeast+I{0.137127}+G4{1.21947}: gene_1472{13.3823},
+    Q.insect+R4{0.271425,0.0951852,0.414449,0.533157,0.266415,1.79671,0.047711,5.75396}: gene_1473{7.41697},
+    Q.insect+G4{0.905448}: gene_1474{8.79474},
+    Q.insect+I{0.0744709}+G4{1.75009}: gene_1475{14.154},
+    Q.yeast+I{0.182644}+G4{0.87653}: gene_1476{11.6133},
+    Q.insect+I{0.196293}+G4{1.52585}: gene_1477{11.7363},
+    Q.insect+G4{0.816225}: gene_1478{19.552},
+    Q.insect+G4{0.869926}: gene_1479{7.24564},
+    Q.insect+I{0.0392532}+G4{1.553}: gene_1480{16.5012},
+    Q.insect+G4{0.810613}: gene_1481{10.155},
+    Q.insect+I{0.114718}+G4{1.07219}: gene_1482{14.7246},
+    Q.insect+G4{0.768863}: gene_1483{12.5428},
+    LG+I{0.150001}+G4{1.11123}: gene_1484{14.0975},
+    Q.insect+G4{0.848168}: gene_1485{14.9617},
+    LG+I{0.0591284}+G4{2.00307}: gene_1486{12.3892},
+    Q.insect+I{0.0734231}+G4{1.75951}: gene_1487{11.2061},
+    Q.insect+I{0.207462}+G4{1.65298}: gene_1488{11.7941},
+    LG+I{0.238517}+R4{0.204933,0.252841,0.280814,0.871512,0.201411,1.9535,0.0743241,4.17085}: gene_1489{8.93441},
+    Q.yeast+I{0.179658}+G4{0.786533}: gene_1490{14.8048},
+    Q.insect+I{0.099566}+G4{1.38671}: gene_1491{12.804},
+    LG+I{0.0934436}+G4{1.31465}: gene_1492{12.8999},
+    Q.insect+I{0.0965515}+G4{1.05238}: gene_1493{13.8901},
+    Q.yeast+G4{0.75455}: gene_1494{9.95849},
+    Q.yeast+I{0.306852}+G4{0.865421}: gene_1495{12.5326},
+    Q.insect+G4{0.568222}: gene_1496{5.69284},
+    LG+F+R4{0.258831,0.0873191,0.278053,0.587897,0.374166,1.42105,0.0889507,3.17281}: gene_1497{11.8994},
+    Q.insect+G4{1.00785}: gene_1498{18.6862},
+    Q.insect+R4{0.367519,0.0926397,0.462533,0.812014,0.152492,2.92853,0.0174554,8.23764}: gene_1499{6.91231},
+    LG+I{0.194234}+G4{0.827647}: gene_1500{13.7089},
+    Q.insect+I{0.119723}+G4{1.25318}: gene_1501{9.26619},
+    LG+I{0.116863}+G4{1.12196}: gene_1502{16.3174},
+    Q.yeast+I{0.0526034}+G4{1.86022}: gene_1503{12.8141},
+    Q.insect+R4{0.298473,0.0632889,0.327533,0.6205,0.311385,1.73615,0.062609,3.78965}: gene_1504{11.92},
+    Q.insect+I{0.168625}+G4{1.07636}: gene_1505{9.92295},
+    LG+I{0.185009}+G4{0.86998}: gene_1506{8.7557},
+    LG+R4{0.272352,0.0984014,0.295525,0.574046,0.391782,1.53266,0.0403405,5.03428}: gene_1507{14.4867},
+    Q.insect+I{0.129964}+G4{1.19351}: gene_1508{12.2005},
+    Q.insect+G4{0.741522}: gene_1509{10.9002},
+    Q.insect+I{0.197546}+G4{0.783089}: gene_1510{13.55},
+    mtZOA+G4{0.713062}: gene_1511{22.9729},
+    Q.insect+I{0.0594758}+R3{0.239156,0.236112,0.538858,1.06162,0.162511,2.28582}: gene_1512{13.5845},
+    Q.insect+R4{0.169022,0.0525135,0.417988,0.523444,0.333656,1.40758,0.0793339,3.81529}: gene_1513{14.272},
+    Q.insect+G4{0.926446}: gene_1514{8.30564},
+    Q.insect+R4{0.282112,0.085236,0.250963,0.543633,0.416747,1.50274,0.0501777,4.2501}: gene_1515{9.51009},
+    Q.insect+I{0.0765148}+R3{0.384539,0.283713,0.45278,1.39818,0.0861662,2.99229}: gene_1516{14.841},
+    Q.insect+G4{0.577869}: gene_1517{5.20392},
+    Q.yeast+I{0.264065}+G4{1.08806}: gene_1518{10.1606},
+    Q.insect+G4{0.43394}: gene_1519{5.7382},
+    Q.insect+G4{0.791465}: gene_1520{8.24887},
+    Q.insect+R4{0.222872,0.0856485,0.324811,0.535563,0.327719,1.4138,0.124598,2.75785}: gene_1521{13.561},
+    Q.insect+I{0.0972196}+G4{1.08409}: gene_1522{13.9734},
+    Q.insect+I{0.162464}+R4{0.468244,0.347042,0.251504,1.46243,0.102726,3.26437,0.0150614,8.92053}: gene_1523{5.98471},
+    Q.insect+I{0.231596}+G4{0.739281}: gene_1524{12.3043},
+    Q.insect+I{0.0991968}+G4{0.798009}: gene_1525{13.6275},
+    Q.insect+R4{0.342192,0.165666,0.339812,0.690954,0.259202,1.62581,0.0587941,4.88318}: gene_1526{9.72502},
+    Q.insect+I{0.137005}+G4{1.45823}: gene_1527{6.07952},
+    Q.insect+I{0.245418}+R3{0.344601,0.320053,0.312869,1.63982,0.0971122,3.87859}: gene_1528{8.42625},
+    Q.yeast+I{0.197918}+G4{0.862342}: gene_1529{12.0282},
+    Q.insect+G4{0.687173}: gene_1530{17.8686},
+    Q.insect+G4{1.20218}: gene_1531{15.3987},
+    LG+R4{0.319295,0.0328985,0.312914,0.535547,0.283063,1.61246,0.0847268,4.31372}: gene_1532{9.80596},
+    Q.insect+I{0.0858632}+G4{1.72139}: gene_1533{11.0137},
+    Q.insect+I{0.146245}+G4{1.12456}: gene_1534{11.0562},
+    Q.yeast+I{0.0912187}+G4{1.23609}: gene_1535{13.9459},
+    LG+G4{0.832831}: gene_1536{16.8979},
+    Q.yeast+R3{0.171427,0.102554,0.616532,0.930638,0.212041,1.92723}: gene_1537{18.4037},
+    LG+F+I{0.241424}+G4{1.20753}: gene_1538{16.1747},
+    Q.insect+G4{0.648653}: gene_1539{10.0674},
+    Q.insect+I{0.211932}+G4{0.70222}: gene_1540{10.2865},
+    LG+I{0.148554}+G4{0.63759}: gene_1541{10.5844},
+    Q.insect+I{0.216484}+G4{0.813868}: gene_1542{10.8742},
+    Q.insect+R4{0.273802,0.114735,0.317449,0.555063,0.327956,1.45251,0.0807932,3.91151}: gene_1543{11.3257},
+    Q.insect+I{0.129154}+R3{0.634841,0.541731,0.210812,2.29729,0.0251934,6.81889}: gene_1544{3.18837},
+    Q.insect+G4{1.06503}: gene_1545{17.1691},
+    Q.insect+I{0.241945}+G4{0.826457}: gene_1546{6.52007},
+    Q.yeast+F+I{0.0482627}+G4{1.71366}: gene_1547{16.0698},
+    Q.insect+F+I{0.0638875}+G4{1.06159}: gene_1548{13.9061},
+    Q.insect+G4{1.21947}: gene_1549{13.1768},
+    Q.insect+G4{0.811488}: gene_1550{12.1895},
+    mtZOA+F+R5{0.242307,0.0181295,0.206602,0.193009,0.269741,0.736118,0.202434,1.82819,0.0789153,4.90502}: gene_1551{15.9594},
+    Q.insect+I{0.179885}+G4{0.953407}: gene_1552{14.6503},
+    LG+I{0.127795}+G4{0.800909}: gene_1553{14.7693},
+    Q.insect+I{0.0859802}+G4{1.14375}: gene_1554{14.6498},
+    Q.insect+R4{0.363366,0.106713,0.329869,0.686209,0.207322,1.77513,0.0994432,3.68896}: gene_1555{11.218},
+    Q.insect+I{0.100279}+G4{2.20596}: gene_1556{9.17839},
+    Q.insect+G4{0.707361}: gene_1557{17.5298},
+    Q.yeast+I{0.225778}+G4{0.938039}: gene_1558{9.79994},
+    Q.insect+R4{0.449858,0.0654103,0.279828,0.650135,0.245706,2.37074,0.0246088,8.37687}: gene_1559{8.09697},
+    Q.pfam+I{0.0813612}+G4{2.20592}: gene_1560{13.2802},
+    Q.insect+I{0.0734715}+G4{1.55111}: gene_1561{13.7531},
+    LG+I{0.184809}+G4{1.11436}: gene_1562{15.4905},
+    Q.insect+I{0.175051}+G4{1.05163}: gene_1563{15.7029},
+    Q.insect+G4{1.10566}: gene_1564{10.1717},
+    LG+G4{0.574568}: gene_1565{17.1028},
+    Q.insect+I{0.127993}+R3{0.444694,0.38527,0.37093,1.51747,0.056383,4.71412}: gene_1566{7.52373},
+    Q.yeast+I{0.131188}+G4{0.766338}: gene_1567{16.8595},
+    mtZOA+I{0.111364}+G4{1.0161}: gene_1568{16.8983},
+    LG+I{0.149855}+G4{0.679545}: gene_1569{12.1531},
+    LG+I{0.151874}+G4{1.14568}: gene_1570{9.63789},
+    Q.insect+I{0.279759}+G4{0.948384}: gene_1571{8.80927},
+    Q.insect+I{0.186839}+G4{0.963163}: gene_1572{9.73416},
+    Q.yeast+G4{1.1228}: gene_1573{15.0441},
+    Q.insect+I{0.131268}+G4{1.15209}: gene_1574{12.8303},
+    Q.yeast+I{0.128591}+G4{1.36008}: gene_1575{16.4989},
+    Q.yeast+I{0.121465}+G4{1.21372}: gene_1576{18.5402},
+    Q.insect+I{0.241731}+G4{1.15305}: gene_1577{6.62487},
+    Q.insect+I{0.182996}+G4{1.154}: gene_1578{6.82142},
+    Q.insect+I{0.240569}+G4{1.15887}: gene_1579{9.46385},
+    Q.insect+R3{0.231594,0.0386547,0.449404,0.70932,0.319002,2.10744}: gene_1580{14.105},
+    Q.yeast+G4{0.662184}: gene_1581{11.126},
+    Q.insect+I{0.139672}+G4{1.07592}: gene_1582{11.5832},
+    Q.insect+R4{0.22826,0.0305433,0.351613,0.530236,0.340911,1.2915,0.0792162,4.6241}: gene_1583{17.9589},
+    Q.insect+I{0.0648802}+G4{2.15643}: gene_1584{16.0148},
+    mtZOA+I{0.0620134}+R4{0.233102,0.151299,0.42048,0.720584,0.228298,1.70073,0.056106,4.87412}: gene_1585{17.6559},
+    Q.insect+G4{0.83182}: gene_1586{8.90768},
+    Q.insect+I{0.55031}+R2{0.359686,0.921577,0.0900034,7.42773}: gene_1587{1.29397},
+    Q.insect+I{0.167987}+G4{1.60352}: gene_1588{10.5724},
+    Q.insect+R4{0.273903,0.0754613,0.416327,0.782582,0.245737,1.77037,0.0640332,3.41192}: gene_1589{10.7955},
+    Q.yeast+G4{1.91056}: gene_1590{7.80372},
+    Q.insect+G4{0.892082}: gene_1591{7.46997},
+    Q.insect+I{0.140793}+G4{0.774897}: gene_1592{13.4655},
+    LG+I{0.123392}+G4{1.25652}: gene_1593{10.6759},
+    Q.insect+I{0.142421}+G4{1.17444}: gene_1594{9.93603},
+    Q.insect+R4{0.580419,0.280415,0.266369,1.0194,0.136971,3.04587,0.0162412,9.14391}: gene_1595{7.09518},
+    Q.insect+I{0.0756228}+R3{0.380284,0.379063,0.4619,1.27249,0.0821933,3.26164}: gene_1596{8.86291},
+    Q.yeast+G4{1.05933}: gene_1597{11.6543},
+    Q.insect+G4{0.706101}: gene_1598{11.2377},
+    Q.yeast+I{0.164736}+G4{1.00541}: gene_1599{17.6357},
+    Q.insect+I{0.190767}+G4{0.984236}: gene_1600{9.31283},
+    Q.insect+I{0.0717223}+G4{2.11666}: gene_1601{12.807},
+    Q.insect+G4{0.887397}: gene_1602{12.358},
+    Q.insect+I{0.132468}+G4{1.75754}: gene_1603{12.0367},
+    Q.insect+I{0.116576}+G4{1.35306}: gene_1604{11.941},
+    LG+I{0.136106}+G4{1.49898}: gene_1605{11.1595},
+    Q.insect+G4{0.689847}: gene_1606{17.4538},
+    Q.insect+I{0.0982382}+G4{1.33933}: gene_1607{9.12619},
+    LG+I{0.0962596}+G4{1.35976}: gene_1608{13.0744},
+    LG+I{0.195132}+G4{1.01777}: gene_1609{14.0781},
+    Q.yeast+I{0.0522012}+G4{1.7452}: gene_1610{14.778},
+    Q.insect+G4{0.647284}: gene_1611{20.3055},
+    LG+G4{0.632963}: gene_1612{15.4252},
+    LG+I{0.367883}+G4{1.50498}: gene_1613{10.458},
+    LG+G4{0.658148}: gene_1614{10.7573},
+    mtZOA+G4{0.959647}: gene_1615{13.4059},
+    Q.yeast+G4{0.67535}: gene_1616{7.01928},
+    Q.insect+I{0.0928062}+G4{1.1923}: gene_1617{11.6108},
+    Q.plant+I{0.0650649}+G4{1.31862}: gene_1618{18.3363},
+    Q.insect+G4{0.8738}: gene_1619{14.3283},
+    Q.insect+I{0.302543}+R3{0.325576,0.482532,0.312931,1.79613,0.0589505,4.76391}: gene_1620{8.0974},
+    Q.plant+G4{0.960744}: gene_1621{20.0726},
+    Q.insect+I{0.104456}+G4{0.810698}: gene_1622{14.2691},
+    LG+I{0.193473}+G4{1.13849}: gene_1623{12.6009},
+    Q.insect+I{0.066231}+G4{2.0058}: gene_1624{13.8871},
+    Q.insect+I{0.185378}+G4{0.872979}: gene_1625{20.5714},
+    Q.insect+I{0.11794}+G4{2.57341}: gene_1626{9.5583},
+    LG+I{0.0482347}+G4{1.63369}: gene_1627{15.3002},
+    LG+G4{0.723324}: gene_1628{8.55935},
+    Q.insect+I{0.0709563}+G4{1.11187}: gene_1629{15.1297},
+    Q.yeast+I{0.0955303}+G4{1.63665}: gene_1630{11.1943},
+    Q.insect+I{0.0715241}+G4{1.20974}: gene_1631{11.5743},
+    Q.insect+I{0.118172}+G4{1.11789}: gene_1632{8.63675},
+    Q.yeast+I{0.311952}+G4{0.986054}: gene_1633{5.42408},
+    LG+I{0.10929}+G4{0.911883}: gene_1634{15.3583},
+    Q.insect+R4{0.391422,0.149683,0.34111,0.915347,0.239572,2.08674,0.0278958,4.63338}: gene_1635{9.37817},
+    Q.insect+G4{1.12037}: gene_1636{12.5118},
+    Q.insect+I{0.249746}+G4{0.91195}: gene_1637{7.09686},
+    Q.insect+I{0.0841542}+G4{1.88964}: gene_1638{14.5501},
+    Q.yeast+I{0.159856}+G4{0.908855}: gene_1639{11.6736},
+    Q.insect+G4{0.828558}: gene_1640{5.98181},
+    Q.insect+G4{1.63225}: gene_1641{9.00221},
+    LG+I{0.111472}+G4{0.93888}: gene_1642{13.7578},
+    LG+I{0.0940073}+G4{1.06852}: gene_1643{8.77103},
+    mtZOA+G4{0.651395}: gene_1644{22.4731},
+    mtZOA+G4{0.890787}: gene_1645{14.9733},
+    Q.insect+R3{0.548956,0.193279,0.418871,1.64761,0.0321721,6.33351}: gene_1646{4.88638},
+    Q.pfam+G4{0.814626}: gene_1647{9.59149},
+    Q.insect+G4{0.822077}: gene_1648{12.1259},
+    Q.insect+I{0.086976}+G4{1.23162}: gene_1649{9.87249},
+    Q.insect+I{0.102183}+G4{1.73272}: gene_1650{12.437},
+    LG+G4{0.814285}: gene_1651{14.2667},
+    LG+G4{0.717594}: gene_1652{12.9771},
+    Q.pfam+R3{0.257559,0.0908178,0.567946,0.958035,0.174495,2.47856}: gene_1653{13.0399},
+    Q.insect+I{0.101011}+G4{1.24628}: gene_1654{9.71838},
+    Q.insect+I{0.245262}+G4{1.00565}: gene_1655{9.82531},
+    Q.insect+I{0.107207}+G4{1.08162}: gene_1656{16.999},
+    Q.insect+G4{0.861619}: gene_1657{16.2408},
+    Q.yeast+I{0.213536}+G4{1.18785}: gene_1658{10.2426},
+    Q.insect+R4{0.14589,0.0396808,0.411753,0.415462,0.364332,1.48377,0.078025,3.62137}: gene_1659{15.1206},
+    Q.insect+G4{0.886317}: gene_1660{16.977},
+    Q.insect+G4{1.21383}: gene_1661{7.01553},
+    LG+I{0.0546409}+R3{0.524358,0.53475,0.372232,1.47334,0.0487696,3.50986}: gene_1662{13.7435},
+    Q.insect+R4{0.350388,0.101707,0.345803,0.732339,0.270636,1.86002,0.0331724,6.26212}: gene_1663{7.87942},
+    Q.yeast+G4{0.734738}: gene_1664{10.7679},
+    mtZOA+F+I{0.113698}+G4{1.02867}: gene_1665{15.6621},
+    LG+I{0.125614}+G4{1.39711}: gene_1666{10.037},
+    Q.insect+I{0.109646}+G4{2.33248}: gene_1667{11.8237},
+    LG+I{0.144262}+G4{1.01589}: gene_1668{13.8739},
+    Q.yeast+R4{0.215296,0.0679338,0.357473,0.516729,0.331615,1.41225,0.0956171,3.47567}: gene_1669{15.1192},
+    Q.insect+I{0.171772}+G4{1.5196}: gene_1670{10.3265},
+    Q.insect+I{0.0926719}+G4{1.03878}: gene_1671{13.3976},
+    Q.insect+I{0.0892126}+G4{1.56598}: gene_1672{13.5352},
+    Q.insect+R4{0.253885,0.100724,0.309467,0.508737,0.353127,1.47027,0.083521,3.56555}: gene_1673{10.7202},
+    Q.insect+I{0.0755182}+G4{1.4381}: gene_1674{10.368},
+    Q.insect+I{0.0645878}+G4{1.47903}: gene_1675{12.6898},
+    Q.insect+I{0.0982053}+R4{0.189794,0.16673,0.287268,0.61827,0.339266,1.43166,0.0854661,3.56904}: gene_1676{14.1669},
+    Q.yeast+I{0.123524}+G4{1.20533}: gene_1677{11.3645},
+    Q.insect+G4{0.621365}: gene_1678{2.62197},
+    Q.yeast+G4{0.998137}: gene_1679{12.404},
+    LG+I{0.0888926}+G4{1.11707}: gene_1680{14.1092},
+    Q.insect+G4{0.949416}: gene_1681{12.0281},
+    Q.insect+I{0.100823}+G4{2.04689}: gene_1682{7.94943},
+    Q.yeast+G4{0.501651}: gene_1683{29.3349},
+    LG+G4{0.796918}: gene_1684{12.2977},
+    Q.yeast+I{0.0475743}+G4{1.4975}: gene_1685{13.7946},
+    mtZOA+I{0.191448}+R3{0.350184,0.292689,0.287291,0.980288,0.171078,3.59997}: gene_1686{10.6115},
+    Q.yeast+I{0.184765}+G4{1.33599}: gene_1687{14.2665},
+    LG+I{0.104985}+G4{1.62868}: gene_1688{10.9015},
+    Q.insect+G4{0.808004}: gene_1689{13.6289},
+    Q.yeast+R5{0.212153,0.0768733,0.42851,0.485091,0.186123,1.12581,0.131924,2.6188,0.0412893,5.3477}: gene_1690{14.8488},
+    Q.insect+G4{0.974866}: gene_1691{12.4092},
+    Q.yeast+I{0.129535}+G4{1.91212}: gene_1692{12.268},
+    Q.yeast+I{0.118087}+G4{1.35942}: gene_1693{9.04263},
+    Q.insect+G4{0.940459}: gene_1694{13.4342},
+    Q.insect+G4{0.544525}: gene_1695{9.87319},
+    Q.yeast+G4{1.06258}: gene_1696{11.6433},
+    Q.insect+I{0.245502}+G4{1.2168}: gene_1697{5.60143},
+    Q.plant+G4{0.910449}: gene_1698{9.81661},
+    Q.insect+R4{0.294887,0.0782655,0.451284,0.683484,0.191436,1.71073,0.062392,5.4651}: gene_1699{9.30968},
+    Q.insect+I{0.167523}+G4{1.53364}: gene_1700{10.8181},
+    Q.insect+I{0.269731}+G4{1.50241}: gene_1701{10.1014},
+    Q.insect+I{0.11782}+G4{1.26845}: gene_1702{7.9615},
+    Q.insect+I{0.105359}+G4{1.27364}: gene_1703{10.5575},
+    Q.insect+I{0.119367}+G4{1.74322}: gene_1704{18.4937},
+    Q.insect+I{0.114315}+R3{0.373973,0.303301,0.466049,1.46138,0.0456627,4.50037}: gene_1705{9.11343},
+    Q.yeast+I{0.189549}+G4{0.724134}: gene_1706{14.44},
+    Q.pfam+G4{0.838676}: gene_1707{11.5281},
+    Q.insect+R3{0.452851,0.0935322,0.480088,1.38781,0.0670608,4.34489}: gene_1708{3.50449},
+    Q.yeast+G4{0.515259}: gene_1709{11.1175},
+    LG+R3{0.263579,0.0508574,0.338067,0.711378,0.398353,1.87296}: gene_1710{18.284},
+    Q.insect+G4{1.26111}: gene_1711{8.59736},
+    Q.insect+G4{1.21577}: gene_1712{9.94732},
+    LG+I{0.109494}+G4{0.905205}: gene_1713{11.5571},
+    Q.insect+I{0.168803}+G4{1.18509}: gene_1714{15.1807},
+    Q.insect+I{0.0611111}+G4{1.31017}: gene_1715{15.7162},
+    Q.insect+I{0.131493}+G4{1.38738}: gene_1716{16.0515},
+    mtZOA+I{0.0947658}+G4{1.07878}: gene_1717{12.135},
+    LG+G4{1.18317}: gene_1718{10.6466},
+    Q.insect+I{0.0955094}+G4{1.3448}: gene_1719{17.8358};
+end;
