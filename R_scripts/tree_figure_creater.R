@@ -1,18 +1,21 @@
+library(tidyverse)
 library(ggtree)
 library(ape)
-library(dplyr)
-library(stringr)
 library(treeio)
+library(scales)
+
+prefix <- "nonrib"
+root_adjacent_ids <- c(1, 114) # FIND AUTOMATED WAY OF DOING THIS?
+base_path <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/results/"
 
 # Load the tree from the tree file
-tree_file <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/results/simion/NONREV_simion.treefile"
-rootstrap_file <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/results/simion/NONREV_simion.rootstrap.nex"
-csv_file <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/results/simion/TOP_simion.roottest.csv"
+tree_file <- paste0(base_path, prefix, "/NONREV_", prefix, ".treefile")
+rootstrap_file <- paste0(base_path, prefix, "/NONREV_", prefix, ".rootstrap.nex")
+csv_file <- paste0(base_path, prefix, "/TOP_", prefix, ".roottest.csv")
 
 tree <- read.tree(tree_file)
 label_tree <- read.beast(rootstrap_file)
 
-root_adjacent_ids <- c(1, 114)
 root_length <- 0.1
 
 # Extract leaf labels
@@ -33,8 +36,9 @@ phyla <- sapply(label_data, function(x) x$phylum)
 shortened_labels <- sapply(label_data, function(x) x$shortened_label)
 
 # Assign colours based on Phylum
-colour_palette <- scales::hue_pal()(length(unique(phyla)))
-names(colour_palette) <- unique(phyla)
+clades <- c("Bilateria", "Porifera", "Cnidaria", "Ctenophora", "Placozoa")
+colour_palette <- hue_pal()(length(clades))
+names(colour_palette) <- clades
 
 # Create a data frame for the tip labels with their corresponding colours and shortened labels
 tip_data <- data.frame(label = leaf_labels, Phylum = phyla, shortened_label = shortened_labels) %>%
@@ -81,7 +85,7 @@ p <- ggtree(tree) %<+% tip_data +
   coord_cartesian(xlim = c(-0.1, 1.1)) +
   theme(legend.position='bottom',
         text = element_text(size=10))
+p
 
-
-ggsave("/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/results/tree_images/R_simion.png", p, 
-       width=1500, height=1000, limitsize=F)
+#ggsave("/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/results/tree_images/R_simion.png", p, 
+       #width=1500, height=1000, limitsize=F)

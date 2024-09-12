@@ -5,12 +5,12 @@
 
 #### 1. Input parameters ####
 ## Specify parameters:
-# iqtree_file_dir    <- Directory for IQ-fasta output (.log, .iqtree and .fastafile files from IQ-fasta runs)
+# iqtree_file_dir    <- Directory for IQ-fasta output (.log, .iqtree and .fastafile files from IQ-TREE runs)
 # renamed_fasta_dir   <- Directory for results and plots
 # repo_dir           <- Location of caitlinch/metazoan-mixtures github repository
 
-iqtree_file_dir      <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/" # make end in /
-renamed_fasta_dir     <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/" # make end in /
+iqtree_file_dir      <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/abc/" # make end in /
+renamed_fasta_dir     <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/metazoan-root/outgroup_removed_data/abc/" # make end in /
 repo_dir        <- "/Users/nicholasboffa/Library/CloudStorage/OneDrive-AustralianNationalUniversity/Uni/2024/Semester_2/SCNC2101/caitlyn-metazoan-mixtures/" # DON'T CHANGE
 
 
@@ -27,12 +27,26 @@ source(paste0(repo_dir, "code/func_naming.R"))
 update.fasta.taxa <- function(fasta_file, naming_reconciliation_df, output.clade.names = FALSE, save.updated.fasta = FALSE, output.directory = NA) {
   # Function to update taxa names in fasta files
   
-  # Identify which dataset and alignment this fasta matches
-  fasta_dataset <- strsplit(basename(fasta_file), "\\.")[[1]][1]
-  fasta_matrix <- strsplit(basename(fasta_file), "\\.")[[1]][2]
+  # Extract the dataset and alignment from the filename
+  fasta_basename <- basename(fasta_file)
   
-  # Filter the reconciliation data frame for relevant taxa
-  fasta_taxa_df <- naming_reconciliation_df[naming_reconciliation_df$dataset == fasta_dataset & naming_reconciliation_df$alignment == fasta_matrix,]
+  # Handle special cases for dataset naming conventions, e.g., Laumer2018
+  if (grepl("Laumer2018", fasta_basename)) {
+    fasta_dataset <- "Laumer2018"
+    # Extract the part after the dataset for the alignment
+    fasta_alignment <- strsplit(fasta_basename, "\\.")[[1]][2]
+  } else {
+    # General case: extract the dataset and alignment using periods to split the name
+    fasta_dataset <- strsplit(fasta_basename, "\\.")[[1]][1]
+    fasta_alignment <- strsplit(fasta_basename, "\\.")[[1]][2]
+  }
+  
+  # Filter the reconciliation data frame to match dataset and alignment
+  fasta_taxa_df <- naming_reconciliation_df[naming_reconciliation_df$dataset == fasta_dataset & naming_reconciliation_df$alignment == fasta_alignment,]
+  
+  if (nrow(fasta_taxa_df) == 0) {
+    stop(paste("No matching taxa found for", fasta_dataset, fasta_alignment))
+  }
   
   # Read the fasta file
   fasta_sequences <- read.fasta(fasta_file)
@@ -69,6 +83,9 @@ update.fasta.taxa <- function(fasta_file, naming_reconciliation_df, output.clade
   # Return the updated fasta sequences
   return(fasta_sequences)
 }
+
+
+
 
 
 # Open the renaming csv
