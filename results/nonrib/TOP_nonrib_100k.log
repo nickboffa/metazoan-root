@@ -1,0 +1,545 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Aug  4 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree2 --seed 2222 -s ../Nosenko2013.nonrib.relabelled.outgroup_rem.fasta -p REV.best_scheme.nex -mdef NQ.nonrib.nex --model-joint NQ.nonrib --root-test -zb 100000 -au -te NONREV_nonrib.treefile -T 30 --prefix TOP_nonrib_100k
+Seed:    2222 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Oct 21 21:32:23 2024
+Kernel:  AVX+FMA - 30 threads (256 CPU cores detected)
+
+Reading partition model file REV.best_scheme.nex ...
+Reading alignment file ../Nosenko2013.nonrib.relabelled.outgroup_rem.fasta ... Fasta format detected
+Reading fasta file: done in 0.0385192 secs using 25.72% CPU
+Alignment most likely contains protein sequences
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 61 sequences with 9187 columns, 8316 distinct patterns
+4558 parsimony-informative, 1604 singleton sites, 3025 constant sites
+                                         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00234485 secs using 4551% CPU
+   1  CNIDARIA_Acropora_hyacinthus              24.90%    passed     99.23%
+   2  CNIDARIA_Acropora_millepora                1.04%    passed     98.97%
+   3  CNIDARIA_Acropora_palmata                 53.22%    passed     90.85%
+   4  PORIFERA_Amphimedon_queenslandica          0.15%    passed     99.13%
+   5  BILATERIA_Anoplodactylus_eroticus         69.38%    passed     36.97%
+   6  BILATERIA_Aplysia_californica             24.64%    passed     99.52%
+   7  PORIFERA_Aphrocallistes_vastus            82.62%    failed      0.68%
+   8  PORIFERA_Asbestopluma_sp                  28.54%    passed     95.75%
+   9  PORIFERA_Astrosclera_willeyana            66.13%    passed     53.84%
+  10  CTENOPHORA_Beroe_sp                       38.30%    passed     98.88%
+  11  BILATERIA_Branchiostoma_floridae           1.56%    passed     98.99%
+  12  BILATERIA_Capitella_teleta                 6.16%    passed    100.00%
+  13  PORIFERA_Carteriospongia_foliascens       58.77%    passed     92.58%
+  14  BILATERIA_Ciona_intestinalis               5.63%    passed     49.90%
+  15  CNIDARIA_Clytia_hemisphaerica              1.81%    passed     95.56%
+  16  PORIFERA_Corticium                        85.68%    passed     71.77%
+  17  BILATERIA_Crassostrea_gigas               21.16%    passed     92.27%
+  18  PORIFERA_Crateromorpha_meyeri             56.16%    passed     99.05%
+  19  CNIDARIA_Cyanea_capillata                 91.98%    passed     17.61%
+  20  BILATERIA_Danio_rerio                      0.09%    passed     99.90%
+  21  BILATERIA_Daphnia_pulex                    0.46%    passed     99.97%
+  22  PORIFERA_Ephydatia_muelleri               12.01%    passed     57.07%
+  23  BILATERIA_Euprymna_scolopes               36.67%    passed     54.80%
+  24  BILATERIA_Helobdella_robusta               0.40%    passed     93.65%
+  25  PORIFERA_Heterochone_calyx                55.64%    passed     79.89%
+  26  CNIDARIA_Hydra_magnipapillata              0.28%    passed     94.82%
+  27  CNIDARIA_Hydra_vulgaris                   50.91%    passed     65.24%
+  28  CNIDARIA_Hydractinia_echinata             52.64%    passed     46.39%
+  29  BILATERIA_Ixodes_scapularis                8.36%    passed     96.13%
+  30  PORIFERA_Leucetta_chagosensis             45.40%    passed     83.17%
+  31  PORIFERA_Leucosolenia_sp                  86.60%    failed      0.41%
+  32  PORIFERA_Lubomirskia_baicalensis          72.33%    passed     25.16%
+  33  CTENOPHORA_Mertensiid_sp                  78.98%    passed      5.15%
+  34  CNIDARIA_Metridium_senile                 17.88%    passed     93.64%
+  35  CTENOPHORA_Mnemiopsis_leidyi              31.66%    passed     94.75%
+  36  BILATERIA_Molgula_tectiformis              2.67%    passed     99.76%
+  37  CNIDARIA_Montastraea_faveolata            80.45%    passed     75.37%
+  38  BILATERIA_Nasonia_vitripennis             10.37%    passed     55.72%
+  39  CNIDARIA_Nematostella_vectensis            3.13%    passed     99.50%
+  40  PORIFERA_Oopsacas_minuta                  66.46%    passed     58.58%
+  41  PORIFERA_Oscarella_carmela                24.30%    passed     99.57%
+  42  PORIFERA_Oscarella_lobularis              64.61%    passed      6.90%
+  43  PORIFERA_Oscarella_sp                     19.94%    passed     97.28%
+  44  PORIFERA_Pachydictyum_globosum            75.74%    passed     62.03%
+  45  BILATERIA_Pedicellina_cernua              48.62%    passed     96.86%
+  46  BILATERIA_Pediculus_humanus_capitis       73.97%    passed     42.07%
+  47  BILATERIA_Petromyzon_marinus              11.68%    passed     98.34%
+  48  CTENOPHORA_Pleurobrachia_pileus           36.27%    passed     39.21%
+  49  CNIDARIA_Podocoryna_carnea                57.39%    passed     78.96%
+  50  CNIDARIA_Porites_astreoides               28.46%    passed     91.03%
+  51  BILATERIA_Saccoglossus_kowalevskii         1.93%    passed     99.48%
+  52  BILATERIA_Scutigera_coleoptrata           88.40%    passed     88.20%
+  53  BILATERIA_Strongylocentrotus_purpuratus    8.72%    passed     99.95%
+  54  PORIFERA_Suberites_domuncula               8.77%    passed     99.85%
+  55  PORIFERA_Sycon_ciliatum                   54.87%    failed      2.20%
+  56  PORIFERA_Sycon_raphanus                   55.80%    passed     26.54%
+  57  PORIFERA_Tethya_wilhelma                  36.61%    passed     97.41%
+  58  PLACOZOA_Trichoplax_adhaerens              0.26%    passed     39.79%
+  59  PLACOZOA_Trichoplax_sp                    37.24%    passed     92.72%
+  60  BILATERIA_Tubifex_tubifex                 40.95%    passed     95.38%
+  61  BILATERIA_Xenoturbella_bocki              67.88%    passed     23.61%
+WARNING: 24 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                     37.27%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Loading 35 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	AA	57	238	18	182	JTTDCMut+R2	gene_0001
+2	AA	42	619	254	265	Q.insect+I+G4	gene_0002
+3	AA	52	143	26	84	Q.insect+I+R2	gene_0003
+4	AA	52	165	55	45	Q.insect+R3	gene_0004
+5	AA	53	160	104	27	Q.insect+I+G4	gene_0005
+6	AA	45	523	267	155	Q.yeast+R4	gene_0006
+7	AA	43	133	104	17	LG+G4	gene_0007
+8	AA	49	160	115	24	WAG+I+G4	gene_0008
+9	AA	50	227	118	66	Q.insect+I+R3	gene_0009
+10	AA	40	297	115	104	Q.insect+R3	gene_0010
+11	AA	40	167	47	94	Q.insect+R3	gene_0011
+12	AA	44	141	67	50	Q.insect+R4	gene_0012
+13	AA	37	103	81	5	WAG+G4	gene_0013
+14	AA	38	273	197	31	LG+I+R3	gene_0014
+15	AA	42	329	168	117	WAG+R4	gene_0015
+16	AA	57	371	48	221	LG+I+R2	gene_0016
+17	AA	41	278	160	77	LG+I+R3	gene_0017
+18	AA	51	209	126	39	Q.yeast+R5	gene_0018
+19	AA	43	159	100	42	LG+I+G4	gene_0019
+20	AA	41	305	214	50	WAG+I+G4	gene_0020
+21	AA	43	371	146	151	LG+I+R4	gene_0021
+22	AA	41	417	119	218	Q.insect+R3	gene_0022
+23	AA	45	441	61	251	LG+I+R2	gene_0023
+24	AA	40	309	195	72	Q.yeast+I+G4	gene_0024
+25	AA	45	259	184	35	Q.insect+R4	gene_0025
+26	AA	56	246	174	35	WAG+I+G4	gene_0026
+27	AA	44	321	187	87	WAG+R4	gene_0027
+28	AA	43	203	162	20	LG+I+G4	gene_0028
+29	AA	46	136	3	122	LG+I	gene_0029
+30	AA	49	122	71	17	Q.insect+R3	gene_0030
+31	AA	37	415	237	115	LG+I+G4	gene_0031
+32	AA	37	244	178	46	LG+I+G4	gene_0032
+33	AA	38	282	160	87	Q.yeast+I+G4	gene_0033
+34	AA	46	252	165	53	Q.yeast+G4	gene_0034
+35	AA	46	169	132	21	Q.yeast+I+G4	gene_0035
+Degree of missing data: 0.272
+Info: multi-threading strategy over partitions
+
+WARNING: States(s) C, W rarely appear in partition gene_0001 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0003 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0029 and may cause numerical problems
+WARNING: States(s) W rarely appear in partition gene_0030 and may cause numerical problems
+Reading model definition file NQ.nonrib.nex ... 87 models and 214 frequency vectors loaded
+Reading input tree file NONREV_nonrib.treefile ... rooted tree
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 224 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -236873.961
+Current log-likelihood at step 1: -233899.755
+Current log-likelihood at step 2: -233576.673
+Current log-likelihood at step 3: -233515.305
+Current log-likelihood at step 4: -233479.259
+Current log-likelihood at step 5: -233399.713
+Current log-likelihood at step 6: -233379.008
+Current log-likelihood at step 7: -233370.461
+Current log-likelihood at step 8: -233366.310
+Current log-likelihood at step 9: -233363.598
+Current log-likelihood at step 10: -233361.502
+Current log-likelihood at step 11: -233359.791
+Current log-likelihood at step 12: -233358.423
+Current log-likelihood at step 13: -233357.343
+Current log-likelihood at step 14: -233356.501
+Current log-likelihood at step 15: -233355.840
+Current log-likelihood at step 16: -233355.306
+Current log-likelihood at step 17: -233354.857
+Current log-likelihood at step 18: -233354.466
+Current log-likelihood at step 19: -233354.123
+Current log-likelihood at step 20: -233353.816
+Current log-likelihood at step 21: -233353.536
+Current log-likelihood at step 22: -233353.283
+Current log-likelihood at step 23: -233353.052
+Current log-likelihood at step 24: -233352.840
+Current log-likelihood at step 25: -233352.646
+Current log-likelihood at step 26: -233352.465
+Current log-likelihood at step 27: -233352.297
+Current log-likelihood at step 28: -233352.144
+Current log-likelihood at step 29: -233352.002
+Current log-likelihood at step 30: -233351.868
+Current log-likelihood at step 31: -233351.743
+Current log-likelihood at step 32: -233351.627
+Current log-likelihood at step 33: -233351.515
+Current log-likelihood at step 34: -233351.412
+Current log-likelihood at step 35: -233351.315
+Current log-likelihood at step 36: -233351.223
+Current log-likelihood at step 37: -233351.135
+Current log-likelihood at step 38: -233351.051
+Current log-likelihood at step 39: -233350.970
+Current log-likelihood at step 40: -233350.894
+Current log-likelihood at step 41: -233350.823
+Current log-likelihood at step 42: -233350.753
+Current log-likelihood at step 43: -233350.684
+Current log-likelihood at step 44: -233350.620
+Current log-likelihood at step 45: -233350.556
+Current log-likelihood at step 46: -233350.495
+Current log-likelihood at step 47: -233350.437
+Current log-likelihood at step 48: -233350.380
+Current log-likelihood at step 49: -233350.324
+Current log-likelihood at step 50: -233350.272
+Current log-likelihood at step 51: -233350.219
+Current log-likelihood at step 52: -233350.168
+Current log-likelihood at step 53: -233350.118
+Current log-likelihood at step 54: -233350.069
+Current log-likelihood at step 55: -233350.021
+Current log-likelihood at step 56: -233349.975
+Current log-likelihood at step 57: -233349.927
+Current log-likelihood at step 58: -233349.880
+Current log-likelihood at step 59: -233349.835
+Current log-likelihood at step 60: -233349.791
+Current log-likelihood at step 61: -233349.746
+Current log-likelihood at step 62: -233349.702
+Current log-likelihood at step 63: -233349.658
+Current log-likelihood at step 64: -233349.615
+Current log-likelihood at step 65: -233349.572
+Current log-likelihood at step 66: -233349.530
+Current log-likelihood at step 67: -233349.488
+Current log-likelihood at step 68: -233349.446
+Current log-likelihood at step 69: -233349.404
+Current log-likelihood at step 70: -233349.364
+Current log-likelihood at step 71: -233349.323
+Current log-likelihood at step 72: -233349.283
+Current log-likelihood at step 73: -233349.242
+Current log-likelihood at step 74: -233349.202
+Current log-likelihood at step 75: -233349.162
+Current log-likelihood at step 76: -233349.123
+Current log-likelihood at step 77: -233349.084
+Current log-likelihood at step 78: -233349.045
+Current log-likelihood at step 79: -233349.007
+Current log-likelihood at step 80: -233348.969
+Current log-likelihood at step 81: -233348.931
+Current log-likelihood at step 82: -233348.892
+Current log-likelihood at step 83: -233348.854
+Current log-likelihood at step 84: -233348.818
+Current log-likelihood at step 85: -233348.780
+Current log-likelihood at step 86: -233348.743
+Current log-likelihood at step 87: -233348.705
+Current log-likelihood at step 88: -233348.668
+Current log-likelihood at step 89: -233348.631
+Current log-likelihood at step 90: -233348.594
+Current log-likelihood at step 91: -233348.558
+Current log-likelihood at step 92: -233348.521
+Current log-likelihood at step 93: -233348.484
+Current log-likelihood at step 94: -233348.448
+Current log-likelihood at step 95: -233348.411
+Current log-likelihood at step 96: -233348.375
+Current log-likelihood at step 97: -233348.339
+Current log-likelihood at step 98: -233348.304
+Current log-likelihood at step 99: -233348.268
+Partition-specific rates:  0.082 0.669 0.134 0.423 0.773 0.779 1.420 1.956 0.825 0.517 0.239 0.639 2.114 1.768 1.184 0.131 1.116 1.720 1.257 1.805 0.699 0.305 0.155 1.666 1.359 2.054 1.123 2.147 0.083 0.937 1.247 1.729 1.262 0.942 1.898
+Parameters optimization took 99 rounds (336.333 sec)
+
+Wrote distance file to... 
+Partition information was printed to TOP_nonrib_100k.best_model.nex
+BEST SCORE FOUND : -233348.268
+Testing root positions...
+Better root: -233348.266
+UPDATE BEST SCORE: -233348.266
+Rooted trees with log-likelihoods printed to TOP_nonrib_100k.roottest.trees
+Reading trees in TOP_nonrib_100k.roottest.trees ...
+
+119 trees detected
+Note: 3265.076 MB of RAM required!
+Creating 100000 bootstrap replicates...
+done
+Tree 1 / LogL: -233348.265
+Tree 2 / LogL: -233348.973
+Tree 3 / LogL: -233349.015
+Tree 4 / LogL: -233349.782
+Tree 5 / LogL: -233349.782
+Tree 6 / LogL: -233351.315
+Tree 7 / LogL: -233351.316
+Tree 8 / LogL: -233351.625
+Tree 9 / LogL: -233351.626
+Tree 10 / LogL: -233352.354
+Tree 11 / LogL: -233352.354
+Tree 12 / LogL: -233353.922
+Tree 13 / LogL: -233354.788
+Tree 14 / LogL: -233356.066
+Tree 15 / LogL: -233356.428
+Tree 16 / LogL: -233356.540
+Tree 17 / LogL: -233357.372
+Tree 18 / LogL: -233357.372
+Tree 19 / LogL: -233358.671
+Tree 20 / LogL: -233359.230
+Tree 21 / LogL: -233359.230
+Tree 22 / LogL: -233360.838
+Tree 23 / LogL: -233360.838
+Tree 24 / LogL: -233360.929
+Tree 25 / LogL: -233360.969
+Tree 26 / LogL: -233362.807
+Tree 27 / LogL: -233362.815
+Tree 28 / LogL: -233363.498
+Tree 29 / LogL: -233363.825
+Tree 30 / LogL: -233364.429
+Tree 31 / LogL: -233365.170
+Tree 32 / LogL: -233364.950
+Tree 33 / LogL: -233366.165
+Tree 34 / LogL: -233366.398
+Tree 35 / LogL: -233366.777
+Tree 36 / LogL: -233367.019
+Tree 37 / LogL: -233368.326
+Tree 38 / LogL: -233369.219
+Tree 39 / LogL: -233369.219
+Tree 40 / LogL: -233369.620
+Tree 41 / LogL: -233369.620
+Tree 42 / LogL: -233369.768
+Tree 43 / LogL: -233369.768
+Tree 44 / LogL: -233370.360
+Tree 45 / LogL: -233371.574
+Tree 46 / LogL: -233371.813
+Tree 47 / LogL: -233372.182
+Tree 48 / LogL: -233372.237
+Tree 49 / LogL: -233372.237
+Tree 50 / LogL: -233373.864
+Tree 51 / LogL: -233374.799
+Tree 52 / LogL: -233375.510
+Tree 53 / LogL: -233375.542
+Tree 54 / LogL: -233375.719
+Tree 55 / LogL: -233375.600
+Tree 56 / LogL: -233375.960
+Tree 57 / LogL: -233376.746
+Tree 58 / LogL: -233376.803
+Tree 59 / LogL: -233377.270
+Tree 60 / LogL: -233377.354
+Tree 61 / LogL: -233378.084
+Tree 62 / LogL: -233380.262
+Tree 63 / LogL: -233380.515
+Tree 64 / LogL: -233381.669
+Tree 65 / LogL: -233381.946
+Tree 66 / LogL: -233382.487
+Tree 67 / LogL: -233382.487
+Tree 68 / LogL: -233383.084
+Tree 69 / LogL: -233383.214
+Tree 70 / LogL: -233383.540
+Tree 71 / LogL: -233384.031
+Tree 72 / LogL: -233385.326
+Tree 73 / LogL: -233385.435
+Tree 74 / LogL: -233385.776
+Tree 75 / LogL: -233386.155
+Tree 76 / LogL: -233386.647
+Tree 77 / LogL: -233386.693
+Tree 78 / LogL: -233387.762
+Tree 79 / LogL: -233387.841
+Tree 80 / LogL: -233389.432
+Tree 81 / LogL: -233389.432
+Tree 82 / LogL: -233389.589
+Tree 83 / LogL: -233391.511
+Tree 84 / LogL: -233392.513
+Tree 85 / LogL: -233392.542
+Tree 86 / LogL: -233393.089
+Tree 87 / LogL: -233393.292
+Tree 88 / LogL: -233393.364
+Tree 89 / LogL: -233394.001
+Tree 90 / LogL: -233395.890
+Tree 91 / LogL: -233396.366
+Tree 92 / LogL: -233397.202
+Tree 93 / LogL: -233397.880
+Tree 94 / LogL: -233397.941
+Tree 95 / LogL: -233398.615
+Tree 96 / LogL: -233398.977
+Tree 97 / LogL: -233399.516
+Tree 98 / LogL: -233399.916
+Tree 99 / LogL: -233400.240
+Tree 100 / LogL: -233400.385
+Tree 101 / LogL: -233401.194
+Tree 102 / LogL: -233401.208
+Tree 103 / LogL: -233401.564
+Tree 104 / LogL: -233401.674
+Tree 105 / LogL: -233402.205
+Tree 106 / LogL: -233402.705
+Tree 107 / LogL: -233402.744
+Tree 108 / LogL: -233402.834
+Tree 109 / LogL: -233403.039
+Tree 110 / LogL: -233403.993
+Tree 111 / LogL: -233404.069
+Tree 112 / LogL: -233405.387
+Tree 113 / LogL: -233407.757
+Tree 114 / LogL: -233407.883
+Tree 115 / LogL: -233409.972
+Tree 116 / LogL: -233411.345
+Tree 117 / LogL: -233413.919
+Tree 118 / LogL: -233413.919
+Tree 119 / LogL: -233421.340
+Performing RELL-BP test...
+Performing KH and SH test...
+Performing ELW test...
+Performing approximately unbiased (AU) test...
+907 MB required for AU test
+Generating 10 x 100000 multiscale bootstrap replicates... 115.986 seconds
+TreeID	AU	RSS	d	c
+1	0.934	7.984	-0.630	0.876
+2	0.657	22.930	0.385	0.790 !!!
+3	0.415	12.036	0.757	0.543
+4	0.320	65.569	0.668	0.201 !!!
+5	0.320	63.737	0.668	0.200 !!!
+6	0.243	13.064	1.127	0.430
+7	0.242	12.303	1.127	0.428
+8	0.169	28.272	1.167	0.209 !!!
+9	0.169	29.254	1.168	0.210 !!!
+10	0.041	9.243	1.983	0.240
+11	0.042	10.520	1.979	0.246
+12	0.071	19.314	1.775	0.306
+13	0.006	13.502	3.080	0.551
+14	0.006	6.443	3.096	0.562
+15	0.061	6.144	2.117	0.570
+16	0.014	7.051	2.633	0.447
+17	0.003	10.827	3.051	0.246
+18	0.003	10.491	3.050	0.248
+19	0.005	6.280	2.887	0.295
+20	0.031	5.638	2.175	0.315
+21	0.032	5.770	2.171	0.319
+22	0.001	3.505	3.495	0.345
+23	0.001	3.487	3.485	0.354
+24	0.003	3.164	3.307	0.526
+25	0.001	6.980	3.640	0.555
+26	0.001	5.072	3.439	0.354
+27	0.001	14.234	3.538	0.292
+28	0.000	2.646	3.811	0.281
+29	0.010	2.141	2.943	0.600
+30	0.000	8.778	3.749	0.358
+31	0.005	17.213	3.018	0.422
+32	0.000	1.020	4.508	0.279
+33	0.002	5.253	3.159	0.216
+34	0.000	6.140	3.597	0.221
+35	0.000	5.132	4.205	0.418
+36	0.006	11.319	2.677	0.141
+37	0.002	8.614	3.369	0.421
+38	0.000	10.413	4.760	0.092
+39	0.000	6.877	4.533	0.147
+40	0.000	3.950	4.200	0.126
+41	0.000	4.148	4.187	0.139
+42	0.000	2.268	4.247	0.306
+43	0.000	2.506	4.231	0.319
+44	0.000	0.662	4.590	0.366
+45	0.001	2.601	3.376	0.255
+46	0.000	1.118	4.758	0.232
+47	0.000	1.267	4.705	0.264
+48	0.000	4.275	4.498	0.125
+49	0.000	4.100	4.461	0.153
+50	0.000	5.568	4.076	0.360
+51	0.000	0.178	4.954	0.151
+52	0.000	3.049	4.681	0.346
+53	0.000	0.968	5.110	-0.022
+54	0.000	0.000	12.134	-3.327
+55	0.000	1.100	5.016	0.053
+56	0.000	0.734	5.657	-0.263
+57	0.000	5.318	4.411	0.363
+58	0.000	0.825	4.679	0.283
+59	0.000	1.469	4.298	0.578
+60	0.000	3.082	3.959	0.212
+61	0.000	0.109	5.975	-0.207
+62	0.000	3.049	4.581	0.211
+63	0.000	2.155	4.369	0.389
+64	0.000	1.827	4.671	0.131
+65	0.000	1.862	4.651	0.375
+66	0.000	8.790	4.011	0.287
+67	0.000	8.905	4.005	0.293
+68	0.000	0.673	4.660	0.259
+69	0.000	1.733	4.047	0.258
+70	0.000	3.404	4.327	0.319
+71	0.000	0.209	5.726	-0.105
+72	0.000	0.920	5.117	0.310
+73	0.000	0.644	4.889	0.439
+74	0.000	4.240	3.807	0.370
+75	0.000	2.683	4.957	-0.036
+76	0.000	0.413	11.172	-2.767
+77	0.000	4.082	5.164	-0.130
+78	0.000	2.397	4.130	0.153
+79	0.000	0.000	12.233	-3.228
+80	0.000	8.488	4.320	0.295
+81	0.000	8.491	4.321	0.295
+82	0.000	3.167	4.748	0.155
+83	0.000	2.563	4.777	0.289
+84	0.000	0.000	10.298	-2.185
+85	0.000	0.249	4.765	0.506
+86	0.000	0.839	4.826	0.450
+87	0.000	0.594	4.890	0.224
+88	0.000	0.977	3.976	0.379
+89	0.000	0.000	13.850	-4.131
+90	0.000	2.567	4.605	0.524
+91	0.000	1.657	4.842	0.114
+92	0.000	0.000	9.728	-1.835
+93	0.000	0.000	10.172	-2.051
+94	0.000	0.000	10.186	-2.105
+95	0.000	0.000	11.552	-2.896
+96	0.000	8.086	4.525	0.182
+97	0.000	0.000	13.785	-4.162
+98	0.000	2.864	4.668	0.292
+99	0.000	0.415	5.525	-0.050
+100	0.000	3.561	4.373	0.188
+101	0.000	0.673	4.176	0.103
+102	0.000	0.280	14.148	-4.402
+103	0.000	0.972	4.767	0.478
+104	0.000	0.000	12.560	-3.092
+105	0.000	0.269	10.761	-2.470
+106	0.000	1.572	4.976	0.054
+107	0.000	0.000	11.822	-2.944
+108	0.000	0.000	10.699	-2.236
+109	0.000	0.000	12.625	-3.398
+110	0.000	3.829	4.412	0.141
+111	0.000	4.079	4.202	0.230
+112	0.000	0.000	14.812	-4.536
+113	0.000	0.819	4.667	0.111
+114	0.000	0.000	12.437	-3.391
+115	0.000	1.525	4.126	0.406
+116	0.000	0.580	4.835	0.509
+117	0.000	0.000	11.930	-3.046
+118	0.000	0.000	11.915	-3.039
+119	0.000	0.000	9.889	-1.947
+Time for AU test: 116.056 seconds
+Time for evaluating all trees: 753.083 sec.
+Tree test results printed to TOP_nonrib_100k.roottest.csv
+Total tree length: 9.682
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 48971.147 sec (13h:36m:11s)
+Total wall-clock time used: 2098.614 sec (0h:34m:58s)
+
+Analysis results written to: 
+  IQ-TREE report:                TOP_nonrib_100k.iqtree
+  Maximum-likelihood tree:       TOP_nonrib_100k.treefile
+  Screen log file:               TOP_nonrib_100k.log
+
+Date and Time: Mon Oct 21 22:07:23 2024
